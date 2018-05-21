@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>详情页</title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script src="__STATIC__/js/rem.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!--<header class="header header-fixed">
+            <a href="javascript:;" onclick="history.go(-1)" class="back back1"></a>
+            	详情
+        </header>-->
+        <div class="information-e" style="margin-top: 0;">
+        	<h1 style="line-height:0.4rem;font-size: 0.26rem;margin: 0.2rem 0;">{$data.title}</h1>
+			<span class="add_follow_3 fr" onClick="ck({$data.id},'{$data.corpus_name}')" >{$data.corpus_name}</span>
+			<!-- {if condition="$data['isme'] neq 1"} -->
+			<!-- {if condition="$data['isconcern'] eq 0"} -->
+        	<!-- <span class="add_follow fr" onClick="btn1('{$data.bephone_account}')" id="guanzhu">关注</span> -->
+        	<!-- {else/} -->
+        	<!-- <span class="add_follow_2 fr" onClick="btn1('{$data.bephone_account}')" id="guanzhu">已关注</span> -->
+        	<!-- {/if} -->
+			<!-- {/if} -->
+		
+        	<input type="hidden" name="phone_account" value="{$data.phone_account}" id="phone_account"> 
+        	<section >
+	            <div class="fl server-head "  onClick="btn('{$data.bephone_account}')">
+	            	<img src="{$data.headerurl}" />
+	            </div>
+	            <div class="fl server-news">
+	            	<p>
+		            	{if condition="$data['nickname'] neq ''"}{$data.nickname}{else/}{$data.grade}家长{/if}<br />
+		            	<span>{$data.release_time}</span>
+		            </p>
+	            </div>
+	            <div class="clear"></div>
+	        </section>
+	        <div class="ma-t20">
+	        	{$data.content}
+	        </div>
+       		<section>
+       			<div class="arr-show">
+       				<span class="arr-show-click arr-show-left">评论<span>{$data.comment_count}</span></span>
+	        		<span class="arr-show-right">喜欢<span>{$data.collect_count}</span></span>
+       			</div>
+	        	<div class="arr-zan arr-zan-left">
+	        		<ul>
+	        			{volist name="commentData" id="vo1"}
+		        			<li>
+		        				<img src="{$vo1.headerurl}" onClick="btn('{$vo1.phone_account}')"/>
+		        				<i >{$vo1.nickname}</i>
+		        				<span>{$vo1.comment_time}</span>
+		        				<p>{$vo1.content}</p>
+		        			</li>
+	        			{/volist}
+
+	        		</ul>
+	        		
+	        	</div>
+	        	<div class="arr-zan arr-zan-right">
+	        		<ul>
+	        			{volist name="collectData" id="vo2"}
+	        			    <li><img src="{$vo2.headerurl}" onClick="btn('{$vo2.phone_account}')"/><i>{$vo2.nickname}</i></li>
+	        			{/volist}
+	        		</ul>
+	        	</div>
+	        </section>
+        </div>
+        
+        <!--<div class="information-fixed">
+        	<input type="text" name="" id="" value="" placeholder="写评论..." readonly="value"/>
+        	<a href="javascript:" class="click-zan fr">
+        		
+        	</a>
+	        <a href="javascript:" class="return-news fr"></a>
+        	
+        </div>-->
+    </div>
+</body>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+			$('.arr-show-left').click(function(){
+				$(this).addClass('arr-show-click')
+				$(this).siblings().removeClass('arr-show-click')
+				$('.arr-zan-left').show();
+				$('.arr-zan-right').hide()
+			})
+			
+			$('.arr-show-right').click(function(){
+				$(this).addClass('arr-show-click')
+				$(this).siblings().removeClass('arr-show-click')
+				$('.arr-zan-left').hide();
+				$('.arr-zan-right').show()
+				
+			})
+			
+		
+			
+		})
+
+		function btn(phoneAccount){ 
+		
+		   android.info(phoneAccount); 
+		}
+
+        function ck(id,corpus_name){ 
+		    android.jump(id,corpus_name); 
+		   //android.jump(parseInt(id)); 
+		} 		
+		
+		function btn1(bephone_account,phone_account){ 
+		  var phone_account = $('#phone_account').val();
+		    //alert(phone_account);
+		     $.ajax({
+                    type:'post',//选择get方式提交
+                    url:'{:url("informationarticle/corpusWorksConcern")}',//将数据提交的页面
+                    data:{phone_account:phone_account,bephone_account:bephone_account},//传值
+                    dataType:'text',
+                    success: function(data)
+                    {
+                        if(data ==0){
+                            $('#guanzhu').removeClass('add_follow').addClass('add_follow_2');
+                            $('#guanzhu').text('已关注');
+                        }
+
+                        if(data ==2){
+                            $('#guanzhu').removeClass('add_follow_2').addClass('add_follow');
+                            $('#guanzhu').text('关注');
+                        }
+                        //alert(data);
+                    }
+                })
+		  
+		}
+	</script>
+</html>

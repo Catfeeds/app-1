@@ -1,0 +1,170 @@
+{extend name="template/base" /}
+{block name="content"}
+
+<div class="page-container">
+<style>
+   #fileupload {
+   position:absolute;
+   width: 60px;
+   height: 60px;
+   left: 15px;
+   top: 10px;
+   opacity:0
+   }
+</style>
+    <form class="form form-horizontal" id="form" method="post" action="{:\\think\\Request::instance()->baseUrl()}">
+        <input type="hidden" name="id" value="{$vo.id ?? ''}">
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">学生账号：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="学生账号" readonly name="account" value="{$vo1.account ?? ''}" >
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+		<div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">绑定手机：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="绑定手机" readonly name="number" value="{$vo1.contact ?? ''}" >
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        {volist name="vo2" id="vo2"}
+        <div class="row cl">
+        	<div class="col-xs-3 col-sm-3 text-r" style="line-height: 100px;">{$vo2.relation}：</div>
+        	<div class="col-xs-6 col-sm-6">
+               
+        		<div style="width: 15px;"></div>
+        		<div style="border: 1px solid #ddd;height: 100px;">
+        			<div class="col-xs-3 col-sm-3" style="padding: 10px;">
+        				<div class="col-xs-6 col-sm-6">
+        					<div>
+					            <img src="{$vo2.image}" width="60px" height="60px" style="border-radius:10px;margin-top:10px;" onerror="this.src='__STATIC__/images/defaulthead.jpg'"/>
+        					</div>
+        				</div>
+        				<div class="col-xs-6 col-sm-6">
+        					<a class="btn btn-default" href="javascript:;" style="width:60px;height:60px;margin-top:10px;border-radius:10px;">
+        						<span class="Hui-iconfont Hui-iconfont-add" style="font-size: 24px;color: #999;line-height:50px;"></span>
+        					</a>
+        					<input id="fileupload" type="file" name="file" accept="image/gif,image/jpeg,image/png,image/jpg" multiple="true" data-url="{:\\think\\Url::build('upload')}?type={$Request.param.type}&funId={$Request.param.funId}&personId={$Request.param.personId}&self={$Request.param.self}&pid={$Request.param.pid}">
+        				</div>
+        			</div>
+        			<div class="col-xs-5 col-sm-5" style="height: 100px;line-height:100px;">
+        				<label class="form-label col-xs-5 col-sm-5">车牌号：</label>
+        				<div class="formControls col-xs-7 col-sm-7  text-l">
+			                <input type="text" class="input-text" placeholder="请输入车牌号" name="carCard_{$vo2.id}" value="{$vo2.carCard}">
+			            </div>
+        			</div>
+        			<div class="col-xs-4 col-sm-4 skin-minimal" style="height: 100px;padding: 40px 0;text-align: center">
+                        
+        				<div class="radio-box">
+
+		                    <input type="radio" name="access_{$vo2.id}" id="acess-1"   value="1" {if condition="$vo2.access eq 1"} checked {/if} class="btn1">
+                            <input type="hidden" class="access" value="{$vo2.id}" >
+		                    <label for="acess-1">启用</label>
+		                </div>
+                       
+		                <div class="radio-box">
+		                    <input type="radio" name="access_{$vo2.id}"  value="0" {if condition="$vo2.access eq 0"} checked {/if} class="btn0">
+                            <input type="hidden" class="access" value="{$vo2.id}" >
+		                    <label for="acess-0">禁用</label>
+		                </div>
+        			</div>
+        		</div>
+               
+	           	<div style="width: 15px;"></div>
+        	</div>
+        	<div class="col-xs-3 col-sm-3"></div>
+        </div>
+         {/volist}
+      
+        
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">备注：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+				<textarea class="textarea" placeholder="" name="remark" onKeyUp="textarealength(this,100)">{$vo.remark ?? ''}</textarea>
+                <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button type="submit" class="btn btn-primary radius">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+                <button type="button" class="btn btn-default radius ml-20" onClick="layer_close();">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </form>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__LIB__/Validform/5.3.2/Validform.min.js"></script>
+<script>
+    $(function () {
+		$("[name='access'][value='{$vo.access ?? '0'}']").prop("checked", true);
+        var vo2_js = <?php echo json_encode($vo2js); ?>;
+        
+        var aarr = eval(vo2_js);
+        
+        //var ss = '{$vo.lAccess}'.split(",");
+        for (i = 0; i < aarr.length; i++) {
+            var str = 'lAccess_' + aarr[i]['id'];
+            //alert(aarr[i]['access']);
+            if (aarr[i]['access'] == '1') {
+                $("[name='" + str + "'][value='1']").prop("checked", true);
+            } else {
+                $("[name='" + str + "'][value='0']").prop("checked", true);
+            }
+        }
+        $('.skin-minimal input').iCheck({
+            checkboxClass: 'icheckbox-blue',
+            radioClass: 'iradio-blue',
+            increaseArea: '20%'
+        });
+
+        $("#form").Validform({
+            tiptype: 2,
+            ajaxPost: true,
+            showAllError: true,
+            callback: function (ret){
+                ajax_progress(ret);
+            }
+        });
+
+        $('.btn1').click(function(){
+            var id = $(this).parents().next('.access').val();
+            $.ajax({
+                    type: 'post',//选择get方式提交
+                    url: '{:url("StudentAccessManagement/start")}',//将数据提交的页面
+                    data: {id: id},//传值
+                    success:function(data)
+                    {
+                        // if(data == 'ok'){
+                        //    alert(data)
+                        // }
+                    }
+            });
+        })
+
+        $('.btn0').click(function(){
+            var id = $(this).parents().next('.access').val();
+           // alert(id)
+            $.ajax({
+                    type: 'post',//选择get方式提交
+                    url: '{:url("StudentAccessManagement/forbidden")}',//将数据提交的页面
+                    data: {id: id},//传值
+                    success:function(data)
+                    {
+                        // if(data == 'ok'){
+                        //    alert(data)
+                        // }
+                    }
+            });
+        })
+
+     
+
+
+
+    })
+</script>
+{/block}

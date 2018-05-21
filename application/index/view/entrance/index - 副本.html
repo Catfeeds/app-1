@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>门禁</title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script src="__STATIC__/js/rem.js"></script>
+</head>
+<body>
+    <div id="wrap">
+      <!--<div class="center_box">
+        <div class="center_img">
+          <img src="__STATIC__/../../uploads/file/{$headurl}">
+        </div>
+        <p>学生姓名</p>
+      </div>-->
+      <div class="class_new"style="background: #FC729C; color: #333;">
+	   		<div class="new-left"style="border-radius: 3em;">
+	   			 <img src="__STATIC__/../../uploads/file/{$headurl}">
+	   		</div>
+	   		<div class="new-right">
+	   			<p>学生姓名</p>
+	   			<span style="color: #555;">所在班级</span>
+	   		</div>
+	   		<div class="clear"></div>
+	  	</div>
+      <div class="center_link">
+        <a href="{:\\think\\Url::build('collect/index')}">头像采集</a>
+        <a href="{:\\think\\Url::build('leave/index')}">请假申请</a>
+        <a href="{:\\think\\Url::build('Workinfo/index')}">考勤记录</a>
+      </div>
+    </div>
+    <div class="foot_nav">
+       <a href="{:\\think\\Url::build('Circle/index')}" class="fl">
+            <i class="fexed-qzhi"></i>
+            <span style=" color: #aeaeac;font-size: 10px;">圈子</span>
+          </a>
+           <a href="{:\\think\\Url::build('Index/index')}" class="active_nav">
+           <i class="fexed-class"></i>
+           <span style="font-size: 10px;">班级</span>
+          </a>
+		 <a href="{:\\think\\Url::build('News/index')}">
+           <i class="fexed-new"></i>
+           <span style="color: #aeaeac; font-size: 10px;">消息</span>
+         </a>
+          <a href="{:\\think\\Url::build('Entrance/index')}" class="active fr"> 
+            <i class="fexed-room"></i>
+            <span style="color: #aeaeac;font-size: 10px;">门禁</span>
+          </a>
+          <a href="{:\\think\\Url::build('Personal/index')}" class="fr"> 
+            <i class="fexed-our"></i>
+            <span style="color: #aeaeac;font-size: 10px;">我的</span>
+          </a>
+    </div>
+</body>
+
+</html>

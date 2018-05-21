@@ -1,0 +1,64 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+
+    <!--<input type="text" class="input-text Wdate" style="width:250px" placeholder="发布时间" name="release_time" value="{$Request.param.release_time}" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal} >-->
+
+
+    <div class="select-box" style="width:250px">
+        <select name="companyName" class="select" datatype="*" nullmsg="请选择公司名称" >
+            <option value ="">请选择公司名称</option>
+            {volist name="companyName" id="vo"}
+               <option value ="{$vo.companyName}">{$vo.companyName}</option>
+            {/volist}
+        </select>
+    </div>
+
+
+    <div class="select-box" style="width:250px">
+        <select name="city_area" class="select" datatype="*" nullmsg="请选择工作区域" >
+            <option value ="">请选择工作区域</option>
+            {volist name="city_area" id="v1"}
+            <option value ="{$v1.city}-{$v1.area}">{$v1.city}{$v1.area}</option>
+            {/volist}
+        </select>
+    </div>
+
+    <div class="select-box" style="width:250px">
+        <select name="isdown" class="select" datatype="*" nullmsg="请选择职位发布状态">
+            <option value="">请选择职位状态</option>
+            <option value ="0">正在上架</option>
+            <option value ="1">已下架</option>
+        </select>
+    </div>
+
+
+
+
+    <!--<div class="select-box" style="width:250px">-->
+        <!--<select name="property" class="select" datatype="*" nullmsg="请选择职位属性" >-->
+            <!--<option value ="">请选择职位属性</option>-->
+            <!--<option value ="兼职">兼职</option>-->
+        <!--</select>-->
+    <!--</div>-->
+
+
+    <!--<div class="select-box" style="width:250px">-->
+        <!--<select name="period" class="select" datatype="*" nullmsg="请选择时段" >-->
+            <!--<option value ="">请选择时段</option>-->
+            <!--<option value ="工作日">工作日</option>-->
+            <!--<option value ="双休日">双休日</option>-->
+            <!--<option value ="每天">每天</option>-->
+        <!--</select>-->
+    <!--</div>-->
+
+    <!--<div class="select-box" style="width:250px">-->
+        <!--<select name="payroll" class="select" datatype="*" nullmsg="请选择结薪方式" >-->
+            <!--<option value ="">请选择结薪方式</option>-->
+            <!--<option value ="日结">日结</option>-->
+            <!--<option value ="周结">周结</option>-->
+            <!--<option value ="月结">月结</option>-->
+        <!--</select>-->
+    <!--</div>-->
+
+
+    <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+</form>

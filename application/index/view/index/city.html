@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="keywords" content="派职网,高考">
+		<title>派职网-城市</title>
+		<link rel="stylesheet" type="text/css" href="__STATIC__/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="__STATIC__/css/common.css"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<a href="/" ><img src="__STATIC__/img/logo1.png" class="logo"/></a>
+			</div>
+		</nav>
+		<div class="container container-top">
+			<div class="col-sm-8 col-xs-12" >
+				<header class="header1">
+					<a href="/">首页</a><span class="glyphicon glyphicon-menu-right"></span> 城市选择
+				</header>
+				<h1 class="title-h1">热门城市</h1>
+				<section class="new-pag-all m-t15 o-h">
+					<a href="http://hefei.paizhiw.com" target="_blank" class="new-pag-b">合肥</a>
+					<a href="http://beijing.paizhiw.com" target="_blank" class="new-pag-b">北京</a>
+					<a href="http://shanghai.paizhiw.com" target="_blank"  class="new-pag-b">上海</a>
+					<a href="http://tianjin.paizhiw.com" target="_blank" class="new-pag-b">天津</a>
+					<a href="http://shenzhen.paizhiw.com" target="_blank" class="new-pag-b">深圳</a>
+				</section>
+				<section class="m-t15 list-city">
+					<div style="overflow: hidden;">
+						<label for="search-text" style="font-size: 16px;display: block;">搜索城市:</label>
+					  	<input type="text" name="city" id="search-text" placeholder="请输入职称/地理位置进行筛选" class="form-control" style="width:80%;float: left;">
+					  	<button class="glyphicon glyphicon-search btn btn-default"  type="button" style="width:12%;float: left;margin-left:5%;margin-top: -2px;"></button>
+					</div>
+				
+					{volist name="list" id="vo"}
+					 <div class="m-t15 city">
+						<span>{$key}</span>
+						{volist name="vo" id="vo1"}
+						<div class="province">
+						
+							<div class="title">{$vo1.name}</div>
+							
+							<div class="area">
+							{volist name="vo1.children" id="vo2"}
+							<a  href="{$vo2['url']}" target="_blank" >{$vo2.name}</a>
+							{/volist}
+							</div>
+						</div>
+						{/volist}
+						
+					 </div>
+					 {/volist}
+					
+				</section>
+			{include file="index@tpl/footer" /}
+			</div>
+			
+			{include file="index@tpl/right" /}
+		</div>
+		<div class="actGotop"><a href="javascript:;" title="返回顶部" class="glyphicon glyphicon-menu-up"></a><br/>TOP</div>
+	</body>
+	<script src="__STATIC__/js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="__STATIC__/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="__STATIC__/js/gotop.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.btn').click(function(){
+				var city =  $(" input[ name='city' ] ").val();
+			
+				$.ajax({
+                    type:'post',//选择get方式提交
+                    url:'/index/index/citySearch',//将数据提交的页面
+                    data:{city:city},//传值
+					dataType:'json',
+                    success: function(data)
+                    {   //alert(data)
+					    var msg = data['msg'];
+					    if(data['status'] =='0'){
+						   // var msg = data['msg'];
+						    alert(msg)
+						}else{
+						    location.href="+msg+";
+						
+						}
+                        //status = data.status;
+                     
+
+                    
+                    }
+                })
+			})
+		})
+	</script>
+</html>

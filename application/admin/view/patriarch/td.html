@@ -1,0 +1,96 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.phone_account}</td>
+<td>{$vo.nickname}</td>
+<td>
+    <!--统计当前用户发表的所有东西（包括帖子、文集、社区资讯）-->
+    <?php
+       if($post_count[$vo['phone_account']]){
+          $count1 = count($post_count[$vo['phone_account']]);
+       }else{
+          $count1 = 0;
+       }
+       if($corpus_count[$vo['phone_account']]){
+          $count2 = count($corpus_count[$vo['phone_account']]);
+       }else{
+          $count2 = 0;
+       }
+       if($information_count[$vo['phone_account']]){
+           $count3 = count($information_count[$vo['phone_account']]);
+       }else{
+          $count3 = 0;
+       }
+
+       $num = $count1+$count2+$count3;
+       echo $num;
+    ?>
+
+</td>
+
+<td>
+   <!--统计该用户发表的文集被收藏的次数-&#45;&#45;只有文集才被收藏-->
+    <?php
+
+       echo $corpus_collect_count[$vo['phone_account']];
+    ?>
+</td>
+
+<!--获取该用户的粉丝数量-->
+<td>
+    <?php
+       if($follower_count[$vo['phone_account']]){
+          $counts = count($follower_count[$vo['phone_account']]);
+       }else{
+          $counts = 0;
+       }
+       echo $counts;
+    ?>
+</td>
+
+<!--获取当前用户的关联账号-->
+<td>
+    <?php
+       if($relation_account[$vo['phone_account']]){
+             foreach($relation_account[$vo['phone_account']] as $value)
+             {
+                  echo $value.'<br>';
+             }
+       }else{
+            echo '无';
+       }
+
+    ?>
+</td>
+
+
+<!--判断当前用户的发文状态,点击实现切换-->
+<td>
+     {if condition="$vo.isdispatch eq 1"}
+           <a href="{:url('Patriarch/changeDispatch',array('id'=>$vo.id))}"  style="color: #148cf1">正常</a>
+     {/if}
+     {if condition="$vo.isdispatch eq 0"}
+          <a href="{:url('Patriarch/changeDispatch',array('id'=>$vo.id))}"  style="color: #148cf1">暂停发文</a>
+     {/if}
+</td>
+
+
+<!--判断当前用户是否封号，点击实现切换-->
+<td>
+    {if condition="$vo.status eq 1"}
+        <a href="{:url('Patriarch/changeStatus',array('id'=>$vo.id))}"  style="color: #148cf1">启用</a>
+    {/if}
+    {if condition="$vo.status eq 0"}
+        <a href="{:url('Patriarch/changeStatus',array('id'=>$vo.id))}" style="color: #148cf1">禁用</a>
+    {/if}
+</td>
+
+
+
+<td>
+    {$vo.operator}
+</td>
+
+
+
+
+

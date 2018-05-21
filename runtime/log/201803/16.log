@@ -1,0 +1,1877 @@
+[ 2018-03-16T17:39:43+08:00 ] 0.0.0.0 36.32.24.164 POST /index/community/corpusWorksMessage
+[ log ] yeyap.com/index/community/corpusWorksMessage [运行时间：0.124358s][吞吐率：8.04req/s] [内存消耗：2,116.12kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksMessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '55',
+  'x-original-url' => '/index/community/corpusWorksMessage',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'bephone_account' => 'S13866187233',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksMessage[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001101s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.023408s ]
+[ sql ] [ SQL ] SELECT `headerurl`,`nickname`,`bgimage` FROM `tp_patriarch` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233' LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.018516s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `bephone_account` = 'S13866187233'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'S13866187233'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.017932s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `phone_account` = 'S13866187233'  AND `isqualified` = 0  AND `status` = 1  AND `isdelete` = 0 OR `isqualified` = 1 [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.017932s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 7  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 9  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 33  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 34  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 51  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 52  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 53  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 55  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 95  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 107  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 110  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000265s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:39:43+08:00 ] 0.0.0.0 36.32.24.164 POST /index/community/corpusWorksMessageArticle
+[ log ] yeyap.com/index/community/corpusWorksMessageArticle [运行时间：0.130118s][吞吐率：7.69req/s] [内存消耗：2,109.91kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksMessageArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '69',
+  'x-original-url' => '/index/community/corpusWorksMessageArticle',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'bephone_account' => 'S13866187233',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksMessageArticle[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001125s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.016794s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `phone_account` = 'S13866187233'  AND ( `isqualified` <> 0 or `isqualified` <> 1 )  AND `status` = 1  AND `isrelease` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.001363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.019947s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 34  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.046753s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 34 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 53  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 53 LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 52  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 52 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 51  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 51 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 33  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 33 LIMIT 1 [ RunTime:0.000258s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:39:45+08:00 ] 0.0.0.0 36.32.24.164 POST /index/community/corpusWorksMessage
+[ log ] yeyap.com/index/community/corpusWorksMessage [运行时间：0.168362s][吞吐率：5.94req/s] [内存消耗：2,116.17kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksMessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '55',
+  'x-original-url' => '/index/community/corpusWorksMessage',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'bephone_account' => 'S13866187233',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksMessage[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001159s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.064883s ]
+[ sql ] [ SQL ] SELECT `headerurl`,`nickname`,`bgimage` FROM `tp_patriarch` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233' LIMIT 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.017044s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `bephone_account` = 'S13866187233'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'S13866187233'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.017920s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `phone_account` = 'S13866187233'  AND `isqualified` = 0  AND `status` = 1  AND `isdelete` = 0 OR `isqualified` = 1 [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.017718s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 7  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 9  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 33  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 34  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 51  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 52  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 53  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 55  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 95  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 107  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 110  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000266s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:39:45+08:00 ] 0.0.0.0 36.32.24.164 POST /index/community/corpusWorksMessage
+[ log ] yeyap.com/index/community/corpusWorksMessage [运行时间：0.109770s][吞吐率：9.11req/s] [内存消耗：2,116.17kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksMessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '55',
+  'x-original-url' => '/index/community/corpusWorksMessage',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'bephone_account' => 'S13866187233',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksMessage[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001164s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.021290s ]
+[ sql ] [ SQL ] SELECT `headerurl`,`nickname`,`bgimage` FROM `tp_patriarch` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233' LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.013328s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `bephone_account` = 'S13866187233'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'S13866187233'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.013200s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `phone_account` = 'S13866187233'  AND `isqualified` = 0  AND `status` = 1  AND `isdelete` = 0 OR `isqualified` = 1 [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.013445s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 7  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 9  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 33  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 34  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 51  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 52  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 53  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 55  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 95  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 107  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 110  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000286s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:39:45+08:00 ] 0.0.0.0 36.32.24.164 POST /index/community/corpusWorksMessageArticle
+[ log ] yeyap.com/index/community/corpusWorksMessageArticle [运行时间：0.089916s][吞吐率：11.12req/s] [内存消耗：2,109.91kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksMessageArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '69',
+  'x-original-url' => '/index/community/corpusWorksMessageArticle',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'bephone_account' => 'S13866187233',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksMessageArticle[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001189s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.014271s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `phone_account` = 'S13866187233'  AND ( `isqualified` <> 0 or `isqualified` <> 1 )  AND `status` = 1  AND `isrelease` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.013689s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 34  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.017675s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 34 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 53  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 53 LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 52  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 52 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 51  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 51 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 33  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `status` = 1  AND `isdelete` = 0  AND `corpusarticle_id` = 33 LIMIT 1 [ RunTime:0.000270s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:39:45+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/getlogo
+[ log ] yeyap.com/index/circleapi/getlogo [运行时间：0.054855s][吞吐率：18.23req/s] [内存消耗：1,954.40kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'getlogo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/getlogo',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->getLogo[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001460s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.017648s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000468s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:39:46+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/index?phone_account=&type=0&page=1&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=&type=0&page=1&num=10 [运行时间：0.215660s][吞吐率：4.64req/s] [内存消耗：1,987.70kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=&type=0&page=1&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => '',
+  'type' => '0',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001155s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_banner` [ RunTime:0.027960s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.026215s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 0,10 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.019810s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.020361s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_zan` [ RunTime:0.022703s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_comment` [ RunTime:0.020150s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 52  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 51  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 50  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 49  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 48  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 47  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 46  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 45  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 44  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 43  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000615s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:39:46+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/index?phone_account=&type=1&page=1&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=&type=1&page=1&num=10 [运行时间：0.172269s][吞吐率：5.80req/s] [内存消耗：1,985.05kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=&type=1&page=1&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => '',
+  'type' => '1',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001139s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.016212s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 0,10 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.018252s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.019357s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_zan` [ RunTime:0.015036s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_comment` [ RunTime:0.020210s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 52  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 51  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 50  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 49  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 48  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 47  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 46  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 45  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 44  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 43  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000409s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:39:50+08:00 ] 0.0.0.0 36.32.24.164 GET /index/appapi/collect?phone_account=S13866187233&account=A36530456&type=1
+[ log ] yeyap.com/index/appapi/collect?phone_account=S13866187233&account=A36530456&type=1 [运行时间：0.117363s][吞吐率：8.52req/s] [内存消耗：2,052.23kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'appapi',
+    2 => 'collect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/appapi/collect?phone_account=S13866187233&account=A36530456&type=1',
+  'user-agent' => 'okhttp/3.9.0',
+  'if-modified-since' => 'Fri, 16 Mar 2018 09:34:44 GMT',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'account' => 'A36530456',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Appapi->collect[ C:\wwwroot\AMS\application\index\controller\Appapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001244s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.027167s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `account` = 'A36530456'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_access_management` [ RunTime:0.021285s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_access_management` WHERE  `employee_id` = '50'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_file` [ RunTime:0.024488s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_file` WHERE  `id` = 299 LIMIT 1 [ RunTime:0.000425s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:40:01+08:00 ] 0.0.0.0 36.32.24.164 POST /index/parentcenter/message
+[ log ] yeyap.com/index/parentcenter/message [运行时间：0.152998s][吞吐率：6.54req/s] [内存消耗：1,997.18kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'parentcenter',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '51',
+  'x-original-url' => '/index/parentcenter/message',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'account' => 'A36530456',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Parentcenter->message[ C:\wwwroot\AMS\application\index\controller\Parentcenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001274s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.026120s ]
+[ sql ] [ SQL ] SELECT `bgimage`,`grade`,`province`,`city`,`phone`,`headerurl`,`nickname` FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.019271s ]
+[ sql ] [ SQL ] SELECT `account` FROM `tp_employee_management` WHERE  `iphone` = '13866187233'  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article` [ RunTime:0.019514s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_all_school_post` [ RunTime:0.022222s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_all_school_post` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.023301s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000488s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:40:09+08:00 ] 0.0.0.0 36.32.24.164 POST /index/parentcenter/message
+[ log ] yeyap.com/index/parentcenter/message [运行时间：0.189080s][吞吐率：5.29req/s] [内存消耗：1,997.18kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'parentcenter',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '51',
+  'x-original-url' => '/index/parentcenter/message',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'account' => 'A36530456',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Parentcenter->message[ C:\wwwroot\AMS\application\index\controller\Parentcenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001616s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.038939s ]
+[ sql ] [ SQL ] SELECT `bgimage`,`grade`,`province`,`city`,`phone`,`headerurl`,`nickname` FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.017667s ]
+[ sql ] [ SQL ] SELECT `account` FROM `tp_employee_management` WHERE  `iphone` = '13866187233'  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article` [ RunTime:0.046503s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_all_school_post` [ RunTime:0.017997s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_all_school_post` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.018963s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000455s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:40:17+08:00 ] 0.0.0.0 36.32.24.164 GET /index/parentcenter/corpus?phone_account=S13866187233
+[ log ] yeyap.com/index/parentcenter/corpus?phone_account=S13866187233 [运行时间：0.093177s][吞吐率：10.73req/s] [内存消耗：1,981.01kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'parentcenter',
+    2 => 'corpus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/parentcenter/corpus?phone_account=S13866187233',
+  'user-agent' => 'okhttp/3.9.0',
+  'if-modified-since' => 'Fri, 16 Mar 2018 08:06:52 GMT',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+)
+[ info ] [ RUN ] app\index\controller\Parentcenter->corpus[ C:\wwwroot\AMS\application\index\controller\Parentcenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001204s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus` [ RunTime:0.029547s ]
+[ sql ] [ SQL ] SELECT `corpus_name`,`id` FROM `tp_corpus` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 OR `phone_account` = '0' ORDER BY `id`  asc [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.020550s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article` WHERE  `corpus_id` = 1  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article` WHERE  `corpus_id` = 2  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article` WHERE  `corpus_id` = 4  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article` WHERE  `corpus_id` = 5  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000516s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:26+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/getlogo
+[ log ] yeyap.com/index/circleapi/getlogo [运行时间：0.062910s][吞吐率：15.90req/s] [内存消耗：1,954.40kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'getlogo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/getlogo',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->getLogo[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001341s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.026558s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000487s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:27+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/index?phone_account=&type=0&page=1&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=&type=0&page=1&num=10 [运行时间：0.197627s][吞吐率：5.06req/s] [内存消耗：1,987.70kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=&type=0&page=1&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => '',
+  'type' => '0',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001129s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_banner` [ RunTime:0.026591s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.022436s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 0,10 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.020160s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.020539s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_zan` [ RunTime:0.017513s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_comment` [ RunTime:0.017465s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 52  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 51  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 50  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 49  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 48  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 47  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 46  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 45  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 44  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 43  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000294s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:27+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/index?phone_account=&type=1&page=1&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=&type=1&page=1&num=10 [运行时间：0.157670s][吞吐率：6.34req/s] [内存消耗：1,985.05kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=&type=1&page=1&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => '',
+  'type' => '1',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001030s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.020408s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 0,10 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.014808s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.015702s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_zan` [ RunTime:0.015180s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_comment` [ RunTime:0.013226s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 52  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 51  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 50  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 49  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 48  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 47  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 46  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 45  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.002314s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 44  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 43  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000309s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:27+08:00 ] 0.0.0.0 183.61.51.68 GET /uploads/file/20180103/uplodImage1514966362.png
+[ log ] yeyap.com/uploads/file/20180103/uplodImage1514966362.png [运行时间：0.022579s][吞吐率：44.29req/s] [内存消耗：1,108.47kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '20180103',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/20180103/uplodImage1514966362.png',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; vivo X9 Build/MOB31K)',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:27+08:00 ] 0.0.0.0 183.61.51.68 GET /uploads/file/20180103/uplodImage1514966362.png
+[ log ] yeyap.com/uploads/file/20180103/uplodImage1514966362.png [运行时间：0.023482s][吞吐率：42.59req/s] [内存消耗：1,108.47kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '20180103',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/20180103/uplodImage1514966362.png',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; vivo X9 Build/MOB31K)',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:33+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/index?phone_account=&type=2&page=1&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=&type=2&page=1&num=10 [运行时间：0.191369s][吞吐率：5.23req/s] [内存消耗：1,976.14kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=&type=2&page=1&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => '',
+  'type' => '2',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001187s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.031212s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `type` = 2  AND `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 0,10 [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.026359s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.025144s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_zan` [ RunTime:0.024635s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 7  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_comment` [ RunTime:0.019834s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 7  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 7  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 6  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 6  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 6  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000379s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:34+08:00 ] 0.0.0.0 183.61.51.68 GET /uploads/file/20180103/uplodImage1514966362.png
+[ log ] yeyap.com/uploads/file/20180103/uplodImage1514966362.png [运行时间：0.022733s][吞吐率：43.99req/s] [内存消耗：1,108.47kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '20180103',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/20180103/uplodImage1514966362.png',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; vivo X9 Build/MOB31K)',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:34+08:00 ] 0.0.0.0 183.61.51.68 GET /uploads/file/20180103/uplodImage1514966362.png
+[ log ] yeyap.com/uploads/file/20180103/uplodImage1514966362.png [运行时间：0.021339s][吞吐率：46.86req/s] [内存消耗：1,108.47kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '20180103',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/20180103/uplodImage1514966362.png',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; vivo X9 Build/MOB31K)',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:36+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/index?phone_account=&type=1&page=2&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=&type=1&page=2&num=10 [运行时间：0.208594s][吞吐率：4.79req/s] [内存消耗：1,985.87kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=&type=1&page=2&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => '',
+  'type' => '1',
+  'page' => '2',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001459s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.029511s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 10,10 [ RunTime:0.001187s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.023473s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.021340s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_zan` [ RunTime:0.018851s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 42  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000980s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_comment` [ RunTime:0.024536s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 42  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 42  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 41  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 41  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 41  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 40  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.001052s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 40  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 40  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 39  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 39  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 39  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 38  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 38  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 38  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 37  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 37  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 37  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 36  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 36  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 36  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 35  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 35  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 35  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 34  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 34  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 34  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 33  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 33  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 33  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000379s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:37+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/index?phone_account=&type=3&page=1&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=&type=3&page=1&num=10 [运行时间：0.199038s][吞吐率：5.02req/s] [内存消耗：1,975.17kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=&type=3&page=1&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => '',
+  'type' => '3',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001533s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.033582s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `type` = 3  AND `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 0,10 [ RunTime:0.001060s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.027167s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.026220s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_zan` [ RunTime:0.024500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 9  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_comment` [ RunTime:0.025768s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 9  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 9  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000567s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:37+08:00 ] 0.0.0.0 183.61.51.68 GET /uploads/file/20171228/1514452775751531.jpg
+[ log ] yeyap.com/uploads/file/20171228/1514452775751531.jpg [运行时间：0.031353s][吞吐率：31.89req/s] [内存消耗：1,108.42kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '20171228',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/20171228/1514452775751531.jpg',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; vivo X9 Build/MOB31K)',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:37+08:00 ] 0.0.0.0 183.61.51.68 GET /uploads/file/20171228/1514452775751531.jpg
+[ log ] yeyap.com/uploads/file/20171228/1514452775751531.jpg [运行时间：0.033874s][吞吐率：29.52req/s] [内存消耗：1,108.42kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '20171228',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/20171228/1514452775751531.jpg',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; vivo X9 Build/MOB31K)',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:38+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/index?phone_account=&type=2&page=2&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=&type=2&page=2&num=10 [运行时间：0.078018s][吞吐率：12.82req/s] [内存消耗：1,957.73kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=&type=2&page=2&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => '',
+  'type' => '2',
+  'page' => '2',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001406s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.027555s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `type` = 2  AND `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 10,10 [ RunTime:0.000723s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:39+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/index?phone_account=&type=4&page=1&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=&type=4&page=1&num=10 [运行时间：0.060563s][吞吐率：16.51req/s] [内存消耗：1,957.73kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=&type=4&page=1&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => '',
+  'type' => '4',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001129s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.024182s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `type` = 4  AND `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 0,10 [ RunTime:0.000763s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:40+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/index?phone_account=&type=0&page=1&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=&type=0&page=1&num=10 [运行时间：0.190557s][吞吐率：5.25req/s] [内存消耗：1,987.90kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=&type=0&page=1&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'if-modified-since' => 'Fri, 16 Mar 2018 09:41:26 GMT',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => '',
+  'type' => '0',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001544s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_banner` [ RunTime:0.025675s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.017772s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 0,10 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.017818s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.017357s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_zan` [ RunTime:0.018024s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_comment` [ RunTime:0.017509s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 52  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 51  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 50  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 49  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 48  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 47  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 46  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 45  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 44  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 43  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000296s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:40+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/index?phone_account=&type=1&page=1&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=&type=1&page=1&num=10 [运行时间：0.140963s][吞吐率：7.09req/s] [内存消耗：1,985.24kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=&type=1&page=1&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'if-modified-since' => 'Fri, 16 Mar 2018 09:41:27 GMT',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => '',
+  'type' => '1',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001329s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.014427s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 0,10 [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.013217s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.013041s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_zan` [ RunTime:0.014076s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_comment` [ RunTime:0.013666s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 52  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 51  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 50  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 49  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 48  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 47  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 46  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 45  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 44  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 43  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000303s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:40+08:00 ] 0.0.0.0 183.61.51.68 GET /uploads/file/20180103/uplodImage1514966362.png
+[ log ] yeyap.com/uploads/file/20180103/uplodImage1514966362.png [运行时间：0.023726s][吞吐率：42.15req/s] [内存消耗：1,108.47kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '20180103',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/20180103/uplodImage1514966362.png',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; vivo X9 Build/MOB31K)',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:41+08:00 ] 0.0.0.0 183.61.51.68 GET /index/circleapi/index?phone_account=&type=1&page=2&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=&type=1&page=2&num=10 [运行时间：0.176353s][吞吐率：5.67req/s] [内存消耗：1,986.06kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=&type=1&page=2&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'if-modified-since' => 'Fri, 16 Mar 2018 09:41:36 GMT',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => '',
+  'type' => '1',
+  'page' => '2',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001197s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.023810s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 10,10 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.019403s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.018263s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_zan` [ RunTime:0.018364s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 42  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_comment` [ RunTime:0.019339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 42  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 42  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 41  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 41  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 41  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 40  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 40  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 40  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 39  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 39  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 39  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 38  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 38  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 38  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 37  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 37  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 37  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 36  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 36  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 36  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 35  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 35  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 35  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 34  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 34  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 34  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 33  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 33  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 33  AND `phone_account` = ''  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000307s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T17:41:41+08:00 ] 0.0.0.0 183.61.51.68 GET /uploads/file/20180103/uplodImage1514966362.png
+[ log ] yeyap.com/uploads/file/20180103/uplodImage1514966362.png [运行时间：0.022311s][吞吐率：44.82req/s] [内存消耗：1,108.47kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '20180103',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/20180103/uplodImage1514966362.png',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; vivo X9 Build/MOB31K)',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-16T20:24:20+08:00 ] 0.0.0.0 114.102.148.240 GET /index/circleapi/getlogo
+[ log ] yeyap.com/index/circleapi/getlogo [运行时间：0.079618s][吞吐率：12.56req/s] [内存消耗：1,954.34kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'getlogo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/getlogo',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->getLogo[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002110s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.028190s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000466s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T20:24:20+08:00 ] 0.0.0.0 114.102.148.240 GET /index/circleapi/index?phone_account=K18355572573&type=0&page=1&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=K18355572573&type=0&page=1&num=10 [运行时间：0.342363s][吞吐率：2.92req/s] [内存消耗：1,987.96kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=K18355572573&type=0&page=1&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'K18355572573',
+  'type' => '0',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000904s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_banner` [ RunTime:0.020230s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.104394s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 0,10 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.038084s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.039378s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_zan` [ RunTime:0.030696s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_comment` [ RunTime:0.036338s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 52  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 51  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 50  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 49  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 48  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 47  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 46  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 45  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 44  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 43  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000400s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T20:24:20+08:00 ] 0.0.0.0 114.102.148.240 GET /index/circleapi/index?phone_account=K18355572573&type=1&page=1&num=10
+[ log ] yeyap.com/index/circleapi/index?phone_account=K18355572573&type=1&page=1&num=10 [运行时间：0.314519s][吞吐率：3.18req/s] [内存消耗：1,985.31kb] [文件加载：55]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'circleapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/circleapi/index?phone_account=K18355572573&type=1&page=1&num=10',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'K18355572573',
+  'type' => '1',
+  'page' => '1',
+  'num' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Circleapi->index[ C:\wwwroot\AMS\application\index\controller\Circleapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001966s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_dynamic` [ RunTime:0.031335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_dynamic` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 ORDER BY release_time desc LIMIT 0,10 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.037333s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_plate_logo` [ RunTime:0.032986s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_zan` [ RunTime:0.035828s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_circle_comment` [ RunTime:0.094660s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 52  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 52  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 14  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 51  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 51  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 50  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 50  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 49  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 49  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 48  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 48  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 47  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 47  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 46  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 46  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 45  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 45  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 44  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 44  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_plate_logo` WHERE  `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_comment` WHERE  `rid` = 43  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_circle_zan` WHERE  `ids` = 43  AND `phone_account` = 'K18355572573'  AND `iszan` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000291s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T21:21:23+08:00 ] 0.0.0.0 66.249.73.194 GET /Index/Starlist
+[ log ] yeyap.com/Index/Starlist [运行时间：0.167924s][吞吐率：5.96req/s] [内存消耗：2,073.48kb] [文件加载：58]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => 'Starlist',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/Index/Starlist',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'if-modified-since' => 'Wed, 07 Mar 2018 19:33:49 GMT',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Starlist->index[ C:\wwwroot\AMS\application\index\controller\Starlist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\starlist\index.html [ array (
+  0 => 'date',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002006s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_management` [ RunTime:0.028716s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_management` WHERE  `account` IS NULL  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_starlist` [ RunTime:0.033771s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_starlist` WHERE  `schoolName` IS NULL  AND `className` IS NULL  AND `release_time` = '2018-03-16'  AND `student` <> '请选择'  AND `status` = 1  AND `isdelete` = 0 ORDER BY id desc [ RunTime:0.000645s ]
+
+---------------------------------------------------------------
+[ 2018-03-16T21:45:46+08:00 ] 0.0.0.0 106.11.153.253 GET /index/dynamic/index.html
+[ log ] www.yeyap.com/index/dynamic/index.html [运行时间：0.054556s][吞吐率：18.33req/s] [内存消耗：1,416.81kb] [文件加载：51]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'dynamic',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/dynamic/index.html',
+  'user-agent' => 'YisouSpider',
+  'host' => 'www.yeyap.com',
+  'accept-language' => 'zh-cn,en-us,zh-tw,en-gb,en;',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Dynamic->index[ C:\wwwroot\AMS\application\index\controller\Dynamic.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-16T21:45:46+08:00 ] 0.0.0.0 106.11.153.253 GET /index/parentlogin/index.html
+[ log ] www.yeyap.com/index/parentlogin/index.html [运行时间：0.033846s][吞吐率：29.55req/s] [内存消耗：1,401.49kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'parentlogin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/parentlogin/index.html',
+  'user-agent' => 'YisouSpider',
+  'host' => 'www.yeyap.com',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Parentlogin->index[ C:\wwwroot\AMS\application\index\controller\Parentlogin.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\parentlogin\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

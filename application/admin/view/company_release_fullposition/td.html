@@ -1,0 +1,48 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.release}</td>
+<td>{$vo.companyName}</td>
+<td>{$vo.city}{$vo.area}</td>
+
+<td>{$vo.positionName}</td>
+<td>
+
+    <?php
+       if(!array_key_exists($vo['type'],$type_array)){
+           echo '';
+       }else{
+           echo $type_array[$vo['type']];
+       }
+    ?>
+</td>
+<td>
+    {$vo.release_time}
+</td>
+<td>{$vo.count}</td>
+
+<td>
+    <?php
+       if(!array_key_exists($vo['id'],$enroll_array)){
+           echo 0;
+       }else{
+           echo count($enroll_array[$vo['id']]);
+       }
+    ?>
+</td>
+
+
+<td>{$vo.label}</td>
+
+<td>
+
+    {if condition="$vo.isdown eq 0"}
+         <a id="info{$vo.id}" href="javascript:;"  onclick="isdown({$vo.id})"  style="color: #148cf1">正在上架</a>
+    {/if}
+    {if condition="$vo.isdown eq 1"}
+         <a id="info{$vo.id}" href="javascript:;" onclick="isdown({$vo.id})"  style="color: #148cf1">已下架</a>
+    {/if}
+
+</td>
+
+
+

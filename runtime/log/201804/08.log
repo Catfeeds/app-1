@@ -1,0 +1,2566 @@
+[ 2018-04-08T00:45:13+08:00 ] 0.0.0.0 120.25.208.128 GET /
+[ log ] www.yeyap.com/ [运行时间：0.028803s][吞吐率：34.72req/s] [内存消耗：1,403.53kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36',
+  'host' => 'www.yeyap.com',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T01:49:54+08:00 ] 0.0.0.0 112.198.73.97 GET /wp-login.php
+[ log ] yeyap.com/wp-login.php [运行时间：0.084477s][吞吐率：11.84req/s] [内存消耗：1,108.09kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-login.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/wp-login.php',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'yeyap.com',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T08:57:46+08:00 ] 0.0.0.0 36.32.24.164 POST /index/Community/information
+[ log ] yeyap.com/index/Community/information [运行时间：0.269579s][吞吐率：3.71req/s] [内存消耗：2,169.13kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Community',
+    2 => 'information',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '40',
+  'x-original-url' => '/index/Community/information',
+  'user-agent' => 'BabyHome/1.0 (iPhone; iOS 10.1.1; Scale/2.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'num' => '10',
+  'page' => '1',
+  'phone_account' => 'S13866187233',
+)
+[ info ] [ RUN ] app\index\controller\Community->information[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001806s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.021438s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information` [ RunTime:0.059921s ]
+[ sql ] [ SQL ] SELECT `id`,`info_name` FROM `tp_information` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information_article` WHERE `city` = '合肥' AND (`isqualified` = 0 OR`isqualified` = 1)  AND `status` = 1 AND `isdelete` = 0 ORDER BY `id` desc limit 0,10 [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information` WHERE  `id` = 17  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_collect` [ RunTime:0.017326s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 180  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_answer` [ RunTime:0.017637s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 180  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 179  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 179  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 178  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 178  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information` WHERE  `id` = 16  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 177  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 177  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 176  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 176  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information` WHERE  `id` = 18  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 175  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 175  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 174  AND `images` <> ''  AND `status` = 1  AND `isdelete` = 0 ORDER BY `answer_time`  desc LIMIT 1 [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 174  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 174  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 173  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 173  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information` WHERE  `id` = 19  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 172  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 172  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information` WHERE  `id` = 17  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 171  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 171  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000421s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T08:57:49+08:00 ] 0.0.0.0 36.32.24.164 GET /index/appapi/classes?account=A36530456&num=10&page=1&phone_account=S13866187233&type=2
+[ log ] yeyap.com/index/appapi/classes?account=A36530456&num=10&page=1&phone_account=S13866187233&type=2 [运行时间：0.479936s][吞吐率：2.08req/s] [内存消耗：2,170.87kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'appapi',
+    2 => 'classes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/appapi/classes?account=A36530456&num=10&page=1&phone_account=S13866187233&type=2',
+  'user-agent' => 'BabyHome/1.0 (iPhone; iOS 10.1.1; Scale/2.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'A36530456',
+  'num' => '10',
+  'page' => '1',
+  'phone_account' => 'S13866187233',
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Appapi->classes[ C:\wwwroot\AMS\application\index\controller\Appapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000889s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.025658s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_school_management` WHERE  `schoolID` = 'A3653'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.015661s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.100563s ]
+[ sql ] [ SQL ] SELECT `schoolName`,`className`,`name` FROM `tp_employee_management` WHERE  `account` = 'A36530456'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_dynamic` [ RunTime:0.020111s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_dynamic` WHERE  `isdelete` = 0  AND `status` = 1  AND `schoolAccount` = 'A36532142' ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mien` [ RunTime:0.019455s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mien` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 45 LIMIT 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mien_comment` [ RunTime:0.019901s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 45 LIMIT 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mien_zan` [ RunTime:0.020980s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 45 LIMIT 1 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mien` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 44 LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 44 LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 44 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_notice` [ RunTime:0.055205s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 31 LIMIT 1 [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_notice_comment` [ RunTime:0.018122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 31 LIMIT 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_notice_zan` [ RunTime:0.021233s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `nid` = 31 LIMIT 1 [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 31  AND `phone_account` = 'S13866187233'  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mien` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 43 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 43 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 43 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mien` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 42 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 42 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 42 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 30 LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 30 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `nid` = 30 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 30  AND `phone_account` = 'S13866187233'  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mien` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 41 LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 41 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 41 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 29 LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 29 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `nid` = 29 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 29  AND `phone_account` = 'S13866187233'  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 28 LIMIT 1 [ RunTime:0.001047s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530043' LIMIT 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 28 LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `nid` = 28 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 28  AND `phone_account` = 'S13866187233'  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mien` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 40 LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 40 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 40 LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.018779s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `isdelete` = 0  AND `status` = 1 [ RunTime:0.000551s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T08:57:52+08:00 ] 0.0.0.0 36.32.24.164 GET /index/appapi/classes?account=A36530456&num=10&page=1&phone_account=S13866187233&type=2
+[ log ] yeyap.com/index/appapi/classes?account=A36530456&num=10&page=1&phone_account=S13866187233&type=2 [运行时间：0.318293s][吞吐率：3.14req/s] [内存消耗：2,170.87kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'appapi',
+    2 => 'classes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/appapi/classes?account=A36530456&num=10&page=1&phone_account=S13866187233&type=2',
+  'user-agent' => 'BabyHome/1.0 (iPhone; iOS 10.1.1; Scale/2.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'A36530456',
+  'num' => '10',
+  'page' => '1',
+  'phone_account' => 'S13866187233',
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Appapi->classes[ C:\wwwroot\AMS\application\index\controller\Appapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000810s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.018552s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_school_management` WHERE  `schoolID` = 'A3653'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.013874s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.014185s ]
+[ sql ] [ SQL ] SELECT `schoolName`,`className`,`name` FROM `tp_employee_management` WHERE  `account` = 'A36530456'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_dynamic` [ RunTime:0.017257s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_dynamic` WHERE  `isdelete` = 0  AND `status` = 1  AND `schoolAccount` = 'A36532142' ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mien` [ RunTime:0.019797s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mien` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 45 LIMIT 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mien_comment` [ RunTime:0.024493s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 45 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mien_zan` [ RunTime:0.021841s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 45 LIMIT 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mien` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 44 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 44 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 44 LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_notice` [ RunTime:0.025987s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 31 LIMIT 1 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_notice_comment` [ RunTime:0.036843s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 31 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_notice_zan` [ RunTime:0.025299s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `nid` = 31 LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 31  AND `phone_account` = 'S13866187233'  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mien` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 43 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 43 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 43 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mien` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 42 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 42 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 42 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 30 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 30 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `nid` = 30 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 30  AND `phone_account` = 'S13866187233'  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mien` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 41 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 41 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 41 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 29 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 29 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `nid` = 29 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 29  AND `phone_account` = 'S13866187233'  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 28 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530043' LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 28 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `nid` = 28 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 28  AND `phone_account` = 'S13866187233'  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mien` WHERE  `isdelete` = 0  AND `status` = 1  AND `id` = 40 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0  AND `status` = 1  AND `account` = 'A36530456' LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 40 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_mien_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 40 LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.024401s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `isdelete` = 0  AND `status` = 1 [ RunTime:0.000433s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T09:03:57+08:00 ] 0.0.0.0 220.181.108.94 GET /
+[ log ] yeyap.com/ [运行时间：0.027800s][吞吐率：35.97req/s] [内存消耗：1,404.22kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'if-none-match' => '"@NULL@"',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-cn,zh-tw',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:46:58+08:00 ] 0.0.0.0 36.32.24.164 GET /index/community/informationReply?phone_account=S13866187233
+[ log ] yeyap.com/index/community/informationReply?phone_account=S13866187233 [运行时间：0.026585s][吞吐率：37.62req/s] [内存消耗：1,535.61kb] [文件加载：46]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'informationReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/community/informationReply?phone_account=S13866187233',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+)
+[ info ] [ RUN ] app\index\controller\Community->informationReply[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:39+08:00 ] 0.0.0.0 36.32.24.164 GET /index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1
+[ log ] yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1 [运行时间：0.195916s][吞吐率：5.10req/s] [内存消耗：2,247.60kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'parentcenter',
+    2 => 'corpusArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'K18355572573',
+  'isrelease' => '0',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Parentcenter->corpusArticle[ C:\wwwroot\AMS\application\index\controller\Parentcenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001785s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE `corpus_id` = 1 AND `phone_account` = 'K18355572573' AND (`isrelease` = 0 OR`isqualified` = 2)  AND `status` = 1 AND `isdelete` = 0 ORDER BY `update_time` desc [ RunTime:0.001679s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.020652s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus` [ RunTime:0.019457s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000359s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:40+08:00 ] 0.0.0.0 36.32.24.164 GET /"http:/yeyap.com/uploads/file/20180326/1522046842285115.png/"
+[ log ] yeyap.com/"http:/yeyap.com/uploads/file/20180326/1522046842285115.png/" [运行时间：0.159376s][吞吐率：6.27req/s] [内存消耗：1,110.01kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '"http:',
+    1 => 'yeyap.com',
+    2 => 'uploads',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/"http:/yeyap.com/uploads/file/20180326/1522046842285115.png/"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'file' => '20180326',
+  'png' => '&quot;',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:40+08:00 ] 0.0.0.0 36.32.24.164 GET /"http:/p1.pstatp.com/thumb/5d4d000d75d9ebd89b29/"
+[ log ] yeyap.com/"http:/p1.pstatp.com/thumb/5d4d000d75d9ebd89b29/" [运行时间：0.026274s][吞吐率：38.06req/s] [内存消耗：1,109.75kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '"http:',
+    1 => 'p1.pstatp.com',
+    2 => 'thumb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/"http:/p1.pstatp.com/thumb/5d4d000d75d9ebd89b29/"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '5d4d000d75d9ebd89b29' => '&quot;',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:40+08:00 ] 0.0.0.0 36.32.24.164 GET /"http:/yeyap.com/uploads/file/20180331/1522475980990405.jpg/"
+[ log ] yeyap.com/"http:/yeyap.com/uploads/file/20180331/1522475980990405.jpg/" [运行时间：0.023981s][吞吐率：41.70req/s] [内存消耗：1,109.95kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '"http:',
+    1 => 'yeyap.com',
+    2 => 'uploads',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/"http:/yeyap.com/uploads/file/20180331/1522475980990405.jpg/"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'file' => '20180331',
+  'jpg' => '&quot;',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:40+08:00 ] 0.0.0.0 36.32.24.164 GET /"content:/com.ss.android.article.base.ImageProvider/getimage/origin/eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an65qZmSQYGBsYmhgYmZoZJ5ibmlhZKOgpARTnFQFXRShklJQVW-voFxnoFxSWJJQV6yfm5-vj1wrQkWZKhh1h7YmuBukoySnOTkD0FFiDTU_j1YvcUkXqItSe2thYAebJ6cw==/6538600711771390212/0/"
+[ log ] yeyap.com/"content:/com.ss.android.article.base.ImageProvider/getimage/origin/eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an65qZmSQYGBsYmhgYmZoZJ5ibmlhZKOgpARTnFQFXRShklJQVW-voFxnoFxSWJJQV6yfm5-vj1wrQkWZKhh1h7YmuBukoySnOTkD0FFiDTU_j1YvcUkXqItSe2thYAebJ6cw==/6538600711771390212/0/" [运行时间：0.024802s][吞吐率：40.32req/s] [内存消耗：1,111.55kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '"content:',
+    1 => 'com.ss.android.article.base.ImageProvider',
+    2 => 'getimage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/"content:/com.ss.android.article.base.ImageProvider/getimage/origin/eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an65qZmSQYGBsYmhgYmZoZJ5ibmlhZKOgpARTnFQFXRShklJQVW-voFxnoFxSWJJQV6yfm5-vj1wrQkWZKhh1h7YmuBukoySnOTkD0FFiDTU_j1YvcUkXqItSe2thYAebJ6cw==/6538600711771390212/0/"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'origin' => 'eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an65qZmSQYGBsYmhgYmZoZJ5ibmlhZKOgpARTnFQFXRShklJQVW-voFxnoFxSWJJQV6yfm5-vj1wrQkWZKhh1h7YmuBukoySnOTkD0FFiDTU_j1YvcUkXqItSe2thYAebJ6cw==',
+  '6538600711771390212' => '0',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:40+08:00 ] 0.0.0.0 36.32.24.164 GET /"content:/com.ss.android.article.base.ImageProvider/getimage/origin/eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an6ZqlppgYGBpaWBsYW5okmBiaWaZZKOgpARTnFQFXRShklJQVW-voFxnoFxSWJJQV6yfm5-vj1wrQkWZKhh1h7YmuBukoySnOTkD0FFiDTU_j1YvcUkXqItSe2thYAN7t96w==/6538600711771390212/2/"
+[ log ] yeyap.com/"content:/com.ss.android.article.base.ImageProvider/getimage/origin/eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an6ZqlppgYGBpaWBsYW5okmBiaWaZZKOgpARTnFQFXRShklJQVW-voFxnoFxSWJJQV6yfm5-vj1wrQkWZKhh1h7YmuBukoySnOTkD0FFiDTU_j1YvcUkXqItSe2thYAN7t96w==/6538600711771390212/2/" [运行时间：0.018634s][吞吐率：53.67req/s] [内存消耗：1,111.51kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '"content:',
+    1 => 'com.ss.android.article.base.ImageProvider',
+    2 => 'getimage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/"content:/com.ss.android.article.base.ImageProvider/getimage/origin/eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an6ZqlppgYGBpaWBsYW5okmBiaWaZZKOgpARTnFQFXRShklJQVW-voFxnoFxSWJJQV6yfm5-vj1wrQkWZKhh1h7YmuBukoySnOTkD0FFiDTU_j1YvcUkXqItSe2thYAN7t96w==/6538600711771390212/2/"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'origin' => 'eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an6ZqlppgYGBpaWBsYW5okmBiaWaZZKOgpARTnFQFXRShklJQVW-voFxnoFxSWJJQV6yfm5-vj1wrQkWZKhh1h7YmuBukoySnOTkD0FFiDTU_j1YvcUkXqItSe2thYAN7t96w==',
+  '6538600711771390212' => '2',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:40+08:00 ] 0.0.0.0 36.32.24.164 GET /"content:/com.ss.android.article.base.ImageProvider/getimage/origin/eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an65qZmyQYGBsbGaWmp5gaGxqmp5oZKOgpARTnFQFXRShklJQVW-voFxnoFxSWJJQV6yfm5-vj1wrQkWZKhh1h7YmuBukoySnOTkD0FFiDTU_j1YvcUkXqItSe2thYAEHmAWw==/6538600711771390212/1/"
+[ log ] yeyap.com/"content:/com.ss.android.article.base.ImageProvider/getimage/origin/eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an65qZmyQYGBsbGaWmp5gaGxqmp5oZKOgpARTnFQFXRShklJQVW-voFxnoFxSWJJQV6yfm5-vj1wrQkWZKhh1h7YmuBukoySnOTkD0FFiDTU_j1YvcUkXqItSe2thYAEHmAWw==/6538600711771390212/1/" [运行时间：0.018930s][吞吐率：52.83req/s] [内存消耗：1,111.51kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '"content:',
+    1 => 'com.ss.android.article.base.ImageProvider',
+    2 => 'getimage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/"content:/com.ss.android.article.base.ImageProvider/getimage/origin/eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an65qZmyQYGBsbGaWmp5gaGxqmp5oZKOgpARTnFQFXRShklJQVW-voFxnoFxSWJJQV6yfm5-vj1wrQkWZKhh1h7YmuBukoySnOTkD0FFiDTU_j1YvcUkXqItSe2thYAEHmAWw==/6538600711771390212/1/"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'origin' => 'eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an65qZmyQYGBsbGaWmp5gaGxqmp5oZKOgpARTnFQFXRShklJQVW-voFxnoFxSWJJQV6yfm5-vj1wrQkWZKhh1h7YmuBukoySnOTkD0FFiDTU_j1YvcUkXqItSe2thYAEHmAWw==',
+  '6538600711771390212' => '1',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:40+08:00 ] 0.0.0.0 36.32.24.164 GET /"content:/com.ss.android.article.base.ImageProvider/getimage/origin/eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an65qZmyQYGBsYmhokWiSYpBqmpKZZKOgpARTnFQFXRShklJQVW-voFhnoFxSWJJQV6yfm5-vj1wrQkGdNQT2wtUFdJRmluErKnwAJkegq_XuwOpLKe2NpaAAZ8gbM=/6538600711771390212/3/"
+[ log ] yeyap.com/"content:/com.ss.android.article.base.ImageProvider/getimage/origin/eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an65qZmyQYGBsYmhokWiSYpBqmpKZZKOgpARTnFQFXRShklJQVW-voFhnoFxSWJJQV6yfm5-vj1wrQkGdNQT2wtUFdJRmluErKnwAJkegq_XuwOpLKe2NpaAAZ8gbM=/6538600711771390212/3/" [运行时间：0.020048s][吞吐率：49.88req/s] [内存消耗：1,111.49kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '"content:',
+    1 => 'com.ss.android.article.base.ImageProvider',
+    2 => 'getimage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/"content:/com.ss.android.article.base.ImageProvider/getimage/origin/eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an65qZmyQYGBsYmhokWiSYpBqmpKZZKOgpARTnFQFXRShklJQVW-voFhnoFxSWJJQV6yfm5-vj1wrQkGdNQT2wtUFdJRmluErKnwAJkegq_XuwOpLKe2NpaAAZ8gbM=/6538600711771390212/3/"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'origin' => 'eJyrVsovykzPzFOyUqhWKi3KBNJKOYlF6an65qZmyQYGBsYmhokWiSYpBqmpKZZKOgpARTnFQFXRShklJQVW-voFhnoFxSWJJQV6yfm5-vj1wrQkGdNQT2wtUFdJRmluErKnwAJkegq_XuwOpLKe2NpaAAZ8gbM=',
+  '6538600711771390212' => '3',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:40+08:00 ] 0.0.0.0 36.32.24.164 GET /"http:/yeyap.com/uploads/file/20180330/1522395843870870.png/"
+[ log ] yeyap.com/"http:/yeyap.com/uploads/file/20180330/1522395843870870.png/" [运行时间：0.020960s][吞吐率：47.71req/s] [内存消耗：1,110.01kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '"http:',
+    1 => 'yeyap.com',
+    2 => 'uploads',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/"http:/yeyap.com/uploads/file/20180330/1522395843870870.png/"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'file' => '20180330',
+  'png' => '&quot;',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:40+08:00 ] 0.0.0.0 36.32.24.164 GET /"http:/yeyap.com/uploads/file/20180227/151969272003589.jpg/"
+[ log ] yeyap.com/"http:/yeyap.com/uploads/file/20180227/151969272003589.jpg/" [运行时间：0.019248s][吞吐率：51.95req/s] [内存消耗：1,110.03kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '"http:',
+    1 => 'yeyap.com',
+    2 => 'uploads',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/"http:/yeyap.com/uploads/file/20180227/151969272003589.jpg/"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'file' => '20180227',
+  'jpg' => '&quot;',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:40+08:00 ] 0.0.0.0 36.32.24.164 GET /"http:/yeyap.com/uploads/file/20180223/1519370611642594.jpg/"
+[ log ] yeyap.com/"http:/yeyap.com/uploads/file/20180223/1519370611642594.jpg/" [运行时间：0.018945s][吞吐率：52.78req/s] [内存消耗：1,110.01kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '"http:',
+    1 => 'yeyap.com',
+    2 => 'uploads',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/"http:/yeyap.com/uploads/file/20180223/1519370611642594.jpg/"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'file' => '20180223',
+  'jpg' => '&quot;',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:40+08:00 ] 0.0.0.0 36.32.24.164 GET /"http:/yeyap.com/uploads/file/20180227/1519693193446845.jpg/"
+[ log ] yeyap.com/"http:/yeyap.com/uploads/file/20180227/1519693193446845.jpg/" [运行时间：0.018492s][吞吐率：54.08req/s] [内存消耗：1,110.01kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '"http:',
+    1 => 'yeyap.com',
+    2 => 'uploads',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/"http:/yeyap.com/uploads/file/20180227/1519693193446845.jpg/"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'file' => '20180227',
+  'jpg' => '&quot;',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T09:51:40+08:00 ] 0.0.0.0 36.32.24.164 GET /"http:/yeyap.com/uploads/file/20180227/1519704083656352.jpg/"
+[ log ] yeyap.com/"http:/yeyap.com/uploads/file/20180227/1519704083656352.jpg/" [运行时间：0.018281s][吞吐率：54.70req/s] [内存消耗：1,110.01kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '"http:',
+    1 => 'yeyap.com',
+    2 => 'uploads',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/"http:/yeyap.com/uploads/file/20180227/1519704083656352.jpg/"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/parentcenter/corpusArticle?phone_account=K18355572573&isrelease=0&id=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'file' => '20180227',
+  'jpg' => '&quot;',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T10:04:18+08:00 ] 0.0.0.0 36.32.24.164 GET /index/community/publishPost?phone_account=K18355572573&title=%E5%A5%BD%E7%9A%84&id=18&content=%E5%BE%88%E5%A5%BD
+[ log ] yeyap.com/index/community/publishPost?phone_account=K18355572573&title=%E5%A5%BD%E7%9A%84&id=18&content=%E5%BE%88%E5%A5%BD [运行时间：0.213185s][吞吐率：4.69req/s] [内存消耗：2,223.51kb] [文件加载：61]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'publishPost',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/community/publishPost?phone_account=K18355572573&title=%E5%A5%BD%E7%9A%84&id=18&content=%E5%BE%88%E5%A5%BD',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'K18355572573',
+  'title' => '好的',
+  'id' => '18',
+  'content' => '很好',
+)
+[ info ] [ RUN ] app\index\controller\Community->publishPost[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002192s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.033770s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_all_school_post` [ RunTime:0.027649s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'model' cannot be null[C:\wwwroot\AMS\thinkphp\library\think\db\Connection.php:457]
+
+---------------------------------------------------------------
+[ 2018-04-08T10:05:08+08:00 ] 0.0.0.0 36.32.24.164 GET /index/community/publishPost?phone_account=K18355572573&title=%E5%A5%BD%E7%9A%84&id=6014&content=%E5%BE%88%E5%A5%BD&model
+[ log ] yeyap.com/index/community/publishPost?phone_account=K18355572573&title=%E5%A5%BD%E7%9A%84&id=6014&content=%E5%BE%88%E5%A5%BD&model [运行时间：0.120121s][吞吐率：8.32req/s] [内存消耗：2,127.55kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'publishPost',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/community/publishPost?phone_account=K18355572573&title=%E5%A5%BD%E7%9A%84&id=6014&content=%E5%BE%88%E5%A5%BD&model',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'K18355572573',
+  'title' => '好的',
+  'id' => '6014',
+  'content' => '很好',
+  'model' => '',
+)
+[ info ] [ RUN ] app\index\controller\Community->publishPost[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000806s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.022190s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_all_school_post` [ RunTime:0.012943s ]
+[ sql ] [ SQL ] INSERT INTO `tp_all_school_post` (`phone_account` , `title` , `model` , `city` , `school_id` , `image` , `content` , `release_time`) VALUES ('K18355572573' , '好的' , 0 , '合肥' , 6014 , NULL , '很好' , '2018-04-08 10:05:08') [ RunTime:0.053455s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T10:05:31+08:00 ] 0.0.0.0 36.32.24.164 GET /index/community/publishPost?phone_account=K18355572573&title=%E5%A5%BD%E7%9A%84&id=6014&content=%E5%BE%88%E5%A5%BD&model=0
+[ log ] yeyap.com/index/community/publishPost?phone_account=K18355572573&title=%E5%A5%BD%E7%9A%84&id=6014&content=%E5%BE%88%E5%A5%BD&model=0 [运行时间：0.153996s][吞吐率：6.49req/s] [内存消耗：2,127.56kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'publishPost',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/community/publishPost?phone_account=K18355572573&title=%E5%A5%BD%E7%9A%84&id=6014&content=%E5%BE%88%E5%A5%BD&model=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'K18355572573',
+  'title' => '好的',
+  'id' => '6014',
+  'content' => '很好',
+  'model' => '0',
+)
+[ info ] [ RUN ] app\index\controller\Community->publishPost[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000830s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.018251s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_all_school_post` [ RunTime:0.103418s ]
+[ sql ] [ SQL ] INSERT INTO `tp_all_school_post` (`phone_account` , `title` , `model` , `city` , `school_id` , `image` , `content` , `release_time`) VALUES ('K18355572573' , '好的' , 0 , '合肥' , 6014 , NULL , '很好' , '2018-04-08 10:05:31') [ RunTime:0.000568s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T10:05:45+08:00 ] 0.0.0.0 36.32.24.164 GET /index/community/publishPost?phone_account=K18355572573&title=%E5%A5%BD%E7%9A%84&id=6014&content=%E5%BE%88%E5%A5%BD&model=1
+[ log ] yeyap.com/index/community/publishPost?phone_account=K18355572573&title=%E5%A5%BD%E7%9A%84&id=6014&content=%E5%BE%88%E5%A5%BD&model=1 [运行时间：0.066098s][吞吐率：15.13req/s] [内存消耗：2,127.56kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'publishPost',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/community/publishPost?phone_account=K18355572573&title=%E5%A5%BD%E7%9A%84&id=6014&content=%E5%BE%88%E5%A5%BD&model=1',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'K18355572573',
+  'title' => '好的',
+  'id' => '6014',
+  'content' => '很好',
+  'model' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Community->publishPost[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002669s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.019728s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_all_school_post` [ RunTime:0.014204s ]
+[ sql ] [ SQL ] INSERT INTO `tp_all_school_post` (`phone_account` , `title` , `model` , `city` , `school_id` , `image` , `content` , `release_time`) VALUES ('K18355572573' , '好的' , 1 , '合肥' , 6014 , NULL , '很好' , '2018-04-08 10:05:45') [ RunTime:0.000505s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T10:56:16+08:00 ] 0.0.0.0 106.11.225.29 GET /
+[ log ] www.yeyap.com/ [运行时间：0.026805s][吞吐率：37.31req/s] [内存消耗：1,404.38kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'host' => 'www.yeyap.com',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T11:27:42+08:00 ] 0.0.0.0 66.249.79.82 GET /
+[ log ] yeyap.com/ [运行时间：0.028128s][吞吐率：35.55req/s] [内存消耗：1,404.38kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T12:11:34+08:00 ] 0.0.0.0 117.25.139.88 GET /
+[ log ] www.yeyap.com/ [运行时间：0.029058s][吞吐率：34.41req/s] [内存消耗：1,404.44kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'www.yeyap.com',
+  'accept-language' => 'zh-cn,zh;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-charset' => 'GB2312,utf-8;q=0.7,*;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T12:19:36+08:00 ] 0.0.0.0 117.71.34.139 GET /
+[ log ] yeyap.com/ [运行时间：0.028154s][吞吐率：35.52req/s] [内存消耗：1,403.65kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.1.4322)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-cn,zh;q=0.5',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T15:18:05+08:00 ] 0.0.0.0 36.32.24.164 GET /admin
+[ log ] yeyap.com/admin [运行时间：0.522597s][吞吐率：1.91req/s] [内存消耗：4,677.80kb] [文件加载：70]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5083.400 QQBrowser/10.0.972.400',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.101749s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.082791s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001558s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.023714s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 7' , 'Chrome(63.0.3239.26)' , 'http://yeyap.com/admin' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1523171885) [ RunTime:0.046374s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T15:18:05+08:00 ] 0.0.0.0 36.32.24.164 GET /admin/pub/login.html
+[ log ] yeyap.com/admin/pub/login.html [运行时间：0.091310s][吞吐率：10.95req/s] [内存消耗：4,656.61kb] [文件加载：68]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/pub/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5083.400 QQBrowser/10.0.972.400',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=nfspoflh2nugdcsrqqhquk8j33',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005387s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.018092s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010699s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 7' , 'Chrome(63.0.3239.26)' , 'http://yeyap.com/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1523171885) [ RunTime:0.000558s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T15:18:05+08:00 ] 0.0.0.0 36.32.24.164 GET /captcha.html
+[ log ] yeyap.com/captcha.html [运行时间：0.116623s][吞吐率：8.57req/s] [内存消耗：1,135.02kb] [文件加载：41]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/captcha.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5083.400 QQBrowser/10.0.972.400',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=nfspoflh2nugdcsrqqhquk8j33',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\wwwroot\AMS\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T15:18:50+08:00 ] 0.0.0.0 36.32.24.164 GET /admin
+[ log ] yeyap.com/admin [运行时间：0.056736s][吞吐率：17.63req/s] [内存消耗：4,678.23kb] [文件加载：70]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5083.400 QQBrowser/10.0.972.400',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=nfspoflh2nugdcsrqqhquk8j33',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006340s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.027296s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000933s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.019523s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 7' , 'Chrome(63.0.3239.26)' , 'http://yeyap.com/admin' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1523171930) [ RunTime:0.000580s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T15:18:50+08:00 ] 0.0.0.0 36.32.24.164 GET /admin/pub/login.html
+[ log ] yeyap.com/admin/pub/login.html [运行时间：0.074983s][吞吐率：13.34req/s] [内存消耗：4,657.05kb] [文件加载：68]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/pub/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5083.400 QQBrowser/10.0.972.400',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=nfspoflh2nugdcsrqqhquk8j33',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006429s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.037235s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002712s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.027390s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 7' , 'Chrome(63.0.3239.26)' , 'http://yeyap.com/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1523171930) [ RunTime:0.000828s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T15:18:50+08:00 ] 0.0.0.0 36.32.24.164 GET /captcha.html
+[ log ] yeyap.com/captcha.html [运行时间：0.039302s][吞吐率：25.44req/s] [内存消耗：1,135.02kb] [文件加载：41]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/captcha.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5083.400 QQBrowser/10.0.972.400',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=nfspoflh2nugdcsrqqhquk8j33',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\wwwroot\AMS\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T15:19:04+08:00 ] 0.0.0.0 140.207.128.214 GET /admin
+[ log ] yeyap.com/admin [运行时间：0.065107s][吞吐率：15.36req/s] [内存消耗：4,677.40kb] [文件加载：70]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2141.400 QQBrowser/9.5.10219.400',
+  'referer' => 'blank',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005724s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.032957s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002843s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.022439s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '140.207.128.214' , '中国 上海 上海 ' , 'Windows 7' , 'Chrome(53.0.2785.104)' , 'http://yeyap.com/admin' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1523171944) [ RunTime:0.000880s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T15:47:17+08:00 ] 0.0.0.0 212.83.178.172 GET /ckupload.php
+[ log ] yeyap.com/ckupload.php [运行时间：0.021066s][吞吐率：47.47req/s] [内存消耗：1,108.45kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ckupload.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/ckupload.php',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'host' => 'yeyap.com',
+  'accept-language' => 'en-US,en;q=0.5',
+  'accept' => '*/*',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T17:31:08+08:00 ] 0.0.0.0 36.32.24.164 GET /admin/pub/login.html
+[ log ] yeyap.com/admin/pub/login.html [运行时间：0.711885s][吞吐率：1.40req/s] [内存消耗：4,656.63kb] [文件加载：68]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/pub/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.088065s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.106656s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001403s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.027090s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1523179868) [ RunTime:0.002769s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T17:31:08+08:00 ] 0.0.0.0 36.32.24.164 GET /captcha.html
+[ log ] yeyap.com/captcha.html [运行时间：0.077378s][吞吐率：12.92req/s] [内存消耗：1,134.96kb] [文件加载：41]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/captcha.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\wwwroot\AMS\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-08T17:31:19+08:00 ] 0.0.0.0 36.32.24.164 POST /admin/pub/checklogin.html
+[ log ] yeyap.com/admin/pub/checklogin.html [运行时间：0.358871s][吞吐率：2.79req/s] [内存消耗：4,788.56kb] [文件加载：73]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'checklogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '42',
+  'x-original-url' => '/admin/pub/checklogin.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://yeyap.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+  'captcha' => 'Mu73',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005122s ]
+[ info ] [ RUN ] app\admin\controller\Pub->checkLogin[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.030762s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.019271s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `account` = 'admin'  AND `status` = 1 LIMIT 1 [ RunTime:0.009086s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.018704s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_school_management` WHERE  `schoolID` = 'admin'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000643s ]
+[ sql ] [ SQL ] UPDATE `tp_admin_user`  SET `last_login_time`=1523179879,`login_count`=login_count+1,`last_login_ip`='36.32.24.164'  WHERE  `id` = 1 [ RunTime:0.021462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.018622s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `login_ip` , `login_location` , `login_browser` , `login_os`) VALUES (1 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Chrome(67.0.3381.1)' , 'Windows 10') [ RunTime:0.006395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.029227s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/pub/checklogin.html' , 'admin' , 'Pub' , 'checklogin' , 'POST' , 'a:3:{s:7:\"account\";s:5:\"admin\";s:8:\"password\";s:6:\"123456\";s:7:\"captcha\";s:4:\"Mu73\";}' , 1523179878) [ RunTime:0.000600s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T17:31:19+08:00 ] 0.0.0.0 36.32.24.164 GET /admin/index/index.html
+[ log ] yeyap.com/admin/index/index.html [运行时间：0.323930s][吞吐率：3.09req/s] [内存消耗：4,851.40kb] [文件加载：71]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/index/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005036s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wwwroot\AMS\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+  2 => 'num',
+  3 => 'number',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.023186s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000944s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.016822s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type`,`sort` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) ORDER BY group_id,pid,sort,id desc [ RunTime:0.014899s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.016414s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,3,4,5,6,7,8,9,10,11,12,13,14)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.045500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.014374s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mailbox` [ RunTime:0.016239s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mailbox` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_leave` [ RunTime:0.016800s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_leave` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.014208s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/index/index.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1523179879) [ RunTime:0.008133s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T17:31:19+08:00 ] 0.0.0.0 36.32.24.164 GET /admin/index/welcome.html
+[ log ] yeyap.com/admin/index/welcome.html [运行时间：0.135344s][吞吐率：7.39req/s] [内存消耗：4,697.16kb] [文件加载：69]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/index/welcome.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004917s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ C:\wwwroot\AMS\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.023392s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000797s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.010185s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.021624s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1523179879) [ RunTime:0.000628s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T17:31:22+08:00 ] 0.0.0.0 36.32.24.164 GET /admin/student_management/index.html
+[ log ] yeyap.com/admin/student_management/index.html [运行时间：0.281758s][吞吐率：3.55req/s] [内存消耗：4,997.79kb] [文件加载：73]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'student_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/student_management/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005228s ]
+[ info ] [ RUN ] app\admin\controller\StudentManagement->index[ C:\wwwroot\AMS\application\admin\controller\StudentManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\student_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'schoolName',
+  5 => 'className',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.015647s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000824s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_management` [ RunTime:0.020152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.015557s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `schoolName` FROM `tp_student_management` WHERE  `isdelete` = 0 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `className` FROM `tp_student_management` WHERE  `isdelete` = 0 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.014205s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/student_management/index.html' , 'admin' , 'StudentManagement' , 'index' , 'GET' , 'a:0:{}' , 1523179881) [ RunTime:0.000602s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T17:31:26+08:00 ] 0.0.0.0 36.32.24.164 GET /admin/student_management/edit/id/139.html
+[ log ] yeyap.com/admin/student_management/edit/id/139.html [运行时间：0.247587s][吞吐率：4.04req/s] [内存消耗：4,924.05kb] [文件加载：70]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'student_management',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/student_management/edit/id/139.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/student_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005145s ]
+[ info ] [ RUN ] app\admin\controller\StudentManagement->edit[ C:\wwwroot\AMS\application\admin\controller\StudentManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\student_management\edit.html [ array (
+  0 => 'vo',
+  1 => 'data_s',
+  2 => 'data_c',
+  3 => 'linkman',
+  4 => 'maxid',
+  5 => 'count',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.019926s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000831s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_management` [ RunTime:0.017420s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_management` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.013641s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.014697s ]
+[ sql ] [ SQL ] SELECT `schoolName`,`schoolID` FROM `tp_school_management` WHERE  `isdelete` = 0 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_class_management` [ RunTime:0.018983s ]
+[ sql ] [ SQL ] SELECT `class`,`className` FROM `tp_class_management` WHERE  `isdelete` = 0 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_linkman` [ RunTime:0.017039s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `student_id` = '139' ORDER BY `id`  asc [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_linkman` [ RunTime:0.017346s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `tp_employee_linkman` LIMIT 1 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.018513s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/student_management/edit/id/139.html' , 'admin' , 'StudentManagement' , 'edit' , 'GET' , 'a:1:{s:2:\"id\";s:3:\"139\";}' , 1523179885) [ RunTime:0.000582s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T17:31:34+08:00 ] 0.0.0.0 36.32.24.164 GET /admin/student_management/edit/id/18.html
+[ log ] yeyap.com/admin/student_management/edit/id/18.html [运行时间：0.156731s][吞吐率：6.38req/s] [内存消耗：4,923.93kb] [文件加载：70]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'student_management',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/student_management/edit/id/18.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/student_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '18',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005372s ]
+[ info ] [ RUN ] app\admin\controller\StudentManagement->edit[ C:\wwwroot\AMS\application\admin\controller\StudentManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\student_management\edit.html [ array (
+  0 => 'vo',
+  1 => 'data_s',
+  2 => 'data_c',
+  3 => 'linkman',
+  4 => 'maxid',
+  5 => 'count',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.015154s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_management` [ RunTime:0.021339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_management` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.014868s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.014240s ]
+[ sql ] [ SQL ] SELECT `schoolName`,`schoolID` FROM `tp_school_management` WHERE  `isdelete` = 0 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_class_management` [ RunTime:0.016428s ]
+[ sql ] [ SQL ] SELECT `class`,`className` FROM `tp_class_management` WHERE  `isdelete` = 0 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_linkman` [ RunTime:0.013931s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `student_id` = '18' ORDER BY `id`  asc [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_linkman` [ RunTime:0.015291s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `tp_employee_linkman` LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.013773s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/student_management/edit/id/18.html' , 'admin' , 'StudentManagement' , 'edit' , 'GET' , 'a:1:{s:2:\"id\";s:2:\"18\";}' , 1523179894) [ RunTime:0.000575s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T17:31:52+08:00 ] 0.0.0.0 36.32.24.164 POST /admin/student_management/edit/id/18.html
+[ log ] yeyap.com/admin/student_management/edit/id/18.html [运行时间：0.275204s][吞吐率：3.63req/s] [内存消耗：4,933.12kb] [文件加载：74]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'student_management',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '971',
+  'x-original-url' => '/admin/student_management/edit/id/18.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://yeyap.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/student_management/edit/id/18.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '18',
+  'schoolName' => '国贸天琴湾园',
+  'className' => '大1',
+  'account' => 'A365377690',
+  'name' => '李晨曦',
+  'sex' => '女',
+  'birthDate' => '2012-03-12',
+  'height' => '115',
+  'weight' => '30',
+  'contact' => '13866187233',
+  'msg' => 
+  array (
+    48 => 
+    array (
+      'id' => '0',
+      'relation' => '姨',
+      'name' => 'fffffff',
+      'number' => '18355572571',
+    ),
+    182 => 
+    array (
+      'id' => '182',
+      'relation' => '学生本人',
+      'name' => '李晨曦',
+      'number' => '18355572571',
+    ),
+    192 => 
+    array (
+      'id' => '192',
+      'relation' => '哥哥',
+      'name' => '马超',
+      'number' => '18355572572',
+    ),
+    193 => 
+    array (
+      'id' => '193',
+      'relation' => '奶奶',
+      'name' => '兰兰',
+      'number' => '18355572573',
+    ),
+    196 => 
+    array (
+      'id' => '196',
+      'relation' => '妈妈',
+      'name' => '魏延',
+      'number' => '13866187233',
+    ),
+  ),
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005616s ]
+[ info ] [ RUN ] app\admin\controller\StudentManagement->edit[ C:\wwwroot\AMS\application\admin\controller\StudentManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.020762s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_management` [ RunTime:0.016825s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tp_student_management` WHERE  `account` = 'A365377690'  AND `id` <> 18 LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] UPDATE `tp_student_management`  SET `schoolName`='国贸天琴湾园',`className`='大1',`account`='A365377690',`name`='李晨曦',`sex`='女',`birthDate`='2012-03-12',`height`=115,`weight`=30,`contact`='13866187233',`isUpload`=0,`isDownloadP`=0,`isDownloadD`=0  WHERE  `id` = 18 [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.015426s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tp_admin_user` WHERE  `account` = 'A365377690' LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] UPDATE `tp_admin_user`  SET `account`='A365377690',`realname`='李晨曦',`mobile`='13866187233'  WHERE  `id` = 59 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_linkman` [ RunTime:0.017920s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_linkman` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `tp_student_linkman` LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] INSERT INTO `tp_student_linkman` (`id` , `student_id` , `name` , `relation` , `number` , `isUpload` , `isDownloadP` , `isDownloadD`) VALUES (208 , '18' , 'fffffff' , '姨' , '18355572571' , 0 , 0 , 0) [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_linkman` WHERE  `id` = 182 LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `id` = 182  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `student_id` = '18'  AND `status` = 1  AND `isdelete` = 0  AND `relation` = '学生本人' LIMIT 1 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] UPDATE `tp_student_linkman`  SET `name`='李晨曦',`number`='18355572571'  WHERE  `id` = 182 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_linkman` WHERE  `id` = 192 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `id` = 192  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] UPDATE `tp_student_linkman`  SET `name`='马超',`relation`='哥哥',`number`='18355572572'  WHERE  `id` = 192 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_linkman` WHERE  `id` = 193 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `id` = 193  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] UPDATE `tp_student_linkman`  SET `name`='兰兰',`relation`='奶奶',`number`='18355572573'  WHERE  `id` = 193 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_linkman` WHERE  `id` = 196 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `id` = 196  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] UPDATE `tp_student_linkman`  SET `name`='魏延',`relation`='妈妈',`number`='13866187233'  WHERE  `id` = 196 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.019097s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/student_management/edit/id/18.html' , 'admin' , 'StudentManagement' , 'edit' , 'POST' , 'a:11:{s:2:\"id\";s:2:\"18\";s:10:\"schoolName\";s:18:\"国贸天琴湾园\";s:9:\"className\";s:4:\"大1\";s:7:\"account\";s:10:\"A365377690\";s:4:\"name\";s:9:\"李晨曦\";s:3:\"sex\";s:3:\"女\";s:9:\"birthDate\";s:10:\"2012-03-12\";s:6:\"height\";s:3:\"115\";s:6:\"weight\";s:2:\"30\";s:7:\"contact\";s:11:\"13866187233\";s:3:\"msg\";a:5:{i:48;a:4:{s:2:\"id\";s:1:\"0\";s:8:\"relation\";s:3:\"姨\";s:4:\"name\";s:7:\"fffffff\";s:6:\"number\";s:11:\"18355572571\";}i:182;a:4:{s:2:\"id\";s:3:\"182\";s:8:\"relation\";s:12:\"学生本人\";s:4:\"name\";s:9:\"李晨曦\";s:6:\"number\";s:11:\"18355572571\";}i:192;a:4:{s:2:\"id\";s:3:\"192\";s:8:\"relation\";s:6:\"哥哥\";s:4:\"name\";s:6:\"马超\";s:6:\"number\";s:11:\"18355572572\";}i:193;a:4:{s:2:\"id\";s:3:\"193\";s:8:\"relation\";s:6:\"奶奶\";s:4:\"name\";s:6:\"兰兰\";s:6:\"number\";s:11:\"18355572573\";}i:196;a:4:{s:2:\"id\";s:3:\"196\";s:8:\"relation\";s:6:\"妈妈\";s:4:\"name\";s:6:\"魏延\";s:6:\"number\";s:11:\"13866187233\";}}}' , 1523179912) [ RunTime:0.000692s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T17:31:52+08:00 ] 0.0.0.0 36.32.24.164 GET /admin/student_management/index.html
+[ log ] yeyap.com/admin/student_management/index.html [运行时间：0.114807s][吞吐率：8.71req/s] [内存消耗：4,997.96kb] [文件加载：73]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'student_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/student_management/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/student_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005039s ]
+[ info ] [ RUN ] app\admin\controller\StudentManagement->index[ C:\wwwroot\AMS\application\admin\controller\StudentManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\student_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'schoolName',
+  5 => 'className',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.038111s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000825s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_management` [ RunTime:0.016623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.015451s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `schoolName` FROM `tp_student_management` WHERE  `isdelete` = 0 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `className` FROM `tp_student_management` WHERE  `isdelete` = 0 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010598s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/student_management/index.html' , 'admin' , 'StudentManagement' , 'index' , 'GET' , 'a:0:{}' , 1523179912) [ RunTime:0.026700s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T17:33:23+08:00 ] 0.0.0.0 36.32.24.164 GET /admin/student_management/edit/id/139.html
+[ log ] yeyap.com/admin/student_management/edit/id/139.html [运行时间：0.171017s][吞吐率：5.85req/s] [内存消耗：4,924.05kb] [文件加载：70]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'student_management',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/student_management/edit/id/139.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/student_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006016s ]
+[ info ] [ RUN ] app\admin\controller\StudentManagement->edit[ C:\wwwroot\AMS\application\admin\controller\StudentManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\student_management\edit.html [ array (
+  0 => 'vo',
+  1 => 'data_s',
+  2 => 'data_c',
+  3 => 'linkman',
+  4 => 'maxid',
+  5 => 'count',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.019435s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000895s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_management` [ RunTime:0.022337s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_management` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.014525s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.014368s ]
+[ sql ] [ SQL ] SELECT `schoolName`,`schoolID` FROM `tp_school_management` WHERE  `isdelete` = 0 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_class_management` [ RunTime:0.014792s ]
+[ sql ] [ SQL ] SELECT `class`,`className` FROM `tp_class_management` WHERE  `isdelete` = 0 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_linkman` [ RunTime:0.015848s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `student_id` = '139' ORDER BY `id`  asc [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_linkman` [ RunTime:0.015863s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `tp_employee_linkman` LIMIT 1 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.017812s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/student_management/edit/id/139.html' , 'admin' , 'StudentManagement' , 'edit' , 'GET' , 'a:1:{s:2:\"id\";s:3:\"139\";}' , 1523180003) [ RunTime:0.000720s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T17:33:47+08:00 ] 0.0.0.0 36.32.24.164 POST /admin/student_management/edit/id/139.html
+[ log ] yeyap.com/admin/student_management/edit/id/139.html [运行时间：0.124760s][吞吐率：8.02req/s] [内存消耗：4,932.86kb] [文件加载：74]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'student_management',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '963',
+  'x-original-url' => '/admin/student_management/edit/id/139.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://yeyap.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/student_management/edit/id/139.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+  'schoolName' => '国贸天琴湾园',
+  'className' => '大1',
+  'account' => 'A365327828',
+  'name' => '张杰',
+  'sex' => '男',
+  'birthDate' => '2018-02-01',
+  'height' => '100',
+  'weight' => '23',
+  'contact' => '13866187233',
+  'msg' => 
+  array (
+    48 => 
+    array (
+      'id' => '0',
+      'relation' => '其他',
+      'name' => 'fffffff',
+      'number' => '18355572574',
+    ),
+    197 => 
+    array (
+      'id' => '197',
+      'relation' => '妈妈',
+      'name' => '陶有玉',
+      'number' => '18355572573',
+    ),
+    198 => 
+    array (
+      'id' => '198',
+      'relation' => '爸爸',
+      'name' => '李爸爸',
+      'number' => '13866187233',
+    ),
+    200 => 
+    array (
+      'id' => '200',
+      'relation' => '姐姐',
+      'name' => '文风',
+      'number' => '13271273059',
+    ),
+    201 => 
+    array (
+      'id' => '201',
+      'relation' => '哥哥',
+      'name' => '刘峰',
+      'number' => '18755270189',
+    ),
+  ),
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005245s ]
+[ info ] [ RUN ] app\admin\controller\StudentManagement->edit[ C:\wwwroot\AMS\application\admin\controller\StudentManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.017626s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000844s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_management` [ RunTime:0.017695s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tp_student_management` WHERE  `account` = 'A365327828'  AND `id` <> 139 LIMIT 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] UPDATE `tp_student_management`  SET `schoolName`='国贸天琴湾园',`className`='大1',`account`='A365327828',`name`='张杰',`sex`='男',`birthDate`='2018-02-01',`height`=100,`weight`=23,`contact`='13866187233',`isUpload`=0,`isDownloadP`=0,`isDownloadD`=0  WHERE  `id` = 139 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.014654s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tp_admin_user` WHERE  `account` = 'A365327828' LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] UPDATE `tp_admin_user`  SET `account`='A365327828',`realname`='张杰',`mobile`='13866187233'  WHERE  `id` = 70 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_linkman` [ RunTime:0.015763s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_linkman` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `tp_student_linkman` LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] INSERT INTO `tp_student_linkman` (`id` , `student_id` , `name` , `relation` , `number` , `isUpload` , `isDownloadP` , `isDownloadD`) VALUES (209 , '139' , 'fffffff' , '其他' , '18355572574' , 0 , 0 , 0) [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_linkman` WHERE  `id` = 197 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `id` = 197  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] UPDATE `tp_student_linkman`  SET `name`='陶有玉',`relation`='妈妈',`number`='18355572573'  WHERE  `id` = 197 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_linkman` WHERE  `id` = 198 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `id` = 198  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] UPDATE `tp_student_linkman`  SET `name`='李爸爸',`relation`='爸爸',`number`='13866187233'  WHERE  `id` = 198 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_linkman` WHERE  `id` = 200 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `id` = 200  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] UPDATE `tp_student_linkman`  SET `name`='文风',`relation`='姐姐',`number`='13271273059'  WHERE  `id` = 200 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_linkman` WHERE  `id` = 201 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `id` = 201  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] UPDATE `tp_student_linkman`  SET `name`='刘峰',`relation`='哥哥',`number`='18755270189'  WHERE  `id` = 201 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.015996s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/student_management/edit/id/139.html' , 'admin' , 'StudentManagement' , 'edit' , 'POST' , 'a:11:{s:2:\"id\";s:3:\"139\";s:10:\"schoolName\";s:18:\"国贸天琴湾园\";s:9:\"className\";s:4:\"大1\";s:7:\"account\";s:10:\"A365327828\";s:4:\"name\";s:6:\"张杰\";s:3:\"sex\";s:3:\"男\";s:9:\"birthDate\";s:10:\"2018-02-01\";s:6:\"height\";s:3:\"100\";s:6:\"weight\";s:2:\"23\";s:7:\"contact\";s:11:\"13866187233\";s:3:\"msg\";a:5:{i:48;a:4:{s:2:\"id\";s:1:\"0\";s:8:\"relation\";s:6:\"其他\";s:4:\"name\";s:7:\"fffffff\";s:6:\"number\";s:11:\"18355572574\";}i:197;a:4:{s:2:\"id\";s:3:\"197\";s:8:\"relation\";s:6:\"妈妈\";s:4:\"name\";s:9:\"陶有玉\";s:6:\"number\";s:11:\"18355572573\";}i:198;a:4:{s:2:\"id\";s:3:\"198\";s:8:\"relation\";s:6:\"爸爸\";s:4:\"name\";s:9:\"李爸爸\";s:6:\"number\";s:11:\"13866187233\";}i:200;a:4:{s:2:\"id\";s:3:\"200\";s:8:\"relation\";s:6:\"姐姐\";s:4:\"name\";s:6:\"文风\";s:6:\"number\";s:11:\"13271273059\";}i:201;a:4:{s:2:\"id\";s:3:\"201\";s:8:\"relation\";s:6:\"哥哥\";s:4:\"name\";s:6:\"刘峰\";s:6:\"number\";s:11:\"18755270189\";}}}' , 1523180027) [ RunTime:0.000741s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T17:33:47+08:00 ] 0.0.0.0 36.32.24.164 GET /admin/student_management/index.html
+[ log ] yeyap.com/admin/student_management/index.html [运行时间：0.079475s][吞吐率：12.58req/s] [内存消耗：4,997.96kb] [文件加载：73]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'student_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/student_management/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/student_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005051s ]
+[ info ] [ RUN ] app\admin\controller\StudentManagement->index[ C:\wwwroot\AMS\application\admin\controller\StudentManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\student_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'schoolName',
+  5 => 'className',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012701s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002684s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_management` [ RunTime:0.010422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.009899s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `schoolName` FROM `tp_student_management` WHERE  `isdelete` = 0 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `className` FROM `tp_student_management` WHERE  `isdelete` = 0 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011375s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/student_management/index.html' , 'admin' , 'StudentManagement' , 'index' , 'GET' , 'a:0:{}' , 1523180027) [ RunTime:0.000578s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T17:33:51+08:00 ] 0.0.0.0 36.32.24.164 GET /admin/student_management/edit/id/139.html
+[ log ] yeyap.com/admin/student_management/edit/id/139.html [运行时间：0.197378s][吞吐率：5.07req/s] [内存消耗：4,925.82kb] [文件加载：70]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'student_management',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/student_management/edit/id/139.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/student_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=71oh22oan9eeuvv2a77sge1543',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005367s ]
+[ info ] [ RUN ] app\admin\controller\StudentManagement->edit[ C:\wwwroot\AMS\application\admin\controller\StudentManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\student_management\edit.html [ array (
+  0 => 'vo',
+  1 => 'data_s',
+  2 => 'data_c',
+  3 => 'linkman',
+  4 => 'maxid',
+  5 => 'count',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.054182s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000869s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_management` [ RunTime:0.020965s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_management` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.013903s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.014155s ]
+[ sql ] [ SQL ] SELECT `schoolName`,`schoolID` FROM `tp_school_management` WHERE  `isdelete` = 0 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_class_management` [ RunTime:0.018619s ]
+[ sql ] [ SQL ] SELECT `class`,`className` FROM `tp_class_management` WHERE  `isdelete` = 0 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_linkman` [ RunTime:0.015080s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_linkman` WHERE  `student_id` = '139' ORDER BY `id`  asc [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_linkman` [ RunTime:0.014437s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `tp_employee_linkman` LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.052646s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '36.32.24.164' , '中国 安徽 合肥 ' , 'Windows 10' , 'Chrome(67.0.3381.1)' , 'http://yeyap.com/admin/student_management/edit/id/139.html' , 'admin' , 'StudentManagement' , 'edit' , 'GET' , 'a:1:{s:2:\"id\";s:3:\"139\";}' , 1523180030) [ RunTime:0.000607s ]
+
+---------------------------------------------------------------
+[ 2018-04-08T22:48:25+08:00 ] 0.0.0.0 106.11.226.191 GET /
+[ log ] yeyap.com/ [运行时间：0.122363s][吞吐率：8.17req/s] [内存消耗：1,404.38kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

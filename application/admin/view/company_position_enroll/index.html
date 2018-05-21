@@ -1,0 +1,91 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    {include file="form" /}
+    <div class="cl pd-5 bg-1 bk-gray">
+        <span class="l">
+            <!--{tp:menu menu="fadd,forbid,resume,delete,recyclebin,echarts" /}-->
+             {tp:menu menu="delete,recyclebin" /}
+        </span>
+        <span class="r pt-5 pr-5">
+            共有数据 ：<strong>{$count ?? '0'}</strong> 条
+        </span>
+    </div>
+    <table class="table table-border table-bordered table-hover table-bg mt-20">
+        <thead>
+        <tr class="text-c">
+            {include file="th" /}
+            <!--<th width="70">操作</th>-->
+        </tr>
+        </thead>
+        <tbody>
+        
+        {volist name="list" id="vo"}
+        <tr class="text-c">
+            {include file="td" /}
+        </tr>
+        {/volist}
+      
+        </tbody>
+    </table>
+    <div class="page-bootstrap">{$page ?? ''}</div>
+    <button class="btn btn-success radius f-r" id="jsinvite">确认邀约<tton>
+
+</div>
+
+
+<script type="text/javascript" src="__LIB__/jquery/1.9.1/jquery.js"></script>
+<script type="text/javascript">
+    
+
+    $(function(){
+        $('#jsinvite').click(function(){
+            layer.confirm('已选择的人员已被邀请，未被选择的人员系统将删除报名信息，并以短信通知已被邀约和未被邀约员工，谨慎操作！', {
+              btn: ['确定','取消'] //按钮
+            }, function(){
+              var id_checked = [];
+              var id_nochecked = [];
+              //var ids = document.getElementsByTagName("input");
+              var ids = $(".select_id");
+              for(var i in ids){
+                if(ids[i].checked){
+                  //alert(ids[i].value);
+                  id_checked.push(ids[i].value); 
+                }else{
+                  id_nochecked.push(ids[i].value);
+                }
+                
+              }
+              console.log(id_nochecked);
+              //alert(id_checked);
+              //ajax 传递 id参数
+              $.ajax({
+                type:"POST",
+                url:"{:url('CompanyPositionEnroll/add')}",
+                data:{id:id_checked,noid:id_nochecked},
+                dataType:"json",
+                async:false,
+                cache:false,
+                success:function(data){
+                    layer.msg('邀约成功', {icon: 1});
+                    location.reload();
+                    console.log(data);
+                },
+                error:function(data){
+                    alert('邀约失败');
+                }
+              });
+              
+            }, function(){
+                
+            });
+        })
+    })
+
+</script>
+{/block}
+
+
+
+
+

@@ -1,0 +1,440 @@
+[ 2018-05-06T01:23:48+08:00 ] 0.0.0.0 120.76.41.9 GET /
+[ log ] www.paizhiw.com/ [运行时间：0.222305s][吞吐率：4.50req/s] [内存消耗：2,206.42kb] [文件加载：60]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36',
+  'host' => 'www.paizhiw.com',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\inetpub\wwwroot\anhui\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+  10 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004781s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.002170s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` LIKE '%'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` LIKE '%'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` LIKE '%'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.000990s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `name` LIKE '切换城市%' LIMIT 1 [ RunTime:0.001986s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_position` WHERE  `parent_area_code` IS NULL [ RunTime:0.001359s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000502s ]
+
+---------------------------------------------------------------
+[ 2018-05-06T03:06:05+08:00 ] 0.0.0.0 122.114.67.91 GET /
+[ log ] www.paizhiw.com/ [运行时间：0.124281s][吞吐率：8.05req/s] [内存消耗：2,206.35kb] [文件加载：60]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)',
+  'host' => 'www.paizhiw.com',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\inetpub\wwwroot\anhui\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+  10 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001741s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.001291s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` LIKE '%'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` LIKE '%'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` LIKE '%'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.002195s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `name` LIKE '切换城市%' LIMIT 1 [ RunTime:0.002228s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_position` WHERE  `parent_area_code` IS NULL [ RunTime:0.001759s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000398s ]
+
+---------------------------------------------------------------
+[ 2018-05-06T03:06:05+08:00 ] 0.0.0.0 122.114.67.91 GET /e/tool/feedback/temp/test.txt
+[ log ] www.paizhiw.com/e/tool/feedback/temp/test.txt [运行时间：0.043569s][吞吐率：22.95req/s] [内存消耗：1,112.87kb] [文件加载：42]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'e',
+    1 => 'tool',
+    2 => 'feedback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/e/tool/feedback/temp/test.txt',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)',
+  'host' => 'www.paizhiw.com',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'temp' => 'test.txt',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-06T03:06:05+08:00 ] 0.0.0.0 122.114.67.91 GET /d/js/acmsd/ecms_dialog.js
+[ log ] www.paizhiw.com/d/js/acmsd/ecms_dialog.js [运行时间：0.034735s][吞吐率：28.79req/s] [内存消耗：1,112.41kb] [文件加载：42]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'js',
+    2 => 'acmsd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/d/js/acmsd/ecms_dialog.js',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)',
+  'host' => 'www.paizhiw.com',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-06T03:06:05+08:00 ] 0.0.0.0 122.114.67.91 GET /e/space/template/default/images/nav_a_bg3.gif
+[ log ] www.paizhiw.com/e/space/template/default/images/nav_a_bg3.gif [运行时间：0.032697s][吞吐率：30.58req/s] [内存消耗：1,112.90kb] [文件加载：42]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'e',
+    1 => 'space',
+    2 => 'template',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/e/space/template/default/images/nav_a_bg3.gif',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)',
+  'host' => 'www.paizhiw.com',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'default' => 'images',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-06T03:06:05+08:00 ] 0.0.0.0 122.114.67.91 GET /e/data/images/nouserpic.gif
+[ log ] www.paizhiw.com/e/data/images/nouserpic.gif [运行时间：0.055999s][吞吐率：17.86req/s] [内存消耗：1,112.42kb] [文件加载：42]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'e',
+    1 => 'data',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/e/data/images/nouserpic.gif',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)',
+  'host' => 'www.paizhiw.com',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-06T11:51:35+08:00 ] 0.0.0.0 106.11.225.14 GET /
+[ log ] hefei.paizhiw.com/ [运行时间：0.132921s][吞吐率：7.52req/s] [内存消耗：2,213.02kb] [文件加载：60]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'host' => 'hefei.paizhiw.com',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\inetpub\wwwroot\anhui\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+  10 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001894s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_city` [ RunTime:0.001253s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_city` WHERE  `en_name` = 'hefei' LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.001071s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` LIKE '合肥%'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` LIKE '合肥%'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` LIKE '合肥%'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `name` LIKE '合肥%' LIMIT 1 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_position` WHERE  `parent_area_code` = 340100000000 [ RunTime:0.001708s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000406s ]
+
+---------------------------------------------------------------
+[ 2018-05-06T19:50:59+08:00 ] 0.0.0.0 106.11.242.159 GET /
+[ log ] www.paizhiw.com/ [运行时间：0.125928s][吞吐率：7.94req/s] [内存消耗：2,207.20kb] [文件加载：60]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'host' => 'www.paizhiw.com',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\inetpub\wwwroot\anhui\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+  10 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001739s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.001293s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` LIKE '%'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` LIKE '%'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` LIKE '%'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 7  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `name` LIKE '切换城市%' LIMIT 1 [ RunTime:0.002030s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_position` WHERE  `parent_area_code` IS NULL [ RunTime:0.001469s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000407s ]
+
+---------------------------------------------------------------

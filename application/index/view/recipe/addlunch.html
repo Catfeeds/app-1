@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>选择午餐</title>
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <link rel="stylesheet" href="__STATIC__/css/index.css" />
+    <script type="text/javascript" src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/rem.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            $('#finish').click(function(){
+                var id = $(" input[ name='id' ] ").val();
+                var type = $(" input[ name='type' ] ").val();
+                var time = $(" input[ name='time' ] ").val();
+                lunchList = $('#lunchList').val(); //所选择的午餐列表
+                $.ajax({
+                    type:'get',//选择get方式提交
+                    url:'{:url("recipe/lunchListCookie")}',//将数据提交的页面
+                    data:{lunchList:lunchList,id:id,time:time},//传值
+                    success: function(data)
+                    {
+                        id = data.id;
+                        time = data.time;
+
+                        window.location.href="{:url('recipe/sendrecipe')}?id="+id+'&type=2&time='+time;
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+
+<body style="margin:8px 0px">
+<div id="wrap">
+    <header class="header ">
+        <a href="javascript:;" onclick="history.go(-1)" class="back"></a>
+        <span>添加午餐</span>  
+        <a href="javascript:;" id="finish" class="waicheng">完成</a>
+    </header>
+    
+    <div class="main">
+        <div class="main-top">
+            <input type="text" id="lunchList" name="" placeholder="添加食物">
+        </div>
+        <div class="main-center">
+            <div class="zuo">常用菜</div>
+            <div class="you"><a href="{:url('recipe/addrecipe')}?type=2&id={$id}&time={$time}" style="color:#999;text-decoration: none">添加常用菜</a></div>
+        </div>
+
+        <div class="main-bottom">
+            <ul>
+                {volist name="data" id="vo"}
+                <li>
+                    <span>{$vo.name}</span>
+                    {if condition="$vo.lunch_thumb neq ''"}
+                        <img src="__STATIC__/img/icon_picture.png">
+					{/if}
+                </li>
+                {/volist}
+            </ul>
+        </div>
+    </div>
+<input type="hidden" name="id" value="{$id}">
+<input type="hidden" name="type" value="{$type}">
+<input type="hidden" name="time" value="{$time}">
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('.main-bottom li').click(function(){
+            var food = $(this).find('span').html();
+            var addfood = $('.main-top input').val();
+            var str =  addfood+','+food;
+            if(str.substr(0,1) == ','){
+                var str = str.substr(1,str.length-1);
+            }
+            $('.main-top input').val(str);
+        })
+
+    })
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+
+    <form class="form form-horizontal" id="form" method="post" action="{:\\think\\Request::instance()->baseUrl()}">
+        <input type="hidden" name="id" value="{$vo.id ?? ''}">
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>招聘公司：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box">
+                    <select name="companyName" class="select"  datatype="*" nullmsg="请选择公司">
+                        <option value="{$vo.companyName ?? ''}">{$vo.companyName ?? '请选择公司'}</option>
+                        {volist name="schoolName" id="v1"}
+                           <option value="{$v1.schoolName}">{$v1.schoolName}</option>
+                        {/volist}
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+        <div class="row cl" >
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>工作区域：</label>
+            <div class="formControls col-xs-1 col-sm-1">
+                <div class="select-box">
+                    <select class="select" id="s_province" name="province" datatype="*" nullmsg="请选择省">
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-1 col-sm-1"></div>
+            <div class="formControls col-xs-1 col-sm-1">
+                <div class="select-box">
+                    <select class="select" id="s_city" name="city" datatype="*" nullmsg="请选择市">
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-1 col-sm-1"></div>
+            <div class="formControls col-xs-1 col-sm-1">
+                <div class="select-box">
+                    <select class="select" id="s_county" name="area"  datatype="*" nullmsg="请选择区">
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-1 col-sm-1"></div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>职位属性：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box">
+                    <select name="property" class="select"  datatype="*" nullmsg="请选择职位属性">
+						<option value="{$vo.property ?? ''}">{$property_name ?? '请选择职位属性'}</option>
+                        <option value="1">日结兼职</option>
+                        <option value="2">长期兼职</option>
+                        <option value="3">实习兼职</option>
+                        <option value="4">旅行兼职</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>职位名称：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="职位名称(5-12个字)" id="positionName" name="positionName" value="{$vo.positionName ?? ''}"  datatype="/^[\u4e00-\u9fa5A-Za-z0-9]{5,12}$/" nullmsg="请填写职位名称">
+
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>工作类别：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box">
+                    <select name="type" class="select"  datatype="*" nullmsg="请选择工作类别">
+						<option value="{$vo.type ?? ''}">{$vo.type ?? '请选择工作类别'}</option>
+                        <option value="宣传">宣传</option>
+                        <option value="设计">设计</option>
+                        <option value="教育">教育</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>兼职起始时间：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text Wdate" placeholder="兼职起始时间" name="start_time" value="{$vo.start_time ?? ''}"  {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'%y-%M-{%d+1}'})" {/literal}  datatype="*" nullmsg="请填写兼职起始时间">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>兼职结束时间：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text Wdate" placeholder="兼职结束时间" name="end_time" value="{$vo.end_time ?? ''}"  {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'%y-%M-{%d+1}'})" {/literal}  datatype="*" nullmsg="请填写兼职结束时间">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>兼职时段：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box">
+                    <select name="period" class="select"  datatype="*" nullmsg="请选择兼职时段">
+						<option value="{$vo.period ?? ''}">{$vo.period ?? '请选择兼职时段'}</option>
+                        <option value="工作日">工作日</option>
+                        <option value="双休日">双休日</option>
+                        <option value="每天">每天</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>招聘人数：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="招聘人数" name="count" value="{$vo.count ?? ''}"  datatype="*" nullmsg="请填写招聘人数">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>薪资待遇：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="薪资待遇" name="salary" value="{$vo.salary ?? ''}"  datatype="*" nullmsg="请填写薪资待遇">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>结薪方式：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box">
+                    <select name="payroll" class="select"  datatype="*" nullmsg="请选择结薪方式">
+						<option value="{$vo.payroll ?? ''}">{$vo.payroll ?? '请选择结薪方式'}</option>
+                        <option value="日结">日结</option>
+                        <option value="周结">周结</option>
+                        <option value="月结">月结</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>招聘要求：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+            	<textarea cols="" rows="" class="textarea" name="requirement" id="yq"  placeholder="招聘要求" datatype="*" nullmsg="请填写招聘要求">{$vo.requirement ?? ''}</textarea>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>工作内容：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+            	<textarea cols="" rows="" class="textarea" name="content" id="nr"  placeholder="工作内容"  datatype="*" nullmsg="请填写工作内容">{$vo.content ?? ''}</textarea>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>标签：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box">
+                    <select name="label" class="select"  datatype="*" nullmsg="请选择标签">
+						<option value="{$vo.label ?? ''}">{$vo.label ?? '请选择标签'}</option>
+                        <option value="最优推荐">最优推荐</option>
+                        <option value="公司急招">公司急招</option>
+                        <option value="工资担保">工资担保</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button type="submit" class="btn btn-primary radius">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+                <button type="button" class="btn btn-default radius ml-20" onClick="layer_close();">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </form>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__LIB__/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="__LIB__/Validform/5.3.2/Validform.min.js"></script>
+<script type="text/javascript" src="__LIB__/showdown/1.4.2/showdown.min.js"></script>
+<script>window.UEDITOR_HOME_URL = '__LIB__/ueditor/1.4.3/'</script>
+<script type="text/javascript" charset="utf-8" src="__LIB__/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__LIB__/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="__LIB__/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="__STATIC__/js/area.js"></script>
+
+
+<script>
+    $(function () {
+        $('.skin-minimal input').iCheck({
+            checkboxClass: 'icheckbox-blue',
+            radioClass: 'iradio-blue',
+            increaseArea: '20%'
+        });
+
+        $("#form").Validform({
+            tiptype: 2,
+            ajaxPost: true,
+            showAllError: true,
+            callback: function (ret){
+                ajax_progress(ret);
+            }
+        });
+
+
+    });
+
+
+    var s=["s_province","s_city","s_county"];//三个select的name
+//    var opt0 = ["","",""];//初始值
+
+    var province = "{$vo.province ?? ''}";
+    var city = "{$vo.city ?? ''}";
+    var area = "{$vo.area ?? ''}";
+    var opt0 = [""+province+"",""+city+"",""+area+""];//初始值
+
+    function _init_area(){  //初始化函数
+        for(i=0;i<s.length-1;i++){
+            document.getElementById(s[i]).onchange=new Function("change("+(i+1)+")");
+        }
+        change(0);
+    }
+    _init_area();
+
+
+</script>
+
+{/block}

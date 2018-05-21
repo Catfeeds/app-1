@@ -1,0 +1,311 @@
+{extend name="template/base" /}
+{block name="content"}
+<style type="text/css">
+    #picture{
+        position:absolute;
+        width: 60px;
+        height: 60px;
+        left: 15px;
+        top: 10px;
+        opacity:0;
+        overflow: hidden;
+    }
+</style>
+<div class="page-container" style="margin-top: 50px">
+    <form class="form form-horizontal" id="form" method="post" action="{:\\think\\Request::instance()->baseUrl()}" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{$vo.id ?? ''}">
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>学校名称：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box">
+                    <select name="schoolName" class="select"  datatype="*" nullmsg="请选择学校名称" id="schoolName">
+                        <option value ="{$vo.schoolName ?? ''}" selected>{$vo.schoolName ?? '请选择学校名称'}</option>
+                        {volist name="schoolName" id="vos"}
+                        <option value ="{$vos.schoolName}">{$vos.schoolName}</option>
+                        {/volist}
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>课程对象：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="课程对象" name="target" value="{$vo.target ?? ''}"  datatype="*" nullmsg="请填写课程对象">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>课程名称：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="课程名称" name="courseName" value="{$vo.courseName ?? ''}"  datatype="*" nullmsg="请填写课程名称">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3" style="position: relative;top: 25px">课程封面：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <!--<input type="text" class="input-text" id="upload" placeholder="请点击后面的上传按钮" datatype="*" nullmsg="请填写图片url" style="width: 70%">-->
+
+
+                <div style="width: 15px;"></div>
+                <div  style="border: 1px solid #ddd;overflow: hidden;padding: 10px;">
+                    <div>
+                        <a class="btn btn-default" href="javascript:;" style="width:60px;height:60px;margin-top:10px;border-radius:10px;">
+                            <span class="Hui-iconfont Hui-iconfont-add" style="font-size: 24px;color: #999;line-height:50px;"></span>
+                        </a>
+                        <input type="file" id="picture"  name="picture" accept="image/gif,image/jpeg,image/png,image/jpg" >
+						<span id="show">
+
+                             <?php
+                                 if(!empty($vo['image']))
+                                 {
+                             ?>
+                                    <img src="__ROOT__{$vo.image}"  height="60" style="margin-top: 11px"/>
+                            <?php
+                                 }
+                             ?>
+
+
+                        </span>
+                    </div>
+                </div>
+                <div style="width: 15px;"></div>
+                <!--用来存放当前上传图片的路径-->
+                <input type="hidden" name="path" id="path">
+                <!--用来存放当前上传图片的路径-->
+
+
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>课程价格：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="课程价格" name="price" value="{$vo.price ?? ''}"  datatype="*" nullmsg="请填写课程价格">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>课时：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="课时" name="period" value="{$vo.period ?? ''}"  datatype="*" nullmsg="请填写课时">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>开始时间：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text Wdate" placeholder="课程开始时间" name="startTime" value="{$vo.startTime ?? ''}"  {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal}  datatype="*" nullmsg="请填写课程开始时间">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>结束时间：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text Wdate" placeholder="课程结束时间" name="endTime" value="{$vo.endTime ?? ''}"  {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal}  datatype="*" nullmsg="请填写课程结束时间">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>主讲人：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box">
+                    <select name="speaker" class="select"  datatype="*" nullmsg="请选择主讲人" id="speaker">
+                        <option value ="{$vo.speaker ?? ''}" selected>{$vo.speaker ?? '请选择主讲人'}</option>
+
+                        {volist name="name" id="vm"}
+                        <option value ="{$vm.name}">{$vm.name}--------{$vm.label}</option>
+                        {/volist}
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>课程类型：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box">
+                    <select name="type" class="select"  datatype="*" nullmsg="请选择课程类型" >
+                        <option value ="{$vo.type ?? ''}" selected>{$vo.type ?? '请选择课程类型'}</option>
+
+                        <option value ="视频">视频</option>
+                        <option value ="音频">音频</option>
+                        <option value ="书籍">书籍</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>课程特色：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="课程特色" name="feature" value="{$vo.feature ?? ''}"  datatype="*" nullmsg="请填写课程特色">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">课程介绍：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <!-- 加载编辑器的容器 -->
+                <script id="container" name="content" type="text/plain" style="height:400px"></script>
+
+            </div>
+            <!--<div class="col-xs-3 col-sm-3"></div>-->
+        </div>
+
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>发布时间：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text Wdate" placeholder="发布时间" name="release_time" value="{$vo.release_time ?? ''}"  {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal}  datatype="*" nullmsg="请填写发布时间">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>标签：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box">
+                    <select name="label" class="select"  datatype="*" nullmsg="请选择课程标签">
+                        <option value="{$vo.label ?? ''}" selected>{$vo.label ?? '请选择课程标签'}</option>
+
+                        <option value="免费">免费</option>
+                        <option value="无">无</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <!--<div class="row cl">-->
+            <!--<label class="form-label col-xs-3 col-sm-3">标签：</label>-->
+            <!--<div class="formControls col-xs-6 col-sm-6">-->
+                <!--<input type="text" class="input-text" placeholder="标签" name="label" value="{$vo.label ?? ''}" >-->
+            <!--</div>-->
+            <!--<div class="col-xs-3 col-sm-3"></div>-->
+        <!--</div>-->
+
+
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button type="submit" class="btn btn-primary radius">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+                <button type="button" class="btn btn-default radius ml-20" onClick="layer_close();">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </form>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__LIB__/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="__LIB__/Validform/5.3.2/Validform.min.js"></script>
+<script type="text/javascript" src="__LIB__/showdown/1.4.2/showdown.min.js"></script>
+<script>window.UEDITOR_HOME_URL = '__LIB__/ueditor/1.4.3/'</script>
+<script type="text/javascript" charset="utf-8" src="__LIB__/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__LIB__/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="__LIB__/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script>
+    $(function () {
+		var ue = UE.getEditor('container',{
+            //serverUrl:'{:\\think\\Url::build("Ueditor/index")}',
+			//autoClearinitialContent: true,
+            //wordCount: false,
+            //elementPathEnabled: false,
+            //autoFloatEnabled: false,
+
+            initialContent: '{:htmlspecialchars_decode($vo.content)}'
+        });
+
+        $('.skin-minimal input').iCheck({
+            checkboxClass: 'icheckbox-blue',
+            radioClass: 'iradio-blue',
+            increaseArea: '20%'
+        });
+		$("#form").Validform({
+            tiptype: 2,
+            ajaxPost: true,
+            showAllError: true,
+            callback: function (ret){
+                ajax_progress(ret);
+            }
+        });
+
+
+
+        //当选择图片后，利用ajax实现图片单上传
+        $('#picture').change(function(){
+            file =  $('#picture')[0].files;
+            var formData = new FormData();
+
+            formData.append("myfile",file[0]); //上传一张图片
+
+            $.ajax({
+                type:'post',//选择post方式提交
+                url:'{:url("TrainingAddcourse/upload")}',//将数据提交的页面
+                contentType: false,
+                processData: false,
+                data:formData, //传值
+                success: function(data)
+                {
+
+                    //alert(data);return false; //传回来的data表示当前上传图片的路径
+
+                    $('#show').html(''); //清除所有内容
+                    //开始显示上传的图片
+                    $('#show').append('<img src=__ROOT__"'+data+'" height="60px" style="border-radius:2px;margin-top:10px;margin-right:5px">');
+
+
+                    $('#path').val(data);  //保存该上传图片的路径
+
+
+                }
+            })
+        });
+
+
+
+    });
+	window.onresize = function(){
+		var ue = UE.getEditor('container',{
+            serverUrl:'{:\\think\\Url::build("Ueditor/index")}',
+			//autoClearinitialContent: true,
+            //wordCount: false,
+            //elementPathEnabled: false,
+            //autoFloatEnabled: false,
+
+            initialContent: '{:htmlspecialchars_decode($vo.content)}'
+        });
+	}
+</script>
+
+{/block}

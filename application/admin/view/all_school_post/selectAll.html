@@ -1,0 +1,77 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    <style type="text/css">
+    .d-n{display: none;}
+    .content{color: #555;line-height:2;font-size: 16px;background: #f5f5f5;margin:20px 0}
+	.content>ul{padding:15px 15px 30px;text-indent:0}
+    .content>ul>li{background: #fff;padding:0 10px 10px;margin-top: 15px}
+    .content>ul>li>span{margin-top:15px;color:#999}
+    .content>ul>li p{margin: 0;text-align: left;padding: 0 15px}
+	.content>ul>li img{width:20%;margin:15px auto;display: block}
+    .content>ul h1{font-size: 20px;border-bottom:1px dashed #ddd;}
+    .content>ul .shen-he{overflow: hidden;color: #999}
+    .title-w{border: 1px solid #3c9;font-size: 14px;color: #3c9;padding:1px 5px;margin-top: -10px;margin-left: 10px;border-radius:5px}
+	</style>
+	<div class="col-md-2"></div>
+	<div class="col-md-8 content">
+	    <ul>
+	    	{volist name="all3" id="vo"}
+			<li>
+	    		<span class="f-r">{$vo.release_time}</span>
+	    		<h1>{$vo.title|htmlspecialchars_decode}<span class="title-w">{$vo.plate_name}</span></h1>
+	    		<p class="cut_str">{$vo.content|htmlspecialchars_decode}</p>
+
+				<!--若查询的是未审核-->
+				<!--{if condition="$isqualified eq 0"}-->
+				    <!--<div class="shen-he js-noresult">-->
+						<!--未审核-->
+					<!--</div>-->
+				<!--{/if}-->
+                <?php
+                    if($vo['isqualified'] == 0)
+                    {
+                ?>
+					  <div class="shen-he js-noresult">
+						  <a href="{:url('AllSchoolPost/select',array('id'=>$vo.id))}" style="color: #148cf1">未审核</a>
+					  </div>
+				<?php
+
+                    }
+
+                ?>
+
+
+				<!--若查询的是合格-->
+				{if condition="$isqualified eq 1"}
+				    <div class="shen-he js-result"><span class="f-r">审核人员：{$vo.assessor}</span></div>
+				{/if}
+				<!--若查询的是不合格-->
+				<!--{if condition="$isqualified eq 2"}-->
+				    <!--<div class="shen-he js-result"><span class="js-result-no">未通过理由：{$vo.reason}</span><span class="f-r">审核人员：{$vo.assessor}</span></div>-->
+				<!--{/if}-->
+
+			</li>
+			{/volist}
+
+	    	
+	    </ul>
+	</div> 
+	<div class="col-md-2"></div>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript">
+	$(document).ready(function(){
+		//限制字符个数
+		$(".cut_str").each(function(){
+			var maxwidth=100;
+			if($(this).text().length>maxwidth){
+				$(this).text($(this).text().substring(0,maxwidth));
+				$(this).html($(this).html()+'...');
+			}
+		});
+
+	});
+</script>
+{/block}

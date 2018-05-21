@@ -1,0 +1,25 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.schoolName|high_light=$Request.param.schoolName}</td>
+<td>{$vo.one_level}{$vo.two_level}</td>
+<td>{$vo.schoolAccount|high_light=$Request.param.schoolAccount}</td>
+<td>{$vo.number}</td>
+<td>{$vo.regNumber}</td>
+<td>{$vo.corporation}</td>
+<td>{$vo.address}</td>
+<td>
+	<a href="{$vo.business_license}"><img src="{$vo.business_license}"></a>
+	<a href="{$vo.authorization}"><img src="{$vo.authorization}"></a>
+	{if condition="$vo.isRealName eq 0"}
+        <a id="info{$vo.id}" href="javascript:;"  onclick="isRealName({$vo.id})"  style="color: #148cf1">未实名</a>
+    {/if}
+    {if condition="$vo.isRealName eq 1"}
+        <a id="info{$vo.id}" href="javascript:;" onclick="isRealName({$vo.id})"  style="color: #148cf1">已实名</a>
+    {/if}
+</td>
+<td>{if condition="$vo.isGuarantee eq 0"}
+        <a id="info1{$vo.id}" href="javascript:;"  onclick="isGuarantee({$vo.id})"  style="color: #148cf1">未担保</a>
+    {/if}
+    {if condition="$vo.isGuarantee eq 1"}
+        <a id="info1{$vo.id}" href="javascript:;" onclick="isGuarantee({$vo.id})"  style="color: #148cf1">已担保</a>
+    {/if}</td>

@@ -1,0 +1,1685 @@
+[ 2018-04-15T00:22:16+08:00 ] 0.0.0.0 180.149.130.151 GET /admin/pub/login.html
+[ log ] yeyap.com/admin/pub/login.html [运行时间：0.394272s][吞吐率：2.54req/s] [内存消耗：4,656.55kb] [文件加载：68]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/pub/login.html',
+  'x-forwarded-for' => '117.32.216.54, 10.128.88.19',
+  'user-agent' => 'Mozilla/5.0 (iphone; U; CPU iPhone OS 4_3_5 like Mac OS X; zh-cn) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-cn,zh;q=0.5,*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.075869s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.108874s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001468s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.021590s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '180.149.130.151' , '中国 北京 北京 ' , 'Mac' , 'Safari(6533.18.5)' , 'http://yeyap.com/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1523722936) [ RunTime:0.000733s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:22:17+08:00 ] 0.0.0.0 61.135.169.55 GET /captcha.html
+[ log ] yeyap.com/captcha.html [运行时间：0.073306s][吞吐率：13.64req/s] [内存消耗：1,134.77kb] [文件加载：41]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/captcha.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1; rv:8.0.1) Gecko/20100101 Firefox/8.0.1',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'en-US,*',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\wwwroot\AMS\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T00:22:18+08:00 ] 0.0.0.0 117.32.216.54 GET /admin/pub/login.html
+[ log ] yeyap.com/admin/pub/login.html [运行时间：0.080612s][吞吐率：12.41req/s] [内存消耗：4,658.29kb] [文件加载：68]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/pub/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'https://www.baidu.com/from=844b/bd_page_type=1/ssid=b99430333032b2dcb0ebcfc9176d/uid=0/pu=usm%401%2Csz%401320_2001%2Cta%40iphone_1_11.3_3_605/baiduid=4EAC2E760970930B3F24F2A674CC8566/w=0_10_/t=iphone/l=3/tc?ref=www_iphone&lid=8336378012839278279&order=6&fm=alop&tj=www_normal_6_0_10_title&vit=osres&m=8&srd=1&cltj=cloud_title&asres=1&title=%E5%90%8E%E5%8F%B0%E7%99%BB%E5%BD%95-%E6%A0%A1%E5%9B%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F&dict=32&wd=&eqid=73b0c3a278a97800100000015ad22aa7&w_qd=IlPT2AEptyoA_ykzx41ctuiu45RSmW5ntjkYif8Tr4gtLOg5KChcy7a&tcplug=1&sec=29056&di=b15c4e0d303875cf&bdenc=1&tch=124.99.55.1441.1.19281639&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IDx31ND9K1TWz7JuVefTiGNgfEFXfRXnTUS4-u7WHfw2NhCn8&clk_info=%7B%22srcid%22%3A1599%2C%22tplname%22%3A%22www_normal%22%2C%22t%22%3A1523722935665%2C%22xpath%22%3A%22div-a-h3%22%7D&sfOpen=1',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005671s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.050372s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002971s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.020879s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1523722938) [ RunTime:0.019882s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:22:19+08:00 ] 0.0.0.0 117.32.216.54 GET /captcha.html
+[ log ] yeyap.com/captcha.html [运行时间：0.018520s][吞吐率：54.00req/s] [内存消耗：1,135.05kb] [文件加载：41]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/captcha.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\wwwroot\AMS\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T00:22:49+08:00 ] 0.0.0.0 117.32.216.54 POST /admin/pub/checklogin.html
+[ log ] yeyap.com/admin/pub/checklogin.html [运行时间：0.111524s][吞吐率：8.97req/s] [内存消耗：4,713.59kb] [文件加载：70]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'checklogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '43',
+  'x-original-url' => '/admin/pub/checklogin.html',
+  'origin' => 'http://yeyap.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'account' => '123456',
+  'password' => '123456',
+  'captcha' => 'd8bu',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005398s ]
+[ info ] [ RUN ] app\admin\controller\Pub->checkLogin[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.015673s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000875s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.023886s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `account` = '123456'  AND `status` = 1 LIMIT 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.014097s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/pub/checklogin.html' , 'admin' , 'Pub' , 'checklogin' , 'POST' , 'a:3:{s:7:\"account\";s:6:\"123456\";s:8:\"password\";s:6:\"123456\";s:7:\"captcha\";s:4:\"d8bu\";}' , 1523722969) [ RunTime:0.000611s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:22:58+08:00 ] 0.0.0.0 117.32.216.54 POST /admin/pub/checklogin.html
+[ log ] yeyap.com/admin/pub/checklogin.html [运行时间：0.054055s][吞吐率：18.50req/s] [内存消耗：4,677.61kb] [文件加载：69]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'checklogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '42',
+  'x-original-url' => '/admin/pub/checklogin.html',
+  'origin' => 'http://yeyap.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+  'captcha' => 'd8bu',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005227s ]
+[ info ] [ RUN ] app\admin\controller\Pub->checkLogin[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.026422s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001055s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.018670s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/pub/checklogin.html' , 'admin' , 'Pub' , 'checklogin' , 'POST' , 'a:3:{s:7:\"account\";s:5:\"admin\";s:8:\"password\";s:6:\"123456\";s:7:\"captcha\";s:4:\"d8bu\";}' , 1523722978) [ RunTime:0.000580s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:22:59+08:00 ] 0.0.0.0 117.32.216.54 GET /captcha.html?t=1523722979047
+[ log ] yeyap.com/captcha.html?t=1523722979047 [运行时间：0.024000s][吞吐率：41.67req/s] [内存消耗：1,135.22kb] [文件加载：41]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/captcha.html?t=1523722979047',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  't' => '1523722979047',
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\wwwroot\AMS\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T00:23:07+08:00 ] 0.0.0.0 117.32.216.54 POST /admin/pub/checklogin.html
+[ log ] yeyap.com/admin/pub/checklogin.html [运行时间：0.338194s][吞吐率：2.96req/s] [内存消耗：4,788.65kb] [文件加载：73]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'checklogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '42',
+  'x-original-url' => '/admin/pub/checklogin.html',
+  'origin' => 'http://yeyap.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+  'captcha' => 'un3a',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005240s ]
+[ info ] [ RUN ] app\admin\controller\Pub->checkLogin[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.014809s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000875s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.022102s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `account` = 'admin'  AND `status` = 1 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.018232s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_school_management` WHERE  `schoolID` = 'admin'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000652s ]
+[ sql ] [ SQL ] UPDATE `tp_admin_user`  SET `last_login_time`=1523722987,`login_count`=login_count+1,`last_login_ip`='117.32.216.54'  WHERE  `id` = 1 [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.178870s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `login_ip` , `login_location` , `login_browser` , `login_os`) VALUES (1 , '117.32.216.54' , '中国 陕西 西安 ' , 'Safari(604.1)' , 'Mac') [ RunTime:0.011948s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.013409s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/pub/checklogin.html' , 'admin' , 'Pub' , 'checklogin' , 'POST' , 'a:3:{s:7:\"account\";s:5:\"admin\";s:8:\"password\";s:6:\"123456\";s:7:\"captcha\";s:4:\"un3a\";}' , 1523722987) [ RunTime:0.000563s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:23:12+08:00 ] 0.0.0.0 117.32.216.54 GET /admin/index/index.html
+[ log ] yeyap.com/admin/index/index.html [运行时间：0.282543s][吞吐率：3.54req/s] [内存消耗：4,858.65kb] [文件加载：71]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/index/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006042s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wwwroot\AMS\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+  2 => 'num',
+  3 => 'number',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.017862s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000931s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.024093s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type`,`sort` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) ORDER BY group_id,pid,sort,id desc [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.018141s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.015769s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.001090s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mailbox` [ RunTime:0.017972s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mailbox` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_leave` [ RunTime:0.020030s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_leave` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.016274s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/index/index.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1523722992) [ RunTime:0.000639s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:23:12+08:00 ] 0.0.0.0 117.32.216.54 GET /admin/index/welcome.html
+[ log ] yeyap.com/admin/index/welcome.html [运行时间：0.088204s][吞吐率：11.34req/s] [内存消耗：4,697.66kb] [文件加载：69]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/index/welcome.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005355s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ C:\wwwroot\AMS\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.013559s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000880s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.011424s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.012089s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1523722992) [ RunTime:0.000570s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:24:39+08:00 ] 0.0.0.0 117.32.216.54 GET /admin/student_management/index.html
+[ log ] yeyap.com/admin/student_management/index.html [运行时间：0.446160s][吞吐率：2.24req/s] [内存消耗：4,997.63kb] [文件加载：73]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'student_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/student_management/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007960s ]
+[ info ] [ RUN ] app\admin\controller\StudentManagement->index[ C:\wwwroot\AMS\application\admin\controller\StudentManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\student_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'schoolName',
+  5 => 'className',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.015294s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000835s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_management` [ RunTime:0.080506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.014644s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.072832s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000965s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `schoolName` FROM `tp_student_management` WHERE  `isdelete` = 0 [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `className` FROM `tp_student_management` WHERE  `isdelete` = 0 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.013901s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/student_management/index.html' , 'admin' , 'StudentManagement' , 'index' , 'GET' , 'a:0:{}' , 1523723079) [ RunTime:0.000572s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:24:40+08:00 ] 0.0.0.0 117.32.216.54 GET /uploads/file/033fc20efb497505073ed7ff96f84088.png
+[ log ] yeyap.com/uploads/file/033fc20efb497505073ed7ff96f84088.png [运行时间：0.082446s][吞吐率：12.13req/s] [内存消耗：1,109.47kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '033fc20efb497505073ed7ff96f84088.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/033fc20efb497505073ed7ff96f84088.png',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/student_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T00:24:40+08:00 ] 0.0.0.0 117.32.216.54 GET /uploads/file/20180228/uplodImage1519807013.png
+[ log ] yeyap.com/uploads/file/20180228/uplodImage1519807013.png [运行时间：0.018079s][吞吐率：55.31req/s] [内存消耗：1,109.36kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '20180228',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/20180228/uplodImage1519807013.png',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/student_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T00:24:40+08:00 ] 0.0.0.0 117.32.216.54 GET /uploads/file/20180228/uplodImage1519804036.png
+[ log ] yeyap.com/uploads/file/20180228/uplodImage1519804036.png [运行时间：0.017511s][吞吐率：57.11req/s] [内存消耗：1,109.36kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '20180228',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/20180228/uplodImage1519804036.png',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/student_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T00:24:40+08:00 ] 0.0.0.0 117.32.216.54 GET /uploads/file/20180319/IMG20180319201648.jpg
+[ log ] yeyap.com/uploads/file/20180319/IMG20180319201648.jpg [运行时间：0.022812s][吞吐率：43.84req/s] [内存消耗：1,109.33kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '20180319',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/20180319/IMG20180319201648.jpg',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/student_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T00:24:53+08:00 ] 0.0.0.0 117.32.216.54 GET /admin/student_management/index.html?schoolName=%E5%90%88%E8%82%A5%E5%B9%BC%E5%84%BF%E5%9B%AD&className=%E5%A4%A71&account=&name=&sex=%E7%94%B7&parentName=&relation=%E7%88%B7%E7%88%B7&contact=
+[ log ] yeyap.com/admin/student_management/index.html?schoolName=%E5%90%88%E8%82%A5%E5%B9%BC%E5%84%BF%E5%9B%AD&className=%E5%A4%A71&account=&name=&sex=%E7%94%B7&parentName=&relation=%E7%88%B7%E7%88%B7&contact= [运行时间：0.122017s][吞吐率：8.20req/s] [内存消耗：4,967.66kb] [文件加载：73]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'student_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/student_management/index.html?schoolName=%E5%90%88%E8%82%A5%E5%B9%BC%E5%84%BF%E5%9B%AD&className=%E5%A4%A71&account=&name=&sex=%E7%94%B7&parentName=&relation=%E7%88%B7%E7%88%B7&contact=',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/student_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'schoolName' => '合肥幼儿园',
+  'className' => '大1',
+  'account' => '',
+  'name' => '',
+  'sex' => '男',
+  'parentName' => '',
+  'relation' => '爷爷',
+  'contact' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.011599s ]
+[ info ] [ RUN ] app\admin\controller\StudentManagement->index[ C:\wwwroot\AMS\application\admin\controller\StudentManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\student_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'schoolName',
+  5 => 'className',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.030499s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001386s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_student_management` [ RunTime:0.019849s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.014115s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_student_management` WHERE  `schoolName` = '合肥幼儿园'  AND `className` = '大1'  AND `sex` = '男'  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_student_management` WHERE  `schoolName` = '合肥幼儿园'  AND `className` = '大1'  AND `sex` = '男'  AND `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `schoolName` FROM `tp_student_management` WHERE  `isdelete` = 0 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `className` FROM `tp_student_management` WHERE  `isdelete` = 0 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.028493s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/student_management/index.html?schoolName=%E5%90%88%E8%82%A5%E5%B9%BC%E5%84%BF%E5%9B%AD&className=%E5%A4%A71&account=&name=&sex=%E7%94%B7&parentName=&relation=%E7%88%B7%E7%88%B7&contact=' , 'admin' , 'StudentManagement' , 'index' , 'GET' , 'a:8:{s:10:\"schoolName\";s:15:\"合肥幼儿园\";s:9:\"className\";s:4:\"大1\";s:7:\"account\";s:0:\"\";s:4:\"name\";s:0:\"\";s:3:\"sex\";s:3:\"男\";s:10:\"parentName\";s:0:\"\";s:8:\"relation\";s:6:\"爷爷\";s:7:\"contact\";s:0:\"\";}' , 1523723093) [ RunTime:0.001111s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:25:01+08:00 ] 0.0.0.0 117.32.216.54 GET /admin/employee_management/index.html
+[ log ] yeyap.com/admin/employee_management/index.html [运行时间：0.266555s][吞吐率：3.75req/s] [内存消耗：4,977.94kb] [文件加载：73]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/employee_management/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005676s ]
+[ info ] [ RUN ] app\admin\controller\EmployeeManagement->index[ C:\wwwroot\AMS\application\admin\controller\EmployeeManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\employee_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'schoolName',
+  5 => 'divisionName',
+  6 => 'className',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.020644s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002805s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.035447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.015489s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_employee_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.002182s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT `type`,`realname`,`account` FROM `tp_admin_user` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `schoolName` FROM `tp_employee_management` WHERE  `isdelete` = 0 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `divisionName` FROM `tp_employee_management` WHERE  `isdelete` = 0 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `className` FROM `tp_employee_management` WHERE  `isdelete` = 0 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.019128s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/employee_management/index.html' , 'admin' , 'EmployeeManagement' , 'index' , 'GET' , 'a:0:{}' , 1523723101) [ RunTime:0.000639s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:25:01+08:00 ] 0.0.0.0 117.32.216.54 GET /uploads/file/033fc20efb497505073ed7ff96f84088.png
+[ log ] yeyap.com/uploads/file/033fc20efb497505073ed7ff96f84088.png [运行时间：0.019937s][吞吐率：50.16req/s] [内存消耗：1,109.44kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '033fc20efb497505073ed7ff96f84088.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/033fc20efb497505073ed7ff96f84088.png',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/employee_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T00:25:01+08:00 ] 0.0.0.0 117.32.216.54 GET /uploads/file/20180108/1515394602.jpeg
+[ log ] yeyap.com/uploads/file/20180108/1515394602.jpeg [运行时间：0.019283s][吞吐率：51.86req/s] [内存消耗：1,109.41kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'file',
+    2 => '20180108',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/uploads/file/20180108/1515394602.jpeg',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/employee_management/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T00:25:14+08:00 ] 0.0.0.0 117.32.216.54 GET /admin/all_school/index.html
+[ log ] yeyap.com/admin/all_school/index.html [运行时间：0.311277s][吞吐率：3.21req/s] [内存消耗：4,916.67kb] [文件加载：73]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'all_school',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/all_school/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005338s ]
+[ info ] [ RUN ] app\admin\controller\AllSchool->index[ C:\wwwroot\AMS\application\admin\controller\AllSchool.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\all_school\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.018687s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000853s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_all_school` [ RunTime:0.026250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.017188s ]
+[ sql ] [ SQL ] SELECT `type`,`realname` FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_all_school` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.084207s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_all_school` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.010693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.017242s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/all_school/index.html' , 'admin' , 'AllSchool' , 'index' , 'GET' , 'a:0:{}' , 1523723113) [ RunTime:0.000594s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:25:24+08:00 ] 0.0.0.0 117.32.216.54 GET /admin/company_information/index.html
+[ log ] yeyap.com/admin/company_information/index.html [运行时间：0.252854s][吞吐率：3.95req/s] [内存消耗：4,843.90kb] [文件加载：73]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_information',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/company_information/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005372s ]
+[ info ] [ RUN ] app\admin\controller\CompanyInformation->index[ C:\wwwroot\AMS\application\admin\controller\CompanyInformation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\company_information\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.019124s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002662s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_information` [ RunTime:0.022608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.014119s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_information` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_information` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.017405s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/company_information/index.html' , 'admin' , 'CompanyInformation' , 'index' , 'GET' , 'a:0:{}' , 1523723123) [ RunTime:0.000779s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:25:28+08:00 ] 0.0.0.0 117.32.216.54 GET /admin/index/index.html
+[ log ] yeyap.com/admin/index/index.html [运行时间：0.200635s][吞吐率：4.98req/s] [内存消耗：4,858.65kb] [文件加载：71]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/index/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007363s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wwwroot\AMS\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+  2 => 'num',
+  3 => 'number',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ C:\wwwroot\AMS\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.022600s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004216s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.024421s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type`,`sort` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) ORDER BY group_id,pid,sort,id desc [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.020249s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.018985s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mailbox` [ RunTime:0.018708s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mailbox` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_leave` [ RunTime:0.025930s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_leave` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.020591s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/index/index.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1523723128) [ RunTime:0.000814s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:25:29+08:00 ] 0.0.0.0 117.32.216.54 GET /admin/index/welcome.html
+[ log ] yeyap.com/admin/index/welcome.html [运行时间：0.075098s][吞吐率：13.32req/s] [内存消耗：4,697.66kb] [文件加载：69]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/index/welcome.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://yeyap.com/admin/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=iaejhsuhqihlo554hp3v1j7551',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005227s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ C:\wwwroot\AMS\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.016088s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000828s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.021708s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.014656s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '117.32.216.54' , '中国 陕西 西安 ' , 'Mac' , 'Safari(604.1)' , 'http://yeyap.com/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1523723129) [ RunTime:0.000590s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T00:33:51+08:00 ] 0.0.0.0 220.181.108.147 GET /admin/pub/login.html
+[ log ] yeyap.com/admin/pub/login.html [运行时间：0.159930s][吞吐率：6.25req/s] [内存消耗：4,656.41kb] [文件加载：68]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/pub/login.html',
+  'user-agent' => 'Mozilla/5.0 (Linux;u;Android 4.2.2;zh-cn;) AppleWebKit/534.46 (KHTML,like Gecko) Version/5.1 Mobile Safari/10600.6.3 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'if-none-match' => '"@NULL@"',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-cn,zh-tw',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.010092s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.120376s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001429s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.022483s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '220.181.108.147' , '中国 北京 北京 ' , 'Linux' , 'Safari(10600.6.3)' , 'http://yeyap.com/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1523723630) [ RunTime:0.089161s ]
+
+---------------------------------------------------------------
+[ 2018-04-15T03:31:04+08:00 ] 0.0.0.0 207.46.13.59 GET /
+[ log ] www.yeyap.com/ [运行时间：0.029361s][吞吐率：34.06req/s] [内存消耗：1,404.50kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)',
+  'host' => 'www.yeyap.com',
+  'from' => 'bingbot(at)microsoft.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'pragma' => 'no-cache',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T05:50:25+08:00 ] 0.0.0.0 106.11.227.2 GET /
+[ log ] yeyap.com/ [运行时间：0.027966s][吞吐率：35.76req/s] [内存消耗：1,404.38kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T07:08:57+08:00 ] 0.0.0.0 106.11.154.245 GET /
+[ log ] www.yeyap.com/ [运行时间：0.029157s][吞吐率：34.30req/s] [内存消耗：1,403.91kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'YisouSpider',
+  'host' => 'www.yeyap.com',
+  'accept-language' => 'zh-cn,en-us,zh-tw,en-gb,en;',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T07:36:22+08:00 ] 0.0.0.0 47.100.104.184 GET /index/parentlogin/index.html
+[ log ] yeyap.com/index/parentlogin/index.html [运行时间：0.025809s][吞吐率：38.75req/s] [内存消耗：1,401.79kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'parentlogin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/parentlogin/index.html',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'yeyap.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Parentlogin->index[ C:\wwwroot\AMS\application\index\controller\Parentlogin.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\parentlogin\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T09:03:02+08:00 ] 0.0.0.0 123.125.71.107 GET /
+[ log ] yeyap.com/ [运行时间：0.029525s][吞吐率：33.87req/s] [内存消耗：1,404.22kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'if-none-match' => '"@NULL@"',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-cn,zh-tw',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T09:03:03+08:00 ] 0.0.0.0 111.206.221.38 GET /static/index/css/reset.css
+[ log ] yeyap.com/static/index/css/reset.css [运行时间：0.019593s][吞吐率：51.04req/s] [内存消耗：1,109.28kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/reset.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => 'db8e5cc6-9a98-495f-ab5f-9de35c50d6cd',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T09:03:08+08:00 ] 0.0.0.0 111.206.198.44 GET /static/index/css/reset.css
+[ log ] yeyap.com/static/index/css/reset.css [运行时间：0.017300s][吞吐率：57.80req/s] [内存消耗：1,109.38kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/reset.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => '4632cb09-3dab-4c2d-a2b5-fa5efa175c8c',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T10:25:15+08:00 ] 0.0.0.0 54.202.83.73 GET /wp-login.php
+[ log ] yeyap.com/wp-login.php [运行时间：0.021929s][吞吐率：45.60req/s] [内存消耗：1,108.44kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-login.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/wp-login.php',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.2; rv:29.0) Gecko/20120101 Firefox/29.0',
+  'referer' => 'https://google.com',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T16:50:44+08:00 ] 0.0.0.0 207.46.13.59 GET /
+[ log ] www.yeyap.com/ [运行时间：0.041303s][吞吐率：24.21req/s] [内存消耗：1,404.50kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)',
+  'host' => 'www.yeyap.com',
+  'from' => 'bingbot(at)microsoft.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'pragma' => 'no-cache',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T18:06:21+08:00 ] 0.0.0.0 106.11.227.110 GET /
+[ log ] www.yeyap.com/ [运行时间：0.444307s][吞吐率：2.25req/s] [内存消耗：1,404.38kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'host' => 'www.yeyap.com',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T20:05:05+08:00 ] 0.0.0.0 207.46.13.59 GET /
+[ log ] yeyap.com/ [运行时间：0.028285s][吞吐率：35.35req/s] [内存消耗：1,404.50kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)',
+  'host' => 'yeyap.com',
+  'from' => 'bingbot(at)microsoft.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'pragma' => 'no-cache',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-15T20:10:18+08:00 ] 0.0.0.0 112.28.183.37 POST /index/indexapi/index
+[ log ] yeyap.com/index/indexapi/index [运行时间：0.136179s][吞吐率：7.34req/s] [内存消耗：1,922.00kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '101',
+  'x-original-url' => '/index/indexapi/index',
+  'user-agent' => 'PaiZhi/1.0 (iPhone; iOS 10.1.1; Scale/2.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'city' => '合肥市',
+  'token' => '85c587d7e8b65cba1521d336cf96d437',
+  'user_id' => 'Ea5GpyI2n452N3R10454N',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->index[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002301s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.025489s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = 'Ea5GpyI2n452N3R10454N'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000818s ]
+
+---------------------------------------------------------------

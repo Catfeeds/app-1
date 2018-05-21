@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>个人信息</title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script src="__STATIC__/js/rem.js"></script>
+    <style>
+    #logox,
+    #logox1 {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        top: 25px;
+        right: 100px;
+        border: 1px solid #ccc;
+		background:url(__STATIC__/img/sc.png) center center no-repeat;
+		background-size:100%;
+    }
+
+    #logox img,
+    #logox1 img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-height: 100px;
+        width: 100%;
+    }
+
+    .htmleaf-container {
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background: #fff;
+        display: none;
+        z-index: 9999999;
+    }
+
+    #clipArea,
+    #clipArea1 {
+        height: 90%;
+    }
+
+    .foot-use {
+        background: #fff;
+        height: 10%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .uploader1 {
+        position: absolute;
+        width: 110px;
+        height: 8rem;
+        cursor: default;
+        height: 100%;
+        float: left;
+    }
+
+    .blue .button {
+        color: #fff;
+        background: #18b4ed;
+        height: 100%;
+        width: 1rem;
+        font-size: 14px;
+    }
+
+    #file,
+    #file1 {
+        float: left;
+        height: 100%;
+        width: 110px;
+    }
+
+    .uploader1 input[type=file] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        height: 0.24rem;
+        width: 50%;
+        cursor: pointer;
+        border: solid 1px #ddd;
+        opacity: 0;
+    }
+
+    #clipBtn,
+    #clipBtn1 {
+        float: right;
+        height: 100%;
+        width: 1rem;
+        background: #18b4ed;
+        border: 0;
+        outline: none;
+        color: #fff;
+        font-size: 0.12rem;
+        z-index: 999;
+        position: relative;
+    }
+
+    .sc_img {
+        overflow: hidden;
+        padding: 0 0 50px 0;
+        position: relative;
+    }
+    .sc_img1 {
+        padding: 0.12rem;
+    }
+    .sc_img1 img{
+        width:100%;
+    }
+    </style>
+    <!--检查宝宝联系人电话和密码是否为空-->
+    <script type="text/javascript">
+    function check() {
+        if (form.name.value == '') {
+            alert('请输入联系人姓名！');
+            return false;
+        }
+        if (form.number.value == '') {
+            alert('请输入联系人电话！');
+            return false;
+        }
+        if (form.face_file_ids.value == '') {
+            alert('请输入上传图片！');
+            return false;
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- 宝宝图像上传显示 -->
+    <article class="htmleaf-container htmleaf-container1">
+        <div id="clipArea"></div>
+        <div class="foot-use">
+        
+            <div class="uploader1 blue">
+                <input type="button" name="file" class="button" value="打开"/>
+                <input id="file" type="file" accept="image/*" multiple name="file"/>
+            </div>
+            <button  id="clipBtn">截取</button>
+       
+        </div>
+        <div id="view"></div>
+    </article>
+    <!-- =联系人图像上传显示 -->
+    <article class="htmleaf-container htmleaf-container2">
+        <div id="clipArea1"></div>
+        <div class="foot-use">
+            <div class="uploader1 blue">
+                <input type="button" name="file" class="button" value="打开" />
+                <input id="file1" type="file" accept="image/*" multiple />
+            </div>
+            <button id="clipBtn1">截取</button>
+        </div>
+        <div id="view1"></div>
+    </article>
+    <div id="wrap">
+        <header class="header header1">
+            <a href="javascript:;" onclick="history.go(-1)" class="back back1"></a> 邀请{$relation}
+        </header>
+        <form id="form" name="form" method="post" action="{:url('Invite/index')}" enctype="multipart/form-data">
+            
+            <div class="line_bgw"></div>
+            <div class="nc_edit clearfix">
+                <span class="fl">{$relation}姓名:</span>
+                <input type="text" value="{$relationinfo['name']}" name="name" class="fl">
+            </div>
+            <div class="line_bgw"></div>
+            <div class="nc_edit clearfix">
+                <span class="fl">{$relation}电话:</span>
+                <input type="text" value="{$relationinfo['number']}" name="number" class="fl">
+            </div>
+            <div class="line_bgw"></div>
+          
+            <div class="sc_img">
+                <div>
+                    <span style="font-size: 0.15rem;width: 55%;float: left;margin-left: 18px;margin-top:80px;">头像采集:</span>
+                    <div class="fr" id="logox">
+                        <!-- <img src="__STATIC__/../../uploads/file/"/> -->
+                    </div>
+                </div>
+            </div>
+            <div class="line_bgw"></div>
+            <div class="sc_img1">
+                <?php if(!empty($name)){?>
+                   <img src="{$name}"/> 
+                <?php } ?>
+             </div>
+    </div>
+            <input type="hidden" name="face_file_ids" value="" id="imageid">
+            <input type="hidden" name="studentLinkman_id" value="{$relationinfo['id']}" >
+            <input type="hidden" name="student_id" value="{$student_id}" >
+            <input type="hidden" name="relation" value="{$relation}" >
+
+            <!--<a href="javascript:;" class="save">保存</a>-->
+            <input type="submit" value="保存" class="save" onclick="return check()" />
+        </form>
+    </div>
+    <script src="__STATIC__/js/iscroll-zoom.js"></script>
+    <script src="__STATIC__/js/hammer.js"></script>
+    <script src="__STATIC__/js/jquery.photoClip.js"></script>
+    <script>
+    var obUrl = ''
+    //document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    $("#clipArea").photoClip({
+        width:250,
+        height:255,
+        file: "#file",
+        view: "#view",
+        ok: "#clipBtn",
+     
+        loadStart: function() {
+            // console.log("照片读取中");
+        },
+        loadComplete: function() {
+            // console.log("照片读取完成");
+        },
+        clipFinish: function(dataURL) {
+            $.ajax({ 
+            url:"{:url('invite/base')}", 
+            data:{str:dataURL}, 
+            type:'post', 
+            success:function(d){
+               console.log(d);
+               $('#imageid').val(d);
+            }
+         }) 
+        }
+    });
+
+    $("#logox").click(function() {
+        $(".htmleaf-container1").show();
+    })
+    $("#clipBtn").click(function() {
+        $("#logox").empty();
+        $('#logox').append('<img src="' + imgsource + '" align="absmiddle">');
+        $(".htmleaf-container1").hide();
+    })
+    </script>
+    <script>
+    var obUrl = ''
+    //document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    $("#clipArea1").photoClip({
+        width: 90,
+        height: 90,
+        file: "#file1",
+        view: "#view1",
+        ok: "#clipBtn1",
+   
+        loadStart: function() {
+            // console.log("照片读取中");
+        },
+        loadComplete: function() {
+            // console.log("照片读取完成");
+        },
+        clipFinish: function(dataURL) {
+            $.ajax({ 
+            url:"{:url('Modifyinformation/base')}", 
+            data:{str:dataURL,linkman:1}, 
+            type:'post', 
+            success:function(d){
+             $('#imageid').val(d);
+            // $('#logox1').append('<img src="' + imgsource + '" align="absmiddle">');
+            //  console.log(d);
+            }
+         }) 
+        }
+    });
+
+    $("#logox1").click(function() {
+        $(".htmleaf-container2").show();
+    })
+    $("#clipBtn1").click(function() {
+        $("#logox1").empty();
+     //   $('#logox1').append('<img src="' + imgsource + '" align="absmiddle">');
+        $(".htmleaf-container2").hide();
+    })
+    </script>
+	
+
+</body>
+
+</html>

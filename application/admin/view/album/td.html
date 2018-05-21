@@ -1,0 +1,26 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.release}</td>
+
+<td>{$vo.schoolName}</td>
+<td>{$vo.className}</td>
+<td>{$vo.title}</td>
+<td>
+
+    <?php
+        $arrImg = json_decode($vo['images']);
+        foreach($arrImg as $value)
+        {
+    ?>
+           <img src="__ROOT__{$value}" height="40">
+
+    <?php
+           break;
+        }
+    ?>
+</td>
+
+<td>{$vo.release_time}</td>
+
+<!--<td>内容省略</td>-->
+<td>{$vo.label|high_light=$Request.param.label}</td>

@@ -1,0 +1,16 @@
+<form class="mb-20" method="post" action="{:\\think\\Url::build($Request.action)}">
+
+
+    <div class="select-box" style="width:250px">
+        <select name="isqualified" class="select" datatype="*" nullmsg="请选择审核结果" >
+            <option value ="0">未审核</option>
+            <option value ="1">合格</option>
+        </select>
+    </div>
+
+
+    <!--<input type="text" class="input-text" style="width:250px" placeholder="标题" name="title" value="{$Request.param.title}" >-->
+    <!--<input type="text" class="input-text Wdate" style="width:250px" placeholder="发布时间" name="release_time" value="{$Request.param.release_time}" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal} >-->
+    <!--<input type="text" class="input-text" style="width:250px" placeholder="类型" name="type" value="{$Request.param.type}" >-->
+    <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+</form>

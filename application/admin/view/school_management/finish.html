@@ -1,0 +1,61 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+	<form class="form" id="form" method="post" action="">
+    <div class="row cl">
+    	<div class="col-xs-3 col-sm-3"></div>
+    	<div class="col-xs-6 col-sm-6">
+			<ul class="pay-step row cl">
+				<li class="col-xs-4 col-sm-4">1. 填写预招人数信息</li>
+				<li class="col-xs-4 col-sm-4">2. 确认并支付</li>
+				<li class="col-xs-4 col-sm-4">3. 完成</li>
+			</ul>
+			<div class="row cl pay-content">
+				<p class="f-16 c-success"><strong>支付成功！</strong></p>
+			</div>
+			<a href="{:url('Index/index')}" class="btn btn-primary radius f-r mt-20">点击返回首页</a>
+    	</div>
+    	<div class="col-xs-3 col-sm-3"></div>
+    </div>
+    </form>
+</div>
+<style>
+	.pay-step li{background:#fea128;color: #fff;line-height:40px;text-align: center;}
+	.pay-step li:after{ content: '';display: inline-block;border:20px solid transparent;border-left: 20px solid #fea128;position:absolute;top:0px;right:-40px;z-index:2;}
+	.pay-step li:before{content:'';display: inline-block;border: 23px solid transparent;border-left: 23px solid #fff;position:absolute;top:-3px;right:-46px;z-index:1;}
+	.pay-step li:last-child:after{content:none ;}
+	.pay-content{border: 1px solid #ddd;padding: 15px;}
+	.pay-list{border:1px solid #ddd;padding: 15px;}
+</style>
+{/block}
+{block name="script"}
+<script src="__LIB__/laypage/1.3/laypage.js"></script>
+<script src="__LIB__/lightbox2/js/lightbox.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.pay-list input').iCheck({
+			checkboxClass: 'icheckbox-blue',
+			radioClass: 'iradio-blue',
+			increaseArea: '20%'
+		})
+	});
+
+	$('.pay-list div').click(function(){
+		$('.pay-list div').find('.iradio-blue').removeClass('checked');
+		$(this).find('.iradio-blue').addClass('checked');
+		var val = $(this).find('input').val()
+		console.log(val)
+	})
+	
+	/*$(function(){
+		$('.remove-post').click(function(){
+			layer.confirm('是否要删除该职位？', {
+	            btn : [ '确定', '取消' ]//按钮
+	        }, function(index) {
+	            layer.close(index);
+	            //此处请求后台程序，下方是成功后的前台处理……
+	        }); 
+		})
+	})*/
+</script>
+{/block}

@@ -1,0 +1,122 @@
+{extend name="template/base" /}
+{block name="nav"}{/block}
+{block name="content"}
+<div class="page-container">
+    <form action="{:\\think\\Request::instance()->baseUrl()}" method="post" id="form" style="padding-top: 50px">
+        <input type="hidden" name="id" VALUE="{$Request.param.id}" />
+        <div class="cl pd-5 bg-1 bk-gray pos-f" style="left: 20px;right: 20px;top: 20px;">
+            <span class="l">
+                <button type="button" class="btn btn-primary radius" onclick="$('#checkAll').click()">&nbsp;&nbsp;全选&nbsp;&nbsp;</button>
+            </span>
+
+            <!--所有部门-->
+            <div class="row cl" style="float: left;margin-left: 25px">
+                <div class="formControls col-xs-6 col-sm-6">
+                    <div class="select-box" style="width: 220px">
+                        <select name="division" id="division" class="select">
+                            <option value="">---请选择部门---</option>
+                            {volist name="all_division" id="vd"}
+                                  <option value="{$vd.divisionName}">{$vd.divisionName}</option>
+                            {/volist}
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-3"></div>
+            </div>
+
+            <!--所有班级-->
+            <div class="row cl" style="float: left;position: relative;left: -15px">
+                <div class="formControls col-xs-6 col-sm-6">
+                    <div class="select-box" style="width: 220px">
+                        <select name="className" id="className" class="select">
+                            <option value="">----请选择班级---</option>
+                            {volist name="all_class" id="vc"}
+                                <option value="{$vc.class}{$vc.className}">{$vc.class}{$vc.className}班</option>
+                            {/volist}
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-3"></div>
+            </div>
+
+            <!--保存tp_admin_role表中当前角色id-->
+            <input type="hidden" name="role_id" id="role_id" value="{$role_id}">
+            <!--/保存tp_admin_role表中当前角色id-->
+
+            <span class="l" style="float: left;">
+                <button type="button" id="search" name="search" class="btn btn-primary radius" style="position: relative;left: -35px">&nbsp;&nbsp;查找&nbsp;&nbsp;</button>
+            </span>
+
+
+
+            <span class="r pt-5 pr-5">
+                <button type="submit" class="btn btn-primary radius">&nbsp;&nbsp;保存&nbsp;&nbsp;</button>
+                <button type="button" class="ml-20 btn btn-default radius" onclick="layer_close()">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </span>
+        </div>
+
+
+
+        <table class="table table-border table-bordered table-hover table-bg mt-20">
+            <thead>
+            <tr class="text-c">
+                <th width="80">
+                    <div class="check-box">
+                        <input type="checkbox" id="checkAll">
+                    </div>
+                </th>
+                <th width="150">账号</th>
+                <th width="150">姓名</th>
+            </tr>
+            </thead>
+            <tbody>
+            {volist name="list" id="vo"}
+                <tr class="text-c">
+                    <td>
+                        <div class="check-box">
+                            <input type="checkbox" name="user_id[]" value="{$vo.id}"/>
+                        </div>
+                    </td>
+                    <td>{$vo.account}</td>
+                    <td>{$vo.realname}</td>
+                </tr>
+            {/volist}
+            </tbody>
+        </table>
+    </form>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__LIB__/Validform/5.3.2/Validform.min.js"></script>
+<script>
+    $(function () {
+        var checks = '{$checks}'.split(",");
+        if(checks.length > 0){
+            for (var i in checks){
+                $("[name='user_id[]'][value='"+checks[i]+"']").attr("checked",true);
+            }
+        }
+
+        $("#form").Validform({
+            tiptype:2,
+            ajaxPost:true,
+            showAllError:true,
+            callback:function(ret){
+                ajax_progress(ret);
+            }
+        });
+
+
+        //点击查找按钮--按条件进行查找
+        $('#search').click(function(){
+            var division = $('#division').val();  //所要查的部门
+            var className = $("#className").val(); //所要查的班级
+            var role_id = $('#role_id').val();  //tp_admin_role表序号
+            window.location.href="{:url('AdminRole/user')}?division="+division+"&className="+className+"&id="+role_id+"";
+        });
+
+
+
+    })
+</script>
+{/block}

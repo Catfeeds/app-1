@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title></title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script src="__STATIC__/js/rem.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+    <header class="header header1">
+            <a href="javascript:;" onclick="history.go(-1)" class="back back1"></a>
+            用户信息
+        </header>
+        <div class="cu_info">
+        <div class="nc_edit clearfix">
+            <span class="fl">登陆账号:</span>
+            <input type="text" name="" value="{$data1.account ?? ''}" class="fl" readonly>
+        </div>
+         <div class="line_bgw"></div>
+         <div class="nc_edit clearfix">
+            <span class="fl">宝宝姓名:</span>
+            <input type="text" name="" value="{$data1.name ?? ''}" class="fl" readonly>
+        </div>
+         <div class="line_bgw"></div>
+         <div class="nc_edit clearfix">
+            <span class="fl">宝宝班级:</span>
+            <input type="text" name="" value="{$data1.className ?? ''}" class="fl" readonly>
+        </div>
+         <div class="line_bgw"></div>
+         <div class="nc_edit clearfix">
+            <span class="fl">联系电话:</span>
+            <input type="text" name="" value="{$data1.contact ?? ''}" class="fl" readonly>
+        </div>
+         <div class="line_bgw"></div>
+         <div class="nc_edit clearfix">
+            <span class="fl">与宝宝关系:</span>
+            <input type="text" name="" value="{$data2.relation ?? ''}" class="fl" readonly>
+        </div>
+         <div class="line_bgw"></div>
+         <div class="nc_edit clearfix">
+            <span class="fl">姓名:</span>
+            <input type="text" name="" value="{$data2.name ?? ''}" class="fl" readonly>
+        </div>
+         <div class="line_bgw"></div>
+         <div class="nc_edit clearfix">
+            <span class="fl">联系电话:</span>
+            <input type="text" name="" value="{$data2.number ?? ''}" class="fl" readonly>
+        </div>
+        <div class="line_bgw"></div>
+        </div>
+        <div class="foot_nav">
+          <a href="{:\\think\\Url::build('Index/index')}" class="fl">
+            <i class="home"></i>
+            <span style="color: #aeaeac;font-size: 10px;">幼儿园</span>
+        </a>
+             <a href="{:\\think\\Url::build('Album/index')}" class="active_nav">
+           <i class="photo"></i>
+           <span style="color: #aeaeac;font-size: 10px;">活动相册</span>
+         </a> 
+		  <a href="{:\\think\\Url::build('Workinfo/index')}">
+           <i class="workinfo"></i>
+           <span style="color: #aeaeac; font-size: 10px;">考勤信息</span>
+         </a>
+          <a href="{:\\think\\Url::build('Personal/index')}" class="active fr"> 
+            <i class="center"></i>
+            <span style="font-size: 10px;">我的</span>
+          </a>
+        </div>
+    </div>
+</body>
+
+</html>

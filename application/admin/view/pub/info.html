@@ -1,0 +1,52 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    <div class="cl pd-5 bg-1 bk-gray">
+        <!--<span class="l">-->
+        <!--{tp:menu menu="forbid,resume,delete,recyclebin,echarts" /}-->
+        <!--</span>-->
+        <span class="l">全部消息：</span>
+        <span class="r pt-5 pr-5">
+            共有请假消息 ：<strong>{$count ?? '0'}</strong> 条
+        </span>
+    </div>
+    <table class="table table-border table-bordered table-hover table-bg mt-20">
+        <thead>
+        <tr class="text-c">
+            {include file="th2" /}
+
+        </tr>
+        </thead>
+        <tbody>
+        {volist name="result" id="vo"}
+        <tr class="text-c">
+            {include file="td2" /}
+        </tr>
+        {/volist}
+        </tbody>
+    </table>
+    <div class="page-bootstrap">{$page ?? ''}</div>
+</div>
+<script type="text/javascript" src="__LIB__/jquery/1.9.1/jquery.js"></script>
+<script type="text/javascript">
+    function isapprove(id)
+    {
+         $(function(){
+             $.ajax({
+                 type:'get',//选择get方式提交
+                 url:'{:url("pub/getId")}',//将数据提交的页面
+                 data:{id:id},//传值
+                 success: function(data)
+                 {
+                     if(data == 'approve'){
+                         $('#info'+id).text('已审批');
+                     }
+                     if(data == 'disapprove'){
+                         $('#info'+id).text('未审批');
+                     }
+                 }
+             })
+         })
+    }
+</script>
+{/block}

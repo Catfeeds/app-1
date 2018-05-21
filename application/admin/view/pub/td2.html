@@ -1,0 +1,21 @@
+<!--<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>-->
+<td>{$vo.id}</td>
+<td>{$vo.release}</td>
+<td>{$vo.release_time}</td>
+<td>{$vo.schoolName}</td>
+<td>{$vo.className}班</td>
+<td>{$vo.start_time}</td>
+<td>{$vo.end_time}</td>
+<td>{$vo.content}</td>
+<td>
+    {if condition="$vo.checkinfo eq 0"}
+          <a id="info{$vo.id}" href="javascript:;" style="color: brown;text-decoration: underline" onclick="isapprove({$vo.id})">未审批</a>
+       {else /}
+          <a id="info{$vo.id}" href="javascript:;" style="color: brown;text-decoration: underline" onclick="isapprove({$vo.id})">已审批</a>
+    {/if}
+</td>
+
+
+
+
+

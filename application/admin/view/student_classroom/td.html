@@ -1,0 +1,62 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.release}</td>
+<td>{$vo.schoolName}</td>
+<td>{$vo.className}</td>
+<td>{$vo.release_time}</td>
+<td>{$vo.course_time}</td>
+
+
+<td>
+
+    <?php
+       if(strlen($vo['morning'])>1){
+          $arr = explode(',',$vo['morning']);
+          $str = '';
+          foreach($arr as $v){
+             if($v!=''){
+                $str.=$course_array[$v].',';
+             }
+
+          }
+          echo trim($str,',');
+       }elseif(strlen($vo['morning']) == 1){
+           echo $course_array[$vo['morning']];
+       }else{
+           echo $vo['morning'];
+       }
+
+    ?>
+</td>
+
+
+
+<td>
+
+    <?php
+       if(strlen($vo['afternoon'])>1){
+          $arr = explode(',',$vo['afternoon']);
+          $str = '';
+          foreach($arr as $vv){
+              if($vv!=''){
+                  $str.=$course_array[$vv].',';
+              }
+          }
+          echo trim($str,',');
+       }elseif(strlen($vo['afternoon']) == 1){
+             echo $course_array[$vo['afternoon']];
+       }else{
+            echo $vo['afternoon'];
+       }
+
+    ?>
+
+</td>
+
+
+
+<td>{$vo.type}</td>
+<td>{$vo.label|high_light=$Request.param.label}</td>
+
+
+

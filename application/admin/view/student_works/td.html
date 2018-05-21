@@ -1,0 +1,14 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.release}</td>
+<td>{$vo.schoolName}</td>
+
+<td>{$vo.author}</td>
+<td>{$vo.works_name}</td>
+
+<td><img src="__ROOT__{$vo.image}" height="40"></td>
+<!--<td>{:htmlspecialchars_decode($vo.content)}</td>-->
+<td>内容省略</td>
+<td>{$vo.release_time}</td>
+
+<td>{$vo.label|high_light=$Request.param.label}</td>

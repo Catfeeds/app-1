@@ -1,0 +1,10 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.schoolName}</td>
+<td>{$vo.className}</td>
+<td>{$vo.account|high_light=$Request.param.account}</td>
+<td>{$vo.name|high_light=$Request.param.name}</td>
+<td>{$vo.sex}</td>
+<td>{$vo.birthDate}</td>
+<td>{$vo.contact|high_light=$Request.param.contact}</td>
+<td><img src="{$vo.image}" height="40" onerror="this.src='__STATIC__/images/defaulthead.jpg'"><br>{$vo.relation}</td>

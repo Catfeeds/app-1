@@ -1,0 +1,162 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+	<form class="form" id="form" method="post" action="{:url('SchoolManagement/alipay')}">
+    <div class="row cl">
+    	<div class="col-xs-3 col-sm-3"></div>
+    	<div class="col-xs-6 col-sm-6">
+			<ul class="pay-step row cl">
+				<li class="col-xs-4 col-sm-4">1. 填写预招人数信息</li>
+				<li class="col-xs-4 col-sm-4">2. 确认并支付</li>
+				<li class="col-xs-4 col-sm-4">3. 完成</li>
+			</ul>
+			<div class="row cl pay-content">
+				支付订单详情！
+			</div>
+			<form action="" method="post" class="form ">
+			<div class="row cl pay-list">
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="微信支付" />
+					<img src="__STATIC__/images/pay/WXPAY.png" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="支付宝" />
+					<img src="__STATIC__/images/pay/alipay.jpg" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="中国银联" />
+					<img src="__STATIC__/images/pay/unionpay.gif" alt="" />
+				</div>
+			</div>
+			<div class="row cl pay-list">
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="交通银行" />
+					<img src="__STATIC__/images/pay/BCOM.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="农业银行" />
+					<img src="__STATIC__/images/pay/ABC.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="中国银行" />
+					<img src="__STATIC__/images/pay/BOC.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="北京银行" />
+					<img src="__STATIC__/images/pay/BJBANK.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="中国邮政" />
+					<img src="__STATIC__/images/pay/PSBC.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="上海银行" />
+					<img src="__STATIC__/images/pay/BOS.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="渤海银行" />
+					<img src="__STATIC__/images/pay/CBHB.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="建设银行" />
+					<img src="__STATIC__/images/pay/CCB.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="光大银行" />
+					<img src="__STATIC__/images/pay/CEBB.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="兴业银行" />
+					<img src="__STATIC__/images/pay/CIB.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="招商银行" />
+					<img src="__STATIC__/images/pay/CMB.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="民生银行" />
+					<img src="__STATIC__/images/pay/CMBC.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="中信银行" />
+					<img src="__STATIC__/images/pay/CNCB.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="广发银行" />
+					<img src="__STATIC__/images/pay/GDB.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="华夏银行" />
+					<img src="__STATIC__/images/pay/HXB.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="工商银行" />
+					<img src="__STATIC__/images/pay/ICBC.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="宁波银行" />
+					<img src="__STATIC__/images/pay/NBBANK.gif" alt="" />
+				</div>
+				
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="平安银行" />
+					<img src="__STATIC__/images/pay/SPABANK.gif" alt="" />
+				</div>
+				<div class="col-xs-3 col-sm-3 radio-box">
+					<input type="radio" name="pay" id="" value="浦发银行" />
+					<img src="__STATIC__/images/pay/SPDB.gif" alt="" />
+				</div>
+			</div>
+			
+			<div class="row cl">
+				<input type="submit" value="确认支付" class="btn btn-primary radius f-r"/>
+			</div>
+			</form>
+    	</div>
+    	<div class="col-xs-3 col-sm-3"></div>
+    </div>
+    </form>
+</div>
+<style>
+	.pay-step li{background:#fea128;color: #fff;line-height:40px;text-align: center;}
+	.pay-step li:after{ content: '';display: inline-block;border:20px solid transparent;border-left: 20px solid #fea128;position:absolute;top:0px;right:-40px;z-index:2;}
+	.pay-step li:before{content:'';display: inline-block;border: 23px solid transparent;border-left: 23px solid #fff;position:absolute;top:-3px;right:-46px;z-index:1;}
+	.pay-step li:last-child:after{content:none ;}
+	.pay-step li:last-child{background: #ccc;}
+	.pay-content{border: 1px solid #ddd;padding: 15px;}
+	.pay-list{border:1px solid #ddd;padding: 15px;}
+	.pay-list>div{margin: 10px 0;}
+	.pay-list img{border: 1px solid #ddd;width:90%;margin-top: -5px;}
+</style>
+{/block}
+{block name="script"}
+<script src="__LIB__/laypage/1.3/laypage.js"></script>
+<script src="__LIB__/lightbox2/js/lightbox.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.pay-list input').iCheck({
+			checkboxClass: 'icheckbox-blue',
+			radioClass: 'iradio-blue',
+			increaseArea: '20%'
+		})
+	});
+
+	$('.pay-list div').click(function(){
+		$('.pay-list div').find('.iradio-blue').removeClass('checked');
+		$(this).find('.iradio-blue').addClass('checked');
+		var val = $(this).find('input').val()
+		console.log(val)
+	})
+	
+	/*$(function(){
+		$('.remove-post').click(function(){
+			layer.confirm('是否要删除该职位？', {
+	            btn : [ '确定', '取消' ]//按钮
+	        }, function(index) {
+	            layer.close(index);
+	            //此处请求后台程序，下方是成功后的前台处理……
+	        }); 
+		})
+	})*/
+</script>
+{/block}

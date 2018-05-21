@@ -1,0 +1,1325 @@
+[ 2018-03-28T20:19:28+08:00 ] 0.0.0.0 112.28.177.87 GET /index/informationArticle/cindex?phone_account=S13866187233&id=114
+[ log ] yeyap.com/index/informationArticle/cindex?phone_account=S13866187233&id=114 [运行时间：0.674593s][吞吐率：1.48req/s] [内存消耗：2,119.77kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'informationArticle',
+    2 => 'cindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/informationArticle/cindex?phone_account=S13866187233&id=114',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vb7cdv06ecmfdubcmk0euq5q35',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Informationarticle->cindex[ C:\wwwroot\AMS\application\index\controller\Informationarticle.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\informationarticle\cindex.html [ array (
+  0 => 'data',
+  1 => 'collectData',
+  2 => 'commentData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000893s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.052207s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.414203s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.037630s ]
+[ sql ] [ SQL ] SELECT b.headerurl as headerurl,b.nickname as nickname,b.phone_account as phone_account FROM `tp_corpus_article_collect` `a`,`tp_patriarch` `b` WHERE  (  b.phone_account=a.phone_account and a.corpusarticle_id=114 )  AND `a`.`iscollect` = 1 ORDER BY `collect_time`  desc [ RunTime:0.001115s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.020929s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 ORDER BY `comment_time`  desc [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.024801s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article`  SET `click`=10  WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.005203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus` [ RunTime:0.020376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000424s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:19:33+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksArticle
+[ log ] yeyap.com/index/community/corpusWorksArticle [运行时间：0.407400s][吞吐率：2.45req/s] [内存消耗：2,108.48kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksArticle',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksArticle[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002469s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.054112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.044490s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.041057s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.217453s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000499s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:19:33+08:00 ] 0.0.0.0 112.28.177.87 GET /index/informationArticle/cindex?phone_account=S13866187233&id=114
+[ log ] yeyap.com/index/informationArticle/cindex?phone_account=S13866187233&id=114 [运行时间：0.508818s][吞吐率：1.97req/s] [内存消耗：2,119.82kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'informationArticle',
+    2 => 'cindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/informationArticle/cindex?phone_account=S13866187233&id=114',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vb7cdv06ecmfdubcmk0euq5q35',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Informationarticle->cindex[ C:\wwwroot\AMS\application\index\controller\Informationarticle.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\informationarticle\cindex.html [ array (
+  0 => 'data',
+  1 => 'collectData',
+  2 => 'commentData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000972s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.077482s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.044779s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.042897s ]
+[ sql ] [ SQL ] SELECT b.headerurl as headerurl,b.nickname as nickname,b.phone_account as phone_account FROM `tp_corpus_article_collect` `a`,`tp_patriarch` `b` WHERE  (  b.phone_account=a.phone_account and a.corpusarticle_id=114 )  AND `a`.`iscollect` = 1 ORDER BY `collect_time`  desc [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.039840s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 ORDER BY `comment_time`  desc [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.221081s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article`  SET `click`=11  WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.007871s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus` [ RunTime:0.025281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000453s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:19:47+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksCollect
+[ log ] yeyap.com/index/community/corpusWorksCollect [运行时间：0.070516s][吞吐率：14.18req/s] [内存消耗：2,087.84kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksCollect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksCollect',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksCollect[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000964s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.024361s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000739s ]
+[ sql ] [ SQL ] INSERT INTO `tp_corpus_article_collect` (`corpusarticle_id` , `phone_account` , `collect_time` , `iscollect`) VALUES (114 , 'S13866187233' , '2018-03-28 20:19:47' , 1) [ RunTime:0.001027s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:19:48+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksArticle
+[ log ] yeyap.com/index/community/corpusWorksArticle [运行时间：0.237338s][吞吐率：4.21req/s] [内存消耗：2,108.48kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksArticle',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksArticle[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000962s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.057429s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.043835s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.048234s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.043198s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000492s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:19:48+08:00 ] 0.0.0.0 112.28.177.87 GET /index/informationArticle/cindex?phone_account=S13866187233&id=114
+[ log ] yeyap.com/index/informationArticle/cindex?phone_account=S13866187233&id=114 [运行时间：0.274860s][吞吐率：3.64req/s] [内存消耗：2,120.54kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'informationArticle',
+    2 => 'cindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/informationArticle/cindex?phone_account=S13866187233&id=114',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vb7cdv06ecmfdubcmk0euq5q35',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Informationarticle->cindex[ C:\wwwroot\AMS\application\index\controller\Informationarticle.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\informationarticle\cindex.html [ array (
+  0 => 'data',
+  1 => 'collectData',
+  2 => 'commentData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002558s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.039268s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.050018s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.044546s ]
+[ sql ] [ SQL ] SELECT b.headerurl as headerurl,b.nickname as nickname,b.phone_account as phone_account FROM `tp_corpus_article_collect` `a`,`tp_patriarch` `b` WHERE  (  b.phone_account=a.phone_account and a.corpusarticle_id=114 )  AND `a`.`iscollect` = 1 ORDER BY `collect_time`  desc [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.046454s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 ORDER BY `comment_time`  desc [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.013408s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article`  SET `click`=12  WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.007495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus` [ RunTime:0.021461s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000425s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:19:52+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksCollect
+[ log ] yeyap.com/index/community/corpusWorksCollect [运行时间：0.074649s][吞吐率：13.40req/s] [内存消耗：2,090.10kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksCollect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksCollect',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksCollect[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001278s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.029794s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.002183s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article_collect`  SET `iscollect`=0,`collect_time`='2018-03-28 20:19:52'  WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000901s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:19:52+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksArticle
+[ log ] yeyap.com/index/community/corpusWorksArticle [运行时间：0.231252s][吞吐率：4.32req/s] [内存消耗：2,108.48kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksArticle',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksArticle[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000933s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.059279s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.044839s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.045871s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.039094s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000455s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:19:52+08:00 ] 0.0.0.0 112.28.177.87 GET /index/informationArticle/cindex?phone_account=S13866187233&id=114
+[ log ] yeyap.com/index/informationArticle/cindex?phone_account=S13866187233&id=114 [运行时间：0.274680s][吞吐率：3.64req/s] [内存消耗：2,119.99kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'informationArticle',
+    2 => 'cindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/informationArticle/cindex?phone_account=S13866187233&id=114',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vb7cdv06ecmfdubcmk0euq5q35',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Informationarticle->cindex[ C:\wwwroot\AMS\application\index\controller\Informationarticle.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\informationarticle\cindex.html [ array (
+  0 => 'data',
+  1 => 'collectData',
+  2 => 'commentData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003072s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.046156s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.045843s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.041989s ]
+[ sql ] [ SQL ] SELECT b.headerurl as headerurl,b.nickname as nickname,b.phone_account as phone_account FROM `tp_corpus_article_collect` `a`,`tp_patriarch` `b` WHERE  (  b.phone_account=a.phone_account and a.corpusarticle_id=114 )  AND `a`.`iscollect` = 1 ORDER BY `collect_time`  desc [ RunTime:0.000980s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.042504s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 ORDER BY `comment_time`  desc [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.013482s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000577s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article`  SET `click`=13  WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.013321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus` [ RunTime:0.019343s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000503s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:13+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksCollect
+[ log ] yeyap.com/index/community/corpusWorksCollect [运行时间：0.072691s][吞吐率：13.76req/s] [内存消耗：2,090.10kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksCollect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksCollect',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksCollect[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002298s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.025764s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000750s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article_collect`  SET `iscollect`=1,`collect_time`='2018-03-28 20:20:13'  WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000638s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:13+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksArticle
+[ log ] yeyap.com/index/community/corpusWorksArticle [运行时间：0.116565s][吞吐率：8.58req/s] [内存消耗：2,108.48kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksArticle',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksArticle[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002200s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.014081s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.018893s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.019271s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.018265s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000457s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:13+08:00 ] 0.0.0.0 112.28.177.87 GET /index/informationArticle/cindex?phone_account=S13866187233&id=114
+[ log ] yeyap.com/index/informationArticle/cindex?phone_account=S13866187233&id=114 [运行时间：0.166738s][吞吐率：6.00req/s] [内存消耗：2,120.54kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'informationArticle',
+    2 => 'cindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/informationArticle/cindex?phone_account=S13866187233&id=114',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vb7cdv06ecmfdubcmk0euq5q35',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Informationarticle->cindex[ C:\wwwroot\AMS\application\index\controller\Informationarticle.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\informationarticle\cindex.html [ array (
+  0 => 'data',
+  1 => 'collectData',
+  2 => 'commentData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000941s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.015577s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.022320s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.001982s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.017345s ]
+[ sql ] [ SQL ] SELECT b.headerurl as headerurl,b.nickname as nickname,b.phone_account as phone_account FROM `tp_corpus_article_collect` `a`,`tp_patriarch` `b` WHERE  (  b.phone_account=a.phone_account and a.corpusarticle_id=114 )  AND `a`.`iscollect` = 1 ORDER BY `collect_time`  desc [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.016904s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 ORDER BY `comment_time`  desc [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.014560s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article`  SET `click`=14  WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.007912s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus` [ RunTime:0.019941s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000476s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:15+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksCollect
+[ log ] yeyap.com/index/community/corpusWorksCollect [运行时间：0.064307s][吞吐率：15.55req/s] [内存消耗：2,090.10kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksCollect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksCollect',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksCollect[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002344s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.023684s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article_collect`  SET `iscollect`=0,`collect_time`='2018-03-28 20:20:15'  WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000559s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:15+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksArticle
+[ log ] yeyap.com/index/community/corpusWorksArticle [运行时间：0.232773s][吞吐率：4.30req/s] [内存消耗：2,108.48kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksArticle',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksArticle[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002257s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.057359s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.042465s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.042709s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.045175s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000473s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:15+08:00 ] 0.0.0.0 112.28.177.87 GET /index/informationArticle/cindex?phone_account=S13866187233&id=114
+[ log ] yeyap.com/index/informationArticle/cindex?phone_account=S13866187233&id=114 [运行时间：0.286109s][吞吐率：3.50req/s] [内存消耗：2,119.99kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'informationArticle',
+    2 => 'cindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/informationArticle/cindex?phone_account=S13866187233&id=114',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vb7cdv06ecmfdubcmk0euq5q35',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Informationarticle->cindex[ C:\wwwroot\AMS\application\index\controller\Informationarticle.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\informationarticle\cindex.html [ array (
+  0 => 'data',
+  1 => 'collectData',
+  2 => 'commentData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001169s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.041245s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.044011s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.046778s ]
+[ sql ] [ SQL ] SELECT b.headerurl as headerurl,b.nickname as nickname,b.phone_account as phone_account FROM `tp_corpus_article_collect` `a`,`tp_patriarch` `b` WHERE  (  b.phone_account=a.phone_account and a.corpusarticle_id=114 )  AND `a`.`iscollect` = 1 ORDER BY `collect_time`  desc [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.048995s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 ORDER BY `comment_time`  desc [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.022839s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article`  SET `click`=15  WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.008333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus` [ RunTime:0.021751s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000442s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:18+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksCollect
+[ log ] yeyap.com/index/community/corpusWorksCollect [运行时间：0.065763s][吞吐率：15.21req/s] [内存消耗：2,090.10kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksCollect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksCollect',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksCollect[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000939s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.024520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article_collect`  SET `iscollect`=1,`collect_time`='2018-03-28 20:20:18'  WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000555s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:19+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksArticle
+[ log ] yeyap.com/index/community/corpusWorksArticle [运行时间：0.242348s][吞吐率：4.13req/s] [内存消耗：2,108.48kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksArticle',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksArticle[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001127s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.066982s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.039840s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.043979s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.047335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000479s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:19+08:00 ] 0.0.0.0 112.28.177.87 GET /index/informationArticle/cindex?phone_account=S13866187233&id=114
+[ log ] yeyap.com/index/informationArticle/cindex?phone_account=S13866187233&id=114 [运行时间：0.300969s][吞吐率：3.32req/s] [内存消耗：2,120.54kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'informationArticle',
+    2 => 'cindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/informationArticle/cindex?phone_account=S13866187233&id=114',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vb7cdv06ecmfdubcmk0euq5q35',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Informationarticle->cindex[ C:\wwwroot\AMS\application\index\controller\Informationarticle.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\informationarticle\cindex.html [ array (
+  0 => 'data',
+  1 => 'collectData',
+  2 => 'commentData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002438s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.048684s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.042352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.043666s ]
+[ sql ] [ SQL ] SELECT b.headerurl as headerurl,b.nickname as nickname,b.phone_account as phone_account FROM `tp_corpus_article_collect` `a`,`tp_patriarch` `b` WHERE  (  b.phone_account=a.phone_account and a.corpusarticle_id=114 )  AND `a`.`iscollect` = 1 ORDER BY `collect_time`  desc [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.055283s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 ORDER BY `comment_time`  desc [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.014547s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article`  SET `click`=16  WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.014097s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus` [ RunTime:0.029813s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000442s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:20+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksCollect
+[ log ] yeyap.com/index/community/corpusWorksCollect [运行时间：0.065158s][吞吐率：15.35req/s] [内存消耗：2,090.10kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksCollect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksCollect',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksCollect[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000961s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.025761s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.002159s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article_collect`  SET `iscollect`=0,`collect_time`='2018-03-28 20:20:20'  WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000599s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:20+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksArticle
+[ log ] yeyap.com/index/community/corpusWorksArticle [运行时间：0.258177s][吞吐率：3.87req/s] [内存消耗：2,108.48kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksArticle',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksArticle[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000954s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.064771s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.048434s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `phone_account` = 'S13866187233'  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.050676s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.049062s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000511s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:20+08:00 ] 0.0.0.0 112.28.177.87 GET /index/informationArticle/cindex?phone_account=S13866187233&id=114
+[ log ] yeyap.com/index/informationArticle/cindex?phone_account=S13866187233&id=114 [运行时间：0.317487s][吞吐率：3.15req/s] [内存消耗：2,119.99kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'informationArticle',
+    2 => 'cindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/informationArticle/cindex?phone_account=S13866187233&id=114',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vb7cdv06ecmfdubcmk0euq5q35',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '114',
+)
+[ info ] [ RUN ] app\index\controller\Informationarticle->cindex[ C:\wwwroot\AMS\application\index\controller\Informationarticle.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\informationarticle\cindex.html [ array (
+  0 => 'data',
+  1 => 'collectData',
+  2 => 'commentData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002269s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.051931s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.049016s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.049237s ]
+[ sql ] [ SQL ] SELECT b.headerurl as headerurl,b.nickname as nickname,b.phone_account as phone_account FROM `tp_corpus_article_collect` `a`,`tp_patriarch` `b` WHERE  (  b.phone_account=a.phone_account and a.corpusarticle_id=114 )  AND `a`.`iscollect` = 1 ORDER BY `collect_time`  desc [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.062053s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 ORDER BY `comment_time`  desc [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 114  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 114  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.018508s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000637s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article`  SET `click`=17  WHERE  `id` = 114  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.009659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus` [ RunTime:0.023096s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000423s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:28+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksArticle
+[ log ] yeyap.com/index/community/corpusWorksArticle [运行时间：0.304617s][吞吐率：3.28req/s] [内存消耗：2,122.44kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksArticle',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '110',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksArticle[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000928s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.076943s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 110  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.061850s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 110  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 110  AND `phone_account` = 'S13866187233'  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.060055s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 110  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.063380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'S13866187233'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000727s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:28+08:00 ] 0.0.0.0 112.28.177.87 GET /index/informationArticle/cindex?phone_account=S13866187233&id=110
+[ log ] yeyap.com/index/informationArticle/cindex?phone_account=S13866187233&id=110 [运行时间：0.380374s][吞吐率：2.63req/s] [内存消耗：2,135.21kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'informationArticle',
+    2 => 'cindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/informationArticle/cindex?phone_account=S13866187233&id=110',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vb7cdv06ecmfdubcmk0euq5q35',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '110',
+)
+[ info ] [ RUN ] app\index\controller\Informationarticle->cindex[ C:\wwwroot\AMS\application\index\controller\Informationarticle.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\informationarticle\cindex.html [ array (
+  0 => 'data',
+  1 => 'collectData',
+  2 => 'commentData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002669s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.070249s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 110  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.061023s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.065547s ]
+[ sql ] [ SQL ] SELECT b.headerurl as headerurl,b.nickname as nickname,b.phone_account as phone_account FROM `tp_corpus_article_collect` `a`,`tp_patriarch` `b` WHERE  (  b.phone_account=a.phone_account and a.corpusarticle_id=110 )  AND `a`.`iscollect` = 1 ORDER BY `collect_time`  desc [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.080040s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 110  AND `status` = 1  AND `isdelete` = 0 ORDER BY `comment_time`  desc [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 110  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 110  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'S13866187233'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article`  SET `click`=22  WHERE  `id` = 110  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.005027s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus` [ RunTime:0.028406s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000418s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:37+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/informationReply
+[ log ] yeyap.com/index/community/informationReply [运行时间：0.274254s][吞吐率：3.65req/s] [内存消耗：2,107.38kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'informationReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '47',
+  'x-original-url' => '/index/community/informationReply',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'page' => '1',
+  'num' => '10',
+  'id' => '167',
+)
+[ info ] [ RUN ] app\index\controller\Community->informationReply[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000960s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_collect` [ RunTime:0.153418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 167  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article` [ RunTime:0.020197s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`content`,`thumbs`,`images`,`release_time`,`info_id` FROM `tp_information_article` WHERE  `id` = 167  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 167  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_answer` [ RunTime:0.025921s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 167  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information` [ RunTime:0.030056s ]
+[ sql ] [ SQL ] SELECT `id`,`info_name` FROM `tp_information` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 167  AND `status` = 1  AND `isdelete` = 0 ORDER BY `answer_time`  desc LIMIT 0,10 [ RunTime:0.000809s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:20:42+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/informationReply
+[ log ] yeyap.com/index/community/informationReply [运行时间：0.185112s][吞吐率：5.40req/s] [内存消耗：2,121.02kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'informationReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '47',
+  'x-original-url' => '/index/community/informationReply',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'page' => '1',
+  'num' => '10',
+  'id' => '162',
+)
+[ info ] [ RUN ] app\index\controller\Community->informationReply[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002075s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_collect` [ RunTime:0.026892s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 162  AND `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article` [ RunTime:0.019546s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`content`,`thumbs`,`images`,`release_time`,`info_id` FROM `tp_information_article` WHERE  `id` = 162  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_collect` WHERE  `infoarticle_id` = 162  AND `status` = 1  AND `isdelete` = 0  AND `iscollect` = 1 LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_answer` [ RunTime:0.018309s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 162  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information` [ RunTime:0.018446s ]
+[ sql ] [ SQL ] SELECT `id`,`info_name` FROM `tp_information` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information_article_answer` WHERE  `infoarticle_id` = 162  AND `status` = 1  AND `isdelete` = 0 ORDER BY `answer_time`  desc LIMIT 0,10 [ RunTime:0.001157s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.018168s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_answer_comment` [ RunTime:0.016050s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer_comment` WHERE  `answer_id` = 43  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_answer_like` [ RunTime:0.016367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer_like` WHERE  `answer_id` = 43  AND `status` = 1  AND `isdelete` = 0  AND `islike` = 1 LIMIT 1 [ RunTime:0.000551s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:21:04+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/informationArticle
+[ log ] yeyap.com/index/community/informationArticle [运行时间：0.186654s][吞吐率：5.36req/s] [内存消耗：2,095.99kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'informationArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'x-original-url' => '/index/community/informationArticle',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '43',
+)
+[ info ] [ RUN ] app\index\controller\Community->informationArticle[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000993s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_answer_like` [ RunTime:0.085890s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer_like` WHERE  `answer_id` = 43  AND `islike` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_answer_comment` [ RunTime:0.059671s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer_comment` WHERE  `answer_id` = 43  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information_article_answer_like` WHERE  `answer_id` = 43  AND `phone_account` = 'S13866187233'  AND `islike` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000529s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:21:05+08:00 ] 0.0.0.0 112.28.177.87 GET /index/informationArticle/index?phone_account=S13866187233&id=43
+[ log ] yeyap.com/index/informationArticle/index?phone_account=S13866187233&id=43 [运行时间：0.328587s][吞吐率：3.04req/s] [内存消耗：2,070.65kb] [文件加载：59]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'informationArticle',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/informationArticle/index?phone_account=S13866187233&id=43',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vb7cdv06ecmfdubcmk0euq5q35',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '43',
+)
+[ info ] [ RUN ] app\index\controller\Informationarticle->index[ C:\wwwroot\AMS\application\index\controller\Informationarticle.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\informationarticle\index.html [ array (
+  0 => 'data',
+  1 => 'zanData',
+  2 => 'commentData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002548s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_answer` [ RunTime:0.078112s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information_article_answer` WHERE  `id` = 43  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] UPDATE `tp_information_article_answer`  SET `click`=5  WHERE  `id` = 43  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.005869s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article` [ RunTime:0.073320s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information_article` WHERE  `id` = 162  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.033761s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_answer_like` [ RunTime:0.028825s ]
+[ sql ] [ SQL ] SELECT b.headerurl as headerurl,b.nickname as nickname,b.phone_account as phone_account FROM `tp_information_article_answer_like` `a`,`tp_patriarch` `b` WHERE  (  b.phone_account=a.phone_account and a.answer_id=43 )  AND `a`.`islike` = 1 ORDER BY `zan_time`  desc [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information_article_answer_comment` [ RunTime:0.028122s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information_article_answer_comment` WHERE  `answer_id` = 43  AND `status` = 1  AND `isdelete` = 0 ORDER BY `comment_time`  desc [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer_like` WHERE  `answer_id` = 43  AND `islike` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_information_article_answer_comment` WHERE  `answer_id` = 43  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_information` [ RunTime:0.028795s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_information` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000519s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:21:41+08:00 ] 0.0.0.0 112.28.177.87 POST /index/community/corpusWorksArticle
+[ log ] yeyap.com/index/community/corpusWorksArticle [运行时间：0.282423s][吞吐率：3.54req/s] [内存消耗：2,107.52kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'community',
+    2 => 'corpusWorksArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '33',
+  'x-original-url' => '/index/community/corpusWorksArticle',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '115',
+)
+[ info ] [ RUN ] app\index\controller\Community->corpusWorksArticle[ C:\wwwroot\AMS\application\index\controller\Community.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002808s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.081580s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 115  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.055269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 115  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 115  AND `phone_account` = 'S13866187233'  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.044782s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 115  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.040332s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000517s ]
+
+---------------------------------------------------------------
+[ 2018-03-28T20:21:41+08:00 ] 0.0.0.0 112.28.177.87 GET /index/informationArticle/cindex?phone_account=S13866187233&id=115
+[ log ] yeyap.com/index/informationArticle/cindex?phone_account=S13866187233&id=115 [运行时间：0.326045s][吞吐率：3.07req/s] [内存消耗：2,119.02kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'informationArticle',
+    2 => 'cindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/informationArticle/cindex?phone_account=S13866187233&id=115',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vb7cdv06ecmfdubcmk0euq5q35',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'id' => '115',
+)
+[ info ] [ RUN ] app\index\controller\Informationarticle->cindex[ C:\wwwroot\AMS\application\index\controller\Informationarticle.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\informationarticle\cindex.html [ array (
+  0 => 'data',
+  1 => 'collectData',
+  2 => 'commentData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001447s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article` [ RunTime:0.071681s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article` WHERE  `id` = 115  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.048419s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'K18355572573'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_collect` [ RunTime:0.041264s ]
+[ sql ] [ SQL ] SELECT b.headerurl as headerurl,b.nickname as nickname,b.phone_account as phone_account FROM `tp_corpus_article_collect` `a`,`tp_patriarch` `b` WHERE  (  b.phone_account=a.phone_account and a.corpusarticle_id=115 )  AND `a`.`iscollect` = 1 ORDER BY `collect_time`  desc [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_comment` [ RunTime:0.058563s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 115  AND `status` = 1  AND `isdelete` = 0 ORDER BY `comment_time`  desc [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_collect` WHERE  `corpusarticle_id` = 115  AND `iscollect` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_corpus_article_comment` WHERE  `corpusarticle_id` = 115  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus_article_concern` [ RunTime:0.024150s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus_article_concern` WHERE  `status` = 1  AND `isdelete` = 0  AND `phone_account` = 'S13866187233'  AND `bephone_account` = 'K18355572573'  AND `isconcern` = 1 LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] UPDATE `tp_corpus_article`  SET `click`=7  WHERE  `id` = 115  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.007663s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_corpus` [ RunTime:0.019066s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_corpus` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000454s ]
+
+---------------------------------------------------------------

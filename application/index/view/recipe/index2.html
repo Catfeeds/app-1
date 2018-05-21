@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>每周食谱</title>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/layui.css"/>
+    <link rel="stylesheet" href="__STATIC__/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/index.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <script type="text/javascript" src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/rem.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <header class="header header-fixed">
+        <a href="javascript:;" onclick="history.go(-1)" class="back"></a>每周食谱
+    </header>
+    
+    <div id="rightPart2" class="box rightPart2" style="margin-top: 0.54rem;">
+		<div class="schedule1">
+			<div id="calendar" class="dateShow">
+				<table id="dayshow" class="dates">
+					<tr class="riqi">
+						<th class="tl" colspan="2"><button id="last-week" class="lastW" title="上一周">上一周</button></th>
+						<th id="curday" style="color:#333;font-weight: bold !important;" colspan="3"></th>
+						<th class="tr" colspan="2"><button id="next-week" class="nextW" title="下一周">下一周</button></th>
+					</tr>
+					<tr id="monitor">
+                        
+                         <td><button  class="<?php if($riqi['info1']){?>button-bg <?php } ?> <?php if($riqi['time']==1){?>mark1 <?php } ?>">一<br/><i></i></button></td>
+                        <td><button class="<?php if($riqi['info2']){?>button-bg <?php } ?> <?php if($riqi['time']==2){?>mark1 <?php } ?>">二<br/><i></i></button></td>
+                        <td><button class="<?php if($riqi['info3']){?>button-bg <?php } ?> <?php if($riqi['time']==3){?>mark1 <?php } ?>" >三<br/><i></i></button></td>
+                        <td><button class="<?php if($riqi['info4']){?>button-bg <?php } ?> <?php if($riqi['time']==4){?>mark1 <?php } ?>"  >四<br/><i></i></button></td>
+                        <td><button class="<?php if($riqi['info5']){?>button-bg <?php } ?> <?php if($riqi['time']==5){?>mark1 <?php } ?>" >五<br/><i></i></button></td>
+                        <td><button>六<br /><i></i></button></td>
+                        <td><button>日<br /><i></i></button></td>
+                    </tr>
+				</table>
+			</div>
+		</div>
+		<script src="__STATIC__/js/date.js"></script>
+  
+    <div class="main-food">
+       
+        <div class="main-food-family">
+			<dl>
+               <?php if(!empty($result['breakfast'])){?>
+				<dt class="dt-breakfast">早餐</dt>
+				<div class="food">{$result.breakfast}</div>
+				<div class="issuer">{$result.releaser}</div>
+				<div class="main-food-breakfast-bottom">
+	            	<div class="zan">{$result.zan_count}</div>
+		            <div class="bianji"><a href="{:url('recipe/sendrecipe')}?id={$result.id}&type=1">编辑</a></div>
+		            <div class="shanchu"><a href="{:url('recipe/delete')}?id={$result.id}&type=1">删除</a></div>
+		        </div>
+                <?php } ?>
+		        <?php if(!empty($result['lunch'])){?>
+				<dt class="dt-lunch">中餐</dt>
+				<div class="food">{$result.lunch}</div>
+                <!-- <div class="fanwei">发布范围：幼儿园全体</div> -->
+                <div class="issuer">{$result.releaser}</div>
+	            <div class="main-food-lunch-bottom">
+                	<div class="zan">{$result.zan_count}</div>
+	                <div class="bianji"><a href="{:url('recipe/sendrecipe')}?id={$result.id}&type=2">编辑</a></div>
+	                <div class="shanchu"><a href="{:url('recipe/delete')}?id={$result.id}&type=2">删除</a></div>
+	            </div>
+		        <?php } ?>
+                <?php if(!empty($result['snack'])){?>
+				<dt class="dt-mug-up">午点</dt>
+				<div class="food">{$result.snack}</div>
+               <!--  <div class="fanwei">发布范围：幼儿园全体</div> -->
+                <div class="issuer">{$result.releaser}</div>
+	            <div class="main-food-snacks-bottom">
+	                <div class="zan">{$result.zan_count}</div>
+	                <div class="bianji"><a href="{:url('recipe/sendrecipe')}?id={$result.id}&type=3">编辑</a></div>
+	                <div class="shanchu"><a href="{:url('recipe/delete')}?id={$result.id}&type=3">删除</a></div>
+	            </div>
+                <?php } ?>
+			</dl>
+		</div>	
+        <?php if(!empty($result['id'])){?>
+        <div class="add"><a href="{:url('recipe/sendrecipe')}?id={$result.id}">+</a></div>
+        <?php }else{?>
+        <div class="add"><a href="{:url('recipe/sendrecipe')}">+</a></div>
+        <?php } ?>
+    </div>
+    <input type="hidden" name="schoolName" value="{$schoolName}">
+
+    <script src="__STATIC__/js/date.js"></script>
+    <script>
+        $(function () {
+             /*上一周*/
+            $('#next-week,#last-week').click(function(){
+                var riqi='';
+                var schoolName = $(" input[ name='schoolName' ] ").val();
+                var myDate=new Date();
+                    today = myDate.getDate();//获取当前日期
+                    monthI = myDate.getMonth()+1;//获取当前月份
+                    yearI = myDate.getFullYear();//获取当前年份
+
+                
+                for(var i=0;i<5;i++){
+                    if($('#curday').html()+'-'+$('#monitor').find('i').eq(i).text()== yearI+'-'+monthI+'-'+today){
+                        $('#monitor').find('button').eq(i).addClass("mark1"); 
+                       
+                    }else{
+                   
+                        $('#monitor').find('button').eq(i).removeClass("mark1"); 
+                    }
+                    if(i==4){
+                        if($('#monitor').find('i').eq(i).html()<10){
+                             day = '0'+($('#monitor').find('i').eq(i).html());
+                        }else{
+                             day = $('#monitor').find('i').eq(i).html();
+                        }
+                        riqi+=$('#curday').html()+'-'+day;
+                    }else{
+                        if($('#monitor').find('i').eq(i).html()<10){
+                             day = '0'+($('#monitor').find('i').eq(i).html());
+                        }else{
+                             day = $('#monitor').find('i').eq(i).html();
+                        }
+
+                        riqi+=$('#curday').html()+'-'+day+',';
+                    }
+
+
+                }
+                $.ajax({
+                url:'{:url("recipe/week")}',
+                type:'post',
+                data:{riqi:riqi,schoolName:schoolName},
+                dataType:'json',
+                success:function(d){
+                    if(d.info1==2){
+
+                       $('#monitor').find('button').eq(0).removeClass("button-bg"); 
+                    }else if(d.info1==1){
+                       $('#monitor').find('button').eq(0).addClass("button-bg"); 
+                    }
+
+                    if(d.info2==2){
+                       $('#monitor').find('button').eq(1).removeClass("button-bg"); 
+                    }else if(d.info2==1){
+                       $('#monitor').find('button').eq(1).addClass("button-bg"); 
+                    }
+
+                    if(d.info3==2){
+                       $('#monitor').find('button').eq(2).removeClass("button-bg"); 
+                    }
+                    else if(d.info3==1){
+                       $('#monitor').find('button').eq(2).addClass("button-bg"); 
+                    }
+                    if(d.info4==2){
+                       $('#monitor').find('button').eq(3).removeClass("button-bg"); 
+                    }else if(d.info4==1){
+                       $('#monitor').find('button').eq(3).addClass("button-bg"); 
+                    }
+                    if(d.info5==2){
+                       $('#monitor').find('button').eq(4).removeClass("button-bg"); 
+                    }else if(d.info5==1){
+                       $('#monitor').find('button').eq(4).addClass("button-bg"); 
+                    }
+       
+                   
+                    
+                }
+                })
+             })
+
+            $("#monitor td button").click(function(){
+                var schoolName = $(" input[ name='schoolName' ] ").val();
+                if($(this).find('i').html()<10){
+                     day = '0'+($(this).find('i').html());
+                }else{
+                     day = $(this).find('i').html();
+                }
+                 var date = $('#curday').html()+'-'+day;
+              
+                $(this).addClass('mark1')
+                .parent().siblings().children('button').removeClass('mark1');
+                $.ajax({
+                        url:"{:url('recipe/getFood')}",
+                        type:"post",
+                        dataType:'text',
+                        data:{'date':date,'schoolName':schoolName},
+                        success:function(d){
+						
+                            $(".main-food").html(d);
+
+                        }
+
+                    })
+             });
+
+        })
+    </script>
+</div>
+</div>
+</body>
+
+</html>
+

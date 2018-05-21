@@ -1,0 +1,31 @@
+<div class="col-sm-4 hidden-xs">
+				<h4 class="m-t15">热门职位</h4>
+				<div class="m-t15 right-ul">
+				{volist name="hotType" id="vo5" key="k"}
+				{if condition="$k lt 5"}
+					<a href="{:url('index/index')}?type={$vo5.id}">{$vo5.type}</a>
+				{/if}	
+				{/volist}
+				</div>
+				<h4 class="m-t15">热门城市</h4>
+				<div class="m-t15 right-ul">
+					<a href="http://hefei.paizhiw.com" target="_blank" >合肥</a>
+					<a href="http://beijing.paizhiw.com" target="_blank" >北京</a>
+					<a href="http://shanghai.paizhiw.com" target="_blank"  >上海</a>
+					<a href="http://shenzhen.paizhiw.com" target="_blank" >深圳</a>
+				</div>
+				<div class="m-t15 app" id="app">
+					<div class="col-sm-4">
+						<img src="__STATIC__/img/ma.png" alt="派职网" title="派职网" width="100%"/>
+					</div>
+					<div class="col-sm-8">
+						<p>下载派职网APP <span class="glyphicon glyphicon-menu-right"></span></p>
+						<span>随时随地派职给你</span>
+					</div>
+					<div class="c-b"></div>
+					<div class="app-show">
+						<img src="__STATIC__/img/ma.png" width="100%"/>
+						<img src="__STATIC__/img/jt.png" class="app-jt"/>
+					</div>
+				</div>
+</div>

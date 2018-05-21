@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>发食谱</title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script src="__STATIC__/js/rem.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            //当早餐文本框获得焦点时
+            $('#breakfast').focus(function(){
+                var id = $(" input[ name='id' ] ").val();
+                var type = $(" input[ name='type' ] ").val();
+                var time = $(" input[ name='time' ] ").val();
+                window.location.href='{:url("recipe/addbreakfast")}?id='+id+'&type=1&time='+time;
+            });
+
+            //当午餐文本框获得焦点时
+            $('#lunch').focus(function(){
+                var id = $(" input[ name='id' ] ").val();
+                var type = $(" input[ name='type' ] ").val();
+                var time = $(" input[ name='time' ] ").val();
+                window.location.href='{:url("recipe/addlunch")}?id='+id+'&type=2&time='+time;
+            });
+
+            //当午点文本框获得焦点时
+            $('#snack').focus(function(){
+                var id = $(" input[ name='id' ] ").val();
+                var type = $(" input[ name='type' ] ").val();
+                var time = $(" input[ name='time' ] ").val();
+                window.location.href='{:url("recipe/addsnacks")}?id='+id+'&type=3&time='+time;
+            });
+
+
+            //判断早餐、午餐、午点是否都为空
+            $('form').submit(function(){
+                if($('#breakfast').val() == '' && $('#lunch').val() == '' && $('#snack').val() == '')
+                {
+                    alert('请至少选填一项！');
+                    return false;
+                }
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="javascript:;" onclick="history.go(-1)" class="back"></a>发食谱
+    </header>
+    <div class="nc_edit clearfix" style="border: 0 solid black;height: 10%">
+        <span class="fl" style="margin-top: 2%;font-size: 16px;font-family: 微软雅黑">食谱日期:</span>
+        <span style="margin-left: 32%;font-size:16px;position: relative;top: 10px;color: #33cc99">{$date}</span>
+    </div>
+
+    <div class="line_bgw" style="height: 0.10rem;"></div>
+
+    <form method="post" action="{:url('recipe/insertRecipe')}" enctype="multipart/form-data">
+        <div class="nc_edit clearfix" style="border: 0 solid black;height: 75%">
+            <!--添加一个隐藏域用于存放吃饭时间-->
+            <input type="hidden" name="eat_time" value="{$time}">
+            <button class="save" style="border:2px solid #f6f6f6;width: 1.2rem;line-height: 0.4rem;border-radius: 0.3rem;background:#ffffff;color:black;font-weight: bold;font-size: 16px;margin: 0;padding: 0" disabled>
+                <img src="__STATIC__/img/breakfast-img.png" height="36" style="float: left"><span style="float: left;margin-left: 15%;font-family: 微软雅黑">早餐</span>
+            </button>
+            <div style="border: 1px solid #eeeeee;width:1px;height: 80px;margin-left: 20px;float: left"></div>
+            <input type="text" name="breakfast" id="breakfast" value="{$breakfastList}" placeholder="添加食物吧~"  style="float: left;border: 5px solid #f8f8f8;margin-left: 20px;margin-top: 20px;width:80%;height: 50%;background:#f8f8f8;font-family: 微软雅黑"/>
+
+
+
+            <button class="save" style="clear: left;border:2px solid #f6f6f6;width: 1.2rem;line-height: 0.4rem;border-radius: 0.3rem;background:#ffffff;color:black;font-weight: bold;font-size: 16px;margin: 0;padding: 0" disabled>
+                <img src="__STATIC__/img/lunch-img.png" height="36" style="float: left"><span style="float: left;margin-left: 15%;font-family: 微软雅黑">午餐</span>
+            </button>
+            <div style="border: 1px solid #eeeeee;width:1px;height: 80px;margin-left: 20px;float: left"></div>
+            <input type="text" name="lunch" id="lunch" value="{$lunchList}" placeholder="添加食物吧~" style="float: left;border: 5px solid #f8f8f8;margin-left: 20px;margin-top: 20px;width:80%;height: 50%;background:#f8f8f8;font-family: 微软雅黑"/>
+
+
+
+            <button class="save" style="clear: both;border:2px solid #f6f6f6;width: 1.2rem;line-height: 0.4rem;border-radius: 0.3rem;background:#ffffff;color:black;font-weight: bold;font-size: 16px;margin: 0;padding: 0" disabled>
+                <img src="__STATIC__/img/snacks-img.png" height="36" style="float: left"><span style="float: left;margin-left: 15%;font-family: 微软雅黑">午点</span>
+            </button>
+            <input type="text" name="snack" id="snack" value="{$snackList}" placeholder="添加食物吧~" style="border: 5px solid #f8f8f8;margin-left: 40px;margin-top: 20px;width:80%;height: 50%;background:#f8f8f8;font-family: 微软雅黑"/>
+            <img src="__STATIC__/img/p4.png" style="margin-left: 5px;margin-top: 35px;float: left" onclick="image.click()">
+            <input type="file" id="image" name="image" style="display: none;margin-top: 45px">
+
+            <!--显示早餐对应的图片-->
+            {if condition="$breakfastList neq ''"}
+            <div style="clear: left;margin-top: 20px;">
+                  {volist name="array1" id="vo1"}
+                      <div style="float: left;margin-left: 2px">
+					  {if condition="$vo1.breakfast_thumb neq ''"}
+                        <div class="breakfast{$id}">
+                            <img src="__STATIC__/../../uploads/file/{$vo1.breakfast_thumb}" height="50" class="img">
+                             <input type="file" name="file" > 
+                            <span style="font-size: 10px;margin-left: 13px">{$vo1.name}</span>
+                        </div>
+					  {/if}
+                      </div>
+                  {/volist}
+            </div>
+            {/if}
+            <!--/显示早餐对应的图片-->
+
+            <!--显示午餐对应的图片-->
+            {if condition="$lunchList neq ''"}
+            <div style="float: left">
+                {volist name="array2" id="vo2"}
+                  <div style="float: left;margin-left: 2px">
+				  {if condition="$vo2.lunch_thumb neq ''"}
+                    <img src="__STATIC__/../../uploads/file/{$vo2.lunch_thumb}" height="50">
+				 
+                    <span style="font-size: 10px;margin-left: 13px">{$vo2.name}</span>
+					
+				  {/if}
+                  </div>
+                {/volist}
+            </div>
+            {/if}
+            <!--/显示午餐对应的图片-->
+
+
+            <!--显示午点对应的图片-->
+            {if condition="$snackList neq ''"}
+            <div style="float: left">
+                {volist name="array3" id="vo3"}
+                  <div style="float: left;margin-left: 2px">
+				    {if condition="$vo3.snack_thumb neq ''"}
+                    <form enctype ="multipart/form-data">
+                        <img src="__STATIC__/../../uploads/file/{$vo3.snack_thumb}" height="50">
+                        <span style="font-size: 10px;margin-left: 13px">{$vo3.name}</span>
+                        <input type="button" name="" value="提交" class="btn">
+                   </form>
+					{/if}
+                  </div>
+                {/volist}
+            </div>
+            {/if}
+            <!--/显示午点对应的图片-->
+        </div>
+
+        <div class="line_bgw"></div>
+        <input type="hidden" name="id" value="{$id}">
+        <input type="hidden" name="type" value="{$type}">
+        <input type="hidden" name="time" value="{$time}">
+        <div class="nc_edit clearfix" style="border: 0 solid black">
+        <input type="submit" name="sub" value="发布"  class="save" style="float: left;background:#33cc99;line-height: 0.4rem;font-size: 15px;width: 1.59rem;color: #f6f6f6;font-family: 微软雅黑"/>
+            
+        <input type="submit" name="btn" value="发布并添加次日" style="border:1px solid #eeeeee;float: left;background:white;line-height: 0.4rem;font-size: 15px;width: 1.59rem;color: #33cc99;font-family: 微软雅黑;margin-left: 5px;border-radius: 0.06rem;"/>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        $(function(){
+            $('.img').click(function(){
+               alert($(this).attr('src'));
+
+
+
+            })
+   
+
+
+        })
+
+    </script>
+</body>
+</html>

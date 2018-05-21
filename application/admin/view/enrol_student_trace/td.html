@@ -1,0 +1,45 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+
+
+
+<td>{$vo.id}</td>
+
+<td>{$vo.name}</td>
+<td>{$vo.current_school}</td>
+<td>{$vo.class}</td>
+<td>{$vo.sex}</td>
+
+<td>{$vo.contacts}</td>
+<td>
+    {if condition="$vo.remark neq ''"}
+         {$vo.remark}
+    {else/}
+          查看过
+    {/if}
+</td>
+<td>{$vo.contact_time}</td>
+<td>
+    <!--判断该联系人是否成交-->
+    {if condition="$vo.isdone eq 1"}
+           <a href="#?id={$vo.id}" style="text-decoration: underline">成交</a>
+    {/if}
+    {if condition="$vo.isdone eq 0"}
+           <a href="#?id={$vo.id}" style="text-decoration: underline">未成交</a>
+    {/if}
+</td>
+
+
+<!--if($new_trace_info[$vo['id']]['remark']){-->
+<!--echo $new_trace_info[$vo['id']]['remark'].'&nbsp;&nbsp;&nbsp;&nbsp;';-->
+<!--}else{-->
+<!--echo '查看过'.'&nbsp;&nbsp;&nbsp;&nbsp;';-->
+<!--}-->
+
+
+
+
+
+
+
+
+

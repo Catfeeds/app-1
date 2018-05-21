@@ -1,0 +1,163 @@
+{extend name="template/base" /}
+{block name="content"}
+<style>
+html,body{height:100%;width:100%;overflow:hidden;}
+.container-fluid{padding-top:70px;height:100%;line-height:30px;}
+i{font-style:normal;}
+li{line-height:40px;border-bottom:1px solid #ccc;padding:10px 10px 0 10px;overflow:hidden;}
+.fr{float:right;}
+.fl{float:left;}
+.c-b{clear:both;}
+ul{height:100%;padding:20px 0;}
+.row{height:100%;}
+.col-4{height:90%;}
+.scroll-top{background:#fff;height:50%;overflow-y:scroll;}
+.scroll-bottom{height:40%;background:#eee;padding:30px 20px;}
+.f-b{font-weight:bold;}
+tbody{background:#fefefe;}
+
+
+.modal{ position:fixed; left:0; top:0; right:0; bottom:0; z-index:1040; display:none; overflow:hidden;-webkit-overflow-scrolling:touch; outline:0}
+.modal-alert{position:fixed; right:auto; bottom:auto; width:300px; left:50%;margin-left:-150px; top:50%;margin-top:-30px; z-index:9999;background-color: #fff;border: 1px solid #999;border: 1px solid rgba(0,0,0,.2);outline: 0;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	-webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+	box-shadow: 0 3px 9px rgba(0,0,0,.5)}
+.modal-alert-info{padding:30px; text-align:center; font-size:14px; background-color:#fff}
+</style>
+
+
+<div class="container-fluid" >
+	<div class="row">
+	    <div class="col-4 fl">
+			<ul class="col-12" style="background:#eee;">
+				<li><b>姓名：</b><i>{$enrolInfo.name}</i></li>
+				<li><b>性别：</b><i>{$enrolInfo.sex}</i></li>
+				<li><b>目前在读学校：</b><i>{$enrolInfo.current_school}</i></li>
+				<li><b>电话：</b><i>{$enrolInfo.contact}</i></li>
+				<li><b>报名学段：</b><i>{$enrolInfo.class}</i></li>
+				<li>
+					<b>个人介绍：</b>
+					<i>
+						{if condition="$enrolInfo.introduce neq ''"}
+						    {$enrolInfo.introduce}
+						{else/}
+						     无
+						{/if}
+					</i>
+				</li>
+				<li><b>报名来源：</b><i>{$enrolInfo.source}</i></li>
+				<li><b>权属：</b><i>暂无</i></li>
+			</ul>
+	    </div>
+	    <div class="col-8 fl scroll-top" >
+			<table class="table table-border table-bg">
+				<thead>
+				<tr>
+				  <th>备注</th>
+				  <th>联系时间</th>
+				  <th>客服代表</th>
+				</tr>
+				</thead>
+				<tbody>
+
+					{volist name="student_traceInfo" id="vs"}
+						<tr class="row">
+						  <td class="col-8">
+							  {if condition="$vs.remark neq ''"}
+							       {$vs.remark}
+							  {else/}
+							       查看过
+							  {/if}
+						  </td>
+						  <td class="col-2">{$vs.contact_time}</td>
+						  <td class="col-2">{$vs.contacts}</td>
+						</tr>
+				    {/volist}
+				</tbody>
+			</table>
+	    </div>
+
+		<div class="col-8 fl scroll-bottom" >
+			<form action="{:url('Enrolstudent/remarkInfo')}" method="post" class="form form-horizontal" id="demoform-1">
+				<select class="select" size="1" id="result">
+					<option value="" selected>---电话状态---</option>
+					<option value="电话打不通">电话打不通</option>
+					<option value="电话关机">电话关机</option>
+					<option value="已联系">已联系</option>
+				</select>
+
+
+				<label>提交备注：</label>
+				<textarea name="remark" id="remark"  cols="" rows="" class="textarea radius"  placeholder="说点什么..."></textarea>
+
+				<!--记录当前学生报名信息的id-->
+				<input type="hidden" name="hide" id="hide" value="{$enrolInfo.id}">
+				<!--/记录当前学生报名信息的id-->
+
+				<div class="row cl">
+					<div class="col-xs-12 col-sm-12">
+						<button class="btn radius btn-primary">提交</button>
+					</div>
+					<div id="modal-alert" class="modal  modal-alert radius" >
+						<div class="modal-alert-info">
+							备注不能为空
+						</div>
+					</div>
+			    </div>
+		    </form>
+
+
+	    </div>
+   </div>
+</div>
+
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__LIB__/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="__LIB__/Validform/5.3.2/Validform.min.js"></script>
+<script type="text/javascript" src="__LIB__/showdown/1.4.2/showdown.min.js"></script>
+<script>window.UEDITOR_HOME_URL = '__LIB__/ueditor/1.4.3/'</script>
+
+<script type="text/javascript" charset="utf-8" src="__LIB__/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__LIB__/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="__LIB__/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+
+<script type="text/javascript" src="__STATIC__/h-ui/js/H-ui.min.js"></script>
+<script>
+
+	$(function(){
+        $('.skin-minimal input').iCheck({
+            checkboxClass: 'icheckbox-blue',
+            radioClass: 'iradio-blue',
+            increaseArea: '20%'
+        });
+
+//        $("#form").Validform({
+//            tiptype: 2,
+//            ajaxPost: true,
+//            showAllError: true,
+//            callback: function (ret){
+//                ajax_progress(ret);
+//            }
+//        });
+
+		$('#result').change(function(){
+			result = $('#result').val();
+			$('#remark').val(result);
+		});
+
+
+		$('form').submit(function(){
+			remark = $('#remark').val();
+			if(!remark){
+				$.Huimodalalert('备注不能为空',1000);
+				return false;
+			}
+
+		});
+
+	});
+
+</script>
+{/block}

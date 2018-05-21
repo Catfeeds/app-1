@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title></title>
+    
+    <script src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script src="__STATIC__/js/rem.js"></script>
+</head>
+<body>
+    <input type="text" name="mobile" >
+    <input type="button" name="" Onclick="btn()" >
+</div>
+<script type="text/javascript">
+    
+    function btn(){
+     
+        var mobile =  $(" input[ name='mobile' ] ").val();
+         $.ajax({
+                    type:'post',//选择get方式提交
+                    url:'{:url("message/send")}',//将数据提交的页面
+                    data:{mobile:mobile},//传值
+                    dataType:'text',
+                    success: function(data)
+                    {  
+                        alert(data);
+                    }
+                })
+
+    }
+</script>
+
+</body>
+</html>

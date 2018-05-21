@@ -1,0 +1,23 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.schoolName}</td>
+<td>{$vo.divisionName}</td>
+<td>{$vo.className}</td>
+
+<td>
+    {if condition="$vo.identity eq 1"}
+            园长
+    {/if}
+    {if condition="$vo.identity eq 2"}
+           教师
+    {/if}
+</td>
+
+<td>{$vo.account|high_light=$Request.param.account}</td>
+<td>{$vo.name|high_light=$Request.param.name}</td>
+<td>{$vo.sex}</td>
+<td>{$vo.height}</td>
+<td>{$vo.weight}</td>
+<td><img src="__ROOT__{$vo.employee_headurl}" height="40"></td>
+<td>{$vo.postName|high_light=$Request.param.postName}</td>
+<td>{$vo.iphone|high_light=$Request.param.iphone}</td>

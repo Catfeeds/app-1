@@ -1,0 +1,10 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.title|high_light=$Request.param.title}</td>
+<td>{$vo.release_id}</td>
+<td>{$vo.release_time}</td>
+<td>{$vo.type}</td>
+
+<!--<td>{:htmlspecialchars_decode($vo.content)}</td>-->
+<td>内容省略</td>
+<td>{$vo.label|high_light=$Request.param.label}</td>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title></title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script type="text/javascript" src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/rem.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header">
+            <a href="javascript:;" onclick="history.go(-1)" class="back"></a>共建家园
+        </header>
+        <div class="bb_w_l_b jy">
+		{volist name="data" id="vo"}
+			<div class="bb_w_l">
+                <div class="bb_w">
+                    <div class="bb_list">
+                        <div class="bb_title">
+                            <img src="__STATIC__/img/001.png" class="img001">
+                            <img src="__STATIC__/img/002.png" class="img002">
+                            <span class="t_l"></span>
+                            <h4>{$vo.title ?? ''}</h4>
+                        </div>
+                        <p class="bb_time">{$vo.release_time ?? ''}</p>
+                    </div>
+                <div class="bb_p">
+                    {$vo.content|htmlspecialchars_decode|stripslashes ?? ''}
+                </div>
+            </div>
+		{/volist}
+		<div>
+    </div>
+    
+</body>
+</html>

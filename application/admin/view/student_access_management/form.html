@@ -1,0 +1,32 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+	
+    <div class="select-box" style="width:250px">
+	<select name="schoolName" class="select" datatype="*" nullmsg="请选择学区名称" >
+		<option value ="" selected>请选择学区名称</option>
+		{volist name="schoolName" id="vo"}
+			<option value ="{$vo.schoolName}">{$vo.schoolName}</option>
+		{/volist}
+	</select>
+	</div>
+	<div class="select-box" style="width:250px">
+	<select name="className" class="select" datatype="*" nullmsg="请选择班级名称" >
+		<option value ="" selected>请选择班级名称</option>
+		{volist name="className" id="vo"}
+			<option value ="{$vo.className}">{$vo.className}</option>
+		{/volist}
+	</select>
+	</div>
+	
+	
+    <input type="text" class="input-text" style="width:250px" placeholder="学员账号" name="account" value="{$Request.param.account}" >
+    <input type="text" class="input-text" style="width:250px" placeholder="姓名" name="name" value="{$Request.param.name}" >
+    <div class="select-box" style="width:250px">
+        <select name="sex" class="select">
+            <option value="男">男</option>
+            <option value="女">女</option>
+        </select>
+    </div>
+    
+    <input type="text" class="input-text" style="width:250px" placeholder="联系方式" name="contact" value="{$Request.param.contact}" >
+    <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+</form>

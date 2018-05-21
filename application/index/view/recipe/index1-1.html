@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>每周食谱</title>
+
+    <link rel="stylesheet" href="__STATIC__/css/layui.css"/>
+    <link rel="stylesheet" href="__STATIC__/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/index.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <script type="text/javascript" src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/rem.js"></script>
+</head>
+<body>
+<div id="wrap" style="padding: 0;background: #f0f0f0;min-height:95vh">
+    <header class="header   header-fixed">
+        <a href="ios://gotoback" onclick="Back()"  class="back"></a>每周食谱
+    </header>
+    <div id="rightPart2" class="box rightPart2" style="margin-top: 0.54rem;">
+    <div id="rightPart2" class="box rightPart2">
+        <div class="schedule1">
+            <div id="calendar" class="dateShow">
+                <table id="dayshow" class="dates">
+                    <tr class="riqi">
+                        <th class="tl" colspan="2"><button id="last-week" class="lastW" title="上一周">上一周</button></th>
+                        <th id="curday" style="color:#333;font-weight: bold !important;" colspan="3"></th>
+                        <th class="tr" colspan="2"><button id="next-week" class="nextW" title="下一周">下一周</button></th>
+                    </tr>
+                    <tr id="monitor">
+                        
+                         <td><button  class="<?php if($riqi['info1']){?>button-bg <?php } ?> <?php if($riqi['time']==1){?>mark1 <?php } ?>">一<br/><i></i></button></td>
+                        <td><button class="<?php if($riqi['info2']){?>button-bg <?php } ?> <?php if($riqi['time']==2){?>mark1 <?php } ?>">二<br/><i></i></button></td>
+                        <td><button class="<?php if($riqi['info3']){?>button-bg <?php } ?> <?php if($riqi['time']==3){?>mark1 <?php } ?>" >三<br/><i></i></button></td>
+                        <td><button class="<?php if($riqi['info4']){?>button-bg <?php } ?> <?php if($riqi['time']==4){?>mark1 <?php } ?>"  >四<br/><i></i></button></td>
+                        <td><button class="<?php if($riqi['info5']){?>button-bg <?php } ?> <?php if($riqi['time']==5){?>mark1 <?php } ?>" >五<br/><i></i></button></td>
+                        <td><button>六<br /><i></i></button></td>
+                        <td><button>日<br /><i></i></button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--展示-->
+        <script src="__STATIC__/js/date.js"></script>
+        <div class="main-food-family">
+            <dl>
+                <?php if($result['breakfast']){ ?>
+                <dt class="dt-breakfast">早餐</dt>
+                 <?php foreach ($breakfast as $key=>$value){?>
+                    <dd>{$value}</dd>
+                   <?php } ?>
+                <?php } ?>
+                
+                <?php if($result['lunch']){ ?>
+                <dt class="dt-lunch">中餐</dt>
+              
+                 <?php  foreach ($lunch as $key=>$value){?>
+                    <dd>{$value}</dd>
+                   <?php } ?>
+                <?php } ?>
+                <?php if($result['snack']){ ?>
+                <dt class="dt-mug-up">午点</dt>
+                  <?php foreach ($snack as $key=>$value){?>
+                    <dd>{$value}</dd>
+                   <?php } ?>
+                <?php } ?>
+            </dl>
+            
+            <div class="main-food">
+                <ul class="row main-food-ul">
+                    <?php foreach($break_imagename as $key=>$value){?>
+                        <li class="col-xs-4">
+                            <a  href="{$value.0}">
+                                <img src="{$value.1}"/>
+                            </a>
+                            <p class="ppp1">{$value.2}</p>
+                        </li>
+                     <?php } ?>
+                    <?php foreach($lunch_imagename as $key=>$value){?>
+                        <li class="col-xs-4">
+                            <a  href="{$value.0}">
+                                <img src="{$value.1}"/>
+                            </a>
+                            <p class="ppp1">{$value.2}</p>
+                        </li>
+                     <?php } ?>
+                     <?php foreach($snack_imagename as $key=>$value){?>
+                        <li class="col-xs-4">
+                            <a  href="{$value.0}">
+                                <img src="{$value.1}"/>
+                            </a>
+                            <p class="ppp1">{$value.2}</p>
+                       </li>
+                    <?php } ?>
+                    <li class=" clear"> </li>
+                </ul>
+            </div>
+
+
+
+
+            <?php if($zanname){?>
+                <p class="zan-pass">
+                    <?php foreach($zanname as $key=>$value){?>
+                    <span>
+                        <i>{$value}</i>
+                    </span>
+                    <?php } ?>
+              
+                   
+                </p>
+            <?php } ?>
+            <input type="hidden" name="schoolName" value="{$schoolName}">
+            <input type="hidden" name="rid" value="{$result.rid}">
+            <input type="hidden" name="phone_account" value="{$phone_account}">
+        <?php if(empty($result['breakfast'])&&empty($result['lunch'])&&empty($result['snack'])){?>
+              <a href="javascript:" class="" style="margin:0.1rem 50%;"></a>
+        <?php }elseif($iszan['iszan']){?>
+            <a href="javascript:" class="click-zan click-zan-red" style="margin:0.1rem 50%;"></a>
+           <?php }else{?>
+            <a href="javascript:" class="click-zan " style="margin:0.1rem 50%;"></a>
+        <?php } ?>
+        </div>
+    </div>
+</div>
+  
+    <script type="text/javascript" src="__STATIC__/js/baguetteBox.min.js"></script>
+    <script type="text/javascript">
+        baguetteBox.run('.main-food');
+    </script>
+
+
+    
+
+    <script>
+
+        $(function () {
+            /*上一周*/
+            $('#next-week,#last-week').click(function(){
+                var riqi='';
+                var schoolName = $(" input[ name='schoolName' ] ").val();
+                var myDate=new Date();
+                    today = myDate.getDate();//获取当前日期
+                    monthI = myDate.getMonth()+1;//获取当前月份
+                    yearI = myDate.getFullYear();//获取当前年份
+
+                
+                for(var i=0;i<5;i++){
+                    if($('#curday').html()+'-'+$('#monitor').find('i').eq(i).text()== yearI+'-'+monthI+'-'+today){
+                        $('#monitor').find('button').eq(i).addClass("mark1"); 
+                       
+                    }else{
+                   
+                        $('#monitor').find('button').eq(i).removeClass("mark1"); 
+                    }
+                    if(i==4){
+                        if($('#monitor').find('i').eq(i).html()<10){
+                             day = '0'+($('#monitor').find('i').eq(i).html());
+                        }else{
+                             day = $('#monitor').find('i').eq(i).html();
+                        }
+                        riqi+=$('#curday').html()+'-'+day;
+                    }else{
+                        if($('#monitor').find('i').eq(i).html()<10){
+                             day = '0'+($('#monitor').find('i').eq(i).html());
+                        }else{
+                             day = $('#monitor').find('i').eq(i).html();
+                        }
+
+                        riqi+=$('#curday').html()+'-'+day+',';
+                    }
+
+
+                }
+                $.ajax({
+                url:'{:url("recipe/week")}',
+                type:'post',
+                data:{riqi:riqi,schoolName:schoolName},
+                dataType:'json',
+                success:function(d){
+
+                    if(d.info1==2){
+                       $('#monitor').find('button').eq(0).removeClass("button-bg"); 
+                    }else if(d.info1==1){
+                       $('#monitor').find('button').eq(0).addClass("button-bg"); 
+                    }
+
+                    if(d.info2==2){
+                       $('#monitor').find('button').eq(1).removeClass("button-bg"); 
+                    }else if(d.info2==1){
+                       $('#monitor').find('button').eq(1).addClass("button-bg"); 
+                    }
+
+                    if(d.info3==2){
+                       $('#monitor').find('button').eq(2).removeClass("button-bg"); 
+                    }
+                    else if(d.info3==1){
+                       $('#monitor').find('button').eq(2).addClass("button-bg"); 
+                    }
+                    if(d.info4==2){
+                       $('#monitor').find('button').eq(3).removeClass("button-bg"); 
+                    }else if(d.info4==1){
+                       $('#monitor').find('button').eq(3).addClass("button-bg"); 
+                    }
+                    if(d.info5==2){
+                       $('#monitor').find('button').eq(4).removeClass("button-bg"); 
+                    }else if(d.info5==1){
+                       $('#monitor').find('button').eq(4).addClass("button-bg"); 
+                    }
+       
+                   
+                    
+                }
+                })
+             })
+
+
+            $("#monitor td button").click(function(){
+                
+                var schoolName = $(" input[ name='schoolName' ] ").val();
+                var phone_account = $(" input[ name='phone_account' ] ").val();
+
+                if($(this).find('i').html()<10){
+                     day = '0'+($(this).find('i').html());
+                }else{
+                     day = $(this).find('i').html();
+                }
+                var date = $('#curday').html()+'-'+day; 
+                $(this).addClass('mark1')
+                .parent().siblings().children('button').removeClass('mark1');
+                $.ajax({
+                        url:"{:url('recipe/seeFood')}",
+                        type:"post",
+                        dataType:'text',
+                        data:{'date':date,'schoolName':schoolName,'phone_account':phone_account},
+                        success:function(d){
+                            //console.log(d);
+                            $(".main-food-family").html(d);
+
+                        }
+
+                    })
+             });
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $(document).on('click','.click-zan',function(){
+                var rid = $(" input[ name='rid' ] ").val();
+                var phone_account = $(" input[ name='phone_account' ] ").val();
+                if($(this).hasClass('click-zan-red')){
+                    $(this).removeClass('click-zan-red')
+                }else{
+                    $(this).addClass('click-zan-red')
+                }
+                $.ajax({
+                url:'{:url("recipe/zan")}',
+                type:'post',
+                data:{rid:rid,phone_account:phone_account},
+                dataType:'json',
+                success:function(d){
+            
+                    $(".zan-pass").html(d);
+                }
+
+                })
+            }) 
+
+        })
+    
+	function Back(){
+			android.toFinish();
+			
+		}
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="keywords" content="派职网,高考">
+		<title>派职网-日结兼职</title>
+		<link rel="stylesheet" type="text/css" href="__STATIC__/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="__STATIC__/css/common.css"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<a href="{:url('index/index')}" ><img src="__STATIC__/img/logo1.png" class="logo"/></a>
+			</div>
+		</nav>
+		<div class="container container-top">
+			<div class="col-sm-8 col-xs-12" >
+				<header class="header1">
+					<a href="{:url('index/index')}">首页 </a><span class="glyphicon glyphicon-menu-right"></span> 日结兼职
+				</header>
+				<div class="m-t15">
+					<img src="__STATIC__/img/rjjz.png" width="100%"/>
+				</div>
+				<section class="m-t15 list-job">
+					<ul id="list">
+					{if condition="!empty($part)" }
+					{volist name="part" id="vo2"}
+						<a href="{:url('index/detail')}?id={$vo2.id}">
+							<li class="in">
+								<span class="new-pag-green">{$vo2.wageGuarantee}</span>&nbsp;<span class="title">{$vo2.positionName}</span>
+								<p class="new">
+									<span class="title">{$vo2.area}</span><span>&nbsp;|&nbsp;已报名{$vo2.enroolCount}&nbsp;|&nbsp;需求{$vo2.count}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>{$vo2.period}</span>
+								</p>
+								<p class="new"><span class="new-pag-bor font-12">{$vo2.type}</span><span class="new-pag-bor font-12">{$vo2.payroll}</span><span class="f-r">{$vo2.release_time}</span></p>
+							</li>
+						</a>
+				    {/volist}
+					{else/}	
+						<span >无数据</span>
+					{/if}
+					</ul>
+				</section>
+				{$page}
+				{include file="index@tpl/footer" /}
+			</div>
+			{include file="index@tpl/right1" /}
+		</div>
+		<div class="actGotop"><a href="javascript:;" title="返回顶部" class="glyphicon glyphicon-menu-up"></a><br/>TOP</div>
+	</body>
+	<script src="__STATIC__/js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="__STATIC__/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="__STATIC__/js/gotop.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.js-select li a').click(function(){
+				$(this).addClass('new-pag').siblings('a').removeClass('new-pag');
+			})
+		})
+	</script>
+</html>

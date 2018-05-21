@@ -1,0 +1,55 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+
+    <!--<input type="text" class="input-text Wdate" style="width:250px" placeholder="发布时间" name="release_time" value="{$Request.param.release_time}" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal} >-->
+
+
+    <div class="select-box" style="width:250px">
+        <select name="work_id" class="select" datatype="*" nullmsg="请选择用工单位" >
+            <option value ="">请选择用工单位</option>
+            {volist name="work" id="vo"}
+               <option value ="{$vo.id}">{$vo.work_unit}</option>
+            {/volist}
+        </select>
+    </div>
+
+
+    <div class="select-box" style="width:250px">
+        <select name="area" class="select" datatype="*" nullmsg="请选择工作区域" >
+            <option value ="">请选择工作区域</option>
+            {volist name="area" id="v1"}
+            <option value ="{$v1.area}">{$v1.area}</option>
+            {/volist}
+        </select>
+    </div>
+
+
+    <div class="select-box" style="width:250px">
+        <select name="position_type" class="select" datatype="*" nullmsg="请选择职位种类" >
+            <option value ="">请选择职位种类</option>
+            <option value ="1">兼职</option>
+            <option value ="2">全职</option>
+        </select>
+    </div>
+
+
+
+
+
+
+    <div class="select-box" style="width:250px">
+        <select name="ishire" class="select" datatype="*" nullmsg="请选择录用状态" >
+            <option value ="">请选择录用状态</option>
+
+            <option value ="1">已录用</option>
+            <option value ="0">未录用</option>
+        </select>
+    </div>
+
+
+
+
+
+
+
+    <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+</form>

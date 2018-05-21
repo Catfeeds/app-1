@@ -1,0 +1,15 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.name|high_light=$Request.param.name}</td>
+<td>{$vo.account|high_light=$Request.param.account}</td>
+<td>{$vo.divisionName|high_light=$Request.param.divisionName}</td>
+<td>{$vo.type}</td>
+<td>{$vo.time}</td>
+
+<td>
+    {if condition="$vo.flag eq 0"}
+          进门
+    {else /} 出门
+    {/if}
+</td>
+<td>{$vo.remark}</td>

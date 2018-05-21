@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title></title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script src="__STATIC__/js/rem.js"></script>
+</head>
+    <style>
+    #logox
+     {
+     
+        position: relative;
+      
+        overflow: hidden;
+        top: 25px;
+       /* right: 50px;*/
+      
+
+        width: 1rem;
+        height: 1rem;
+        background: url(__STATIC__/img/de_03.png) no-repeat;
+        background-size: 100% 100%;
+        float: left;
+        margin-right: 0.1rem;
+    }
+
+    #logox img,
+    #logox1 img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-height: 100px;
+        width: 100%;
+    }
+
+    .htmleaf-container {
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background: #000;
+        display: none;
+        z-index: 9999999;
+    }
+
+    #clipArea,
+    #clipArea1 {
+        height: 90%;
+    }
+
+    .foot-use {
+        background: #fff;
+        height: 10%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .uploader1 {
+        position: absolute;
+        width: 110px;
+        height: 8rem;
+        cursor: default;
+        height: 100%;
+        float: left;
+    }
+
+    .blue .button {
+        color: #fff;
+        background: #18b4ed;
+        height: 100%;
+        width: 1rem;
+        font-size: 14px;
+    }
+
+    #file,
+    #file1 {
+        float: left;
+        height: 100%;
+        width: 110px;
+    }
+
+    .uploader1 input[type=file] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        height: 0.24rem;
+        width: 50%;
+        cursor: pointer;
+        border: solid 1px #ddd;
+        opacity: 0;
+    }
+
+    #clipBtn,
+    #clipBtn1 {
+        float: right;
+        height: 100%;
+        width: 1rem;
+        background: #18b4ed;
+        border: 0;
+        outline: none;
+        color: #fff;
+        font-size: 0.12rem;
+        z-index: 999;
+        position: relative;
+    }
+
+    .sc_img {
+        overflow: hidden;
+        padding: 0 0 50px 0;
+        position: relative;
+    }
+ 
+    </style>
+<body>   
+
+      <article class="htmleaf-container htmleaf-container1">
+        <div id="clipArea"></div>
+        <div class="foot-use">
+        
+            <div class="uploader1 blue">
+                <input type="button" name="file" class="button" value="打开"/>
+                <input id="file" type="file" accept="image/*" multiple name="file"/>
+            </div>
+            <button  id="clipBtn">截取</button>
+       
+        </div>
+        <div id="view"></div>
+    </article>
+
+    <div id="wrap">
+        <header class="header">
+            <a href="javascript:;" onclick="history.go(-1)" class="back"></a>成长记忆发布
+        </header>
+        <div class="star_b zb_b jy">
+          <form action="{:\\think\\Url::build('Rnote/index')}" method="post" enctype="multipart/form-data" onSubmit="return myCheck()">
+            <textarea name="content" class="xq_textarea" placeholder="记录宝宝的成长点滴" id="content"></textarea>
+           
+         <!--  <div class="pz_div">
+                  <img src="img/de_03.png" class="de">
+                  <div class="zp_box clearfix">
+                      <img src="img/hz.png">
+                      <img src="img/hz.png">
+                      <img src="img/hz.png">
+                      <img src="img/hz.png">
+                  </div>
+          </div> -->
+      
+                
+                   
+            <div class="fr" id="logox">
+               
+            </div>
+            <input type="hidden" name="images" value="" id="images">
+            
+               
+           
+          <input type="submit" value="发布" class="submit_xx" >
+           
+         </form>
+
+        </div>
+    </div>
+   <script src="__STATIC__/js/iscroll-zoom.js"></script>
+    <script src="__STATIC__/js/hammer.js"></script>
+    <script src="__STATIC__/js/jquery.photoClip.js"></script>
+    <script>
+    var obUrl = ''
+    //document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    $("#clipArea").photoClip({
+        width: 260,
+        height: 130,
+        file: "#file",
+        view: "#view",
+        ok: "#clipBtn",
+     
+        loadStart: function() {
+		
+            // console.log("照片读取中");
+        },
+		
+        loadComplete: function() {
+		
+            // console.log("照片读取完成");
+        },
+        clipFinish: function(dataURL) {
+            $.ajax({ 
+            url:"{:url('rnote/base')}", 
+            data:{str:dataURL}, 
+            type:'post', 
+            success:function(d){
+              //  console.log(d);
+            $('#images').val(d);
+           
+           
+            }
+         }) 
+        }
+    });
+
+    $("#logox").click(function() {
+        $(".htmleaf-container1").show();
+    })
+    $("#clipBtn").click(function() {
+        $("#logox").empty();
+        $('#logox').append('<img src="' + imgsource + '" align="absmiddle">');
+        $(".htmleaf-container1").hide();
+    })
+    </script>
+	
+	<script type="text/javascript">
+	
+        function myCheck()
+        {
+		 if($("#content").val()==''){
+		 alert('请输入内容！');
+		    return false;
+		 };
+		 if($(":hidden[name=images]").val()==''){
+		 alert('请上传图片！');
+		    return false;
+		 };
+
+        }
+    </script>
+</body>
+
+</htm

@@ -1,0 +1,13 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+    <!--<input type="text" class="input-text" style="width:250px" placeholder="标题" name="title" value="{$Request.param.title}" >-->
+    <div class="select-box" style="width:250px">
+        <select class="select" name="sex" value="{$Request.param.sex}">
+            <option value="男" selected>男</option>
+            <option value="女">女</option>
+        </select>
+    </div>
+
+    <input type="text" class="input-text Wdate" style="width:250px" placeholder="报名时间" name="enroll_time" value="{$Request.param.enroll_time}" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal} >
+    <!--<input type="text" class="input-text" style="width:250px" placeholder="类型" name="type" value="{$Request.param.type}" >-->
+    <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+</form>

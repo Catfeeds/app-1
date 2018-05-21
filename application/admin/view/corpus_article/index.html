@@ -1,0 +1,48 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    {include file="form" /}
+    <div class="cl pd-5 bg-1 bk-gray">
+        <span class="l">
+            <!--{tp:menu menu="fadd,forbid,resume,delete,recyclebin,echarts" /}-->
+            {tp:menu menu="forbid,resume,delete,recyclebin,echarts" /}
+        </span>
+        <span class="r pt-5 pr-5">
+            共有数据 ：<strong>{$count ?? '0'}</strong> 条
+        </span>
+    </div>
+    <table class="table table-border table-bordered table-hover table-bg mt-20">
+        <thead>
+        <tr class="text-c">
+            {include file="th" /}
+
+            <!--若是合格-->
+            {if condition="$result eq 1"}
+              <th width="">审核员</th>
+            {/if}
+            <!--若是不合格-->
+            {if condition="$result eq 2"}
+                 <th width="">不合格理由</th>
+                 <th width="">审核员</th>
+            {/if}
+
+              <th width="70">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {volist name="list" id="vo"}
+        <tr class="text-c">
+            {include file="td" /}
+            <td class="f-14">
+                <!--{$vo.status|show_status=$vo.id}-->
+                <!--{tp:menu menu='fsedit' /}-->
+                {tp:menu menu='sdelete' /}
+            </td>
+        </tr>
+        {/volist}
+        </tbody>
+    </table>
+    <div class="page-bootstrap">{$page ?? ''}</div>
+</div>
+{/block}
+

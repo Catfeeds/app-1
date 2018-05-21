@@ -1,0 +1,238 @@
+[ 2018-03-17T23:41:16+08:00 ] 0.0.0.0 112.28.178.76 GET /index/appapi/classes?phone_account=S13866187233&account=A36530456&page=1&num=10&type=1
+[ log ] yeyap.com/index/appapi/classes?phone_account=S13866187233&account=A36530456&page=1&num=10&type=1 [运行时间：0.334691s][吞吐率：2.99req/s] [内存消耗：2,079.69kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'appapi',
+    2 => 'classes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/appapi/classes?phone_account=S13866187233&account=A36530456&page=1&num=10&type=1',
+  'user-agent' => 'okhttp/3.9.0',
+  'if-modified-since' => 'Sat, 17 Mar 2018 15:36:13 GMT',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'account' => 'A36530456',
+  'page' => '1',
+  'num' => '10',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Appapi->classes[ C:\wwwroot\AMS\application\index\controller\Appapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000955s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.032905s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_school_management` WHERE  `schoolID` = 'A3653'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.043740s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.040420s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `account` = 'A36530456'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_dynamic` [ RunTime:0.039400s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_dynamic` WHERE  `isdelete` = 0  AND `status` = 1  AND `schoolAccount` = 'A36532142' ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_comment` [ RunTime:0.044563s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 185 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_zan` [ RunTime:0.040902s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 185 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 185  AND `phone_account` = 'S13866187233'  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.045755s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `isdelete` = 0  AND `status` = 1 [ RunTime:0.000533s ]
+
+---------------------------------------------------------------
+[ 2018-03-17T23:41:16+08:00 ] 0.0.0.0 112.28.178.76 GET /index/appapi/classes?phone_account=S13866187233&account=A36530456&page=1&num=10&type=1
+[ log ] yeyap.com/index/appapi/classes?phone_account=S13866187233&account=A36530456&page=1&num=10&type=1 [运行时间：0.403125s][吞吐率：2.48req/s] [内存消耗：2,079.74kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'appapi',
+    2 => 'classes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/appapi/classes?phone_account=S13866187233&account=A36530456&page=1&num=10&type=1',
+  'user-agent' => 'okhttp/3.9.0',
+  'if-modified-since' => 'Sat, 17 Mar 2018 15:36:13 GMT',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'account' => 'A36530456',
+  'page' => '1',
+  'num' => '10',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Appapi->classes[ C:\wwwroot\AMS\application\index\controller\Appapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001127s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.087238s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_school_management` WHERE  `schoolID` = 'A3653'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.043980s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.039639s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `account` = 'A36530456'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_dynamic` [ RunTime:0.039442s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_dynamic` WHERE  `isdelete` = 0  AND `status` = 1  AND `schoolAccount` = 'A36532142' ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_comment` [ RunTime:0.044241s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 185 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_zan` [ RunTime:0.042430s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `iszan` = 1  AND `rid` = 185 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `rid` = 185  AND `phone_account` = 'S13866187233'  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.057890s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `isdelete` = 0  AND `status` = 1 [ RunTime:0.000477s ]
+
+---------------------------------------------------------------
+[ 2018-03-17T23:41:55+08:00 ] 0.0.0.0 112.28.178.76 GET /index/notice/index?phone_account=S13866187233&account=A36530456&type=1
+[ log ] yeyap.com/index/notice/index?phone_account=S13866187233&account=A36530456&type=1 [运行时间：0.169634s][吞吐率：5.90req/s] [内存消耗：2,082.20kb] [文件加载：57]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'notice',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/notice/index?phone_account=S13866187233&account=A36530456&type=1',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=8nm1burd4reie66kf5s0ruor82',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'account' => 'A36530456',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Notice->index[ C:\wwwroot\AMS\application\index\controller\Notice.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\notice\index.html [ array (
+  0 => 'list',
+  1 => 'phone_account',
+  2 => 'account',
+  3 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001268s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.022434s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.018593s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_school_management` WHERE  `schoolID` = 'A3653'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.017028s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `account` = 'A36530456'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_notice` [ RunTime:0.016323s ]
+[ sql ] [ SQL ] SELECT a.id as id,a.title as title,a.phone_account as phone_account,a.release_time as release_time,a.content as content,a.images as images,a.thumbs as thumbs FROM `tp_notice` `a`,`tp_notice_read` `b` WHERE  (  a.id=b.nid and b.phone_account="S13866187233"  and schoolAccount="A36532142" )  AND `a`.`status` = 1  AND `a`.`isdelete` = 0  AND `b`.`status` = 1  AND `b`.`isdelete` = 0 ORDER BY `a`.`release_time`  desc [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice` WHERE  `schoolAccount` = 'A36532142'  AND `status` = 1  AND `isdelete` = 0  AND `id` NOT IN (14,1) ORDER BY `release_time`  desc [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_notice_comment` [ RunTime:0.016768s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 14 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_notice_zan` [ RunTime:0.017216s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 14  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 14  AND `phone_account` = 'S13866187233'  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'A3462730'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_comment` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 1 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 1  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_notice_zan` WHERE  `isdelete` = 0  AND `status` = 1  AND `nid` = 1  AND `phone_account` = 'S13866187233'  AND `iszan` = 1 LIMIT 1 [ RunTime:0.000446s ]
+
+---------------------------------------------------------------
+[ 2018-03-17T23:41:55+08:00 ] 0.0.0.0 112.28.178.76 GET /static/index/css/layui.css
+[ log ] yeyap.com/static/index/css/layui.css [运行时间：0.022682s][吞吐率：44.09req/s] [内存消耗：1,109.46kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/layui.css',
+  'x-requested-with' => 'com.yeyap.baobei',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; EVA-AL00 Build/HUAWEIEVA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'referer' => 'http://yeyap.com/index/notice/index?phone_account=S13866187233&account=A36530456&type=1',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=8nm1burd4reie66kf5s0ruor82',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/css,*/*;q=0.1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-17T23:42:01+08:00 ] 0.0.0.0 112.28.178.76 GET /index/appapi/classes?phone_account=S13866187233&account=A36530456&page=2&num=10&type=1
+[ log ] yeyap.com/index/appapi/classes?phone_account=S13866187233&account=A36530456&page=2&num=10&type=1 [运行时间：0.155164s][吞吐率：6.44req/s] [内存消耗：2,068.16kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'appapi',
+    2 => 'classes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/appapi/classes?phone_account=S13866187233&account=A36530456&page=2&num=10&type=1',
+  'user-agent' => 'okhttp/3.9.0',
+  'if-modified-since' => 'Sat, 17 Mar 2018 15:38:01 GMT',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'phone_account' => 'S13866187233',
+  'account' => 'A36530456',
+  'page' => '2',
+  'num' => '10',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Appapi->classes[ C:\wwwroot\AMS\application\index\controller\Appapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001175s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.033629s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_school_management` WHERE  `schoolID` = 'A3653'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.018644s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `phone_account` = 'S13866187233'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_employee_management` [ RunTime:0.019138s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_employee_management` WHERE  `account` = 'A36530456'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_dynamic` [ RunTime:0.018421s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_dynamic` WHERE  `isdelete` = 0  AND `status` = 1  AND `schoolAccount` = 'A36532142' ORDER BY `release_time`  desc LIMIT 10,10 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.022384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `isdelete` = 0  AND `status` = 1 [ RunTime:0.000495s ]
+
+---------------------------------------------------------------

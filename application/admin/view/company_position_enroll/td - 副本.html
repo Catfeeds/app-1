@@ -1,0 +1,80 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.companyName}</td>
+
+<td>
+    <?php
+       echo $positionInfo[$vo['pid']];
+    ?>
+</td>
+<td>{$vo.area}</td>
+<td>
+    {if condition="$vo.position_type eq 1"}
+         兼职
+    {/if}
+    {if condition="$vo.position_type eq 2"}
+         全职
+    {/if}
+</td>
+
+
+<td>
+    <?php
+      echo $certificationInfo[$vo['user_id']]['name'];
+    ?>
+</td>
+
+<td>
+
+    <?php
+
+       $birthdate = $certificationInfo[$vo['user_id']]['cardID'];
+	   
+       $birthdateTime = substr($birthdate,5,4);
+       $nowTime = date('Y',time());
+       $age = $nowTime-$birthdateTime;
+       echo $age;
+
+     ?> 
+</td>
+<td>
+
+    <?php
+       echo $certificationInfo[$vo['user_id']]['sex'];
+    ?>
+</td>
+<td>
+
+    <?php
+       echo $patriarchInfo[$vo['user_id']]['phone'];
+    ?>
+</td>
+
+<td>{$vo.enroll_time}</td>
+<td>
+    <?php
+       echo $patriarchInfo[$vo['user_id']]['score'];
+    ?>
+</td>
+
+<td>
+    <!--<a href="{:url('CompanyPositionEnroll/selectResume',array('user_id'=>$vo.user_id))}" style="color: #148cf1">查看简历</a>-->
+
+    <a href="javascript:;" onclick="layer_open('个人简历', '{:\\think\\Url::build(\'CompanyPositionEnroll/selectResume\',array(\'user_id\'=>$vo.user_id))}')" style="color: #148cf1">查看简历</a>
+</td>
+
+<td>
+    {if condition="$vo.ishire eq 0"}
+        <a id="info{$vo.id}" href="javascript:;"  onclick="ishire({$vo.id})"  style="color: #148cf1">未录用</a>
+    {/if}
+    {if condition="$vo.ishire eq 1"}
+        <a id="info{$vo.id}" href="javascript:;" onclick="ishire({$vo.id})"  style="color: #148cf1">已录用</a>
+    {/if}
+
+</td>
+
+
+
+
+
+

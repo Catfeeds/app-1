@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>教师简介</title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script type="text/javascript" src="__STATIC__/js/jquery.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/rem.js"></script>
+	<script src="__STATIC__/js/jsbridge.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header  header-fixed">
+            <a href="javascript:;" onclick="history.go(-1)" class="back"></a>教师简介
+        </header>
+		<ul class="teacher">
+		{volist name="data" id="vo"}
+			<li>
+				<div class="teacher_div">
+					<img src="{$vo.image}"/>
+				</div>
+				<div class="teacher_div_r">
+					<p>{$vo.title}</p>
+					<p>学历：{$vo.xueli}</p>
+					<p style="font-size: 0.14rem">{$vo.content}</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+		{/volist}
+			
+		</ul>
+    </div>
+   <script>
+       $(function () {
+        // 首先调用JSBridge初始化代码，完成后再设置其他
+        initJsBridge(function () {
+			$(".back").click(function(){
+				window.WebViewJavascriptBridge.callHandler('back','1', function (response) {
+				
+					 //showResponse(response);
+				});
+			
+			})
+		
+	    })
+	
+	})
+	
+   </script>
+</body>
+</html>

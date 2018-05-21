@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>教师简介</title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script type="text/javascript" src="__STATIC__/js/jquery.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/rem.js"></script>
+	<script src="__STATIC__/js/jsbridge.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header  header-fixed">
+            <a class="back"></a>教师简介
+        </header>
+		<ul class="teacher">
+			<li>
+				<div class="teacher_div fl">
+					<img src="__STATIC__/img/toux.png"/>
+				</div>
+				<div class="teacher_div_r">
+					<p>梁老师</p>
+					<p>学历：本科</p>
+					<p>从事幼教工作经验有六年之久，认真努力，态度端正。</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li>
+				<div class="teacher_div fr">
+					<img src="__STATIC__/img/dingyi.jpg"/>
+				</div>
+				<div class="teacher_div_l">
+					<p>梁老师</p>
+					<p>学历：本科</p>
+					<p>工作经验</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li>
+				<div class="teacher_div fl">
+					<img src="__STATIC__/img/dingyi.jpg"/>
+				</div>
+				<div class="teacher_div_r">
+					<p>梁老师</p>
+					<p>学历：本科</p>
+					<p>工作经验</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li>
+				<div class="teacher_div fr">
+					<img src="__STATIC__/img/dada.jpg"/>
+				</div>
+				<div class="teacher_div_l">
+					<p>梁老师</p>
+					<p>学历：本科</p>
+					<p>工作经验</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li>
+				<div class="teacher_div fl">
+					<img src="__STATIC__/img/dingyi.jpg"/>
+				</div>
+				<div class="teacher_div_r">
+					<p>梁老师</p>
+					<p>学历：本科</p>
+					<p>工作经验</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li>
+				<div class="teacher_div fr">
+					<img src="__STATIC__/img/dingyi.jpg"/>
+				</div>
+				<div class="teacher_div_l">
+					<p>梁老师</p>
+					<p>学历：本科</p>
+					<p>工作经验</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+		</ul>
+    </div>
+    
+</body>
+<script type="text/javascript">
+	
+	/**
+     * jQuery
+     */
+    $(function () {
+        // 首先调用JSBridge初始化代码，完成后再设置其他
+        initJsBridge(function () {
+			$(".back").click(function(){
+				window.WebViewJavascriptBridge.callHandler('back','1', function (response) {
+				
+					 //showResponse(response);
+				});
+			
+			})
+		
+	    })
+	
+	})
+</script>
+</html>

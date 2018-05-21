@@ -1,0 +1,80 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.releaser}</td>
+<td>{$vo.schoolName}</td>
+<td>{$vo.release_time}</td>
+<td>{$vo.eat_time}</td>
+<td>{$vo.type}</td>
+
+<td>
+
+    <?php
+       if(strlen($vo['breakfast'])>1){
+           $arr = explode(',',$vo['breakfast']);
+           $str = '';
+           foreach($arr as $v){
+               if($v!=''){
+                  $str.=$breakfast_array[$v].',';
+               }
+
+           }
+           echo trim($str,',');
+       }elseif(strlen($vo['breakfast']) == 1){
+               echo $breakfast_array[$vo['breakfast']];
+       }else{
+               echo $vo['breakfast'];
+       }
+
+    ?>
+</td>
+
+
+
+<td>
+
+    <?php
+       if(strlen($vo['lunch'])>1){
+           $arr = explode(',',$vo['lunch']);
+           $str = '';
+           foreach($arr as $v){
+              if($v!=''){
+                 $str.=$lunch_array[$v].',';
+              }
+
+           }
+           echo trim($str,',');
+       }elseif(strlen($vo['lunch']) == 1){
+            echo $lunch_array[$vo['lunch']];
+       }else{
+             echo $vo['lunch'];
+       }
+
+    ?>
+</td>
+
+
+
+<td>
+
+    <?php
+       if(strlen($vo['snack'])>1){
+           $arr = explode(',',$vo['snack']);
+           $str = '';
+           foreach($arr as $v){
+              if($v!=''){
+                  $str.=$snack_array[$v].',';
+              }
+
+           }
+           echo trim($str,',');
+       }elseif(strlen($vo['snack']) == 1){
+            echo $snack_array[$vo['snack']];
+       }else{
+             echo $vo['snack'];
+       }
+
+    ?>
+</td>
+
+
+<td>{$vo.label|high_light=$Request.param.label}</td>

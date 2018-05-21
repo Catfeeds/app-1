@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+<title>发布动态</title>
+<link rel="stylesheet" type="text/css" href="__STATIC__/js/layui/css/layui.css"/>
+<link rel="stylesheet" type="text/css" href="__STATIC__/js/layui/css/pintuer.css"/>
+<link rel="stylesheet" type="text/css" href="__STATIC__/css/Public_d.css"/>
+</head>
+<body>
+	<div class="container">
+		<div class="top-box">
+			<span class="fl">
+				<a href="javascript:;" onclick="history.go(-1)" class="back back1">
+					<i class="layui-icon" style="font-size: 0.5rem;color: #33CC99;line-height:1rem;">&#xe603;</i>
+				</a>
+			</span>
+			<a href="javascript:" class="fr">发布</a>
+			<p>发布动态</p>
+			<p>用户班级</p>
+		</div>
+		<div class="form-box">
+			<form action="" class="layui-form layui-form-pane">
+				<textarea  placeholder="说点什么吧..." class="layui-textarea"></textarea>
+			</form>
+		</div>
+		<div class="synchro-growth">
+			<span>
+				同步到成长日记
+			</span>
+			<div class="hd-bg">
+				<div class="hk-yuans"></div>
+			</div>
+		</div>
+		<div class="picture-box">
+			<ul>
+				<li class="picture-cr">
+					<p>拍照/照片</p>
+				</li>
+			</ul>
+			
+		</div>
+		<!--底部固定-->
+		<div class="fixed-box">
+			<ul>
+				<li>
+					<div>
+						<img src="__STATIC__/img/Publicfixed1.png"/>
+					</div>
+					<p>
+						拍照/照片
+					</p>
+				</li>
+				<li>
+					<div>
+						<img src="__STATIC__/img/Publicfixed2.png"/>
+					</div>
+					<p>
+						视频
+					</p>
+				</li>
+				<li>
+					<div>
+						<img src="__STATIC__/img/Publicfixed3.png"/>
+					</div>
+					<p>
+						表情
+					</p>
+				</li>
+				<li>
+					<div>
+						<img src="__STATIC__/img/Publicfixed4.png"/>
+					</div>
+					<p>
+						语音
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+<!--引用资源文件-->
+<script src="__STATIC__/js/jquery.js"></script>
+<script src="__STATIC__/js/layui/layui.js"></script>
+<script src="__STATIC__/js/TouchSlide.1.1.js"></script>
+<script src="__STATIC__/js/client.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var hkYuans=1;
+		$(".hk-yuans").click(function(){
+			if(hkYuans==1){
+				$(this).addClass("hk-yuans-click")
+				$('.hd-bg').css('background','#33cc99')
+				hkYuans=0;
+			}else{
+				$(this).removeClass("hk-yuans-click")
+				$('.hd-bg').css('background','#ccc')
+				hkYuans=1;
+			}
+		})
+		
+	})
+</script>
+</html>

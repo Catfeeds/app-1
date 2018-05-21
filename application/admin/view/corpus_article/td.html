@@ -1,0 +1,79 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.phone_account}</td>
+<td>{$vo.nickname}</td>
+<td>{$vo.city}</td>
+<td>{$vo.plate_name}</td>
+<td>{$vo.title}</td>
+<td>{$vo.release_time}</td>
+<td>
+    <!--统计当前用户发表的所有文集-->
+    <?php
+
+       $count = count($corpus_count[$vo['phone_account']]);
+       echo $count;
+    ?>
+
+</td>
+
+<td>
+   <!--统计该用户发表的文集被收藏的次数-&#45;&#45;只有文集才被收藏-->
+    <?php
+        if(array_key_exists($vo['phone_account'],$corpus_collect_count)){
+            echo $corpus_collect_count[$vo['phone_account']];
+        }else{
+           echo 0;
+        }
+
+   ?>
+</td>
+<td>
+
+    <!--判断当前最新记录在哪张表中-->
+    <?php
+
+             if($vo['isqualified'] == 0)
+             {
+    ?>
+                 <a href="{:url('CorpusArticle/select',array('id'=>$vo.id))}" style="color: #148cf1">未审核</a>
+    <?php
+             }
+             if($vo['isqualified'] == 1)
+             {
+    ?>
+                合格
+    <?php
+             }
+             if($vo['isqualified'] == 2)
+             {
+    ?>
+               不合格
+    <?php
+             }
+
+    ?>
+</td>
+
+
+<!--根据$vo.isqualified判断查看的是未审核的所有内容、还是合格的所有内容、还是不合格的所有内容-->
+<td>
+    <a href="{:url('CorpusArticle/selectAll',array('phone_account'=>$vo.phone_account,'isqualified'=>$vo.isqualified))}" style="color: #148cf1">查看</a>
+</td>
+
+
+<!--若是合格，只显示审核员-->
+{if condition="$vo.isqualified eq 1"}
+<td>
+    {$vo.assessor}
+</td>
+{/if}
+<!--若是不合格，同时显示不合格理由和审核员-->
+{if condition="$vo.isqualified eq 2"}
+<td>
+    {$vo.reason}
+</td>
+<td>
+    {$vo.assessor}
+</td>
+{/if}
+

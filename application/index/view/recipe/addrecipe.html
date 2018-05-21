@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>添加食谱</title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script src="__STATIC__/js/rem.js"></script>
+</head>
+<body>
+<header class="header">
+    <a href="javascript:;" onclick="history.go(-1)" class="back"></a>添加常见菜
+</header>
+<div class="line_bgw" style="height: 0.1rem;"></div>
+
+<form method="post" enctype="multipart/form-data" action="{:url('recipe/addrecipe')}" >
+    <div class="nc_edit clearfix" style="border: 0 solid black;height: 10%">
+        <span class="fl" style="margin-top: 10px;margin-left: 12px;font-size: 16px;font-weight: bold;font-family: 微软雅黑">菜名</span>
+        <input type="text" name="name" style="border: 4px solid white;font-size: 16px;position: relative;left: 18%;width: 70%;height: 43px;font-family: 微软雅黑" id="name">
+    </div>
+
+    <div class="line_bgw" style="height: 0.50rem;font-size: 14px"><span style="position: relative;top: 29%;left: 6%;font-family: 微软雅黑">以下为选填</span></div>
+
+
+    <div class="nc_edit clearfix" style="border: 0 solid black;height: 75%">
+        <span class="fl" style="margin-top: 10px;margin-left: 12px;font-size: 16px;font-weight: bold;font-family: 微软雅黑">份量</span>
+        <input type="text" name="weight" placeholder="如：土豆50g,牛肉100g" style="border: 4px solid white;font-size: 16px;position: relative;left: 8%;width: 80%;height: 43px;font-family: 微软雅黑">
+    </div>
+
+    <div class="line_bgw" style="height: 0.02rem;"></div>
+
+    <!-- <div class="nc_edit clearfix" style="border: 0 solid black;height: 150px;position: relative;">
+        <span class="fl" style="margin-top: 50px;margin-left: 12px;font-size: 16px;font-weight: bold;font-family: 微软雅黑">图片</span>
+        <img src="__STATIC__/img/p4.png" style="margin-left: 12px;margin-top: 35px;float: right;position: absolute;right:10px;top:5px;">
+        <input type="file" id="image" name="file" style="margin-top: 50px;left:20px;width:80%;z-index:100;margin-left: 20%;opacity: 0;z-index: 100">
+    </div> -->
+    
+    <div class="sc_img">
+            <div class="z_photo z_photo1">
+                <span style="font-size: 0.2rem;width: 53%;float: left;margin-left: 18px;margin-top:80px;">图片:</span>
+                <div class="z_file sc_btn z_files" style="float: left;background-size: 80%;width: 1.5rem;height: 1.5rem;background: url(__STATIC__/img/p4.png) center center no-repeat;">
+                 
+                    <input type="file" name="file"  id="file"  value="" accept="image/*"  onchange="imgChange('z_photo','z_file');" />
+                </div>
+            </div>
+    </div>
+    <input type="hidden" name="type" value="{$type}">
+    <input type="hidden" name="id" value="{$id}">
+    <input type="hidden" name="time" value="{$time}">
+    <div class="line_bgw" style="height: 0.02rem;"></div>
+    <div class="nc_edit clearfix" style="border: 0 solid black">
+        <input type="submit" value="保存菜品" class="save" style="margin-left: 75px;margin-top: 10px;background:#33cc99;line-height: 0.4rem;font-size: 15px;width: 1.59rem;color: #f6f6f6;font-family: 微软雅黑" onclick="return check()" />
+    </div>
+</form>
+    <div class="z_mask">
+            <!--弹出框-->
+            <div class="z_alert">
+                <p>确定要删除这张图片吗？</p>
+                <p>
+                    <span class="z_cancel">取消</span>
+                    <span class="z_sure">确定</span>
+                </p>
+            </div>
+        </div>
+
+       <script type="text/javascript">
+        function imgChange(obj1, obj2) {
+            //获取点击的文本框
+            var file = document.getElementById("file");
+            //存放图片的父级元素
+            var imgContainer = document.getElementsByClassName(obj1)[0];
+            //获取的图片文件
+            var fileList = file.files;
+            //文本框的父级元素
+            var input = document.getElementsByClassName(obj2)[0];
+            var imgArr = [];
+            //遍历获取到得图片文件
+            for (var i = 0; i < fileList.length; i++) {
+                var imgUrl = window.URL.createObjectURL(file.files[i]);
+                imgArr.push(imgUrl);
+                var img = document.createElement("img");
+                var span = document.createElement("span");
+                img.setAttribute("src", imgArr[i]);
+                span.setAttribute("class", 'de');
+                var imgAdd = document.createElement("div");
+                imgAdd.setAttribute("class", "z_addImg");
+                imgAdd.appendChild(img);
+                imgContainer.appendChild(imgAdd);
+                imgAdd.appendChild(span);
+            };
+            imgRemove();
+        };
+
+        function imgRemove() {
+
+            var imgList = document.getElementsByClassName("z_addImg");
+            var mask = document.getElementsByClassName("z_mask")[0];
+            var cancel = document.getElementsByClassName("z_cancel")[0];
+            var sure = document.getElementsByClassName("z_sure")[0];
+            for (var j = 0; j < imgList.length; j++) {
+                imgList[j].index = j;
+                imgList[j].onclick = function() {
+                    var t = this;
+                    mask.style.display = "block";
+                    cancel.onclick = function() {
+                        mask.style.display = "none";
+                    };
+                    sure.onclick = function() {
+                        mask.style.display = "none";
+                        t.style.display = "none";
+                    };
+
+                }
+            };
+        };
+
+    </script>
+    <script type="text/javascript">
+        function check(){
+
+            if($('#name').val() == ''){
+                alert('请输入菜名！');
+                return false;
+            }
+
+        }
+
+    </script>
+</body>
+</html>

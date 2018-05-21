@@ -1,0 +1,24 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+    <input type="text" class="input-text" style="width:250px" placeholder="姓名" name="name" value="{$Request.param.name}" >
+    <input type="text" class="input-text" style="width:250px" placeholder="员工账号" name="account" value="{$Request.param.account}" >
+    <input type="text" class="input-text" style="width:250px" placeholder="部门名称" name="divisionName" value="{$Request.param.divisionName}" >
+    <div class="select-box" style="width:250px">
+        <select name="type" class="select">
+            <option value="">请选择门禁方式</option>
+            <option value="APP门禁">APP门禁</option>
+            <option value="人脸门禁">人脸门禁</option>
+            <option value="刷卡门禁">刷卡门禁</option>
+            <option value="车辆门禁">车辆门禁</option>
+        </select>
+    </div>
+
+    <div class="select-box" style="width:250px">
+        <select name="flag" class="select">
+            <option value="0">进门</option>
+            <option value="1">出门</option>
+        </select>
+    </div>
+    <!--<input type="text" class="input-text Wdate" style="width:250px" placeholder="出门时间" name="outTime" value="{$Request.param.outTime}" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal} >-->
+    <!--<input type="text" class="input-text Wdate" style="width:250px" placeholder="进门时间" name="inTime" value="{$Request.param.inTime}" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal} >-->
+    <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+</form>

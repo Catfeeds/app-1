@@ -1,0 +1,78 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+	<div class="select-box" style="width:250px">
+	<select name="schoolName" class="select" datatype="*" nullmsg="请选择学区名称" >
+		<option value ="" selected>请选择学区名称</option>
+		<!--{volist name="list" id="vo"}-->
+			<!--<option value ="{$vo.schoolName}">{$vo.schoolName}</option>-->
+		<!--{/volist}-->
+
+		{volist name="all_schoolName" id="vo"}
+		     <option value ="{$vo.schoolName}">{$vo.schoolName}</option>
+		{/volist}
+	</select>
+	</div>
+    <div class="select-box" style="width:250px">
+        <select name="class" class="select">
+			    <option value ='' selected>请选择学级</option>
+
+			{if condition="$type eq 'A'"}
+			    <option value="小">小</option>
+			    <option value="中">中</option>
+			    <option value="大">大</option>
+			{/if}
+			{if condition="$type eq 'B'"}
+				<option value="一年级">一年级</option>
+				<option value="二年级">二年级</option>
+				<option value="三年级">三年级</option>
+				<option value="四年级">四年级</option>
+				<option value="五年级">五年级</option>
+				<option value="六年级">六年级</option>
+			{/if}
+			{if condition="$type eq 'C'"}
+				<option value="初一">初一</option>
+				<option value="初二">初二</option>
+				<option value="初三">初三</option>
+			{/if}
+			{if condition="$type eq 'D'"}
+				<option value="高一">高一</option>
+				<option value="高二">高二</option>
+				<option value="高三">高三</option>
+			{/if}
+			{if condition="$type eq 'E'"}
+				<option value="大一">大一</option>
+				<option value="大二">大二</option>
+				<option value="大三">大三</option>
+				<option value="大四">大四</option>
+			{/if}
+			<!--超级管理员访问时-->
+			{if condition="$type eq 'admin'"}
+				<option value="小">小</option>
+				<option value="中">中</option>
+				<option value="大">大</option>
+				<option value="一年级">一年级</option>
+				<option value="二年级">二年级</option>
+				<option value="三年级">三年级</option>
+				<option value="四年级">四年级</option>
+				<option value="五年级">五年级</option>
+				<option value="六年级">六年级</option>
+				<option value="初一">初一</option>
+				<option value="初二">初二</option>
+				<option value="初三">初三</option>
+				<option value="高一">高一</option>
+				<option value="高二">高二</option>
+				<option value="高三">高三</option>
+				<option value="大一">大一</option>
+				<option value="大二">大二</option>
+				<option value="大三">大三</option>
+				<option value="大四">大四</option>
+			{/if}
+
+			<!--<option value="小班">小班</option>-->
+            <!--<option value="中班">中班</option>-->
+            <!--<option value="大班">大班</option>-->
+		</select>
+    </div>
+    <input type="text" class="input-text" style="width:250px" placeholder="班级单位" name="className" value="{$Request.param.className}" >
+    <input type="text" class="input-text" style="width:250px" placeholder="班主任" name="classTeacher" value="{$Request.param.classTeacher}" >
+    <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+</form>

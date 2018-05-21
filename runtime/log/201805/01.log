@@ -1,0 +1,849 @@
+[ 2018-05-01T06:21:19+08:00 ] 0.0.0.0 36.60.20.109 GET /
+[ log ] www.paizhiw.com/ [ËøêË°åÊó∂Èó¥Ôºö0.171375s][ÂêûÂêêÁéáÔºö5.84req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,195.21kb] [Êñá‰ª∂Âä†ËΩΩÔºö60]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.0; zh-cn; EVA-AL00 Build/HUAWEIEVA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.3 Mobile Safari/537.36',
+  'host' => 'www.paizhiw.com',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/sharpp,image/apng,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\inetpub\wwwroot\anhui\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001720s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.001334s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `name` LIKE 'ÂêàËÇ•%' LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_position` WHERE  `parent_area_code` = 340100000000 [ RunTime:0.001947s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000523s ]
+
+---------------------------------------------------------------
+[ 2018-05-01T06:21:26+08:00 ] 0.0.0.0 36.60.20.109 GET /
+[ log ] www.paizhiw.com/ [ËøêË°åÊó∂Èó¥Ôºö0.098012s][ÂêûÂêêÁéáÔºö10.20req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,195.19kb] [Êñá‰ª∂Âä†ËΩΩÔºö60]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.0; zh-cn; EVA-AL00 Build/HUAWEIEVA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.3 Mobile Safari/537.36',
+  'host' => 'www.paizhiw.com',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/sharpp,image/apng,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\inetpub\wwwroot\anhui\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001307s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.001371s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `name` LIKE 'ÂêàËÇ•%' LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_position` WHERE  `parent_area_code` = 340100000000 [ RunTime:0.001577s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000437s ]
+
+---------------------------------------------------------------
+[ 2018-05-01T06:21:31+08:00 ] 0.0.0.0 36.60.20.109 GET /
+[ log ] www.paizhiw.com/ [ËøêË°åÊó∂Èó¥Ôºö0.089457s][ÂêûÂêêÁéáÔºö11.18req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,195.19kb] [Êñá‰ª∂Âä†ËΩΩÔºö60]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.0; zh-cn; EVA-AL00 Build/HUAWEIEVA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.3 Mobile Safari/537.36',
+  'host' => 'www.paizhiw.com',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/sharpp,image/apng,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\inetpub\wwwroot\anhui\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.001221s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `name` LIKE 'ÂêàËÇ•%' LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_position` WHERE  `parent_area_code` = 340100000000 [ RunTime:0.001464s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+
+---------------------------------------------------------------
+[ 2018-05-01T06:21:41+08:00 ] 0.0.0.0 36.60.20.109 GET /
+[ log ] www.paizhiw.com/ [ËøêË°åÊó∂Èó¥Ôºö0.093671s][ÂêûÂêêÁéáÔºö10.68req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,195.19kb] [Êñá‰ª∂Âä†ËΩΩÔºö60]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.0; zh-cn; EVA-AL00 Build/HUAWEIEVA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.3 Mobile Safari/537.36',
+  'host' => 'www.paizhiw.com',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/sharpp,image/apng,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\inetpub\wwwroot\anhui\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001161s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.001222s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `name` LIKE 'ÂêàËÇ•%' LIMIT 1 [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_position` WHERE  `parent_area_code` = 340100000000 [ RunTime:0.001473s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+
+---------------------------------------------------------------
+[ 2018-05-01T06:21:58+08:00 ] 0.0.0.0 36.60.20.109 GET /1008∫œ∑ ’“π§◊˜ºÊ÷∞£¨∫œ∑ ¥Û—ß…˙ºÊ÷∞£¨∫œ∑ –£‘∞ºÊ÷∞£¨∫œ∑ ’–∆∏ - ≈…÷∞Õ¯
+[ log ] www.paizhiw.com/1008∫œ∑ ’“π§◊˜ºÊ÷∞£¨∫œ∑ ¥Û—ß…˙ºÊ÷∞£¨∫œ∑ –£‘∞ºÊ÷∞£¨∫œ∑ ’–∆∏ - ≈…÷∞Õ¯ [ËøêË°åÊó∂Èó¥Ôºö0.036861s][ÂêûÂêêÁéáÔºö27.13req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,114.45kb] [Êñá‰ª∂Âä†ËΩΩÔºö42]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '1008∫œ∑ ’“π§◊˜ºÊ÷∞£¨∫œ∑ ¥Û—ß…˙ºÊ÷∞£¨∫œ∑ –£‘∞ºÊ÷∞£¨∫œ∑ ’–∆∏ - ≈…÷∞Õ¯',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/1008%E5%90%88%E8%82%A5%E6%89%BE%E5%B7%A5%E4%BD%9C%E5%85%BC%E8%81%8C%EF%BC%8C%E5%90%88%E8%82%A5%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%85%BC%E8%81%8C%EF%BC%8C%E5%90%88%E8%82%A5%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C%EF%BC%8C%E5%90%88%E8%82%A5%E6%8B%9B%E8%81%98%20-%20%E6%B4%BE%E8%81%8C%E7%BD%91',
+  'queen' => '0',
+  'apn-type' => '0-13',
+  'q-ua2' => 'QV=3&PL=ADR&PR=QB&PP=com.tencent.mtt&PPVN=8.3.1.4075&TBSVC=43100&CO=BK&COVC=038370&PB=GE&VE=GA&DE=PHONE&CHID=70124&LCID=10304&MO= EVA-AL00 &RL=1080*1794&OS=7.0&API=24',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.0; zh-cn; EVA-AL00 Build/HUAWEIEVA-AL00) AppleWebKit/533.1 (KHTML, like Gecko) Mobile Safari/533.1',
+  'host' => 'www.paizhiw.com',
+  'accept-encoding' => 'gzip',
+  'accept' => 'application/vnd.wap.xhtml+xml,application/xml,text/vnd.wap.wml,text/html,application/xhtml+xml,image/jpeg;q=0.5,image/png;q=0.5,image/gif;q=0.5,image/*;q=0.6,video/*,audio/*,*/*;q=0.6',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-01T06:21:58+08:00 ] 0.0.0.0 36.60.20.109 GET /1008∫œ∑ ’“π§◊˜ºÊ÷∞£¨∫œ∑ ¥Û—ß…˙ºÊ÷∞£¨∫œ∑ –£‘∞ºÊ÷∞£¨∫œ∑ ’–∆∏ - ≈…÷∞Õ¯
+[ log ] www.paizhiw.com/1008∫œ∑ ’“π§◊˜ºÊ÷∞£¨∫œ∑ ¥Û—ß…˙ºÊ÷∞£¨∫œ∑ –£‘∞ºÊ÷∞£¨∫œ∑ ’–∆∏ - ≈…÷∞Õ¯ [ËøêË°åÊó∂Èó¥Ôºö0.032029s][ÂêûÂêêÁéáÔºö31.22req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,114.45kb] [Êñá‰ª∂Âä†ËΩΩÔºö42]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '1008∫œ∑ ’“π§◊˜ºÊ÷∞£¨∫œ∑ ¥Û—ß…˙ºÊ÷∞£¨∫œ∑ –£‘∞ºÊ÷∞£¨∫œ∑ ’–∆∏ - ≈…÷∞Õ¯',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/1008%E5%90%88%E8%82%A5%E6%89%BE%E5%B7%A5%E4%BD%9C%E5%85%BC%E8%81%8C%EF%BC%8C%E5%90%88%E8%82%A5%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%85%BC%E8%81%8C%EF%BC%8C%E5%90%88%E8%82%A5%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C%EF%BC%8C%E5%90%88%E8%82%A5%E6%8B%9B%E8%81%98%20-%20%E6%B4%BE%E8%81%8C%E7%BD%91',
+  'queen' => '0',
+  'apn-type' => '0-13',
+  'q-ua2' => 'QV=3&PL=ADR&PR=QB&PP=com.tencent.mtt&PPVN=8.3.1.4075&TBSVC=43100&CO=BK&COVC=038370&PB=GE&VE=GA&DE=PHONE&CHID=70124&LCID=10304&MO= EVA-AL00 &RL=1080*1794&OS=7.0&API=24',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.0; zh-cn; EVA-AL00 Build/HUAWEIEVA-AL00) AppleWebKit/533.1 (KHTML, like Gecko) Mobile Safari/533.1',
+  'host' => 'www.paizhiw.com',
+  'accept-encoding' => 'gzip',
+  'accept' => 'application/vnd.wap.xhtml+xml,application/xml,text/vnd.wap.wml,text/html,application/xhtml+xml,image/jpeg;q=0.5,image/png;q=0.5,image/gif;q=0.5,image/*;q=0.6,video/*,audio/*,*/*;q=0.6',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-01T06:21:58+08:00 ] 0.0.0.0 36.60.20.109 GET /1008∫œ∑ ’“π§◊˜ºÊ÷∞£¨∫œ∑ ¥Û—ß…˙ºÊ÷∞£¨∫œ∑ –£‘∞ºÊ÷∞£¨∫œ∑ ’–∆∏ - ≈…÷∞Õ¯
+[ log ] www.paizhiw.com/1008∫œ∑ ’“π§◊˜ºÊ÷∞£¨∫œ∑ ¥Û—ß…˙ºÊ÷∞£¨∫œ∑ –£‘∞ºÊ÷∞£¨∫œ∑ ’–∆∏ - ≈…÷∞Õ¯ [ËøêË°åÊó∂Èó¥Ôºö0.127852s][ÂêûÂêêÁéáÔºö7.82req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,114.45kb] [Êñá‰ª∂Âä†ËΩΩÔºö42]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '1008∫œ∑ ’“π§◊˜ºÊ÷∞£¨∫œ∑ ¥Û—ß…˙ºÊ÷∞£¨∫œ∑ –£‘∞ºÊ÷∞£¨∫œ∑ ’–∆∏ - ≈…÷∞Õ¯',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/1008%E5%90%88%E8%82%A5%E6%89%BE%E5%B7%A5%E4%BD%9C%E5%85%BC%E8%81%8C%EF%BC%8C%E5%90%88%E8%82%A5%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%85%BC%E8%81%8C%EF%BC%8C%E5%90%88%E8%82%A5%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C%EF%BC%8C%E5%90%88%E8%82%A5%E6%8B%9B%E8%81%98%20-%20%E6%B4%BE%E8%81%8C%E7%BD%91',
+  'queen' => '0',
+  'apn-type' => '0-13',
+  'q-ua2' => 'QV=3&PL=ADR&PR=QB&PP=com.tencent.mtt&PPVN=8.3.1.4075&TBSVC=43100&CO=BK&COVC=038370&PB=GE&VE=GA&DE=PHONE&CHID=70124&LCID=10304&MO= EVA-AL00 &RL=1080*1794&OS=7.0&API=24',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.0; zh-cn; EVA-AL00 Build/HUAWEIEVA-AL00) AppleWebKit/533.1 (KHTML, like Gecko) Mobile Safari/533.1',
+  'host' => 'www.paizhiw.com',
+  'accept-encoding' => 'gzip',
+  'accept' => 'application/vnd.wap.xhtml+xml,application/xml,text/vnd.wap.wml,text/html,application/xhtml+xml,image/jpeg;q=0.5,image/png;q=0.5,image/gif;q=0.5,image/*;q=0.6,video/*,audio/*,*/*;q=0.6',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-01T06:21:58+08:00 ] 0.0.0.0 36.60.20.109 GET /1008∫œ∑ ’“π§◊˜ºÊ÷∞£¨∫œ∑ ¥Û—ß…˙ºÊ÷∞£¨∫œ∑ –£‘∞ºÊ÷∞£¨∫œ∑ ’–∆∏ - ≈…÷∞Õ¯
+[ log ] www.paizhiw.com/1008∫œ∑ ’“π§◊˜ºÊ÷∞£¨∫œ∑ ¥Û—ß…˙ºÊ÷∞£¨∫œ∑ –£‘∞ºÊ÷∞£¨∫œ∑ ’–∆∏ - ≈…÷∞Õ¯ [ËøêË°åÊó∂Èó¥Ôºö0.079663s][ÂêûÂêêÁéáÔºö12.55req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,114.50kb] [Êñá‰ª∂Âä†ËΩΩÔºö42]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '1008∫œ∑ ’“π§◊˜ºÊ÷∞£¨∫œ∑ ¥Û—ß…˙ºÊ÷∞£¨∫œ∑ –£‘∞ºÊ÷∞£¨∫œ∑ ’–∆∏ - ≈…÷∞Õ¯',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/1008%E5%90%88%E8%82%A5%E6%89%BE%E5%B7%A5%E4%BD%9C%E5%85%BC%E8%81%8C%EF%BC%8C%E5%90%88%E8%82%A5%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%85%BC%E8%81%8C%EF%BC%8C%E5%90%88%E8%82%A5%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C%EF%BC%8C%E5%90%88%E8%82%A5%E6%8B%9B%E8%81%98%20-%20%E6%B4%BE%E8%81%8C%E7%BD%91',
+  'queen' => '0',
+  'apn-type' => '0-13',
+  'q-ua2' => 'QV=3&PL=ADR&PR=QB&PP=com.tencent.mtt&PPVN=8.3.1.4075&TBSVC=43100&CO=BK&COVC=038370&PB=GE&VE=GA&DE=PHONE&CHID=70124&LCID=10304&MO= EVA-AL00 &RL=1080*1794&OS=7.0&API=24',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.0; zh-cn; EVA-AL00 Build/HUAWEIEVA-AL00) AppleWebKit/533.1 (KHTML, like Gecko) Mobile Safari/533.1',
+  'host' => 'www.paizhiw.com',
+  'accept-encoding' => 'gzip',
+  'accept' => 'application/vnd.wap.xhtml+xml,application/xml,text/vnd.wap.wml,text/html,application/xhtml+xml,image/jpeg;q=0.5,image/png;q=0.5,image/gif;q=0.5,image/*;q=0.6,video/*,audio/*,*/*;q=0.6',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-01T06:22:20+08:00 ] 0.0.0.0 101.226.233.146 GET /
+[ log ] www.paizhiw.com/ [ËøêË°åÊó∂Èó¥Ôºö0.092454s][ÂêûÂêêÁéáÔºö10.82req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,194.52kb] [Êñá‰ª∂Âä†ËΩΩÔºö60]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM801 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko)     		Chrome/46.0.2490.11 Mobile Safari/537.36',
+  'host' => 'www.paizhiw.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\inetpub\wwwroot\anhui\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001645s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.001245s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `name` LIKE 'ÂêàËÇ•%' LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_position` WHERE  `parent_area_code` = 340100000000 [ RunTime:0.001451s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000393s ]
+
+---------------------------------------------------------------
+[ 2018-05-01T06:30:48+08:00 ] 0.0.0.0 106.39.189.38 GET /
+[ log ] www.paizhiw.com/ [ËøêË°åÊó∂Èó¥Ôºö0.113513s][ÂêûÂêêÁéáÔºö8.81req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,196.52kb] [Êñá‰ª∂Âä†ËΩΩÔºö60]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-forwarded-for' => '36.60.20.109',
+  'clientip' => '36.60.20.109',
+  'x-ucbrowser-ua' => 'dv(EVA-AL00);pr(UCBrowser/11.9.5.975);ov(Android 7.0);ss(360*598);pi(1080*1794);bt(YZ);pm(0);bv(1);nm(0);im(0);sr(0);nt(1);',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.0; zh-CN; EVA-AL00 Build/HUAWEIEVA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.9.5.975 Mobile Safari/537.36',
+  'host' => 'www.paizhiw.com',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\inetpub\wwwroot\anhui\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001654s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.001343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G40406093'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `position_type` = 1  AND `companyAccount` = 'G71340634'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `name` LIKE 'ÂêàËÇ•%' LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_position` WHERE  `parent_area_code` = 340100000000 [ RunTime:0.001447s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = 'ÂêàËÇ•Â∏Ç'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000383s ]
+
+---------------------------------------------------------------
+[ 2018-05-01T11:34:17+08:00 ] 0.0.0.0 36.5.174.248 GET /admin/school_management/index.html
+[ log ] www.paizhiw.com/admin/school_management/index.html [ËøêË°åÊó∂Èó¥Ôºö0.239280s][ÂêûÂêêÁéáÔºö4.18req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö4,923.19kb] [Êñá‰ª∂Âä†ËΩΩÔºö76]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'school_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/school_management/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'referer' => 'https://www.paizhiw.com/admin',
+  'host' => 'www.paizhiw.com',
+  'cookie' => 'PHPSESSID=dl30csgr840948ufer0fkl9r74; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.062638s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\SchoolManagement->index[ C:\inetpub\wwwroot\anhui\application\admin\controller\SchoolManagement.php ]
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/admin\view\school_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'all_companyName',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.003529s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001123s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SELECT node.id,node.name,node.pid FROM tp_admin_role AS role,tp_admin_role_user AS user,tp_admin_access AS access ,tp_admin_node AS node WHERE user.user_id='81' AND user.role_id=role.id AND access.role_id=role.id AND role.status=1 AND access.node_id=node.id AND node.status=1 [ RunTime:0.044742s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.001167s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 81 LIMIT 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  `isdelete` = 0  AND `schoolAccount` = 'G40406093' LIMIT 1 [ RunTime:0.003714s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_school_management` WHERE  `isdelete` = 0  AND `schoolAccount` = 'G40406093' ORDER BY id desc LIMIT 0,20 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 81 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `schoolName` FROM `tp_school_management` WHERE  `schoolAccount` = 'G40406093'  AND `isdelete` = 0 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.001067s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (81 , '36.5.174.248' , '‰∏≠ÂõΩ ÂÆâÂæΩ ÂêàËÇ• ' , 'Windows 7' , 'Chrome(64.0.3282.186)' , 'https://www.paizhiw.com/admin/school_management/index.html' , 'admin' , 'SchoolManagement' , 'index' , 'GET' , 'a:0:{}' , 1525145657) [ RunTime:0.000627s ]
+
+---------------------------------------------------------------
+[ 2018-05-01T11:34:42+08:00 ] 0.0.0.0 36.5.174.248 GET /admin/school_management/edit/id/34.html
+[ log ] www.paizhiw.com/admin/school_management/edit/id/34.html [ËøêË°åÊó∂Èó¥Ôºö0.081063s][ÂêûÂêêÁéáÔºö12.34req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö4,821.91kb] [Êñá‰ª∂Âä†ËΩΩÔºö73]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'school_management',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/school_management/edit/id/34.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'referer' => 'https://www.paizhiw.com/admin/school_management/index.html',
+  'host' => 'www.paizhiw.com',
+  'cookie' => 'PHPSESSID=dl30csgr840948ufer0fkl9r74; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007870s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\SchoolManagement->edit[ C:\inetpub\wwwroot\anhui\application\admin\controller\SchoolManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/admin\view\school_management\edit.html [ array (
+  0 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.002309s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001133s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.001121s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_school_management` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.000937s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (81 , '36.5.174.248' , '‰∏≠ÂõΩ ÂÆâÂæΩ ÂêàËÇ• ' , 'Windows 7' , 'Chrome(64.0.3282.186)' , 'https://www.paizhiw.com/admin/school_management/edit/id/34.html' , 'admin' , 'SchoolManagement' , 'edit' , 'GET' , 'a:1:{s:2:\"id\";s:2:\"34\";}' , 1525145682) [ RunTime:0.000537s ]
+
+---------------------------------------------------------------
+[ 2018-05-01T11:39:14+08:00 ] 0.0.0.0 36.5.174.248 GET /admin/company_release_position/index.html
+[ log ] www.paizhiw.com/admin/company_release_position/index.html [ËøêË°åÊó∂Èó¥Ôºö0.116695s][ÂêûÂêêÁéáÔºö8.57req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö4,967.29kb] [Êñá‰ª∂Âä†ËΩΩÔºö76]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_release_position',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/company_release_position/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'referer' => 'https://www.paizhiw.com/admin',
+  'host' => 'www.paizhiw.com',
+  'cookie' => 'PHPSESSID=dl30csgr840948ufer0fkl9r74; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007308s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\CompanyReleasePosition->index[ C:\inetpub\wwwroot\anhui\application\admin\controller\CompanyReleasePosition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/admin\view\company_release_position\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'companyName',
+  5 => 'city_area',
+  6 => 'enroll_array',
+  7 => 'type_array',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.002154s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000967s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.001163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 81 LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `companyAccount` = 'G40406093' LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `companyAccount` = 'G40406093' ORDER BY id desc LIMIT 0,20 [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 81 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `companyAccount` = 'G40406093'  AND `isdelete` = 0 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 1 [ RunTime:0.003435s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 2 [ RunTime:0.003879s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_release_position` WHERE  `companyAccount` = 'G40406093'  AND `isdelete` = 0 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city`,`area` FROM `tp_company_release_position` WHERE  `companyAccount` = 'G40406093'  AND `isdelete` = 0 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `companyAccount` = 'G40406093'  AND `companyName` <> ''  AND `city` <> ''  AND `area` <> ''  AND `isdown` <> 100 ORDER BY release_time desc [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `position_type` = 1  AND `isdelete` = 0 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.000888s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (81 , '36.5.174.248' , '‰∏≠ÂõΩ ÂÆâÂæΩ ÂêàËÇ• ' , 'Windows 7' , 'Chrome(64.0.3282.186)' , 'https://www.paizhiw.com/admin/company_release_position/index.html' , 'admin' , 'CompanyReleasePosition' , 'index' , 'GET' , 'a:0:{}' , 1525145954) [ RunTime:0.000497s ]
+
+---------------------------------------------------------------
+[ 2018-05-01T11:39:52+08:00 ] 0.0.0.0 36.5.174.248 GET /admin/company_release_position/fsedit/id/2.html
+[ log ] www.paizhiw.com/admin/company_release_position/fsedit/id/2.html [ËøêË°åÊó∂Èó¥Ôºö0.082974s][ÂêûÂêêÁéáÔºö12.05req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö4,896.85kb] [Êñá‰ª∂Âä†ËΩΩÔºö73]
+[ info ] [ LANG ] C:\inetpub\wwwroot\anhui\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_release_position',
+    2 => 'fsedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/company_release_position/fsedit/id/2.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'referer' => 'https://www.paizhiw.com/admin/company_release_position/index.html',
+  'host' => 'www.paizhiw.com',
+  'cookie' => 'PHPSESSID=dl30csgr840948ufer0fkl9r74; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006863s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\CompanyReleasePosition->fsedit[ C:\inetpub\wwwroot\anhui\application\admin\controller\CompanyReleasePosition.php ]
+[ info ] [ VIEW ] C:\inetpub\wwwroot\anhui\public/../application/admin\view\company_release_position\fsedit.html [ array (
+  0 => 'schoolName',
+  1 => 'all_type',
+  2 => 'type_name',
+  3 => 'vo',
+  4 => 'property_name',
+  5 => 'sex_name',
+  6 => 'period_name',
+  7 => 'payroll_name',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.002000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000969s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SELECT node.id,node.name,node.pid FROM tp_admin_role AS role,tp_admin_role_user AS user,tp_admin_access AS access ,tp_admin_node AS node WHERE user.user_id='81' AND user.role_id=role.id AND access.role_id=role.id AND role.status=1 AND access.node_id=node.id AND node.status=1 [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.001193s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 81  AND `isdelete` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SELECT `schoolName` FROM `tp_school_management` WHERE  `schoolAccount` = 'G40406093'  AND `isdelete` = 0 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `isdelete` = 0 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.000778s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (81 , '36.5.174.248' , '‰∏≠ÂõΩ ÂÆâÂæΩ ÂêàËÇ• ' , 'Windows 7' , 'Chrome(64.0.3282.186)' , 'https://www.paizhiw.com/admin/company_release_position/fsedit/id/2.html' , 'admin' , 'CompanyReleasePosition' , 'fsedit' , 'GET' , 'a:1:{s:2:\"id\";s:1:\"2\";}' , 1525145992) [ RunTime:0.000478s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,2984 @@
+[ 2018-04-20T02:33:01+08:00 ] 0.0.0.0 66.249.69.158 GET /static/index/css/baguetteBox.min.css
+[ log ] yeyap.com/static/index/css/baguetteBox.min.css [运行时间：0.022333s][吞吐率：44.78req/s] [内存消耗：1,109.05kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/baguetteBox.min.css',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'referer' => 'http://yeyap.com/Index/Notice',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => '*/*,text/css,*/*;q=0.1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T02:33:03+08:00 ] 0.0.0.0 66.249.69.159 GET /static/index/js/rem.js
+[ log ] yeyap.com/static/index/js/rem.js [运行时间：0.018223s][吞吐率：54.88req/s] [内存消耗：1,108.94kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/rem.js',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'referer' => 'http://yeyap.com/Index/Notice',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => '*/*,*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T02:33:04+08:00 ] 0.0.0.0 66.249.69.157 GET /static/index/css/layui.css
+[ log ] yeyap.com/static/index/css/layui.css [运行时间：0.020221s][吞吐率：49.45req/s] [内存消耗：1,109.05kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/layui.css',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'referer' => 'http://yeyap.com/Index/Notice',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => '*/*,text/css,*/*;q=0.1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T02:33:04+08:00 ] 0.0.0.0 66.249.69.157 GET /static/index/js/layui/css/layui.css
+[ log ] yeyap.com/static/index/js/layui/css/layui.css [运行时间：0.018784s][吞吐率：53.24req/s] [内存消耗：1,109.48kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/layui/css/layui.css',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'referer' => 'http://yeyap.com/Index/Notice',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => '*/*,text/css,*/*;q=0.1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'layui' => 'css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T02:33:05+08:00 ] 0.0.0.0 66.249.69.157 GET /static/index/css/reset.css
+[ log ] yeyap.com/static/index/css/reset.css [运行时间：0.018496s][吞吐率：54.07req/s] [内存消耗：1,109.05kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/reset.css',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'referer' => 'http://yeyap.com/Index/Notice',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => '*/*,text/css,*/*;q=0.1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T03:42:10+08:00 ] 0.0.0.0 106.11.156.246 GET /static/index/css/swiper-3.4.2.min.css
+[ log ] yeyap.com/static/index/css/swiper-3.4.2.min.css [运行时间：0.023821s][吞吐率：41.98req/s] [内存消耗：1,108.77kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/swiper-3.4.2.min.css',
+  'user-agent' => 'YisouSpider',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-cn,en-us,zh-tw,en-gb,en;',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T06:57:42+08:00 ] 0.0.0.0 40.77.167.22 GET /
+[ log ] www.yeyap.com/ [运行时间：0.028524s][吞吐率：35.06req/s] [内存消耗：1,404.50kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)',
+  'host' => 'www.yeyap.com',
+  'from' => 'bingbot(at)microsoft.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'pragma' => 'no-cache',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:33+08:00 ] 0.0.0.0 123.125.71.48 GET /index/parentlogin/index.html
+[ log ] yeyap.com/index/parentlogin/index.html [运行时间：0.026882s][吞吐率：37.20req/s] [内存消耗：1,401.97kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'parentlogin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/parentlogin/index.html',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-cn,zh-tw',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Parentlogin->index[ C:\wwwroot\AMS\application\index\controller\Parentlogin.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\parentlogin\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:34+08:00 ] 0.0.0.0 123.125.71.22 GET /index/parentlogin/
+[ log ] yeyap.com/index/parentlogin/ [运行时间：0.022905s][吞吐率：43.66req/s] [内存消耗：1,401.84kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'parentlogin',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/parentlogin/',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-cn,zh-tw',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Parentlogin->index[ C:\wwwroot\AMS\application\index\controller\Parentlogin.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\parentlogin\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:35+08:00 ] 0.0.0.0 111.206.198.21 GET /static/index/lib/jquery/1.9.1/jquery.min.js
+[ log ] yeyap.com/static/index/lib/jquery/1.9.1/jquery.min.js [运行时间：0.025054s][吞吐率：39.91req/s] [内存消耗：1,109.59kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/lib/jquery/1.9.1/jquery.min.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => '40244614-f5be-40be-bb86-ba538f3e9a9c',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'jquery' => '1.9.1',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:35+08:00 ] 0.0.0.0 111.206.221.68 GET /static/index/lib/Validform/5.3.2/Validform.min.js
+[ log ] yeyap.com/static/index/lib/Validform/5.3.2/Validform.min.js [运行时间：0.025814s][吞吐率：38.74req/s] [内存消耗：1,109.67kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/lib/Validform/5.3.2/Validform.min.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => '40244614-f5be-40be-bb86-ba538f3e9a9c',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'Validform' => '5.3.2',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:35+08:00 ] 0.0.0.0 111.206.198.103 GET /static/index/lib/layer/2.4/layer.js
+[ log ] yeyap.com/static/index/lib/layer/2.4/layer.js [运行时间：0.017660s][吞吐率：56.63req/s] [内存消耗：1,109.61kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/lib/layer/2.4/layer.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => '40244614-f5be-40be-bb86-ba538f3e9a9c',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'layer' => '2.4',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:35+08:00 ] 0.0.0.0 111.206.198.100 GET /static/index/css/reset.css
+[ log ] yeyap.com/static/index/css/reset.css [运行时间：0.021745s][吞吐率：45.99req/s] [内存消耗：1,109.25kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/reset.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => '40244614-f5be-40be-bb86-ba538f3e9a9c',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:35+08:00 ] 0.0.0.0 111.206.221.92 GET /static/index/js/rem.js
+[ log ] yeyap.com/static/index/js/rem.js [运行时间：0.018383s][吞吐率：54.40req/s] [内存消耗：1,109.24kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/rem.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => '40244614-f5be-40be-bb86-ba538f3e9a9c',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:36+08:00 ] 0.0.0.0 111.206.198.36 GET /static/index/lib/jquery/1.9.1/jquery.min.js
+[ log ] yeyap.com/static/index/lib/jquery/1.9.1/jquery.min.js [运行时间：0.017616s][吞吐率：56.77req/s] [内存消耗：1,109.59kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/lib/jquery/1.9.1/jquery.min.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => '40244614-f5be-40be-bb86-ba538f3e9a9c',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'jquery' => '1.9.1',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:36+08:00 ] 0.0.0.0 111.206.198.47 GET /static/index/lib/layer/2.4/layer.js
+[ log ] yeyap.com/static/index/lib/layer/2.4/layer.js [运行时间：0.020729s][吞吐率：48.24req/s] [内存消耗：1,109.61kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/lib/layer/2.4/layer.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => '40244614-f5be-40be-bb86-ba538f3e9a9c',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'layer' => '2.4',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:36+08:00 ] 0.0.0.0 111.206.221.44 GET /static/index/lib/Validform/5.3.2/Validform.min.js
+[ log ] yeyap.com/static/index/lib/Validform/5.3.2/Validform.min.js [运行时间：0.019050s][吞吐率：52.49req/s] [内存消耗：1,109.67kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/lib/Validform/5.3.2/Validform.min.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => '40244614-f5be-40be-bb86-ba538f3e9a9c',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'Validform' => '5.3.2',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:39+08:00 ] 0.0.0.0 111.206.221.26 GET /static/index/js/rem.js
+[ log ] yeyap.com/static/index/js/rem.js [运行时间：0.017995s][吞吐率：55.57req/s] [内存消耗：1,109.48kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/rem.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => 'd75ca6a2-4f3e-45f9-9481-4946142437e7',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:39+08:00 ] 0.0.0.0 111.206.198.123 GET /static/index/css/reset.css
+[ log ] yeyap.com/static/index/css/reset.css [运行时间：0.017946s][吞吐率：55.72req/s] [内存消耗：1,109.45kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/reset.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => 'd75ca6a2-4f3e-45f9-9481-4946142437e7',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:39+08:00 ] 0.0.0.0 111.206.198.28 GET /static/index/lib/layer/2.4/layer.js
+[ log ] yeyap.com/static/index/lib/layer/2.4/layer.js [运行时间：0.019567s][吞吐率：51.11req/s] [内存消耗：1,109.81kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/lib/layer/2.4/layer.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => 'd75ca6a2-4f3e-45f9-9481-4946142437e7',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'layer' => '2.4',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:39+08:00 ] 0.0.0.0 111.206.221.74 GET /static/index/lib/jquery/1.9.1/jquery.min.js
+[ log ] yeyap.com/static/index/lib/jquery/1.9.1/jquery.min.js [运行时间：0.018026s][吞吐率：55.48req/s] [内存消耗：1,109.91kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/lib/jquery/1.9.1/jquery.min.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => 'd75ca6a2-4f3e-45f9-9481-4946142437e7',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'jquery' => '1.9.1',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:39+08:00 ] 0.0.0.0 111.206.221.81 GET /static/index/lib/Validform/5.3.2/Validform.min.js
+[ log ] yeyap.com/static/index/lib/Validform/5.3.2/Validform.min.js [运行时间：0.043959s][吞吐率：22.75req/s] [内存消耗：1,109.88kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/lib/Validform/5.3.2/Validform.min.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => 'd75ca6a2-4f3e-45f9-9481-4946142437e7',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'Validform' => '5.3.2',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:39+08:00 ] 0.0.0.0 111.206.198.7 GET /static/index/js/rem.js
+[ log ] yeyap.com/static/index/js/rem.js [运行时间：0.020694s][吞吐率：48.32req/s] [内存消耗：1,109.48kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/rem.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => 'd75ca6a2-4f3e-45f9-9481-4946142437e7',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:40+08:00 ] 0.0.0.0 111.206.221.10 GET /static/index/lib/jquery/1.9.1/jquery.min.js
+[ log ] yeyap.com/static/index/lib/jquery/1.9.1/jquery.min.js [运行时间：0.019121s][吞吐率：52.30req/s] [内存消耗：1,109.91kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/lib/jquery/1.9.1/jquery.min.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => 'd75ca6a2-4f3e-45f9-9481-4946142437e7',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'jquery' => '1.9.1',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:40+08:00 ] 0.0.0.0 111.206.221.16 GET /static/index/lib/layer/2.4/layer.js
+[ log ] yeyap.com/static/index/lib/layer/2.4/layer.js [运行时间：0.020219s][吞吐率：49.46req/s] [内存消耗：1,109.81kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/lib/layer/2.4/layer.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => 'd75ca6a2-4f3e-45f9-9481-4946142437e7',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'layer' => '2.4',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:11:41+08:00 ] 0.0.0.0 111.206.198.80 GET /static/index/lib/Validform/5.3.2/Validform.min.js
+[ log ] yeyap.com/static/index/lib/Validform/5.3.2/Validform.min.js [运行时间：0.019470s][吞吐率：51.36req/s] [内存消耗：1,109.86kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/lib/Validform/5.3.2/Validform.min.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => 'd75ca6a2-4f3e-45f9-9481-4946142437e7',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/index/parentlogin/index.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'Validform' => '5.3.2',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T08:32:18+08:00 ] 0.0.0.0 40.77.167.22 GET /
+[ log ] yeyap.com/ [运行时间：0.026980s][吞吐率：37.06req/s] [内存消耗：1,404.50kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)',
+  'host' => 'yeyap.com',
+  'from' => 'bingbot(at)microsoft.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'pragma' => 'no-cache',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:05:58+08:00 ] 0.0.0.0 36.32.24.164 POST /index/indexapi/screening
+[ log ] yeyap.com/index/indexapi/screening [运行时间：0.205595s][吞吐率：4.86req/s] [内存消耗：1,962.01kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'screening',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '101',
+  'x-original-url' => '/index/indexapi/screening',
+  'user-agent' => 'PaiZhi/1.0 (iPhone; iOS 11.2.5; Scale/3.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'city' => '合肥市',
+  'token' => 'a251ecc2572e8d48cee0e75bb8094564',
+  'user_id' => 'FeyT16K37828Utb3K613J',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->screening[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001801s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.032475s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = 'FeyT16K37828Utb3K613J'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.089526s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `name` LIKE '合肥市%' LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_position` WHERE  `parent_area_code` = 340100000000 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.042901s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000472s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T09:05:58+08:00 ] 0.0.0.0 36.32.24.164 POST /index/indexapi/screeningPart
+[ log ] yeyap.com/index/indexapi/screeningPart [运行时间：0.151304s][吞吐率：6.61req/s] [内存消耗：1,969.60kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'screeningPart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '140',
+  'x-original-url' => '/index/indexapi/screeningPart',
+  'user-agent' => 'PaiZhi/1.0 (iPhone; iOS 11.2.5; Scale/3.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'area' => '',
+  'city' => '合肥市',
+  'num' => '10',
+  'page' => '1',
+  'period' => '',
+  'sex' => '',
+  'token' => 'a251ecc2572e8d48cee0e75bb8094564',
+  'type' => '',
+  'user_id' => 'FeyT16K37828Utb3K613J',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->screeningPart[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001932s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.036406s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = 'FeyT16K37828Utb3K613J'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE `city` LIKE '合肥市%' AND `status` = 1 AND `isdelete` = 0   ORDER BY `release_time` desc limit 0,10 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.053520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.017468s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000345s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T09:06:03+08:00 ] 0.0.0.0 36.32.24.164 POST /index/indexapi/screeningPart
+[ log ] yeyap.com/index/indexapi/screeningPart [运行时间：0.087160s][吞吐率：11.47req/s] [内存消耗：1,960.87kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'screeningPart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '141',
+  'x-original-url' => '/index/indexapi/screeningPart',
+  'user-agent' => 'PaiZhi/1.0 (iPhone; iOS 11.2.5; Scale/3.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'area' => '',
+  'city' => '合肥市',
+  'num' => '10',
+  'page' => '1',
+  'period' => '1',
+  'sex' => '',
+  'token' => 'a251ecc2572e8d48cee0e75bb8094564',
+  'type' => '',
+  'user_id' => 'FeyT16K37828Utb3K613J',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->screeningPart[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001248s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.020823s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = 'FeyT16K37828Utb3K613J'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE `city` LIKE '合肥市%' AND `status` = 1 AND `isdelete` = 0  AND `period` = '1' ORDER BY `release_time` desc limit 0,10 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.014836s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.017437s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000347s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T09:06:06+08:00 ] 0.0.0.0 36.32.24.164 POST /index/indexapi/screeningPart
+[ log ] yeyap.com/index/indexapi/screeningPart [运行时间：0.155646s][吞吐率：6.42req/s] [内存消耗：1,954.88kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'screeningPart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '142',
+  'x-original-url' => '/index/indexapi/screeningPart',
+  'user-agent' => 'PaiZhi/1.0 (iPhone; iOS 11.2.5; Scale/3.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'area' => '',
+  'city' => '合肥市',
+  'num' => '10',
+  'page' => '1',
+  'period' => '1',
+  'sex' => '2',
+  'token' => 'a251ecc2572e8d48cee0e75bb8094564',
+  'type' => '',
+  'user_id' => 'FeyT16K37828Utb3K613J',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->screeningPart[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003604s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.035442s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = 'FeyT16K37828Utb3K613J'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE `city` LIKE '合肥市%' AND `status` = 1 AND `isdelete` = 0  AND `period` = '1'AND `sex` = '2' ORDER BY `release_time` desc limit 0,10 [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.031074s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.038682s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000671s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T09:06:09+08:00 ] 0.0.0.0 36.32.24.164 POST /index/indexapi/screeningPart
+[ log ] yeyap.com/index/indexapi/screeningPart [运行时间：0.082411s][吞吐率：12.13req/s] [内存消耗：1,954.86kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'screeningPart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '142',
+  'x-original-url' => '/index/indexapi/screeningPart',
+  'user-agent' => 'PaiZhi/1.0 (iPhone; iOS 11.2.5; Scale/3.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'area' => '',
+  'city' => '合肥市',
+  'num' => '10',
+  'page' => '1',
+  'period' => '1',
+  'sex' => '1',
+  'token' => 'a251ecc2572e8d48cee0e75bb8094564',
+  'type' => '',
+  'user_id' => 'FeyT16K37828Utb3K613J',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->screeningPart[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000872s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.019385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = 'FeyT16K37828Utb3K613J'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE `city` LIKE '合肥市%' AND `status` = 1 AND `isdelete` = 0  AND `period` = '1'AND `sex` = '1' ORDER BY `release_time` desc limit 0,10 [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.015288s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.016590s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000463s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T09:06:12+08:00 ] 0.0.0.0 36.32.24.164 POST /index/indexapi/screeningPart
+[ log ] yeyap.com/index/indexapi/screeningPart [运行时间：0.090971s][吞吐率：10.99req/s] [内存消耗：1,960.81kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'screeningPart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '142',
+  'x-original-url' => '/index/indexapi/screeningPart',
+  'user-agent' => 'PaiZhi/1.0 (iPhone; iOS 11.2.5; Scale/3.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'area' => '',
+  'city' => '合肥市',
+  'num' => '10',
+  'page' => '1',
+  'period' => '1',
+  'sex' => '0',
+  'token' => 'a251ecc2572e8d48cee0e75bb8094564',
+  'type' => '',
+  'user_id' => 'FeyT16K37828Utb3K613J',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->screeningPart[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000913s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.019831s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = 'FeyT16K37828Utb3K613J'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE `city` LIKE '合肥市%' AND `status` = 1 AND `isdelete` = 0  AND `period` = '1' ORDER BY `release_time` desc limit 0,10 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.016666s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.017051s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T09:09:03+08:00 ] 0.0.0.0 85.190.228.246 GET /wp-config.php
+[ log ] yeyap.com/wp-config.php [运行时间：0.021049s][吞吐率：47.51req/s] [内存消耗：1,108.02kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-config.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/wp-config.php',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)',
+  'host' => 'yeyap.com',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:09:03+08:00 ] 0.0.0.0 85.190.228.246 GET /wp-config.php
+[ log ] yeyap.com/wp-config.php [运行时间：0.019916s][吞吐率：50.21req/s] [内存消耗：1,108.02kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-config.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/wp-config.php',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)',
+  'host' => 'yeyap.com',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:13+08:00 ] 0.0.0.0 220.181.108.94 GET /
+[ log ] yeyap.com/ [运行时间：0.028966s][吞吐率：34.52req/s] [内存消耗：1,404.22kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'if-none-match' => '"@NULL@"',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-cn,zh-tw',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:22+08:00 ] 0.0.0.0 111.206.198.104 GET /static/index/css/swiper-3.4.2.min.css
+[ log ] yeyap.com/static/index/css/swiper-3.4.2.min.css [运行时间：0.028257s][吞吐率：35.39req/s] [内存消耗：1,109.27kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/swiper-3.4.2.min.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:22+08:00 ] 0.0.0.0 111.206.221.85 GET /static/index/js/layui/css/layui.css
+[ log ] yeyap.com/static/index/js/layui/css/layui.css [运行时间：0.023921s][吞吐率：41.80req/s] [内存消耗：1,109.58kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/layui/css/layui.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+  'layui' => 'css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:22+08:00 ] 0.0.0.0 111.206.221.15 GET /static/index/js/rem.js
+[ log ] yeyap.com/static/index/js/rem.js [运行时间：0.033220s][吞吐率：30.10req/s] [内存消耗：1,109.16kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/rem.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:22+08:00 ] 0.0.0.0 111.206.198.101 GET /static/index/css/reset.css
+[ log ] yeyap.com/static/index/css/reset.css [运行时间：0.019265s][吞吐率：51.91req/s] [内存消耗：1,109.28kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/reset.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:22+08:00 ] 0.0.0.0 111.206.221.90 GET /static/index/img/qz-3.png
+[ log ] yeyap.com/static/index/img/qz-3.png [运行时间：0.019056s][吞吐率：52.48req/s] [内存消耗：1,109.21kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-3.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:22+08:00 ] 0.0.0.0 111.206.221.109 GET /static/index/img/qz-4.png
+[ log ] yeyap.com/static/index/img/qz-4.png [运行时间：0.025068s][吞吐率：39.89req/s] [内存消耗：1,109.21kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-4.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:23+08:00 ] 0.0.0.0 111.206.198.21 GET /static/index/js/rem.js
+[ log ] yeyap.com/static/index/js/rem.js [运行时间：0.030973s][吞吐率：32.29req/s] [内存消耗：1,109.17kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/rem.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:23+08:00 ] 0.0.0.0 111.206.221.94 GET /static/index/img/qz-5.png
+[ log ] yeyap.com/static/index/img/qz-5.png [运行时间：0.017859s][吞吐率：55.99req/s] [内存消耗：1,109.21kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-5.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:24+08:00 ] 0.0.0.0 111.206.221.24 GET /static/index/img/qz-6.png
+[ log ] yeyap.com/static/index/img/qz-6.png [运行时间：0.018441s][吞吐率：54.23req/s] [内存消耗：1,109.21kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-6.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:24+08:00 ] 0.0.0.0 111.206.198.48 GET /static/index/img/qz-13.png
+[ log ] yeyap.com/static/index/img/qz-13.png [运行时间：0.018787s][吞吐率：53.23req/s] [内存消耗：1,109.21kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-13.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:24+08:00 ] 0.0.0.0 111.206.198.42 GET /static/index/img/qz-6.png
+[ log ] yeyap.com/static/index/img/qz-6.png [运行时间：0.018426s][吞吐率：54.27req/s] [内存消耗：1,109.21kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-6.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:24+08:00 ] 0.0.0.0 111.206.221.48 GET /static/index/img/qz-5.png
+[ log ] yeyap.com/static/index/img/qz-5.png [运行时间：0.019792s][吞吐率：50.53req/s] [内存消耗：1,109.21kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-5.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:24+08:00 ] 0.0.0.0 111.206.221.91 GET /static/index/img/qz-3.png
+[ log ] yeyap.com/static/index/img/qz-3.png [运行时间：0.017679s][吞吐率：56.56req/s] [内存消耗：1,109.21kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-3.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:24+08:00 ] 0.0.0.0 111.206.198.37 GET /static/index/img/qz-4.png
+[ log ] yeyap.com/static/index/img/qz-4.png [运行时间：0.018194s][吞吐率：54.96req/s] [内存消耗：1,109.21kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-4.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '61eee983-6c2f-4c1a-a194-d980658125ce',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:27+08:00 ] 0.0.0.0 111.206.221.82 GET /static/index/js/layui/css/layui.css
+[ log ] yeyap.com/static/index/js/layui/css/layui.css [运行时间：0.018537s][吞吐率：53.95req/s] [内存消耗：1,109.79kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/layui/css/layui.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => '268b1eb0-d039-4cdf-a75f-a101ff4977c8',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+  'layui' => 'css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:27+08:00 ] 0.0.0.0 111.206.198.89 GET /static/index/css/reset.css
+[ log ] yeyap.com/static/index/css/reset.css [运行时间：0.020381s][吞吐率：49.07req/s] [内存消耗：1,109.38kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/reset.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => '268b1eb0-d039-4cdf-a75f-a101ff4977c8',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:27+08:00 ] 0.0.0.0 111.206.221.24 GET /static/index/js/rem.js
+[ log ] yeyap.com/static/index/js/rem.js [运行时间：0.017953s][吞吐率：55.70req/s] [内存消耗：1,109.37kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/rem.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => '268b1eb0-d039-4cdf-a75f-a101ff4977c8',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:27+08:00 ] 0.0.0.0 111.206.198.50 GET /static/index/css/swiper-3.4.2.min.css
+[ log ] yeyap.com/static/index/css/swiper-3.4.2.min.css [运行时间：0.021479s][吞吐率：46.56req/s] [内存消耗：1,109.54kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/swiper-3.4.2.min.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => '268b1eb0-d039-4cdf-a75f-a101ff4977c8',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:28+08:00 ] 0.0.0.0 111.206.221.18 GET /static/index/img/qz-3.png
+[ log ] yeyap.com/static/index/img/qz-3.png [运行时间：0.019381s][吞吐率：51.60req/s] [内存消耗：1,109.42kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-3.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '268b1eb0-d039-4cdf-a75f-a101ff4977c8',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:28+08:00 ] 0.0.0.0 111.206.221.9 GET /static/index/js/rem.js
+[ log ] yeyap.com/static/index/js/rem.js [运行时间：0.017885s][吞吐率：55.91req/s] [内存消耗：1,109.37kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/rem.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => '268b1eb0-d039-4cdf-a75f-a101ff4977c8',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:29+08:00 ] 0.0.0.0 111.206.221.14 GET /static/index/img/qz-5.png
+[ log ] yeyap.com/static/index/img/qz-5.png [运行时间：0.019129s][吞吐率：52.28req/s] [内存消耗：1,109.42kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-5.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '268b1eb0-d039-4cdf-a75f-a101ff4977c8',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:29+08:00 ] 0.0.0.0 111.206.221.20 GET /static/index/img/qz-6.png
+[ log ] yeyap.com/static/index/img/qz-6.png [运行时间：0.018134s][吞吐率：55.15req/s] [内存消耗：1,109.42kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-6.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '268b1eb0-d039-4cdf-a75f-a101ff4977c8',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:29+08:00 ] 0.0.0.0 111.206.221.12 GET /static/index/img/qz-4.png
+[ log ] yeyap.com/static/index/img/qz-4.png [运行时间：0.019399s][吞吐率：51.55req/s] [内存消耗：1,109.42kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-4.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '268b1eb0-d039-4cdf-a75f-a101ff4977c8',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:29+08:00 ] 0.0.0.0 111.206.198.53 GET /static/index/img/qz-13.png
+[ log ] yeyap.com/static/index/img/qz-13.png [运行时间：0.021535s][吞吐率：46.44req/s] [内存消耗：1,109.41kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-13.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '268b1eb0-d039-4cdf-a75f-a101ff4977c8',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:31+08:00 ] 0.0.0.0 111.206.198.33 GET /
+[ log ] yeyap.com/ [运行时间：0.069429s][吞吐率：14.40req/s] [内存消耗：1,405.00kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'resource-type' => '0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => '52422eb6-43c9-45f4-901c-605797c1747e',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:31+08:00 ] 0.0.0.0 111.206.221.44 GET /static/index/css/reset.css
+[ log ] yeyap.com/static/index/css/reset.css [运行时间：0.018869s][吞吐率：53.00req/s] [内存消耗：1,109.63kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/reset.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => '52422eb6-43c9-45f4-901c-605797c1747e',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vcj8ckrtgsmh805hk3r62pfpt4',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:32+08:00 ] 0.0.0.0 111.206.198.89 GET /static/index/js/layui/css/layui.css
+[ log ] yeyap.com/static/index/js/layui/css/layui.css [运行时间：0.018149s][吞吐率：55.10req/s] [内存消耗：1,109.98kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/layui/css/layui.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => '52422eb6-43c9-45f4-901c-605797c1747e',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vcj8ckrtgsmh805hk3r62pfpt4',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+  'layui' => 'css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:32+08:00 ] 0.0.0.0 111.206.221.10 GET /static/index/js/rem.js
+[ log ] yeyap.com/static/index/js/rem.js [运行时间：0.018533s][吞吐率：53.96req/s] [内存消耗：1,109.47kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/rem.js',
+  'resource-type' => '3',
+  'x-devtools-emulate-network-conditions-client-id' => '52422eb6-43c9-45f4-901c-605797c1747e',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vcj8ckrtgsmh805hk3r62pfpt4',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:32+08:00 ] 0.0.0.0 111.206.221.18 GET /static/index/css/swiper-3.4.2.min.css
+[ log ] yeyap.com/static/index/css/swiper-3.4.2.min.css [运行时间：0.018200s][吞吐率：54.95req/s] [内存消耗：1,109.65kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/swiper-3.4.2.min.css',
+  'resource-type' => '2',
+  'x-devtools-emulate-network-conditions-client-id' => '52422eb6-43c9-45f4-901c-605797c1747e',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vcj8ckrtgsmh805hk3r62pfpt4',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:32+08:00 ] 0.0.0.0 111.206.221.96 GET /static/index/img/qz-3.png
+[ log ] yeyap.com/static/index/img/qz-3.png [运行时间：0.020868s][吞吐率：47.92req/s] [内存消耗：1,109.54kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-3.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '52422eb6-43c9-45f4-901c-605797c1747e',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vcj8ckrtgsmh805hk3r62pfpt4',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:32+08:00 ] 0.0.0.0 111.206.221.113 GET /static/index/img/qz-4.png
+[ log ] yeyap.com/static/index/img/qz-4.png [运行时间：0.020213s][吞吐率：49.47req/s] [内存消耗：1,109.54kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-4.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '52422eb6-43c9-45f4-901c-605797c1747e',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vcj8ckrtgsmh805hk3r62pfpt4',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:33+08:00 ] 0.0.0.0 111.206.221.16 GET /static/index/img/qz-6.png
+[ log ] yeyap.com/static/index/img/qz-6.png [运行时间：0.018385s][吞吐率：54.39req/s] [内存消耗：1,109.53kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-6.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '52422eb6-43c9-45f4-901c-605797c1747e',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vcj8ckrtgsmh805hk3r62pfpt4',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:33+08:00 ] 0.0.0.0 111.206.198.16 GET /static/index/img/qz-5.png
+[ log ] yeyap.com/static/index/img/qz-5.png [运行时间：0.018334s][吞吐率：54.54req/s] [内存消耗：1,109.54kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-5.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '52422eb6-43c9-45f4-901c-605797c1747e',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vcj8ckrtgsmh805hk3r62pfpt4',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:18:33+08:00 ] 0.0.0.0 111.206.221.96 GET /static/index/img/qz-13.png
+[ log ] yeyap.com/static/index/img/qz-13.png [运行时间：0.018588s][吞吐率：53.80req/s] [内存消耗：1,109.53kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/img/qz-13.png',
+  'resource-type' => '4',
+  'x-devtools-emulate-network-conditions-client-id' => '52422eb6-43c9-45f4-901c-605797c1747e',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'referer' => 'http://yeyap.com/',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=vcj8ckrtgsmh805hk3r62pfpt4',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:59:03+08:00 ] 0.0.0.0 66.249.69.157 GET /static/index/js/yuanzhang.js
+[ log ] yeyap.com/static/index/js/yuanzhang.js [运行时间：0.025319s][吞吐率：39.50req/s] [内存消耗：1,109.03kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/yuanzhang.js',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'referer' => 'http://yeyap.com/index/classroom/index.html',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => '*/*,*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:59:04+08:00 ] 0.0.0.0 66.249.69.157 GET /static/index/js/swiper-3.4.2.jquery.min.js
+[ log ] yeyap.com/static/index/js/swiper-3.4.2.jquery.min.js [运行时间：0.018648s][吞吐率：53.63req/s] [内存消耗：1,109.11kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/swiper-3.4.2.jquery.min.js',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'referer' => 'http://yeyap.com/index/classroom/index.html',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => '*/*,*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:59:04+08:00 ] 0.0.0.0 66.249.69.159 GET /static/index/js/date-class.js
+[ log ] yeyap.com/static/index/js/date-class.js [运行时间：0.030752s][吞吐率：32.52req/s] [内存消耗：1,109.09kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/date-class.js',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'referer' => 'http://yeyap.com/index/classroom/index.html',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => '*/*,*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:59:05+08:00 ] 0.0.0.0 66.249.69.157 GET /static/index/css/swiper-3.4.2.min.css
+[ log ] yeyap.com/static/index/css/swiper-3.4.2.min.css [运行时间：0.019391s][吞吐率：51.57req/s] [内存消耗：1,109.20kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/swiper-3.4.2.min.css',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'referer' => 'http://yeyap.com/index/classroom/index.html',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => '*/*,text/css,*/*;q=0.1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:59:06+08:00 ] 0.0.0.0 66.249.69.158 GET /static/index/js/jquerys-1.7.2.min.js
+[ log ] yeyap.com/static/index/js/jquerys-1.7.2.min.js [运行时间：0.018465s][吞吐率：54.16req/s] [内存消耗：1,109.17kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/js/jquerys-1.7.2.min.js',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'referer' => 'http://yeyap.com/index/classroom/index.html',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => '*/*,*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T09:59:07+08:00 ] 0.0.0.0 66.249.69.158 GET /static/index/css/index.css
+[ log ] yeyap.com/static/index/css/index.css [运行时间：0.017582s][吞吐率：56.88req/s] [内存消耗：1,109.08kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/index.css',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'referer' => 'http://yeyap.com/index/classroom/index.html',
+  'host' => 'yeyap.com',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip,deflate,br',
+  'accept' => '*/*,text/css,*/*;q=0.1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T10:55:43+08:00 ] 0.0.0.0 183.136.190.62 GET /
+[ log ] yeyap.com/ [运行时间：0.031803s][吞吐率：31.44req/s] [内存消耗：1,404.15kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T12:51:51+08:00 ] 0.0.0.0 117.136.100.104 POST /index/indexapi/hotsearch
+[ log ] yeyap.com/index/indexapi/hotsearch [运行时间：0.146995s][吞吐率：6.80req/s] [内存消耗：1,949.48kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'hotsearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '68',
+  'x-original-url' => '/index/indexapi/hotsearch',
+  'user-agent' => 'PaiZhi/1.0 (iPhone; iOS 11.2.5; Scale/3.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'a251ecc2572e8d48cee0e75bb8094564',
+  'user_id' => 'FeyT16K37828Utb3K613J',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->hotSearch[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001778s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.026095s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = 'FeyT16K37828Utb3K613J'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] select a.id,a.name ,(select count(*) from tp_work_type_time as b where b.wid=a.id and b.search_time='2018-04-19') as d from tp_work_type as a order by d desc [ RunTime:0.001295s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T12:51:54+08:00 ] 0.0.0.0 117.136.100.104 POST /index/indexapi/search
+[ log ] yeyap.com/index/indexapi/search [运行时间：0.344886s][吞吐率：2.90req/s] [内存消耗：2,024.16kb] [文件加载：56]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'search',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '148',
+  'x-original-url' => '/index/indexapi/search',
+  'user-agent' => 'PaiZhi/1.0 (iPhone; iOS 11.2.5; Scale/3.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'city' => '合肥市',
+  'name' => '信息员',
+  'num' => '10',
+  'page' => '1',
+  'token' => 'a251ecc2572e8d48cee0e75bb8094564',
+  'user_id' => 'FeyT16K37828Utb3K613J',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->search[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001136s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.019883s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = 'FeyT16K37828Utb3K613J'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.028462s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `name` LIKE '%信息员%'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE `city` LIKE '合肥市%' AND ( `area` LIKE '%信息员%' OR `positionName` LIKE '%信息员%' or `type` = '8')  and`status` = 1 AND `isdelete` = 0 ORDER BY `release_time` desc limit 0,10 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.023321s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `name` LIKE '%信息员%'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] UPDATE `tp_work_type`  SET `num`=79  WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.007428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type_time` [ RunTime:0.018929s ]
+[ sql ] [ SQL ] INSERT INTO `tp_work_type_time` (`search_time` , `wid`) VALUES ('2018-04-20' , 8) [ RunTime:0.003489s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T12:52:10+08:00 ] 0.0.0.0 117.136.100.104 POST /index/indexapi/screening
+[ log ] yeyap.com/index/indexapi/screening [运行时间：0.141442s][吞吐率：7.07req/s] [内存消耗：1,962.03kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'screening',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '101',
+  'x-original-url' => '/index/indexapi/screening',
+  'user-agent' => 'PaiZhi/1.0 (iPhone; iOS 11.2.5; Scale/3.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'city' => '合肥市',
+  'token' => 'a251ecc2572e8d48cee0e75bb8094564',
+  'user_id' => 'FeyT16K37828Utb3K613J',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->screening[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001137s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.019912s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = 'FeyT16K37828Utb3K613J'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.015617s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `name` LIKE '合肥市%' LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_position` WHERE  `parent_area_code` = 340100000000 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.073318s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000597s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T12:52:10+08:00 ] 0.0.0.0 117.136.100.104 POST /index/indexapi/screeningPart
+[ log ] yeyap.com/index/indexapi/screeningPart [运行时间：0.082159s][吞吐率：12.17req/s] [内存消耗：1,969.65kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'screeningPart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '140',
+  'x-original-url' => '/index/indexapi/screeningPart',
+  'user-agent' => 'PaiZhi/1.0 (iPhone; iOS 11.2.5; Scale/3.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'area' => '',
+  'city' => '合肥市',
+  'num' => '10',
+  'page' => '1',
+  'period' => '',
+  'sex' => '',
+  'token' => 'a251ecc2572e8d48cee0e75bb8094564',
+  'type' => '',
+  'user_id' => 'FeyT16K37828Utb3K613J',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->screeningPart[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001256s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.011758s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = 'FeyT16K37828Utb3K613J'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE `city` LIKE '合肥市%' AND `status` = 1 AND `isdelete` = 0   ORDER BY `release_time` desc limit 0,10 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.011409s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.018532s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000350s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T14:37:59+08:00 ] 0.0.0.0 223.104.33.69 POST /index/indexapi/index
+[ log ] yeyap.com/index/indexapi/index [运行时间：0.151699s][吞吐率：6.59req/s] [内存消耗：1,982.88kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '103',
+  'x-original-url' => '/index/indexapi/index',
+  'user-agent' => 'okhttp/3.9.0',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'city' => '合肥',
+  'user_id' => '80e795o1T81o976QubsEq',
+  'token' => 'c369996c48e34506ae96d760d6ef7b3b',
+  'property' => '0',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->index[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001980s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.023833s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = '80e795o1T81o976QubsEq'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.022685s ]
+[ sql ] [ SQL ] SELECT `banner_img`,`banner_link` FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.027183s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` LIKE '合肥%'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.016006s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.015244s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T18:16:44+08:00 ] 0.0.0.0 183.240.92.14 GET /admin/pub/login.html
+[ log ] yeyap.com/admin/pub/login.html [运行时间：1.329930s][吞吐率：0.75req/s] [内存消耗：4,656.57kb] [文件加载：68]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/pub/login.html',
+  'x-forwarded-for' => '182.99.36.229, 10.117.211.24',
+  'user-agent' => 'Mozilla/5.0 (iphone; U; CPU iPhone OS 4_3_5 like Mac OS X; zh-cn) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-cn,zh;q=0.5,*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.096337s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.298196s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003090s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.031319s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '183.240.92.14' , '中国 广东 广州 ' , 'Mac' , 'Safari(6533.18.5)' , 'http://yeyap.com/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1524219403) [ RunTime:0.133635s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T18:16:44+08:00 ] 0.0.0.0 180.149.133.7 GET /captcha.html
+[ log ] yeyap.com/captcha.html [运行时间：0.102341s][吞吐率：9.77req/s] [内存消耗：1,134.80kb] [文件加载：41]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/captcha.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1; rv:8.0.1) Gecko/20100101 Firefox/8.0.1',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'en-US,*',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\wwwroot\AMS\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T18:16:46+08:00 ] 0.0.0.0 182.99.36.229 GET /admin/pub/login.html
+[ log ] yeyap.com/admin/pub/login.html [运行时间：0.072523s][吞吐率：13.79req/s] [内存消耗：4,658.30kb] [文件加载：68]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/pub/login.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 6.0; zh-cn; vivo Y67 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.3 Mobile Safari/537.36',
+  'referer' => 'https://m.baidu.com/from=1086k/bd_page_type=1/ssid=0/uid=0/pu=usm%401%2Csz%40320_1002%2Cta%40iphone_2_6.0_2_12137.1/baiduid=DFE43944C2A3D44C0BE7336DD4CE122F/w=0_10_/t=iphone/l=3/tc?ref=www_iphone&lid=12572510249209358760&order=4&fm=alop&tj=www_normal_4_0_10_title&vit=osres&m=8&srd=1&cltj=cloud_title&asres=1&title=%E5%90%8E%E5%8F%B0%E7%99%BB%E5%BD%95-%E6%A0%A1%E5%9B%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F&dict=32&wd=&eqid=ae7a8775ab14e800100000005ad9bd95&w_qd=IlPT2AEptyoA_ykz8A1cs37u_zJVfGEp6U9Wfh0V9hUrQh7&tcplug=1&sec=29194&di=6e1f154b232889a1&bdenc=1&tch=124.367.105.721.1.574&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IDx31ND9K1TWz7JuVefTiGNgfEFXfRXnTUS4-u7WHfw2NhCn8&clk_info=%7B%22srcid%22%3A1599%2C%22tplname%22%3A%22www_normal%22%2C%22t%22%3A1524219401542%2C%22xpath%22%3A%22div-div-div-a-p%22%7D&sfOpen=1',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/sharpp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.022412s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.027425s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001463s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.019152s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '182.99.36.229' , '中国 江西 景德镇 ' , 'Linux' , 'Chrome(57.0.2987.132)' , 'http://yeyap.com/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1524219405) [ RunTime:0.000603s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T18:16:46+08:00 ] 0.0.0.0 182.99.36.229 GET /captcha.html
+[ log ] yeyap.com/captcha.html [运行时间：0.028204s][吞吐率：35.46req/s] [内存消耗：1,135.18kb] [文件加载：41]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/captcha.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 6.0; zh-cn; vivo Y67 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.3 Mobile Safari/537.36',
+  'referer' => 'http://yeyap.com/admin/pub/login.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'PHPSESSID=dem98utg8jfrks062o08h0nmt4',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\wwwroot\AMS\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-20T18:17:46+08:00 ] 0.0.0.0 101.227.131.139 GET /admin/pub/login.html
+[ log ] yeyap.com/admin/pub/login.html [运行时间：0.082786s][吞吐率：12.08req/s] [内存消耗：4,656.13kb] [文件加载：68]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/pub/login.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 6.0.1; zh-cn; OPPO R9s Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36 OppoBrowser/4.2.8',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006859s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ C:\wwwroot\AMS\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.052248s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001175s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.026270s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '101.227.131.139' , '中国 上海 上海 ' , 'Linux' , 'Chrome(38.0.0.0)' , 'http://yeyap.com/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1524219466) [ RunTime:0.018595s ]
+
+---------------------------------------------------------------
+[ 2018-04-20T20:12:49+08:00 ] 0.0.0.0 178.156.202.252 GET /
+[ log ] yeyap.com/ [运行时间：0.110000s][吞吐率：9.09req/s] [内存消耗：1,404.23kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64)AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+  'host' => 'yeyap.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

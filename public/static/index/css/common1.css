@@ -1,0 +1,171 @@
+@media (max-width: 768px) { 
+	.container{width: 100%}
+	.city-xs{position:absolute;top:35%;right:5%;color: #fc3;}
+	.nav-xs{position: absolute;top: 30%;left: 30%;font-size: 18px;}
+	.container .nav-son li{padding:0 15px;font-size: 14px}
+	.nav-open-xs{position: absolute;top: 100%;background: #fff;width: 100%;line-height:50px;text-align: center;font-size:16px;display: none;}
+	.nav-open-xs li{border-bottom: 1px dashed #ddd}
+	.actGotop{right:2%;}
+	.logo{height: 30px}
+	.container-top{margin-top:50px}
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) { 
+	.container{width: 100%}
+	.actGotop{right:2%;}
+	.logo{height:40px}
+	.navbar{min-height: 60px}
+	.login-content{width:90%}
+	.login-content h1{font-size: 34px}
+	.container .nav-son li{padding:10px 15px;font-size: 15px}
+	.login-content .input-group{margin:40px 0}
+	.login-content .input-group-addon{font-size:24px}
+	.login-content .form-control{height:60px;font-size:24px}
+	.login-content .sign-in-button{height:60px;font-size: 26px;border-radius:6px;}
+	.login_password,.login_register{font-size: 22px}
+	.nav>li>a{font-size:16px;padding:5px;margin: 10px 2px;}
+	.container-top{margin-top:60px}
+	.navbar .city{line-height:40px;font-size: 18px;margin-left: 15px;}
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width:992px) { 
+	.container{width:960px;margin: 0 auto}
+	.actGotop{right:15%;}
+	.app p{margin-top: 10px;}
+	.container .nav-son li{padding:10px 30px;font-size: 16px}
+	.login-content{width: 400px}
+	.login-content h1{font-size: 24px}
+	.login-content .input-group{margin:20px 0}
+	.login-content .input-group-addon{font-size:16px}
+	.login-content .form-control{height:40px;font-size:16px}
+	.login-content .sign-in-button{height:40px;font-size: 18px;border-radius:4px;}
+	.login_password,.login_register{font-size: 14px}
+	.nav>li>a{font-size:18px;padding:8px 15px;margin:4px 2px;}
+	.container-top{margin-top:70px}
+}
+ul,ol ,li{list-style: none}
+body,html,ul,ol,li{padding: 0;margin:0}
+a:hover{text-decoration:none}
+.container{padding:0;}
+nav .all-container{min-width:768px;max-width: 1440px;margin: 0 auto}
+.b-c{color: #333}
+.g-c{color: #aaa;}
+.zs-3c9{color: #fc3;}
+.m-t15{margin-top: 15px}
+.m-t30{margin-top: 30px}
+.p-lr{padding: 0 15px}
+.p-0{padding:0}
+.f-l{float: left}
+.f-r{float: right}
+.c-b{clear: both}
+.o-h{overflow: hidden}
+.mg-l5{margin-left: 5px}
+.mg-r10{margin-right:10px}
+.font-12{font-size: 12px;}
+.c-s{background: #ff0}
+.d-n{display: none;}
+.fw-n{font-weight: normal;}
+.logo{margin: 10px 0 10px 15px;}
+.container .banner{border-radius: 5px;overflow: hidden}
+.container .nav-son li{width: 25%;float: left;text-align: center;font-weight: 800}
+.container .nav-son li p{margin-top:5px;}
+/*user-head*/
+.container .title-h1{font-size:18px;margin:20px 0 0;padding:5px 10px;color:#333;border-left: 4px solid #fc3;font-weight:800}
+.container .school .info{line-height:2.2;width:100%;padding-left:85px}
+.container .school .info>a{font-size:18px;font-weight:800}
+.navbar-default .navbar-text{font-size:16px;color:#fc3}
+.companyrecruit{border: 1px solid #fc3;background: #fc3;color: #fff;padding:8px 10px;margin:10px 20px;border-radius: 5px;font-size:16px;-webkit-transition: all .1s;-o-transition: all .1s;transition: all .1s;}
+.companyrecruit:hover,.companyrecruit:active,.companyrecruit:focus{background: none}
+/*foot*/
+.container footer{line-height:2.5;color:#aaa;font-size:13px;text-align: center;padding: 10px 0}
+.container footer .friend-link{border-bottom: 1px solid #ddd;overflow: hidden}
+.container footer .friend-link li{float: left}
+.container footer .friend-link a{color:#aaa;margin: 8px;}
+.container footer .friend-link a:hover{color: #555}
+.container footer.footer{height: 180px;background: url(../img/foot-bg.png) no-repeat center center;background-size: auto 100%;padding-top:20px}
+.container footer.footer a{background: #fc3;color: #fff;padding:15px 20px;border-radius: 5px;font-size: 15px}
+/*auto-img*/
+.new-img1{position: absolute;min-width:100%;height: 100%}
+.new-img2{width:100%;min-height: auto}
+/*pags&b*/
+.new-pag{color:#fff;background:#fc3;padding:5px 7px;border-radius:3px;vertical-align:middle;margin-right:5px}
+.new-pag-green{color:#fff;background:#3c9;padding:5px 7px;border-radius:3px;vertical-align:middle;margin-right:5px}
+.new-pag-bor{color:#fc3;padding:2px 5px;border:1px solid #fc3;border-radius:3px;vertical-align:middle;margin-right:5px}
+.new-pag-b{color: #333;background: #f6f6f6;padding: 8px 15px;border: 1px solid #ddd;border-radius:3px;vertical-align:middle}
+.new-pag-b:hover{color: #fff;background: #fc3;border: 1px solid #fc3}
+.new-pag-all .new-pag-b{display: block;float: left;margin:0 10px 15px 0;}
+/*pc-right*/
+.right-ul a{display:block;line-height: 3;margin-top: 15px;color: #fff;font-size: 16px;border-radius:4px;text-align: center}
+.right-ul a:nth-child(1){background: #E2D062;}
+.right-ul a:nth-child(2){background: #99B165;}
+.right-ul a:nth-child(3){background: #89B8CA;}
+.right-ul a:nth-child(4){background: #EF9C94;}
+.app{position:relative;cursor:pointer;border: 1px solid #ddd;padding:10px 0;color:#888;line-height: 1;text-align:center}
+.app p{color:#333}
+.app-show{display:none;position: absolute;width:50%;top:-185%;left:25%;background: #fff;padding: 10px;border: 1px solid #ddd;border-radius: 4px;}
+.app-jt{position:absolute;bottom:-11px;left: 40%;}
+.app:hover .app-show{display: block;}
+/*page-header*/
+.header1{line-height: 3;color: #666;font-size: 16px;border-bottom:1px solid #ddd;margin-top: 15px}
+/*select*/
+.key-select>h3{font-size: 16px;font-weight: 800;}
+.key-select>ul{background:#f8f8f8;padding:10px;line-height: 3}
+.key-select>ul a.new-pag:hover{color: #fff}
+.key-select>ul li span{float:left;height: 100%;}
+.key-select>ul li div{margin-left:8%;}
+.key-select>ul a{color:#333;margin-right:5px;display: inline-block;height:28px;line-height:28px;padding:0 5px;}
+.key-select>ul a.new-pag{color: #fff;padding:0 5px;}
+.list-count{text-align:center;width:30%;padding:0.5em;color:#ddd}
+.empty-item {-webkit-transition-property: opacity;-o-transition-property: opacity;transition-property: opacity;-webkit-transition-duration: 0s;-o-transition-duration: 0s;transition-duration: 0s;-webkit-transition-delay: 0s;-o-transition-delay: 0s;transition-delay: 0s;-webkit-transition-timing-function: ease;-o-transition-timing-function: ease;transition-timing-function: ease;color:#ddd;text-align:center;visibility:hidden;opacity:0}
+.empty .empty-item {-webkit-transition-property: opacity;-o-transition-property: opacity;transition-property: opacity;-webkit-transition-duration: .2s;-o-transition-duration: .2s;transition-duration: .2s;-webkit-transition-delay: .3s;-o-transition-delay: .3s;transition-delay: .3s;-webkit-transition-timing-function: ease;-o-transition-timing-function: ease;transition-timing-function: ease;opacity:1;visibility:visible}
+.list-job ul {width:100%;margin:20px 0;padding:0;position:relative}
+.list-job li {line-height: 2;width:100%;margin:10px 0;padding:10px;background-color:#f8f8f8;color:#333;position:relative;z-index:2}
+.list-job li .title{font-weight:800;color:#333}
+.list-job li .new{color:#666}
+.list a{text-decoration: none}
+.list a:hover,.list a:active{text-decoration: none}
+.hiding {opacity:0.5}
+.hidden {display:none}
+.list-wrap ul {width:100%;margin:20px 0;padding:0;position:relative}
+.list-wrap li {-webkit-transition-property: margin, background-color, border-color;-o-transition-property: margin, background-color, border-color;transition-property: margin, background-color, border-color;-webkit-transition-duration: .4s, .2s, .2s;-o-transition-duration: .4s, .2s, .2s;transition-duration: .4s, .2s, .2s;-webkit-transition-timing-function: ease-in-out, ease, ease;-o-transition-timing-function: ease-in-out, ease, ease;transition-timing-function: ease-in-out, ease, ease;width:100%;margin:10px 0;padding:10px;background-color:#eee;border-left:5px solid #003842;cursor:pointer;color:#333;position:relative;z-index:2}
+.list-wrap li:hover {background-color:#f9f9f9;border-color:#fc3}
+.hiding {opacity:0.5}
+.hidden {display:none}
+.list-wrap li i{font-style: normal;color: #888}
+/*school*/
+.school-content{border-bottom: 1px dashed #ddd;overflow: hidden}
+.school-content li{width:20%;float:left;text-align: center;color: #aaa;font-size:18px;padding:10px 0;margin-right:2%;}
+.school-content li.active{color:#fc3;border-bottom: 4px solid #fc3}
+.school-content li.active:hover{color:#fc3;border-bottom: 4px solid #fc3}
+.school-content li:hover{color:#646464;border-bottom: 4px solid #646464}
+.add-student h1{font-size: 16px;text-align: center;font-weight:800}
+.add-student h2{font-size: 15px;text-align: center;color:#fc3;font-weight:800}
+.add-student p{text-indent:28px}
+/*gotop*/
+.actGotop{cursor:pointer;position: fixed;bottom: 10%;display: none;width: 45px;height: 45px;border: 1px solid #ddd;text-align: center;background:rgba(255,255,255,.8);border-radius: 4px;z-index: 999}
+/*login*/
+.login{font-size:40px;padding:30px 0;text-align: center;}
+.login-content{margin: 0 auto;background: #fff;-webkit-box-shadow: 0 0 10px #ddd;box-shadow: 0 0 10px #ddd;padding:15px 50px;border-radius:5px}
+.login-content h1{color:#fc3;text-align:center;line-height:2}
+.login-content .input-group-addon{border-right: 0;background: #fff;color:#fc3;background: #f8f8f8}
+.login-content .form-control{border-left: 0;-webkit-box-shadow: none;box-shadow: none;padding-left: 0;background: #f8f8f8}
+.login-content .sign-in-button{width: 100%;background: #fc3;border:none;color: #fff}
+.login_password{display:block;color: #888;margin: -10px 0 20px}
+.login_register{display:block;text-align: right;line-height:40px;color: #888}
+.login_register:hover,.login_password:hover{color: #333}
+.input-group input.form-control-code{border:1px solid #ccc;text-align: center;}
+.input-group .two-code{border:1px solid #ccc;position: absolute;height:40px;width:100px;right:-92px;z-index: 10;border-radius:0 5px 5px 0;}
+.input-group .new-code{background: #fc3;line-height: 40px;text-align: center;font-size:16px}
+.input-group .new-code a{color:#fff;display: block}
+.city-select select{width: 30%;margin-right:3.3333333333%;border: 1px solid #ccc;color: #999;height:38px;background: #f8f8f8;font-size: 16px}
+.city-select select:last-of-type{margin-right:0}
+/*职位详情*/
+.job-details>div,.job-details>ul{border-bottom:1px dashed #ddd;padding: 10px 0}
+.job-details>div>h1{font-size: 16px;font-weight: 800}
+.job-details>div>h2{font-size: 15px;font-weight: 800;border-left:3px solid #fc3;padding-left:5px;line-height: 1.5}
+.job-details>div>div,.job-details>div>p,.job-details>ul{color:#888}
+.job-details>div>div span{color: #f40;font-size:24px}
+.job-details>ul span{color: #333;line-height: 2}
+.job-details>div>p.p{color:#333;line-height: 2}
+.job-details>div .enroll{background: #fc3;color: #fff;padding:4px 8px;font-size: 16px;margin-top:-8px;border-radius:4px}
+.job-details>div .span{color:#f40;font-size: 16px}

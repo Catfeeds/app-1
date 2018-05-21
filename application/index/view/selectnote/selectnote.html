@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>查看日记</title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script src="__STATIC__/js/rem.js"></script>
+</head>
+
+	 
+<body>
+<div id="wrap">
+    <header class="header">
+        <a href="javascript:;" onclick="history.go(-1)" class="back"></a>所有日记
+    </header>
+    <div class="star_b zb_b jy">
+
+        <div class="zb_ls">
+            <!--<h3>天鹅湖园区</h3>-->
+            <ul class="zb_ul clearfix">
+
+                {volist name="data" id="vo"}
+                <li style="width: 0.9rem;height: 1.6rem;">
+                    <a href="{:url('Note/index')}?account={$vo['account']}&m=1">
+                        <img src="__STATIC__/../../uploads/file/{$data2[$key]['student_headurl']}"  title="成长日记" style="width:100px;
+	height:100px;border-radius: 10px">
+                    </a>
+                    <span>
+                        {$data2[$key]['name']}<br>
+                        <!--{$data2[$key]['schoolName']}<br>-->
+                        {$data2[$key]['className']}班<br>
+
+                        <!--{$vo.release_time ?? ''}-->
+                        {$vo.release_time|strtotime|date="m-d H:i",###}
+                    </span>
+                </li>
+                {/volist}
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

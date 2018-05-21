@@ -1,0 +1,58 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}" class="select_id"></td>
+<td>{$vo.id}</td>
+<td>{$vo.work_unit}</td>
+
+<td>
+    {$vo.positionName}
+</td>
+<td>{$vo.area}</td>
+<td>
+    {$vo.position_type}
+</td>
+
+
+<td>
+   {$vo.name}
+</td>
+
+<td>
+   {$vo.age}
+</td>
+<td>
+
+    {$vo.sex}
+</td>
+<td>
+
+     {$vo.phone}
+</td>
+
+<td>{$vo.enroll_time}</td>
+<td>
+     {$vo.score}
+</td>
+
+<td>
+    <!--<a href="{:url('CompanyPositionEnroll/selectResume',array('user_id'=>$vo.user_id))}" style="color: #148cf1">查看简历</a>-->
+
+    <a href="javascript:;" onclick="layer_open('个人简历', '{:\\think\\Url::build(\'CompanyPositionEnroll/selectResume\',array(\'user_id\'=>$vo.user_id))}')" style="color: #148cf1">查看简历</a>
+</td>
+
+<td>
+    {if condition="$vo.ishire eq 0"}
+        <span style="color: #32CD32">已报名</span>
+    {/if}
+    {if condition="$vo.ishire eq 1"}
+        <span style="color: #FF7F00">已录用</span>
+    {/if}
+    {if condition="$vo.ishire eq 2"}
+        <span style="color: #545454">未录用</span>
+    {/if}
+
+</td>
+
+
+
+
+
+

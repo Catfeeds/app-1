@@ -1,0 +1,20 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+
+    <div class="select-box" style="width:250px">
+        <select name="courseid" class="select">
+            <option value="">请选择所属课程</option>
+            {volist name="courseInfo2" id="vo"}
+            <option value ="{$vo.id}">{$vo.courseName}</option>
+            {/volist}
+        </select>
+    </div>
+
+
+    <input type="text" class="input-text Wdate" style="width:250px" placeholder="上传时间" name="release_time" value="{$Request.param.release_time}" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal} >
+
+    <!--<input type="text" class="input-text" style="width:250px" placeholder="类型" name="type" value="{$Request.param.type}" >-->
+
+
+
+    <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+</form>

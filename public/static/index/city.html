@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="keywords" content="派职网,高考">
+		<title>派职网-城市列表</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<a href="index.html" ><img src="img/logo1.png" class="logo"/></a>
+			</div>
+		</nav>
+		<div class="container container-top">
+			<div class="col-sm-8 col-xs-12" >
+				<header class="header1">
+					<a href="index.html">首页</a><span class="glyphicon glyphicon-menu-right"></span> 城市选择
+				</header>
+				<h1 class="title-h1">热门城市</h1>
+				<section class="new-pag-all m-t15 o-h">
+					<a href="#" class="new-pag-b">合肥</a>
+					<a href="#" class="new-pag-b">北京</a>
+					<a href="#" class="new-pag-b">南京</a>
+					<a href="#" class="new-pag-b">上海</a>
+					<a href="#" class="new-pag-b">广东</a>
+					<a href="#" class="new-pag-b">苏州</a>
+				</section>
+				<section class="m-t15 list-wrap">
+					<label for="search-text">搜索城市:</label>
+				  	<input type="text" id="search-text" placeholder="请输入城市" class="form-control">
+				  	<span class="list-count"></span>
+					<ul id="list">
+						<a href="#"><li class="in"><span>合肥</span></li></a>
+						<a href="#"><li class="in"><span>南京</span></li></a>
+						<a href="#"><li class="in"><span>北京</span></li></a>
+						<a href="#"><li class="in"><span>广州</span></li></a>
+						<a href="#"><li class="in"><span>上海</span></li></a>
+						<a href="#"><li class="in"><span>厦门</span></li></a>
+						<a href="#"><li class="in"><span>阜阳</span></li></a>
+						<a href="#"><li class="in"><span>亳州</span></li></a>
+						<a href="#"><li class="in"><span>合肥</span></li></a>
+						<a href="#"><li class="in"><span>南京</span></li></a>
+						<a href="#"><li class="in"><span>北京</span></li></a>
+						<a href="#"><li class="in"><span>广州</span></li></a>
+						<a href="#"><li class="in"><span>上海</span></li></a>
+						<a href="#"><li class="in"><span>厦门</span></li></a>
+						<a href="#"><li class="in"><span>阜阳</span></li></a>
+						<a href="#"><li class="in"><span>亳州</span></li></a>
+						<a href="#"><li class="in"><span>合肥</span></li></a>
+						<a href="#"><li class="in"><span>南京</span></li></a>
+						<a href="#"><li class="in"><span>北京</span></li></a>
+						<a href="#"><li class="in"><span>广州</span></li></a>
+						<a href="#"><li class="in"><span>上海</span></li></a>
+						<a href="#"><li class="in"><span>厦门</span></li></a>
+						<a href="#"><li class="in"><span>阜阳</span></li></a>
+						<a href="#"><li class="in"><span>亳州</span></li></a>
+						<span class="empty-item">无数据</span>
+					</ul>
+				</section>
+				<footer class="m-t15">
+					<div class="friend-link">
+						<ul>
+							<li>友情链接：</li>
+							<li><a href="#">派职网</a>|</li>
+							<li><a href="#">派职网</a>|</li>
+							<li><a href="#">派职网</a>|</li>
+							<li><a href="#">派职网</a></li>
+						</ul>
+					</div>
+					<div>
+						©2001-2018 安徽派职网 | 派职网 
+					</div>
+				</footer>
+			</div>
+			<div class="col-sm-4 hidden-xs">
+				<h4 class="m-t15">热门职位</h4>
+				<div class="m-t15 right-ul">
+					<a href="javascript:">传单派发</a>
+				 	<a href="javascript:">餐厅兼职</a>
+				 	<a href="javascript:">市场调查</a>
+				 	<a href="javascript:">产品促销</a>
+				</div>
+				<div class="m-t15 app" id="app">
+					<div class="col-sm-4">
+						<img src="img/ma.png" alt="派职网" title="派职网" width="100%"/>
+					</div>
+					<div class="col-sm-8">
+						<p>下载派职网APP <span class="glyphicon glyphicon-menu-right"></span></p>
+						<span>随时随地派职给你</span>
+					</div>
+					<div class="c-b"></div>
+					<div class="app-show">
+						<img src="img/ma.png" width="100%"/>
+						<img src="img/jt.png" class="app-jt"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="actGotop"><a href="javascript:;" title="返回顶部" class="glyphicon glyphicon-menu-up"></a><br/>TOP</div>
+	</body>
+	<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/select.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/gotop.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.js-select li a').click(function(){
+				$(this).addClass('new-pag').siblings('a').removeClass('new-pag');
+			})
+		})
+	</script>
+</html>

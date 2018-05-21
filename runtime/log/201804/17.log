@@ -1,0 +1,2391 @@
+[ 2018-04-17T17:28:40+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.110799s][吞吐率：9.03req/s] [内存消耗：2,222.32kb] [文件加载：62]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001300s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.018577s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.017719s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000369s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:28:40+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.066199s][吞吐率：15.11req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001247s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.010544s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.009288s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000355s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:28:41+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.084675s][吞吐率：11.81req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001248s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.018699s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.019726s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000365s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:28:41+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.086101s][吞吐率：11.61req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001426s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.012589s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.012350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000504s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:28:41+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.099073s][吞吐率：10.09req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004979s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.014560s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.020334s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000481s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:28:41+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.078136s][吞吐率：12.80req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001283s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.015640s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.004486s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.011129s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:28:41+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.068431s][吞吐率：14.61req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001375s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.011092s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.010853s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000407s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:28:42+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.078406s][吞吐率：12.75req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003660s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.018360s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.014002s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000355s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:35+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.123191s][吞吐率：8.12req/s] [内存消耗：2,222.45kb] [文件加载：62]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003655s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.024163s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.022681s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000358s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:36+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.084258s][吞吐率：11.87req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001120s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.019916s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.020584s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000365s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:36+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.072876s][吞吐率：13.72req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001365s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.014999s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.011304s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.003154s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000347s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:37+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.082228s][吞吐率：12.16req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001623s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.017658s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.014183s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.004033s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000356s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:37+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.062119s][吞吐率：16.10req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001215s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.010577s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.009074s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000347s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:37+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.064889s][吞吐率：15.41req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000945s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.013477s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.009502s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000349s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:37+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.070184s][吞吐率：14.25req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001117s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.012244s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.012965s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000389s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:38+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.159903s][吞吐率：6.25req/s] [内存消耗：2,102.95kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001034s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.017257s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.091818s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.001434s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:38+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.068115s][吞吐率：14.68req/s] [内存消耗：2,102.95kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001083s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.010213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.012183s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.003222s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000357s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:38+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.074609s][吞吐率：13.40req/s] [内存消耗：2,102.95kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001599s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.010760s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.019609s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000550s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:38+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.070175s][吞吐率：14.25req/s] [内存消耗：2,102.95kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001073s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.012192s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.013299s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000401s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:43+08:00 ] 0.0.0.0 36.32.24.164 GET /static/index/css/bootstrap.min.css.map
+[ log ] yeyap.com/static/index/css/bootstrap.min.css.map [运行时间：0.021806s][吞吐率：45.86req/s] [内存消耗：1,108.90kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/bootstrap.min.css.map',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T17:29:44+08:00 ] 0.0.0.0 36.32.24.164 POST /index/indexapi/index
+[ log ] yeyap.com/index/indexapi/index [运行时间：0.085630s][吞吐率：11.68req/s] [内存消耗：1,969.53kb] [文件加载：53]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'indexapi',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '83',
+  'x-original-url' => '/index/indexapi/index',
+  'user-agent' => 'PaiZhi/1.0 (iPhone; iOS 11.2; Scale/3.00)',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-Hans-US;q=1, en;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'city' => 'Cupertino',
+  'token' => 'e7786060f7680d71a6936068953b4f1d',
+  'user_id' => 'Ea5GpyI2n452N3R10454N',
+)
+[ info ] [ RUN ] app\index\controller\Indexapi->index[ C:\wwwroot\AMS\application\index\controller\Indexapi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001058s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.016837s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `user_id` = 'Ea5GpyI2n452N3R10454N'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.020404s ]
+[ sql ] [ SQL ] SELECT `banner_img`,`banner_link` FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.017726s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` LIKE 'Cupertino%'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000499s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:30:17+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.099006s][吞吐率：10.10req/s] [内存消耗：2,102.95kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001133s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.029866s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.026718s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000358s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:30:17+08:00 ] 0.0.0.0 36.32.24.164 GET /static/index/css/bootstrap.min.css.map
+[ log ] yeyap.com/static/index/css/bootstrap.min.css.map [运行时间：0.018219s][吞吐率：54.89req/s] [内存消耗：1,108.90kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/bootstrap.min.css.map',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T17:30:17+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.063140s][吞吐率：15.84req/s] [内存消耗：2,102.95kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003399s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.010570s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.009074s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000358s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:30:17+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.064527s][吞吐率：15.50req/s] [内存消耗：2,102.95kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001053s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.011474s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.010180s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000354s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:30:17+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.067516s][吞吐率：14.81req/s] [内存消耗：2,102.95kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001364s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.011097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.011495s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000368s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:30:18+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.200894s][吞吐率：4.98req/s] [内存消耗：2,102.95kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001081s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.019458s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.003489s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.133104s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:30:19+08:00 ] 0.0.0.0 36.32.24.164 GET /static/index/css/bootstrap.min.css.map
+[ log ] yeyap.com/static/index/css/bootstrap.min.css.map [运行时间：0.019111s][吞吐率：52.33req/s] [内存消耗：1,108.90kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/bootstrap.min.css.map',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T17:30:54+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.115121s][吞吐率：8.69req/s] [内存消耗：2,222.42kb] [文件加载：62]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001350s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.022927s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.015433s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000395s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:30:54+08:00 ] 0.0.0.0 36.32.24.164 GET /static/index/css/bootstrap.min.css.map
+[ log ] yeyap.com/static/index/css/bootstrap.min.css.map [运行时间：0.019157s][吞吐率：52.20req/s] [内存消耗：1,108.90kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/bootstrap.min.css.map',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T17:31:45+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/index.html
+[ log ] yeyap.com/index/part/index.html [运行时间：0.022795s][吞吐率：43.87req/s] [内存消耗：1,399.08kb] [文件加载：52]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/part/travel.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T17:32:17+08:00 ] 0.0.0.0 36.32.24.164 GET /static/index/css/bootstrap.min.css.map
+[ log ] yeyap.com/static/index/css/bootstrap.min.css.map [运行时间：0.018383s][吞吐率：54.40req/s] [内存消耗：1,108.90kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/bootstrap.min.css.map',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T17:32:18+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.108606s][吞吐率：9.21req/s] [内存消耗：2,222.49kb] [文件加载：62]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001170s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.022631s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.014428s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.002992s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:32:18+08:00 ] 0.0.0.0 36.32.24.164 GET /static/index/css/bootstrap.min.css.map
+[ log ] yeyap.com/static/index/css/bootstrap.min.css.map [运行时间：0.019190s][吞吐率：52.11req/s] [内存消耗：1,108.90kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/bootstrap.min.css.map',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T17:32:18+08:00 ] 0.0.0.0 36.32.24.164 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.068324s][吞吐率：14.64req/s] [内存消耗：2,102.88kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/index/index.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001073s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.012122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.014259s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000394s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:32:18+08:00 ] 0.0.0.0 36.32.24.164 GET /static/index/css/bootstrap.min.css.map
+[ log ] yeyap.com/static/index/css/bootstrap.min.css.map [运行时间：0.020054s][吞吐率：49.87req/s] [内存消耗：1,108.90kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/bootstrap.min.css.map',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T17:32:20+08:00 ] 0.0.0.0 36.32.24.164 GET /index/index/index.html
+[ log ] yeyap.com/index/index/index.html [运行时间：0.228141s][吞吐率：4.38req/s] [内存消耗：2,315.13kb] [文件加载：62]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/index/index.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'referer' => 'http://yeyap.com/index/part/travel.html',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wwwroot\AMS\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001081s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.038290s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.018114s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.014029s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 4  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 5  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.016445s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.020476s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `area_name` LIKE '合肥%' LIMIT 1 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT `area_name`,`id` FROM `tp_position` WHERE  `parent_area_code` = 340100000000 [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000354s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:32:20+08:00 ] 0.0.0.0 36.32.24.164 GET /static/index/css/bootstrap.min.css.map
+[ log ] yeyap.com/static/index/css/bootstrap.min.css.map [运行时间：0.020090s][吞吐率：49.78req/s] [内存消耗：1,108.90kb] [文件加载：42]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/static/index/css/bootstrap.min.css.map',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3381.1 Safari/537.36',
+  'host' => 'yeyap.com',
+  'cookie' => 'Huiskin=default; PHPSESSID=o1mjtf12hf0dvv2bmlioi6ov15',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T17:34:35+08:00 ] 0.0.0.0 106.11.242.193 GET /
+[ log ] www.yeyap.com/ [运行时间：0.029664s][吞吐率：33.71req/s] [内存消耗：1,404.28kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'host' => 'www.yeyap.com',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T17:36:10+08:00 ] 0.0.0.0 182.118.20.144 GET /index/part/daily.html
+[ log ] yeyap.com/index/part/daily.html [运行时间：0.124076s][吞吐率：8.06req/s] [内存消耗：2,233.02kb] [文件加载：62]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'daily',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/daily.html',
+  'x-forwarded-for' => 'unknown',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)',
+  'referer' => 'http://yeyap.com/index/part/daily.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'identity',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->daily[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\daily.html [ array (
+  0 => 'hotType',
+  1 => 'part',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000955s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.018802s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.013717s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.013084s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:37:19+08:00 ] 0.0.0.0 182.118.20.144 GET /index/index/index.html?type=2
+[ log ] yeyap.com/index/index/index.html?type=2 [运行时间：0.157704s][吞吐率：6.34req/s] [内存消耗：2,173.55kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/index/index.html?type=2',
+  'x-forwarded-for' => 'unknown',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)',
+  'referer' => 'http://yeyap.com/index/index/index.html?type=2',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'identity',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wwwroot\AMS\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003464s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.019693s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `type` = 2  AND `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `type` = 2  AND `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `type` = 2  AND `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.013833s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.015350s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.013960s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.032362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `area_name` LIKE '合肥%' LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT `area_name`,`id` FROM `tp_position` WHERE  `parent_area_code` = 340100000000 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.003005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000355s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:37:52+08:00 ] 0.0.0.0 210.209.70.55 GET /index/part/daily.html
+[ log ] yeyap.com/index/part/daily.html [运行时间：0.130653s][吞吐率：7.65req/s] [内存消耗：2,111.77kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'daily',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/daily.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'iso-8859-1,*,utf-8',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->daily[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\daily.html [ array (
+  0 => 'hotType',
+  1 => 'part',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001377s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.032767s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.013520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.016946s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G40406093'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000463s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T17:52:15+08:00 ] 0.0.0.0 106.120.160.109 GET /index/index/index.html?type=8
+[ log ] yeyap.com/index/index/index.html?type=8 [运行时间：0.168462s][吞吐率：5.94req/s] [内存消耗：2,175.05kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/index/index.html?type=8',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)',
+  'referer' => 'http://yeyap.com/index/index/index.html?type=8',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'identity',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'type' => '8',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wwwroot\AMS\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\index\index.html [ array (
+  0 => 'count',
+  1 => 'type1',
+  2 => 'area1',
+  3 => 'type',
+  4 => 'property',
+  5 => 'area',
+  6 => 'part',
+  7 => 'page',
+  8 => 'banner',
+  9 => 'hotType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001772s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.025819s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `type` = 8  AND `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `type` = 8  AND `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `type` = 8  AND `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.022875s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 6  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.003799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.017083s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 3  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `companyAccount` = 'G71340634'  AND `ishire` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.017099s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `tp_work_type` WHERE  `status` = 1  AND `isdelete` = 0 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_position` [ RunTime:0.016724s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_position` WHERE  `area_name` LIKE '合肥%' LIMIT 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT `area_name`,`id` FROM `tp_position` WHERE  `parent_area_code` = 340100000000 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000349s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T18:20:24+08:00 ] 0.0.0.0 182.118.20.145 GET /index/list/daily.html
+[ log ] yeyap.com/index/list/daily.html [运行时间：0.026700s][吞吐率：37.45req/s] [内存消耗：1,155.84kb] [文件加载：45]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'list',
+    2 => 'daily',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/list/daily.html',
+  'x-forwarded-for' => 'unknown',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)',
+  'referer' => 'http://yeyap.com/index/list/daily.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'identity',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T18:22:11+08:00 ] 0.0.0.0 113.10.190.249 GET /index/list/daily.html
+[ log ] yeyap.com/index/list/daily.html [运行时间：0.021663s][吞吐率：46.16req/s] [内存消耗：1,155.83kb] [文件加载：45]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'list',
+    2 => 'daily',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/list/daily.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'iso-8859-1,*,utf-8',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-17T18:22:30+08:00 ] 0.0.0.0 182.118.20.145 GET /index/part/travel.html
+[ log ] yeyap.com/index/part/travel.html [运行时间：0.091870s][吞吐率：10.88req/s] [内存消耗：2,102.47kb] [文件加载：60]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'part',
+    2 => 'travel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/part/travel.html',
+  'x-forwarded-for' => 'unknown',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)',
+  'referer' => 'http://yeyap.com/index/part/travel.html',
+  'host' => 'yeyap.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'identity',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Part->travel[ C:\wwwroot\AMS\application\index\controller\Part.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\part\travel.html [ array (
+  0 => 'hotType',
+  1 => 'page',
+  2 => 'part',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002060s ] mysql:dbname=AMS;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.021255s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT `id`,`area`,`positionName`,`type`,`start_time`,`period`,`count`,`salary`,`payroll`,`release_time`,`companyAccount` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `property` = 4  AND `isdelete` = 0 ORDER BY `release_time`  desc LIMIT 0,10 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT `type` FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `status` = 1  AND `isdelete` = 0 ORDER BY `release_time`  desc [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.017908s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 2  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 8  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `city` = '合肥市'  AND `type` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000527s ]
+
+---------------------------------------------------------------
+[ 2018-04-17T23:33:29+08:00 ] 0.0.0.0 42.236.46.85 GET /
+[ log ] www.yeyap.com/ [运行时间：0.030127s][吞吐率：33.19req/s] [内存消耗：1,404.33kb] [文件加载：50]
+[ info ] [ LANG ] C:\wwwroot\AMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36; 360Spider',
+  'referer' => 'http://www.yeyap.com/',
+  'host' => 'www.yeyap.com',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'deflate, gzip',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Circle->index[ C:\wwwroot\AMS\application\index\controller\Circle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wwwroot\AMS\public/../application/index\view\circle\index.html [ array (
+  0 => 'show',
+  1 => 'schoolname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

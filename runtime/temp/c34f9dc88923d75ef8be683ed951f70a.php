@@ -1,0 +1,64 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\wwwroot\AMS\public/../application/index\view\copyright\index.html";i:1514964814;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>设置</title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script type="text/javascript" src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/rem.js"></script> 
+</head>
+<body>
+    <div id="wrap">
+        <header class="header header-fixed">
+            <a href="javascript:;" onclick="history.go(-1)" class="back"></a>
+            	设置
+		</header>
+        <div class="put-up">
+			<a href="javascript:" class="duoselect">
+				账号与安全
+			</a>
+			<a href="javascript:" class="duoselect">
+				社交账号绑定
+			</a>
+			<a href="javascript:"class="duoselect">
+				提醒设置
+			</a>
+			<a href="javascript:" class="duoselect">
+				联系客服
+			</a>
+			<a href="javascript:"class="duoselect">
+				使用帮助
+			</a>
+			<a href="javascript:" class="duoselect">
+				清除缓存
+			</a>
+			<a href="javascript:"class="duoselect">
+				评价我们
+			</a>
+			<a href="javascript:" class="duoselect">
+				关于我们
+			</a>
+			<a href="javascript:"class="duoselect">
+				版权信息
+			</a>
+			<a href="javascript:"class="duoselect">
+				检查更新
+			</a>
+			
+			<div>
+				<a href="<?php echo \think\Url::build('Personal/logout'); ?>" class="unload">退出登录</a>
+			</div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

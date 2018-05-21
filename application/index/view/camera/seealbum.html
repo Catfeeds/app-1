@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title></title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script type="text/javascript" src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/rem.js"></script> 
+	<style>
+	.bb_p{font-size:0.16rem;}
+	.bb_p img{width:100%;height:auto;}
+	</style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header">
+            <a href="javascript:;" onclick="history.go(-1)" class="back"></a>{$info.title}
+		</header>
+        <div class="bb_w_l_jy jy">
+		
+            <div class="bb_w_l">
+				<div class="bb_p">
+                {$info.content|htmlspecialchars_decode|stripslashes ?? ''}
+				</div>
+            </div>
+       
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>园内通知</title>
+	<link rel="stylesheet" type="text/css" href="__STATIC__/css/layui.css"/>
+    <link rel="stylesheet" href="__STATIC__/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/js/layui/css/layui.css"/>
+    <script type="text/javascript" src="__STATIC__/js/jquery.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/rem.js"></script> 
+	<script src="__STATIC__/js/jsbridge.js"></script>
+	<script src="__STATIC__/js/yuanzhang.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<header class="header  header-fixed">
+			<a class="back" ></a>园内通知
+		</header>
+		<div style="margin-top:0.64rem ;"></div>
+		{if condition="$type eq 1"}
+	    <div class="kindergarten-leader">
+    		<div class="select">请选择查看班级<div class="select-img"><img src="__STATIC__/img/back.png"width="100%"/></div></div>
+    		<ul class="option display">
+			{volist name="classManagement" id="vo"}
+    			<li>
+    				{$vo.class}
+    				<ul class="optionCh display">
+					{volist name="vo.className" id="vo1"}
+    					<li><a href="{:url('notice/index')}?className={$vo.class}{$vo1.className}&account={$account}&type={$type}">{$vo.class}{$vo1.className}班</a></li>
+    					
+					{/volist}
+    				</ul>
+    			</li>
+			{/volist}
+    			
+    		</ul>
+    	</div>
+        {/if}
+		<!--1-->
+		 {volist name="list" id="vo"}
+		<a href="{:url('notice/details')}?id={$vo.id}&phone_account={$phone_account}&account={$account}&type={$type}">
+		    <div class="server-public {if condition="$vo['isread'] neq '1'"}server-public-1{/if}">
+				<div>
+					<div class="fl server-head">
+						<img src="{$vo.headerurl}" />
+					</div>
+					<div class="fl server-news">
+						<p>
+							{$vo.nickname}<br />
+							<span>{$vo['release_time']}</span>
+						</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<h1 class="h1">{$vo.title}</h1>
+				
+				{$vo.content}
+			
+			
+				<div class="main-class">
+					<div class="server-img row main-class-ul">
+						{if condition="$vo['img'] neq ''"}
+						{volist name="vo.img" id="vo1" key="k"}
+						{if condition="$k < 9 "}
+					
+						<div class="imgbox imgbox1 col-xs-4">
+							<span> 
+								<img src="{$vo1.1}"/>
+							</span>
+						</div>
+						{/if}
+						{/volist}
+						{/if}
+						
+					</div>
+				</div>
+				{if condition="$vo['isread'] eq ''"}
+				<div class="server-cfr">
+					<span href="#">确认收到</span>
+				</div>
+				{/if}
+			</div>
+		</a>
+        <div class="line_bgw "  style="background:#fff;"></div>
+        {/volist}
+       
+
+            </div>
+        </div>
+        
+	</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		/*点赞*/
+		$('.click-zan').click(function(){
+			if($(this).hasClass('click-zan-red')){
+				$(this).removeClass('click-zan-red')
+			}else{
+				$(this).addClass('click-zan-red')
+			}
+		})
+		/*发送评论*/
+		$('.return-news').click(function(){
+			$(this).parent().next().toggle()
+		})
+		
+		//图片九宫格
+		$(".imgbox img").each(function(i){
+			var img = $(this);
+			var realWidth;//真实的宽度
+			var realHeight;//真实的高度
+			$("<img/>").attr("src", $(img).attr("src")).load(function() {
+			
+				realWidth = this.width;
+				realHeight = this.height;
+				if(realWidth>realHeight){
+				$(img).addClass('imgbox_img_2');
+				}
+				else{
+				$(img).addClass('imgbox_img_1');
+				}
+			});
+		});
+		
+	})
+	/**
+     * jQuery
+     */
+    $(function () {
+        // 首先调用JSBridge初始化代码，完成后再设置其他
+        initJsBridge(function () {
+			$(".back").click(function(){
+				window.WebViewJavascriptBridge.callHandler('back','1', function (response) {
+				
+					 //showResponse(response);
+				});
+			
+			})
+		
+	    })
+	
+	})
+</script>
+</html>

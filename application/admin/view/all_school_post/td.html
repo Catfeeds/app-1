@@ -1,0 +1,65 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.phone_account}</td>
+<td>{$vo.nickname}</td>
+<td>{$vo.city}</td>
+<td>{$vo.plate_name}</td>
+<td>{$vo.title}</td>
+<td>{$vo.release_time}</td>
+<td>
+    <!--统计当前用户发表的帖子个数）-->
+    <?php
+
+          $count = count($post_count[$vo['phone_account']]);
+          echo $count;
+    ?>
+</td>
+
+
+<td>
+
+    <!--判断当前最新记录的审核状态-->
+    <?php
+
+            if($vo['isqualified'] == 0)
+            {
+    ?>
+                <a href="{:url('AllSchoolPost/select',array('id'=>$vo.id))}" style="color: #148cf1">未审核</a>
+    <?php
+            }
+            if($vo['isqualified'] == 1)
+            {
+    ?>
+                合格
+    <?php
+            }
+
+    ?>
+
+
+</td>
+
+
+<!--根据$vo.isqualified判断查看的是未审核的所有内容、还是合格的所有内容、还是不合格的所有内容-->
+<td>
+    <a href="{:url('AllSchoolPost/selectAll',array('phone_account'=>$vo.phone_account,'isqualified'=>$vo.isqualified))}" style="color: #148cf1">查看</a>
+</td>
+
+
+<!--若是合格，只显示审核员-->
+{if condition="$vo.isqualified eq 1"}
+<td>
+    {$vo.assessor}
+</td>
+{/if}
+
+<!--若是不合格，同时显示不合格理由和审核员-->
+<!--{if condition="$vo.isqualified eq 2"}-->
+<!--<td>-->
+    <!--{$vo.reason}-->
+<!--</td>-->
+<!--<td>-->
+    <!--{$vo.assessor}-->
+<!--</td>-->
+<!--{/if}-->
+

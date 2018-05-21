@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>{$notice.title}</title>
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <script src="__STATIC__/js/jquerys-1.7.2.min.js"></script>
+    <script src="__STATIC__/js/rem.js"></script>
+	<script src="__STATIC__/js/jsbridge.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header header-fixed">
+            <a href="{:url('expression/index')}?phone_account={$phone_account}&account={$account}&type={$type}" class="back back1"></a>
+            
+        </header>
+	
+        <div class="information">
+        	<section>
+	            <div class="fl server-head ">
+	            	<img src="{$notice.headerurl}"/>
+	            </div>
+	            <div class="fl server-news">
+	            	<p>
+		            	{$notice.nickname}<br />
+		            	<span>{$notice.release_time}</span>
+		            </p>
+	            </div>
+	            <div class="clear"></div>
+	        </section>
+			<h1 class="h1">{$notice.title}</h1>
+	        <p>{$notice.content}</p>
+	        {if condition="$notice['images'] neq ''"}
+				{volist name="notice['images']" id="vo1" key="k"}
+				   <img src="{$vo1}"  href="ios{$k-1}://{$vo1}" class="js-img"/>
+				{/volist}
+			
+			{/if}
+       		<section>
+       			<div class="arr-show">
+       				<span class="arr-show-click arr-show-left">评论<i>{$commentCount}</i></span>
+	        		<span class="arr-show-right">赞<i class="zanCount">{$zanCount}</i></span>
+       			</div>
+	        	<div class="arr-zan arr-zan-left">
+	        		<ul>
+	        			{volist name="comment" id="vo"}
+	        			<li>
+	        				<img src="{$vo.headerurl}"/>
+	        				<i>{$vo.nickname}</i>
+	        				<span>{$vo.comment_time}</span>
+	        				<p>{$vo.content}</p>
+	        			</li>
+	        			{/volist}
+	        		</ul>
+	        		
+	        	</div>
+	        	<div class="arr-zan arr-zan-right">
+	        		<ul>{volist name="zan" id="vo2"}
+	        			<li><img src="{$vo2.headerurl}"/><i>{$vo2.nickname}</i></li>
+	        			{/volist}
+	        		</ul>
+	        	</div>
+	        </section>
+        </div>
+        
+		<input type="hidden" name="nid" value="{$rid}">
+        <input type="hidden" name="phone_account" value="{$phone_account}">
+		
+		
+        <div class="information-fixed">
+        	<input type="text" name="" id="" value="" placeholder="写评论..." readonly="value" class="comment"/>
+        	<a href="javascript:" class="{if condition="$iszan eq ''"}click-zan {else/}click-zan click-zan-red{/if} fr"  >
+        	</a>
+	        
+        	
+        </div>
+    </div>
+</body>
+	<script type="text/javascript">
+	
+	
+	/**
+     * 显示响应信息
+     * @param response 响应信心
+     */
+    function showResponse(response) {
+        alert(response);
+    }
+	  /**
+     * jQuery
+     */
+    $(function () {
+        // 首先调用JSBridge初始化代码，完成后再设置其他
+        initJsBridge(function () {
+		    var jsImg = $('img.js-img');
+			var images = new Array();
+			var str = '';
+			var str2= '';
+			var str1= '';
+			for (var i = 0; i < jsImg.length; i++) {
+			    var a = jsImg[i];
+			    a.index = i;
+				
+				str +=a.src+",";
+			    a.onclick = function () {
+
+					str1 += this.index;
+					
+					str2=str+str1;
+					window.WebViewJavascriptBridge.callHandler('get', str2, null);
+						 
+					str1 = '';
+
+			    }
+
+			}
+			
+			$(".comment").click(function(){
+			    var nid = $(" input[ name='nid' ] ").val();
+			    window.WebViewJavascriptBridge.callHandler('comment2', nid, function (response) {
+                    //showResponse(response);
+                });
+
+			})
+
+         });
+
+    })
+	
+    
+
+		$(document).ready(function(){
+			$('.arr-show-left').click(function(){
+				$(this).addClass('arr-show-click')
+				$(this).siblings().removeClass('arr-show-click')
+				$('.arr-zan-left').show();
+				$('.arr-zan-right').hide()
+				
+			})
+			$('.arr-show-right').click(function(){
+				$(this).addClass('arr-show-click')
+				$(this).siblings().removeClass('arr-show-click')
+				$('.arr-zan-left').hide();
+				$('.arr-zan-right').show()
+				
+			})
+			
+		
+		})
+		
+		function Back(){
+			android.toFinish();
+			
+		}
+	</script>
+	
+	    <script type="text/javascript">
+        $(document).ready(function(){
+           $(document).on('click','.click-zan',function(){
+                var rid = $(" input[ name='nid' ] ").val();
+				var phone_account = $(" input[ name='phone_account' ] ").val();
+				var account = $(" input[ name='account' ] ").val();
+                <!-- if($(this).hasClass('click-zan-red')){ -->
+                    <!-- $(this).removeClass('click-zan-red') -->
+                <!-- }else{ -->
+                    <!-- $(this).addClass('click-zan-red') -->
+                <!-- } -->
+				
+                $.ajax({
+                url:'{:url("expression/expressionzan")}',
+                type:'post',
+                data:{id:rid,phone_account:phone_account},
+                dataType:'json',
+                success:function(data){
+			
+					if(data ==1){
+					     location.reload();
+					    <!-- $('.fr').addClass('click-zan-red'); -->
+						<!-- zanCount = parseInt($('.zanCount').text())+1; -->
+						<!-- $('.zanCount').text(zanCount) -->
+					}
+					if(data ==2){
+					    location.reload();
+					    <!-- $('.fr').removeClass('click-zan-red');// -->
+						<!-- zanCount = parseInt($('.zanCount').text())-1; -->
+						
+						<!-- $('.zanCount').text(zanCount) -->
+					}
+					
+                 
+                
+                }            
+            }) 
+        })
+    })
+    </script>
+</html>
