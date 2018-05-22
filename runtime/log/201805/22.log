@@ -579,3 +579,693 @@
 [ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/test/public/index.php/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1526971940) [ RunTime:0.000526s ]
 
 ---------------------------------------------------------------
+[ 2018-05-22T15:16:28+08:00 ] ::1 ::1 GET /test/public/index.php/admin/index/index.html
+[ log ] localhost/test/public/index.php/admin/index/index.html [运行时间：0.187547s][吞吐率：5.33req/s] [内存消耗：4,866.58kb] [文件加载：71]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/test/public/index.php/admin/pub/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.015545s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\demo\PHPTutorial\WWW\test\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\test\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+  2 => 'num',
+  3 => 'number',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.009036s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001638s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.011250s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type`,`sort` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) ORDER BY group_id,pid,sort,id desc [ RunTime:0.003959s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.007551s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.006324s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mailbox` [ RunTime:0.007177s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mailbox` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_leave` [ RunTime:0.007551s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_leave` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.007237s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/test/public/index.php/admin/index/index.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1526973388) [ RunTime:0.001067s ]
+
+---------------------------------------------------------------
+[ 2018-05-22T15:16:28+08:00 ] ::1 ::1 GET /test/public/index.php/admin/index/welcome.html
+[ log ] localhost/test/public/index.php/admin/index/welcome.html [运行时间：0.195071s][吞吐率：5.13req/s] [内存消耗：4,791.80kb] [文件加载：69]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/test/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.014051s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\demo\PHPTutorial\WWW\test\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\test\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+  5 => 'userRegisterDay',
+  6 => 'userRegisterMonth',
+  7 => 'userRegisterSeason',
+  8 => 'schoolregDay',
+  9 => 'schoolregMonth',
+  10 => 'schoolregSeason',
+  11 => 'enrollDay',
+  12 => 'enrollMonth',
+  13 => 'enrollSeason',
+  14 => 'requestDay',
+  15 => 'requestMonth',
+  16 => 'requestSeason',
+  17 => 'releaseDay',
+  18 => 'releaseMonth',
+  19 => 'releaseSeason',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.014291s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001489s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.013431s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.010103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_patriarch` WHERE  ( `register_time` >= '2018-05-22 00:00:00' AND `register_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_patriarch` WHERE  ( `register_time` >= '2018-05-1 00:00:00' AND `register_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_patriarch` WHERE  ( `register_time` >= '2018-04-01 00:00:00' AND `register_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.010312s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  ( `school_reg_time` >= '2018-05-22 00:00:00' AND `school_reg_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.003381s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  ( `school_reg_time` >= '2018-05-1 00:00:00' AND `school_reg_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  ( `school_reg_time` >= '2018-04-01 00:00:00' AND `school_reg_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.006448s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-22 00:00:00' AND `enroll_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-1 00:00:00' AND `enroll_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.001683s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-04-01 00:00:00' AND `enroll_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.001020s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-22 00:00:00' AND `enroll_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-1 00:00:00' AND `enroll_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-04-01 00:00:00' AND `enroll_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.008976s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  ( `release_time` >= '2018-05-22 00:00:00' AND `release_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  ( `release_time` >= '2018-05-1 00:00:00' AND `release_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  ( `release_time` >= '2018-04-01 00:00:00' AND `release_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.013062s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/test/public/index.php/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1526973388) [ RunTime:0.000410s ]
+
+---------------------------------------------------------------
+[ 2018-05-22T15:16:33+08:00 ] ::1 ::1 GET /test/public/index.php/admin.html
+[ log ] localhost/test/public/index.php/admin.html [运行时间：0.106733s][吞吐率：9.37req/s] [内存消耗：4,866.27kb] [文件加载：71]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/test/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007329s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\demo\PHPTutorial\WWW\test\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\test\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+  2 => 'num',
+  3 => 'number',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006761s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001341s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.014604s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type`,`sort` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) ORDER BY group_id,pid,sort,id desc [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.005465s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.005439s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mailbox` [ RunTime:0.006087s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mailbox` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_leave` [ RunTime:0.006544s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_leave` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.005623s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/test/public/index.php/admin.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1526973393) [ RunTime:0.000544s ]
+
+---------------------------------------------------------------
+[ 2018-05-22T15:16:33+08:00 ] ::1 ::1 GET /test/public/index.php/admin/index/welcome.html
+[ log ] localhost/test/public/index.php/admin/index/welcome.html [运行时间：0.122796s][吞吐率：8.14req/s] [内存消耗：4,791.66kb] [文件加载：69]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/test/public/index.php/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007190s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\demo\PHPTutorial\WWW\test\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\test\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+  5 => 'userRegisterDay',
+  6 => 'userRegisterMonth',
+  7 => 'userRegisterSeason',
+  8 => 'schoolregDay',
+  9 => 'schoolregMonth',
+  10 => 'schoolregSeason',
+  11 => 'enrollDay',
+  12 => 'enrollMonth',
+  13 => 'enrollSeason',
+  14 => 'requestDay',
+  15 => 'requestMonth',
+  16 => 'requestSeason',
+  17 => 'releaseDay',
+  18 => 'releaseMonth',
+  19 => 'releaseSeason',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.007860s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002619s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.006412s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.005246s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_patriarch` WHERE  ( `register_time` >= '2018-05-22 00:00:00' AND `register_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_patriarch` WHERE  ( `register_time` >= '2018-05-1 00:00:00' AND `register_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_patriarch` WHERE  ( `register_time` >= '2018-04-01 00:00:00' AND `register_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.006459s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  ( `school_reg_time` >= '2018-05-22 00:00:00' AND `school_reg_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  ( `school_reg_time` >= '2018-05-1 00:00:00' AND `school_reg_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  ( `school_reg_time` >= '2018-04-01 00:00:00' AND `school_reg_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.005727s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-22 00:00:00' AND `enroll_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-1 00:00:00' AND `enroll_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-04-01 00:00:00' AND `enroll_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-22 00:00:00' AND `enroll_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-1 00:00:00' AND `enroll_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-04-01 00:00:00' AND `enroll_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.005986s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  ( `release_time` >= '2018-05-22 00:00:00' AND `release_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  ( `release_time` >= '2018-05-1 00:00:00' AND `release_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  ( `release_time` >= '2018-04-01 00:00:00' AND `release_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.006846s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/test/public/index.php/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1526973393) [ RunTime:0.000437s ]
+
+---------------------------------------------------------------
+[ 2018-05-22T15:16:34+08:00 ] ::1 ::1 GET /test/public/index.php/admin.html
+[ log ] localhost/test/public/index.php/admin.html [运行时间：0.104364s][吞吐率：9.58req/s] [内存消耗：4,866.27kb] [文件加载：71]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/test/public/index.php/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007181s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\demo\PHPTutorial\WWW\test\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\test\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+  2 => 'num',
+  3 => 'number',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.007515s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001157s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.014824s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type`,`sort` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) ORDER BY group_id,pid,sort,id desc [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.006568s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.005321s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mailbox` [ RunTime:0.006058s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mailbox` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_leave` [ RunTime:0.005636s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_leave` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.006386s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/test/public/index.php/admin.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1526973393) [ RunTime:0.000539s ]
+
+---------------------------------------------------------------
+[ 2018-05-22T15:16:34+08:00 ] ::1 ::1 GET /test/public/index.php/admin/index/welcome.html
+[ log ] localhost/test/public/index.php/admin/index/welcome.html [运行时间：0.127634s][吞吐率：7.83req/s] [内存消耗：4,791.66kb] [文件加载：69]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/test/public/index.php/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008549s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\demo\PHPTutorial\WWW\test\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\test\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+  5 => 'userRegisterDay',
+  6 => 'userRegisterMonth',
+  7 => 'userRegisterSeason',
+  8 => 'schoolregDay',
+  9 => 'schoolregMonth',
+  10 => 'schoolregSeason',
+  11 => 'enrollDay',
+  12 => 'enrollMonth',
+  13 => 'enrollSeason',
+  14 => 'requestDay',
+  15 => 'requestMonth',
+  16 => 'requestSeason',
+  17 => 'releaseDay',
+  18 => 'releaseMonth',
+  19 => 'releaseSeason',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006581s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001740s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.005517s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.007242s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_patriarch` WHERE  ( `register_time` >= '2018-05-22 00:00:00' AND `register_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_patriarch` WHERE  ( `register_time` >= '2018-05-1 00:00:00' AND `register_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_patriarch` WHERE  ( `register_time` >= '2018-04-01 00:00:00' AND `register_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.005665s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  ( `school_reg_time` >= '2018-05-22 00:00:00' AND `school_reg_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  ( `school_reg_time` >= '2018-05-1 00:00:00' AND `school_reg_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  ( `school_reg_time` >= '2018-04-01 00:00:00' AND `school_reg_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.006047s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-22 00:00:00' AND `enroll_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-1 00:00:00' AND `enroll_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-04-01 00:00:00' AND `enroll_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-22 00:00:00' AND `enroll_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-1 00:00:00' AND `enroll_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-04-01 00:00:00' AND `enroll_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.006141s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  ( `release_time` >= '2018-05-22 00:00:00' AND `release_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  ( `release_time` >= '2018-05-1 00:00:00' AND `release_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  ( `release_time` >= '2018-04-01 00:00:00' AND `release_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.005553s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/test/public/index.php/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1526973394) [ RunTime:0.000426s ]
+
+---------------------------------------------------------------
+[ 2018-05-22T15:17:02+08:00 ] ::1 ::1 GET /test/public/index.php/admin.html
+[ log ] localhost/test/public/index.php/admin.html [运行时间：0.107774s][吞吐率：9.28req/s] [内存消耗：4,866.48kb] [文件加载：71]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/test/public/index.php/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005583s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\demo\PHPTutorial\WWW\test\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\test\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+  2 => 'num',
+  3 => 'number',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\test\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.008527s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001159s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.006528s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type`,`sort` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) ORDER BY group_id,pid,sort,id desc [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.006469s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.001574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.007102s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mailbox` [ RunTime:0.005890s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mailbox` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.001529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_leave` [ RunTime:0.006317s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_leave` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.007355s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/test/public/index.php/admin.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1526973422) [ RunTime:0.000573s ]
+
+---------------------------------------------------------------
+[ 2018-05-22T15:17:02+08:00 ] ::1 ::1 GET /test/public/index.php/admin/index/welcome.html
+[ log ] localhost/test/public/index.php/admin/index/welcome.html [运行时间：0.154954s][吞吐率：6.45req/s] [内存消耗：4,974.09kb] [文件加载：72]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/test/public/index.php/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.010144s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\demo\PHPTutorial\WWW\test\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\test\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+  5 => 'userRegisterDay',
+  6 => 'userRegisterMonth',
+  7 => 'userRegisterSeason',
+  8 => 'schoolregDay',
+  9 => 'schoolregMonth',
+  10 => 'schoolregSeason',
+  11 => 'enrollDay',
+  12 => 'enrollMonth',
+  13 => 'enrollSeason',
+  14 => 'requestDay',
+  15 => 'requestMonth',
+  16 => 'requestSeason',
+  17 => 'releaseDay',
+  18 => 'releaseMonth',
+  19 => 'releaseSeason',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006815s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001515s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.005979s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.011308s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_patriarch` WHERE  ( `register_time` >= '2018-05-22 00:00:00' AND `register_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_patriarch` WHERE  ( `register_time` >= '2018-05-1 00:00:00' AND `register_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_patriarch` WHERE  ( `register_time` >= '2018-04-01 00:00:00' AND `register_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.009605s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  ( `school_reg_time` >= '2018-05-22 00:00:00' AND `school_reg_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  ( `school_reg_time` >= '2018-05-1 00:00:00' AND `school_reg_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  ( `school_reg_time` >= '2018-04-01 00:00:00' AND `school_reg_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.006901s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-22 00:00:00' AND `enroll_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-1 00:00:00' AND `enroll_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-04-01 00:00:00' AND `enroll_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-22 00:00:00' AND `enroll_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-05-1 00:00:00' AND `enroll_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  ( `enroll_time` >= '2018-04-01 00:00:00' AND `enroll_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.005918s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  ( `release_time` >= '2018-05-22 00:00:00' AND `release_time` <= '2018-05-23 00:00:00' ) LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  ( `release_time` >= '2018-05-1 00:00:00' AND `release_time` <= '2018-06-1 00:00:00' ) LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  ( `release_time` >= '2018-04-01 00:00:00' AND `release_time` <= '2018-06-30 23:59:59' ) LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.005822s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/test/public/index.php/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1526973422) [ RunTime:0.000347s ]
+
+---------------------------------------------------------------

@@ -128,6 +128,103 @@ class Index extends Controller
         $info = Db::name("AdminUser")->where("id", UID)->find();
         $this->view->assign("info", $info);
 
-        return $this->view->fetch();
+        
+        //若是管理员
+        if($info['type'] == 0){
+            //今日用户注册
+            $where['register_time'] = array(array('egt',date('Y-m-d 00:00:00',time())),array('elt',date('Y-m-d 00:00:00',strtotime("+1day"))));
+            
+            $userRegisterDay = DB::name('patriarch')->where($where)->count();
+
+            //本月用户注册
+            $where['register_time'] = array(array('egt',date('Y-m-1 00:00:00',time())),array('elt',date('Y-m-1 00:00:00',strtotime("+1month"))));
+
+            $userRegisterMonth = DB::name('patriarch')->where($where)->count();
+            //本季度用户注册
+            $month = date('m',time());
+            $season = ceil(date('n') /3); //获取月份的季度
+            $where['register_time'] = array(array('egt',date('Y-m-01 00:00:00',mktime(0,0,0,($season - 1)*3 +1,1,date('Y')))),array('elt',date('Y-m-t 23:59:59',mktime(0,0,0,$season * 3,1,date('Y')))));
+
+            $userRegisterSeason = DB::name('patriarch')->where($where)->count();
+
+            $this->view->assign('userRegisterDay',$userRegisterDay);
+            $this->view->assign('userRegisterMonth',$userRegisterMonth);
+            $this->view->assign('userRegisterSeason',$userRegisterSeason);
+//----------------------------------------------------------------------------------------------------------
+            //今日注册企业
+            $where1['school_reg_time'] = array(array('egt',date('Y-m-d 00:00:00',time())),array('elt',date('Y-m-d 00:00:00',strtotime("+1day"))));
+            $schoolregDay = DB::name('SchoolManagement')->where($where1)->count();
+            //本月用户注册
+            $where1['school_reg_time'] = array(array('egt',date('Y-m-1 00:00:00',time())),array('elt',date('Y-m-1 00:00:00',strtotime("+1month"))));
+
+            $schoolregMonth = DB::name('SchoolManagement')->where($where1)->count();
+            //本季度用户注册
+            $where1['school_reg_time'] = array(array('egt',date('Y-m-01 00:00:00',mktime(0,0,0,($season - 1)*3 +1,1,date('Y')))),array('elt',date('Y-m-t 23:59:59',mktime(0,0,0,$season * 3,1,date('Y')))));
+
+            $schoolregSeason = DB::name('SchoolManagement')->where($where1)->count();
+
+            $this->view->assign('schoolregDay',$schoolregDay);
+            $this->view->assign('schoolregMonth',$schoolregMonth);
+            $this->view->assign('schoolregSeason',$schoolregSeason);
+//--------------------------------------------------------------------------------------------------------------
+            //今日职位报名
+            $where2['enroll_time'] = array(array('egt',date('Y-m-d 00:00:00',time())),array('elt',date('Y-m-d 00:00:00',strtotime("+1day"))));
+            $enrollDay = DB::name('CompanyPositionEnroll')->where($where2)->count();
+            //本月用户注册
+            $where2['enroll_time'] = array(array('egt',date('Y-m-1 00:00:00',time())),array('elt',date('Y-m-1 00:00:00',strtotime("+1month"))));
+
+            $enrollMonth = DB::name('CompanyPositionEnroll')->where($where2)->count();
+            //本季度用户注册
+            $where2['enroll_time'] = array(array('egt',date('Y-m-01 00:00:00',mktime(0,0,0,($season - 1)*3 +1,1,date('Y')))),array('elt',date('Y-m-t 23:59:59',mktime(0,0,0,$season * 3,1,date('Y')))));
+
+            $enrollSeason = DB::name('CompanyPositionEnroll')->where($where2)->count();
+
+            $this->view->assign('enrollDay',$enrollDay);
+            $this->view->assign('enrollMonth',$enrollMonth);
+            $this->view->assign('enrollSeason',$enrollSeason);
+//-------------------------------------------------------------------------------------------------------------------
+            //今日邀请职位
+            $where3['enroll_time'] = array(array('egt',date('Y-m-d 00:00:00',time())),array('elt',date('Y-m-d 00:00:00',strtotime("+1day"))));
+            $where['ishire'] = 1;
+            $requestDay = DB::name('CompanyPositionEnroll')->where($where3)->count();
+            //本月邀请职位
+            $where3['enroll_time'] = array(array('egt',date('Y-m-1 00:00:00',time())),array('elt',date('Y-m-1 00:00:00',strtotime("+1month"))));
+
+            $requestMonth = DB::name('CompanyPositionEnroll')->where($where3)->count();
+            //本季度邀请职位
+            $where3['enroll_time'] = array(array('egt',date('Y-m-01 00:00:00',mktime(0,0,0,($season - 1)*3 +1,1,date('Y')))),array('elt',date('Y-m-t 23:59:59',mktime(0,0,0,$season * 3,1,date('Y')))));
+
+            $requestSeason = DB::name('CompanyPositionEnroll')->where($where3)->count();
+
+            $this->view->assign('requestDay',$requestDay);
+            $this->view->assign('requestMonth',$requestMonth);
+            $this->view->assign('requestSeason',$requestSeason);
+//-------------------------------------------------------------------------------------------------------------------
+            //今日发布职位
+            $where4['release_time'] = array(array('egt',date('Y-m-d 00:00:00',time())),array('elt',date('Y-m-d 00:00:00',strtotime("+1day"))));
+            $releaseDay = DB::name('CompanyReleasePosition')->where($where4)->count();
+            //本月发布职位
+            $where4['release_time'] = array(array('egt',date('Y-m-1 00:00:00',time())),array('elt',date('Y-m-1 00:00:00',strtotime("+1month"))));
+
+            $releaseMonth = DB::name('CompanyReleasePosition')->where($where4)->count();
+            //本季度发布职位
+            $where4['release_time'] = array(array('egt',date('Y-m-01 00:00:00',mktime(0,0,0,($season - 1)*3 +1,1,date('Y')))),array('elt',date('Y-m-t 23:59:59',mktime(0,0,0,$season * 3,1,date('Y')))));
+
+            $releaseSeason = DB::name('CompanyReleasePosition')->where($where4)->count();
+
+            $this->view->assign('releaseDay',$releaseDay);
+            $this->view->assign('releaseMonth',$releaseMonth);
+            $this->view->assign('releaseSeason',$releaseSeason);
+
+            return $this->view->fetch();
+
+        }
+        
+        return $this->view->fetch('welcome1');
+        
+        //----------------------------------------------------------------------------------------------------------
+
+
+        
     }
 }
